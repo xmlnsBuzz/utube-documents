@@ -1,0 +1,50 @@
+@import "E:\\Users\\Administrator\\Bitnami\\apache2\\htdocs\\scss\\lesson.scss";
+// @import url("http://cadvance.org/scss/lesson.scss");
+// E:\Users\Administrator\Bitnami\apache2\htdocs\scss\lesson.scss
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-weight: 800 - $i * 100;
+    margin-left: 0.5em * $i;
+    border-left: (8px - $i) dotted rgb(194, 194, 194);
+    padding-left: 3px;
+    margin-bottom: 0;
+    background-color: #fff;
+    //border: 1px solid red;
+
+    ~ p {
+      padding-left: 1em * $i;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.settings {
+  border-left: 2px solid #067a37;
+  padding-left: 3px;
+  background-color: rgba(17, 199, 62, 0.267);
+  display: block;
+  padding: 3px;
+  line-height: 1.6;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgb(110, 67, 10);
+  font-family: monospace;
+}
+
+p + ul {
+  margin-left: 30px;
+}
+
+code {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+li li {
+  color: #333;
+}
+
+section {
+  background-color: #fff;
+}

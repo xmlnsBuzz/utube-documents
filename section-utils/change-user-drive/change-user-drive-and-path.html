@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>사용자 계정 드라이브 및 경로 변경하기 - Change windows User Accout's Drive & Path</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="css/main.css" />
+	<style>
+		.example {
+			padding: 0 -8px;
+			border: 1px solid blue;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+
+	</header>
+	<section>
+		<div class="main-wrap">
+			<hr class="horizontal-hr" /> <br />
+			<h1>Change Windows User Account's Drive & Path <br />(윈도우 사용자 계정 드라이브 및 경로 변경) </h1>
+			<ul class="centered">
+				<li>목적
+					<p>일반적으로 하드디스크 'C-Drive'의 '사용자(영문 OS일 경우 Users) 폴더' 계정을 사용할 경우 OS를 새로 설치하거나, 백업을 복원할 경우 사용자 계정의 데이터가
+						손실되는
+						것을 피하기 위하여 boot drive가 아닌 하드디스크로 사용자 계정 저장소를 옮긴다.</p>
+				</li>
+				<li>방법
+					<ol>
+						<li>Administrator 계정 활성화</li>
+						<li>사용자 계정에서 Log off</li>
+						<li>Administrator 계정으로 로그인</li>
+						<li>"C:\사용자(영문OS에서는 'Users')\사용자 계정 경로" 를 원하는 하드디스크로 복사 </li>
+						<li>regedit(registry editor)를 사용하여 Profilelist의 사용자 계정 경로 변경</li>
+						<li>Log off 하고 사용자 계정으로 로그인</li>
+						<li>바탕화면에 .txt 파일을 만들고 드라이브 변경 여부를 확인.</li>
+					</ol>
+				</li>
+				<li>OS 보호를 위해 Administrator 계정을 '사용안함'으로 원상복구 시킨다. </li>
+			</ul>
+
+		</div>
+	</section>
+	<footer>
+		<p>
+			Lorem ipsum dolor sit amet.
+			<span>
+		</p>
+		Lorem ipsum dolor sit amet.
+		</span>
+	</footer>
+	<hr class="horizontal-hr" />
+	<br /><br /><br /><br />
+</body>
+
+</html>

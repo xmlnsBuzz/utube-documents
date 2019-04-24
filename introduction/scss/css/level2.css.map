@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAE;EACF,MAAM,EAAE,CAAC;CACZ",
+    "sources": [
+        "../level2/level2.scss"
+    ],
+    "names": [],
+    "file": "level2.css"
+}

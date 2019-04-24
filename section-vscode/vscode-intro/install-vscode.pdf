@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [['$','$'], ['\\(','\\)']]}});</script>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS": {"availableFonts":["TeX"],"scale": 150}});</script>
+
+<style>
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+	font-size: 14px;
+	padding: 0 12px;
+	line-height: 22px;
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	color: #4080D0;
+	text-decoration: none;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code {
+	font-size: inherit;
+	line-height: auto;
+}
+
+a:hover {
+	color: #4080D0;
+	text-decoration: underline;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left: 5px solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 14px;
+	line-height: 19px;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+.mac code {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+/** Theming */
+
+.vscode-light,
+.vscode-light pre code {
+	color: rgb(30, 30, 30);
+}
+
+.vscode-dark,
+.vscode-dark pre code {
+	color: #DDD;
+}
+
+.vscode-high-contrast,
+.vscode-high-contrast pre code {
+	color: white;
+}
+
+.vscode-light code {
+	color: #A31515;
+}
+
+.vscode-dark code {
+	color: #D7BA7D;
+}
+
+.vscode-light pre:not(.hljs),
+.vscode-light code > div {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre:not(.hljs),
+.vscode-dark code > div {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre:not(.hljs),
+.vscode-high-contrast code > div {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+.vscode-light blockquote,
+.vscode-dark blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.vscode-high-contrast blockquote {
+	background: transparent;
+	border-color: #fff;
+}
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+</style>
+
+</head>
+<body>
+<h1 id="coding-%EC%8B%A4%EC%8A%B5%EC%9D%84-%EC%9C%84%ED%95%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%EC%84%A4%EC%B9%98">Coding 실습을 위한 프로그램 설치</h1>
+<h3 id="triplebyte-it-%EC%9D%B8%EB%A0%A5-%EC%B1%84%EC%9A%A9-%EC%A0%84%EB%AC%B8%ED%9A%8C%EC%82%AC%EC%9D%98-code-editor-%EC%8B%9C%EC%9E%A5-%EC%A0%90%EC%9C%A0%EC%9C%A8-%ED%86%B5%EA%B3%84">TripleByte (IT 인력 채용 전문회사)의 Code Editor 시장 점유율 통계</h3>
+<p>vscode의 시장점유율이 1위 <strong>TripleByte Home Page</strong> <a href="https://triplebyte.com/blog/editor-report-the-rise-of-visual-studio-code">https://triplebyte.com/blog/editor-report-the-rise-of-visual-studio-code</a>)</p>
+<blockquote>
+<p>16.8%의 시장 점유율 (2018.12.4)</p>
+</blockquote>
+<h3 id="code-editor-%EC%84%A0%ED%83%9D%EC%9D%98-%EC%A4%91%EC%9A%94%EC%84%B1">Code editor 선택의 중요성</h3>
+<ul>
+<li>익히는 시간이 길다.</li>
+<li>한 번 익숙해지면 다른 에디터로 갈아타기를 시도하기 힘들다.</li>
+<li>따라서 뒤 늦게 다른 에디터에 마음 뺏기면 현재의 에디터에 情이 안 가기 시작한다.</li>
+<li>'순간의 선택'이 10년을 좌우한다.</li>
+</ul>
+<h3 id="%EC%A2%8B%EC%9D%80-editor%EC%9D%98-%EC%9D%BC%EB%B0%98%EC%A0%81-%EC%B2%B4%ED%81%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8">좋은 editor의 일반적 체크리스트</h3>
+<ul>
+<li>‘무료’일 것.</li>
+<li>지속적인 업데이트와 지원(Updates &amp; Supports)이 될 것.</li>
+<li>좋은 확장성(extensible)을 가질 것.</li>
+<li>&quot;통합성&quot;(Integrity : All in one)
+<ul>
+<li>에디터 내에서 Git, Search, Debug, CLI 등을 통합처리.
+Sass의 경우 Cli로 직접 입력하거나, sassmeister같은 프로그램을 따로 띄워야 되지만</li>
+</ul>
+</li>
+</ul>
+<h3 id="vscode-download-install">VSCode Download &amp; Install</h3>
+<p>Visual Studio Code Download site <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a> 에 접속.</p>
+<h1 id="coding-%EC%8B%A4%EC%8A%B5%EC%9D%84-%EC%9C%84%ED%95%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%EC%84%A4%EC%B9%98">Coding 실습을 위한 프로그램 설치</h1>
+<p>'SIA' Channel 실습을 위한 필수 프로그램</p>
+<p>1 VSCode 설치 이유 :
+안녕하세요 시아채널입니다. 이 번 동영상에서는 프로그램을 몇 가지 설치하려고 하는데요, 이 채널 강의에 나오는 code를 실습하는데 필요한 editor를 설치해 보겠습니다.</p>
+<p>작업을 능률적으로 하기 위해서는 우선 좋은 프로그램을 골라야 되고, 고른 다음에는 그 프로그램의 기능을 최대한 이용해서 작업의 효율설을 높이는 것. 이 두 가지가 핵심 포인트라 할 수 있습니다.</p>
+<p>코딩에 있어서도 코드에디터 프로그램이 차지하는 비중은 매우 큽니다. 그렇기 때문에 최초에 어떤 에디터를 선택 하느냐 하는 문제는 정말 중요하겠죠. 순간의 선택이 10년을 좌우한다는 말이 있는데, 왜냐하면 어떤 에디터에 익숙해 지고 그 프로그램으로 실무를 하다보면 그 때까지 들인 시간이 아깝다는 생각에 웬만해선 다른 에디터로 갈아타려고 하질 않거든요. 뒤늦게 다른 프로그램이 좋다는 걸 알게 되어도 수년에 걸쳐 한가지 에디터를 쓰다가 다른 에디터로 갈아 탈 경우, 또 다시 시간을 들여 새 프로그램을 익혀야되는 것이 망설여지는 건 어찌보면 당연한 겁니다. 그래서 애초에 에디터를 고를 때 검색을 통해 또는 먼저 써 본 주변 사람들을 통해 잘 알아보고 결정하는 것이 중요합니다.</p>
+<p>또 한가지 중요한 문제는 좋은 에디터를 고른 후, 그 에디터의 기능을 충분히 익힌 후 그 기능을 최대한 활용하여 능률적으로 coding하는 것과 겨우 코딩할 수 있는 기능 몇가지 정도 익힌 후 코딩하는 것과 생산성이나 효율성면에서 하늘과 땅 차이란 말이죠. 제가 요 몇년간 국내외 유튜브채널 중 꽤 알려진 코딩 사이트에서의 동영상 강의를 보았는데 그 사람들 코딩할 때 메모장식으로 코딩하는 걸 보고 '어! 저럴 때 사용하는 좋은 기능이 있는데 왜 안 쓰지?' 라는 생각을 자주 했는데, 그건 아마도 프로그램을 처음 처음 시작해서 기능을 익혀나아다가 '이 정도면 코딩하기에 충분하겠다.'라고 생각했거나, 급히 작업 할 프로젝트가 있어서 기능을 제대로 익히지 못한 상태에서 작업하다가 그 상태가 그대로 굳어져서, 더 이상 기능의 깊은 부분까지 캐 보지 않고(남는 시간은 놀아야 되니까) 그냥 작업을 하는 경우가 아닐까 합니다.</p>
+<p>전부는 아니지만 좋은 에디터의 조건 몇 가지</p>
+<ul>
+<li>‘무료’일 것.</li>
+<li>지속적인 업데이트와 지원(Updates &amp; Supports)이 될 것. vscode는 Open source(1개월에 2번 정도의 업데이트), ms가 망해서 없어지긴 힘들다.</li>
+<li>좋은 확장성(extensible)을 가질 것. 기본적으로 강력한 문서편집 기능은 물론, html외의 다른 언어(css scss js ...)에 대해 확장할 수 있는 extension(포토샵의 plugin 같은)을 것.</li>
+<li>&quot;통합성&quot;(Integrity : All in one)
+<ul>
+<li>에디터 내에서 Git, Search, Debug, CLI 등을 통합처리.
+Sass의 경우 Cli로 직접 입력하거나, sassmeister같은 프로그램을 따로 띄워야 된다.</li>
+</ul>
+</li>
+<li>vscode는 다른 코드에디터에 비해 실행속도가 빠르다. electron으로 만들었다고 함.</li>
+</ul>
+<p>저는 앞에서 나열한 기능 말고도 매우 많은 기능을 갖춘 에디터  vscode를 추천하는데, 무턱대고 추천하기 보다, 왜 추천하는지에 대한 이유가 있어야 되는 건 당연한 거죠. 그냥 단순히 vscode는 내가 써 봤는데 참 좋더라. 남들도 다 그러더라... 그래서 저는 객관적인 자료를 보여드리려고 하는데 triplebyte의 조사자료와 vscode다.</p>
+<p>하지만 이미 다른 에디터에 익숙하다면 굳이 안 써도 되지만 현재 사용하는 에디터가 미비한 것 같아서 좀 더 좋은 에디터를 찾고 있거나 코딩에 입문하는 사람에게는 자신있게 적극 권장함.</p>
+<p>vscode의 장점
+현존하는 거의 모든 언어(웹 언어 포함해서 c++ java 등)를 지원한다. 새로 생기는 웹 언어를 즉각 즉각 지원한다.</p>
+<p>ms가 비호감이긴 하지만 vscode는 open source editor라서 직원 몇 명이 만든 것이 아닌 모든 사람이 참여해서 만든 만큼 업데이트 속도나 extension 등이 급격이 증가하고 있음.
+1998년 부터 20년 넘게 코딩을 하는 동안 수 많은 에디터를 써 봤다. 클래식 에디터 coffee cup editor, edit plus, ultra edit ... html-kit 10년 이상 사용했는데 utf-8 encoding이 안 되어 결국 포기</p>
+<p>근래의 에디터 sublime text, atom, vim 매킨토시의 xcode sublime text 6개월 정도 사용하다 vscode를 만남.</p>
+<p>좀처럼 갈아타기를 하지 않는 특성에도 불구하고 vscode로 갈아탐.</p>
+<p>그리고 나서... 이해하기 어려운 부분을 공부하려고</p>
+<p>vscode강의를 유튜브에서 찾았으나(요즘도 가끔 봄) 단편적으로 설명하거나
+심지어 vscode channel의 컨텐츠도 미비함. 유료로 강의하는 외국 사이트(vscode.pro: 페이지를 보여준다.), 유료로 강의하는 국내 사이트가 있다. 아쉬움이 많았다.</p>
+<p>이 채널을 만들 때 html css js 등 웹언어 + vscode 사용법에 대해 강의한다.</p>
+<p>1998년 부터 20년간 몇 가지 에디터를 사용해 코딩했던 경험을 합쳐서 강의한다.</p>
+<p>vscode의 기능은 강의가 진행됨에 따라 필요것들이 나타날 때</p>
+<p>vscode는 포터블 버전도 가능하며, git token을 사용하여 다른 컴퓨터에서도 사용중인 컴퓨터와 똑 같은 vscode환경을 구축할 수 있다.</p>
+<p>sublime text 6개월 사용, atom 매킨토시 finder 같아서 오히려 낯설다.</p>
+<p>&amp;&amp;&amp;&amp;</p>
+<p>vscode는 IDE라 부르는 통합개발환경을 갖추고 있는데, 이 채널에서는 c,</p>
+<p>&amp;&amp;&amp;&amp;</p>
+<ul>
+<li>Visual Studio Code : Code Editor</li>
+<li>git-scm : 문서 관리 및 CLI(Command Line Interface) 사용</li>
+<li>node.js : Coding을 위한 Node Packages 관리</li>
+</ul>
+<p>이미 다른 에디터에 익숙한 사람은 굳이 바꿀 필요 없음.</p>
+<h2 id="visual-studio-code%EB%A5%BC-%EA%B6%8C%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0">Visual Studio Code를 권하는 이유</h2>
+<p>HTML-Kit 8년,
+나는 모든 일을 하는 것에 있어서, 그 일에 필요한 장비가 전체작업몇 년간 유튜브 Web programming coding으로 잘 알려진 외국 사이트채널 들에서 그 들이 coding하는 동영상을 본 후, 그 들이 vscode 기능의 일 부분만을 사용하는 것을 보았다. 따라서 내가 sublimeText를 사용하다 vscode 출시 후 '갈아타기'를 하면서 부터 지금까지 노력해서 알아 낸 vscode 기능들에 이 채널 전반을 통해 최대한 자세히 설명하려고 한다.</p>
+<h3 id="triplebyte-it-%EC%9D%B8%EB%A0%A5-%EC%B1%84%EC%9A%A9-%EC%A0%84%EB%AC%B8%ED%9A%8C%EC%82%AC%EC%9D%98-code-editor-%EC%8B%9C%EC%9E%A5-%EC%A0%90%EC%9C%A0%EC%9C%A8-%ED%86%B5%EA%B3%84">TripleByte (IT 인력 채용 전문회사)의 Code Editor 시장 점유율 통계</h3>
+<p>vscode의 시장점유율이 1위 <strong>TripleByte Home Page</strong> <a href="https://triplebyte.com/blog/editor-report-the-rise-of-visual-studio-code">https://triplebyte.com/blog/editor-report-the-rise-of-visual-studio-code</a>)</p>
+<blockquote>
+<p>16.8%의 시장 점유율 (2018.12.4)</p>
+</blockquote>
+<h3 id="code-editor-%EC%84%A0%ED%83%9D%EC%9D%98-%EC%A4%91%EC%9A%94%EC%84%B1">Code editor 선택의 중요성</h3>
+<ul>
+<li>익히는 시간이 길다.</li>
+<li>한 번 익숙해지면 다른 에디터로 갈아타기를 시도하기 힘들다.</li>
+<li>따라서 뒤 늦게 다른 에디터에 마음 뺏기면 현재의 에디터에 情이 안 가기 시작한다.</li>
+<li>'순간의 선택'이 10년을 좌우한다.</li>
+</ul>
+<h3 id="%EC%A2%8B%EC%9D%80-editor%EC%9D%98-%EC%9D%BC%EB%B0%98%EC%A0%81-%EC%B2%B4%ED%81%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8">좋은 editor의 일반적 체크리스트</h3>
+<h3 id="vscode-download-install">VSCode Download &amp; Install</h3>
+<p>Visual Studio Code Download site <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a> 에 접속.</p>
+<h2 id="git-scm-%EC%84%A4%EC%B9%98">git-scm 설치</h2>
+<h2 id="nodejs-%EC%84%A4%EC%B9%98">node.js 설치</h2>
+
+</body>
+</html>

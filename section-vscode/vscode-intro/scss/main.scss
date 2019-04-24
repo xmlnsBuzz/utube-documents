@@ -1,0 +1,53 @@
+@import "_cadvance_variables";
+
+body {
+  margin: 0;
+  //margin-top: 30px;
+  padding: 0;
+  //height: 100vh;
+  /* 100vh를 사용할 경우 hr 같은 tag이 100vh 위치에 달라 붙어 고정된다.  */
+  background-color: $content-bg;
+  background-image: none;
+  .sia {
+    opacity: 0.12;
+    position: absolute;
+    top: 150px;
+  }
+  .horizontal-hr {
+    width: 95%;
+    height: 1px;
+    border: 1px solid orangered;
+    background-color: orangered;
+  }
+}
+
+
+.main-wrap {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font: normal normal bold 25px/2.5 $base-font-family;
+}
+
+.main-wrap > h1 {
+  text-align: center;
+  font: normal normal bold 46px/2.5 $base-font-family;
+  //text-decoration: underline;
+  color: rgb(93, 69, 1);
+  //padding-top: 100px;
+  /* margin: 150px auto; */
+}
+
+ul.centered {
+  //margin: auto;
+  margin: auto auto auto 250px;
+  color: rgb(184, 124, 12);
+  li {
+    font-size: 36px;
+    p {
+      font: normal normal bold 24px/1.6 $base-font-family;
+      color: initial;
+    }
+  }
+}
+
