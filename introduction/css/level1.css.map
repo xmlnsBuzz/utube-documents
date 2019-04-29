@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,OAAO,EAAE,CAAC;CACb",
-    "sources": [
-        "../scss/level1.scss"
-    ],
-    "names": [],
-    "file": "level1.css"
-}
