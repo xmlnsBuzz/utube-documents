@@ -1,26 +1,22 @@
 @import "_cadvance_variables";
 
-
-
 body {
-	margin: 0;
-	//margin-top: 30px;
-	padding: 0;
-	//height: 100vh;
-	/* 100vh를 사용할 경우 hr 같은 tag이 100vh 위치에 달라 붙어 고정된다.  */
-	//background-color: $content-bg;
-	//background-image: none;
-	background-position: 0 70px;
-	//opacity: 0.1;
+  margin: 50px;
+  //margin-top: 30px;
+  padding: 0;
+  //height: 100vh;
+  /* 100vh를 사용할 경우 hr 같은 tag이 100vh 위치에 달라 붙어 고정된다.  */
+  //background-color: $content-bg;
+  background-image: none;
+  background-position: 0 110px;
+  //opacity: 0.1;
 
-
-	.sia {
-		opacity: 0.12;
-		position: fixed;
-		top: 20px;
-		z-index: -10;
-	}
-
+  .sia {
+    opacity: 0.12;
+    position: fixed;
+    top: 60px;
+    z-index: -10;
+  }
 }
 
 /* .box
@@ -30,46 +26,46 @@ background: linear-gradient(left, rgba(30,87,153,0.3) 0%,rgba(125,185,232,0.1) 1
 
 /* asdf */
 .horizontal-hr {
-	width: 95%;
-	height: 0px;
-	border: 2px solid orangered;
-	background: {
-		color: rgba(orangered, 0.5);
-	}
+  width: 95%;
+  height: 0px;
+  border: 2px solid orangered;
+  background: {
+    color: rgba(orangered, 0.5);
+  }
 }
 
 .main-wrap {
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	z-index: 10;
-	font: normal normal bold 25px/2.5 $base-font-family;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  z-index: 10;
+  font: normal normal bold 25px/2.5 $base-font-family;
 }
 
-.main-wrap>h1 {
-	text-align: center;
-	font: normal normal bold 46px/2.5 $base-font-family;
-	//text-decoration: underline;
-	color: rgb(93, 69, 1);
-	//padding-top: 100px;
-	/* margin: 150px auto; */
+.main-wrap > h1 {
+  text-align: center;
+  font: normal normal bold 46px/2.5 $base-font-family;
+  //text-decoration: underline;
+  color: rgb(93, 69, 1);
+  //padding-top: 100px;
+  /* margin: 150px auto; */
 }
 
 ul.centered {
-	//margin: auto;
-	margin: auto 150px;
-	color: #855a0b;
+  //margin: auto;
+  margin: auto 150px;
+  color: #855a0b;
 
-	li {
-		font-size: 36px;
+  li {
+    font-size: 36px;
 
-		p {
-			font: normal normal bold 24px/1.6 $base-font-family;
-			color: initial;
-		}
-		ul>li {
-			font-size: 18px;
-			list-style-type: disc;
-		}
-	}
+    p {
+      font: normal normal bold 24px/1.6 $base-font-family;
+      color: initial;
+    }
+    ul > li {
+      font-size: 18px;
+      list-style-type: disc;
+    }
+  }
 }
