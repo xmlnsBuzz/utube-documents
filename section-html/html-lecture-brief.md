@@ -23,16 +23,20 @@
 ## HTML Syntax 문법
 1. The doctype declaration
 ```html
-<!DOCTYPE html>
+    <!DOCTYPE html>
 ```
 
 2. Character encoding declaration(charset)  (문자 인코딩 선언)
     * encoding: 인간의 문자(가나다 abc 등)를 컴퓨터 문자(utf-8 ascii 등)로 변환
     * decoding: 컴퓨터 문자를 인간의 문자로 변환
 ```html
-<meta charset="UTF-8" />
+    <meta charset="UTF-8" />
 ```
 3. Elements  
+```html
+    <p>Lorem ipsum</p>
+
+```
 
 4. Attributes 
 
