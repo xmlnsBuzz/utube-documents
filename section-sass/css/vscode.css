@@ -178,6 +178,10 @@ ul.centered li ul > li {
   list-style-type: disc;
 }
 
+.red {
+  color: red;
+}
+
 li {
   color: #282828;
 }

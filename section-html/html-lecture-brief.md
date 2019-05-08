@@ -1,64 +1,59 @@
-# Youtube 동영상 계획표
+# HTML5 Introduction
 
-> 모든 동영상 강좌에는 수업목표(coding이든 설명이든)를 동영상 시작과 함께 제시하고 결과를 체크한다.
+## Terminology 용어해설
+* Markup
+* case insensitive
+* flow contents
+* phrasing content
+* must (브라우저에 따라 허용여부가 다를 수 있다.)
+* new line
+    * U + 000D CARRIAGE RETURN (CR) 문자
+    * U + 000A LINE FEED (LF) 문자
+    * U + 000D CARRIAGE RETURN (CR) 다음에 U + 000A LINE FEED (LF) 문자가 옵니다. 
+* space 
+    * U+0020 SPACE
+    * U+0009 CHARACTER TABULATION (tab)
+    * U+000A LINE FEED (LF)
+    * U+000C FORM FEED (FF)
+    * U+000D CARRIAGE RETURN (CR)
+* UA (User Agent)
+
+* ***viewport에 대한 설명<sup>추가</sup>
+
+## HTML Syntax 문법
+1. The doctype declaration
+```html
+<!DOCTYPE html>
+```
+
+2. Character encoding declaration(charset)  (문자 인코딩 선언)
+    * encoding: 인간의 문자(가나다 abc 등)를 컴퓨터 문자(utf-8 ascii 등)로 변환
+    * decoding: 컴퓨터 문자를 인간의 문자로 변환
+```html
+<meta charset="UTF-8" />
+```
+3. Elements  
+
+4. Attributes 
+
+5. Text and character data (일반 텍스트와 escape 문자)
+
+6. Character references 문자 참조(escape)
+
+7. Comments 주석
 
 
-## HTML
 
------
-
-## W3C Specifications 
-
-### HTML
-
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-* [Youtube 동영상 계획표](#youtube-동영상-계획표)
-	* [HTML](#html)
-	* [W3C Specifications](#w3c-specifications)
-		* [HTML](#html-1)
-			* [Introduction 소개](#introduction-소개)
-			* [Terminology 용어해설](#terminology-용어해설)
-			* [HTML Syntax 문법](#html-syntax-문법)
-			* [HTML elements의 기능별 분류](#html-elements의-기능별-분류)
-			* [HTML elements](#html-elements)
-			* [Common contents models 공통 컨텐츠 모델](#common-contents-models-공통-컨텐츠-모델)
-			* [Global attributes 전역 속성](#global-attributes-전역-속성)
-		* [CSS](#css)
-				* [CSS Syntax](#css-syntax)
-	* [SCSS + CSS](#scss-css)
-	* [VSCode Editing Techs](#vscode-editing-techs)
-		* [Basic editing](#basic-editing)
-		* [VSCode Basic editing](#vscode-basic-editing)
-	* [VSCode Extensions](#vscode-extensions)
-		* [Live Sass Compiler, Server, Preview dependancy(extension의 dependancy tab)에 대한 설명](#live-sass-compiler-server-preview-subdependancyextension의-dependancy-tab에-대한-설명sub)
-		* [SASS Formatter](#sass-formatter)
-	* [Utility Programs](#utility-programs)
-		* [clcl](#clcl)
-		* [Folder Marker](#folder-marker)
-		* [Toby](#toby)
-	* [Git](#git)
-
-<!-- /code_chunk_output -->
----
-#### Introduction 소개
-
-#### Terminology 용어해설
-viewport
-
-#### HTML Syntax 문법
-
-#### HTML elements의 기능별 분류
+    
+## HTML elements의 기능에 의한 분류
 * https://www.w3.org/TR/2012/WD-html-markup-20121025/elements-by-function.html#elements-by-function
 
-    ##### viewport
+    
 
-    ##### The root element
+    ### The root element
     * html – root element
 
-    ##### Document metadata
+    ### Document metadata
     * head – document metadata container
     * title – document title
     * base – base URL
@@ -66,11 +61,11 @@ viewport
     * meta – metadata <sup>Changed</sup>
     * style – style (presentation) information
 
-    ##### Scripting
+    ### Scripting
     * script – embedded script
     * noscript – fallback content for script
 
-    ##### Sections
+    ### Sections
     * body – document body
     * section – section <sup>New</sup>
     * nav – group of navigational links <sup>New</sup>
@@ -87,7 +82,7 @@ viewport
     * footer – footer <sup>New</sup>
     * address – contact information
 
-    ##### Grouping content
+    ### Grouping content
     * p – paragraph
     * hr – thematic break <sup>Changed</sup>
     * br – line break
@@ -103,7 +98,7 @@ viewport
     * figcaption – figure caption <sup>New</sup>
     * div – generic flow container
 
-    ##### Text-level semantics
+    ### Text-level semantics
     * a – hyperlink <sup>Changed</sup>
     * em – emphatic stress
     * strong – strong importance
@@ -131,10 +126,10 @@ viewport
     * bdo – BiDi override
     * span – generic span
 
-    ##### Edits
+    ### Edits
     * ins – inserted text
     * del – deleted text
-    ##### Embedded content
+    ### Embedded content
 
     * img – image
     * iframe – nested browsing context (inline frame)
@@ -149,7 +144,7 @@ viewport
     * map – image-map definition
     * area – image-map hyperlink
 
-    ##### Tables
+    ### Tables
     * table – table
     * caption – table title
     * colgroup – table column group
@@ -161,7 +156,7 @@ viewport
     * td – table cell
     * th – table header cell
 
-    ##### Forms
+    ### Forms
     * form – user-submittable form
     * fieldset – set of related form controls
     * legend – title or explanatory caption
@@ -178,7 +173,7 @@ viewport
     * progress – progress indicator <sup>New</sup>
     * meter – scalar gauge <sup>New</sup>
 
-    ##### Interactive elements
+    ### Interactive elements
     * details – control for additional on-demand information <sup>New</sup>
     * summary – summary, caption, or legend for a details control <sup>New</sup>
     * command – command <sup>New</sup>
@@ -190,96 +185,4 @@ viewport
 * Flow elements
 * Metadata elements
 * Phrasing elements
-#### Global attributes 전역 속성
-
-### CSS
-
-#### HTML 5 default CSS table
-
-#### CSS Syntax
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-
 -----
-
-## SCSS + CSS
-
------
-
-## VSCode Editing Techs
-### Basic editing
-1. Selection in Web Browser
-    * 브라우저에서의 커저 focusing
-    * 더블 & 트리플 클릭
-    * Selecting 시작점 cursor focusing + Next selecting point click
-1. Common Editor
-
-### VSCode Basic editing
-1. Expand & Shrink
-    * Ctrl key, Shift key, Ctrl + Shift key
-
------
-
-## VSCode Extensions
-### Live Sass Compiler, Server, Preview <sub>dependancy(extension의 dependancy tab)에 대한 설명</sub>
-### SASS Formatter
-
-document type declaration
-document type definition
------
-
-## Utility Programs
-### clcl
-### Folder Marker
-### Toby
-
------
-
-## Git
-
-```css{.line-numbers}
-
-@import "_cadvance_variables";
-
-ul, ol {
-    line-height: 1.7;
-
-    li {
-        font-size: 16px;
-    } 
-}
-```
-
-```javascript {.line-numbers}
-function add(x, y) {
-  return x + y
-}
-```
-
-- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
-- [x] list syntax required (any unordered or ordered list supported)
-- [x] this is a complete item
-- [ ] this is an incomplete item
-
-Emoji & Font-Awesome
-This only works for markdown-it parser but not pandoc parser.
-Enabled by default. You can disable it from the package settings.
-
-:smile:
-:fa-car:
-Superscript
-30^th^
-Subscript
-H~2~O
-Footnotes
-Content [^1]
-
-[^1]: Hi! This is a footnote
-Abbreviation
-
-*[HTML]: Hyper Text Markup Language
-*[W3C]:  World Wide Web Consortium
-The HTML specification
-is maintained by the W3C.
-Mark
-==marked==
