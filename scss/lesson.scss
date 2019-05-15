@@ -1,0 +1,111 @@
+@import '_cadvance_variables';
+
+// lesson.scss local variables below
+
+/*
+ sass
+*/
+
+body > p {color: #333;}
+
+ul>li,
+ol>li {
+	font-size: $base-font-size;
+	color: $example-text-color;
+	margin-top: 5px;
+}
+
+
+p {
+	font-family: $base-font-family;
+	background-color: $content-bg;
+	font-size: $para-font-size;
+	font-weight: 100;
+	color: $para-text-color;
+
+}
+
+
+
+div.lesson {
+	img {
+		margin: 16px 0;
+	}
+
+	pre {
+		font-family: $header-font-notoSansKr;
+		color: $pre-font-color;
+	}
+}
+
+.imgSmall {
+	width: 100px;
+}
+
+.img200 {
+	width: 200px;
+}
+
+.img300 {
+	width: 300px;
+}
+
+.img400 {
+	width: 400px;
+}
+
+.img500 {
+	width: 500px;
+}
+
+.imgBig {
+	width: 100%;
+}
+
+.floatLeft {
+	float: left;
+}
+
+.floatRight {
+	float: right;
+}
+
+p.example {
+	background-color: $example-bg-color;
+	border: 1px solid $example-border-color;
+	padding: 5px;
+	margin: 25px 10px;
+	border-width: 1px 0;
+}
+
+span.warnSign {
+	//color: $button-hover-color;
+	font-weight: bold;
+	animation: warnSign $blink-animation-behavior;
+}
+
+@keyframes warnSign {
+	from {
+		color: $button-text-color;
+	}
+
+	to {
+		color: $button-hover-color;
+	}
+}
+
+.tablesorter {
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	overflow: hidden;
+
+
+	tr:nth-of-type(even):not(thead) {
+		background-color: #efefef;
+	}
+
+	thead {
+		background-color: #e1e1e1;
+		border-top: 1px solid $footer-bg;
+	}
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>VSCode 인터페이스 소개 - Introduction to VSCode Interface</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="../../css/normal-documents.css" />
+  <link rel="shortcut icon" type="image/ico" href="../../sia-logo.ico" />
+  <link rel="shortcut icon" type="image/png" href="../../sia-logo.png" />
+  <style>
+    body {
+      background-image: url('../../img/sia-opacity015.svg');
+      background-position: 0 70px;
+    }
+
+    section {
+      margin-left: 150px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    h2 {
+      background-color: rgb(129, 90, 6);
+      border-radius: 5px;
+      padding-left: 20px;
+      margin-right: 80px;
+      color: #ffffff;
+      font-weight: normal;
+    }
+
+    summary {
+      outline: none;
+      font-size: 0.8em;
+      cursor: pointer;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary:after {
+      /* background: #da291c;
+    border-color: #da291c; */
+      border-radius: 15px;
+      content: "+";
+      color: rgb(255, 0, 0);
+      float: left;
+      font-size: 1em;
+      font-weight: bold;
+      margin: -2px 10px 0 0;
+      padding: 1px 0 3px 0;
+      text-align: center;
+      width: 30px;
+    }
+
+    details[open] summary:after {
+      content: "-";
+    }
+  </style>
+</head>
+
+<body>
+  <hr class="horizontal-hr" /> <br />
+  <header>
+
+  </header>
+  <section>
+    <div class="main-wrap">
+      <!--       <img class="sia" src="../../img/sia-Logo-first.svg" />
+
+    </div>
+    <div>
+ -->
+      <h1>VSCode Interface</h1>
+      <h2>
+       VSCode 실행하는 방법
+      </h2>
+      <details>
+        <summary>Contents</summary>
+        <ul>
+          <li>시작 메뉴에서 실행</li>
+          <li>탐색기에서 우클릭 메뉴를 이용하여 실행</li>
+          <li>Bash window에서 실행</li>
+          <li>VSCode는 여러 창을 동시에 띄울 수 있다.</li>
+        </ul>
+      </details>
+      <h2>
+        Screen zoom
+      </h2>
+      <details>
+        <summary>Contents</summary>
+
+        <p>Vscode 화면 비율을 확대 축소 복귀 하는 기능이 있다. 이 기능은 editor group 뿐 아니라 메뉴 사이드바 등 모든 것이 같이 확대, 축소 된다. 포토샵이나 일러스트레이터와 단축키는
+          같지만 vscode는 interface의 모든 부분이 확대, 축소된다.</p>
+        <ul>
+          <li>Ctrl + + 또는 Ctrl + = : 확대</li>
+          <li>Ctrl + - : 축소</li>
+          <li>Ctrl + 0 : 원래크기(Zoom Level 0)</li>
+        </ul>
+ 
+      </details>
+      <h2>Welcome Screen</h2>
+      <details>
+        <summary>Contents</summary>
+        <img src="img/vscode-welcome-screen.png" alt="" />
+        <ul>
+          <li>Start</li>
+          <li>Recent</li>
+          <li>Help</li>
+          <li>Customize</li>
+          <li>Learn</li>
+        </ul>
+      </details>
+
+      <h2>
+        각 부분의 명칭 (name*)
+      </h2>
+      <details>
+        <summary>Contents</summary>
+
+        <img src="https://code.visualstudio.com/assets/docs/getstarted/userinterface/hero.png" alt="VSCode interface">
+
+        <p><a
+            href="https://code.visualstudio.com/assets/docs/getstarted/userinterface/hero.png">그림출처:https://code.visualstudio.com/assets/docs/getstarted/userinterface/hero.png</a>
+        </p>
+
+
+        <ul>
+          <li>
+            <h3>
+              Main menu
+            </h3>
+            <p>Interface 상단의 메뉴바</p>
+          </li>
+          <li>
+            <h3>
+              <span class="emph">Activity bar</span>
+            </h3>
+            <ul>
+              <li>탐색기</li>
+              <li>검색</li>
+              <li>git (source code management)</li>
+              <li>debug</li>
+              <li>extensions</li>
+            </ul>
+          </li>
+          <li>
+            <h3>
+              Side bar
+            </h3>
+            <p>Activity barActivity bar에서 선택한 section에 해당하는 내용이 나온다.</p>
+          </li>
+
+          <li>
+            <h3>
+              Editor group
+            </h3>
+            <p>VSCode의 편집창 부분. 필요에 따라 화면을 분할할 수 있다.</p>
+          </li>
+          <li>
+            <h3>
+              Panels
+            </h3>
+
+          </li>
+          <li>
+            Status bar
+          </li>
+        </ul>
+      </details>
+
+
+       
+
+   </div>
+
+  </section>
+  <footer>
+    <hr class="horizontal-hr" />
+    <br /><br /><br /><br />
+  </footer>
+</body>
+
+</html>
