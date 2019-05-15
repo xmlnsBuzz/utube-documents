@@ -121,8 +121,11 @@ body {
   margin: 50px;
   padding: 0;
   /* 100vh를 사용할 경우 hr 같은 tag이 100vh 위치에 달라 붙어 고정된다.  */
-  background-image: none;
-  background-position: 0 110px;
+}
+
+body body {
+  background-image: url("../../img/sia-opacity015.svg");
+  background-position: 0 50px;
 }
 
 body .sia {
@@ -180,6 +183,12 @@ ul.centered li ul > li {
 
 .red {
   color: red;
+}
+
+.big-font {
+  text-align: center;
+  font-size: 150px;
+  margin: 0 auto;
 }
 
 li {

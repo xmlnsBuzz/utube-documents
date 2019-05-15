@@ -3,7 +3,7 @@
     <defs>
         <style>
         .cls-1,.cls-3{
-        fill:#f7931e33;
+        fill:#f7931e1a;
         stroke:#855a0b33;
         stroke-miterlimit:10;
         stroke-width:10px;
@@ -11,7 +11,7 @@
 
         .cls-2{
         font-size:898.79px;
-        fill:#ed1c2433;
+        fill:#ed1c241a;
         font-family:MajorMonoDisplay-Regular, Major Mono Display;
         letter-spacing:-0.18em;
         stroke-miterlimit:10;

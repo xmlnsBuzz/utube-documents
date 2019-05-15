@@ -1,4 +1,7 @@
 # HTML5 Introduction
+## 문법의 중요성
+
+
 
 ## Terminology 용어해설
 * Markup
@@ -189,4 +192,9 @@
 * Flow elements
 * Metadata elements
 * Phrasing elements
+
+#### Global attributes
+* core attributes 
+* event-handler attributes
+* xml attributes
 -----
