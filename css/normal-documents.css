@@ -7,7 +7,6 @@
 body {
   background-image: url("http://cadvance.org/Mayan_symbol.svg");
   background-position: left top;
-  -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -30,7 +29,6 @@ a.btn.btn-default {
 a,
 .well a {
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   font-size: 14px;
 }
@@ -48,12 +46,12 @@ a:visited,
 
 a:hover,
 .well a:hover {
-  color: #da4453;
+  color: #DA4453;
   text-decoration: underline;
 }
 
 div#logo > h1.site-name > a.navbar-brand {
-  text-shadow: 1px 1px 12px #da4453;
+  text-shadow: 1px 1px 12px #DA4453;
 }
 
 h1,
@@ -73,8 +71,7 @@ h6,
 }
 
 h1,
-.h1,
-h1.entry-title {
+.h1, h1.entry-title {
   font-size: 24px;
   font-weight: 700;
 }
@@ -196,5 +193,34 @@ ol li {
 
 span.emph {
   background-color: rgba(221, 18, 18, 0.438);
+}
+
+summary {
+  outline: none;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:after {
+  /* background: #da291c;
+border-color: #da291c; */
+  border-radius: 15px;
+  content: "+";
+  color: white;
+  float: left;
+  font-size: 1em;
+  font-weight: bold;
+  margin: -2px 10px 0 0;
+  padding: 1px 0 3px 0;
+  text-align: center;
+  width: 30px;
+}
+
+details[open] summary:after {
+  content: "-";
 }
 /*# sourceMappingURL=normal-documents.css.map */

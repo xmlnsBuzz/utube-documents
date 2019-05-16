@@ -1506,8 +1506,7 @@ you can use the generic selector below, but it's slower:
   -webkit-box-shadow: 0 0 0 1px #ccc;
           box-shadow: 0 0 0 1px #ccc;
   padding: .2em;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
+  border-radius: 5px;
 }
 
 .centered {
@@ -1539,7 +1538,6 @@ html, body {
   word-wrap: break-word;
   background-color: #000;
   -webkit-transform: translate(0);
-  -ms-transform: translate(0);
   transform: translate(0);
 }
 
@@ -1634,7 +1632,6 @@ abbr[title]:hover {
 blockquote {
   border-left: 5px solid #333;
   padding-left: .75em;
-  margin-left: -webkit-calc(-.75em - 5px);
   margin-left: calc(-.75em - 5px);
   font-style: italic;
 }
@@ -1662,8 +1659,7 @@ pre {
   white-space: pre;
   background-color: #f8f8f8;
   border: 1px solid #ccc;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
+  border-radius: 3px;
 }
 
 code {
@@ -1672,8 +1668,7 @@ code {
   font-family: Source Code Pro, monospace;
   background-color: #f8f8f8;
   border: 1px solid #ccc;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
+  border-radius: 3px;
 }
 
 pre code {
@@ -1730,4 +1725,73 @@ table tr th :last-child, table tr td :last-child {
 }
 
 /* @end */
+body,
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat";
+}
+
+h1 {
+  margin: 5rem;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  cursor: pointer;
+}
+
+main .card {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+main .card:nth-of-type(1) {
+  background: #f8f8f8;
+}
+
+main .card:nth-of-type(2) {
+  background: #eeeeee;
+}
+
+main .card:nth-of-type(3) {
+  background: #fafafa;
+}
+
+main .card:nth-of-type(4) {
+  background: #cfcfcf;
+}
+
+main .card:nth-of-type(5) {
+  background: whitesmoke;
+}
+
+main .card:nth-of-type(6) {
+  background: #d4d4d4;
+}
+
+main .card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+main .card .info {
+  padding: 1rem;
+}
+
+main .card img {
+  width: 100%;
+}
+
+main .card .desc {
+  color: gray;
+}
 /*# sourceMappingURL=markdown.css.map */

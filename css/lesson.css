@@ -6,8 +6,7 @@
 body {
   background-image: url("http://cadvance.org/Mayan_symbol.svg");
   background-position: left top;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: "Noto Sans KR";
@@ -29,7 +28,6 @@ a.btn.btn-default {
 a,
 .well a {
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
   font-size: 14px;
 }

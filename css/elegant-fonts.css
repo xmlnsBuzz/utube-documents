@@ -1505,8 +1505,7 @@ you can use the generic selector below, but it's slower:
   -webkit-box-shadow: 0 0 0 1px #ccc;
           box-shadow: 0 0 0 1px #ccc;
   padding: .2em;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
+  border-radius: 5px;
 }
 
 .centered {
