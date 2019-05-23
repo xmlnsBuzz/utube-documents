@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<h2>2. Terminology</h2>
+<p>The following is a list of terms that are used in other sections of this reference.</p>
+<dl>
+  <dt>browsing context</dt>
+  <dd>An environment in which UAs present documents to users. A tab or window in a Web browser typically contains a browsing context, as does an <a href="https://www.w3.org/TR/2012/WD-html-markup-20121025/iframe.html#iframe">iframe</a>, orframe elements in a frameset.</dd>
+  <dt>case-insensitive match</dt>
+  <dd>An exact comparison of two strings, codepoint for codepoint, except that the characters in the range A-Z and the corresponding characters in the range a-zare considered to also match.</dd>
+  <dt>DOM tree</dt>
+  <dd>A representation of a document based on the W3C Document Object Model (DOM), as defined in the <a href="https://www.w3.org/TR/2012/WD-html-markup-20121025/references.html#refsDOM" id="refsDOM_xref1">[DOM4]</a> specification. UAs build representations of documents by parsing them and constructing DOM trees from them.</dd>
+  <dt>flow content</dt>
+  <dd><a href="https://www.w3.org/TR/2012/WD-html-markup-20121025/terminology.html#flow-content" id="flow-content_xref1">Flow content</a> consists of <a href="https://www.w3.org/TR/2012/WD-html-markup-20121025/common-models.html#common.elem.flow">flow elements</a> intermixed with <a href="https://www.w3.org/TR/2012/WD-html-markup-20121025/syntax.html#normal-character-data" id="normal-character-data_xref1">normal character data</a>.</dd>
+  <dt>HTML producers</dt>
+  <dd>HTML authors (that is, people) and applications (such as editors and content management systems) that produce HTML content.</dd>
+  <dt>HTML consumers</dt>
+  <dd>HTML user agents; that is, applications (such as Web browsers) which consume HTML content.</dd>
+  <dt>must</dt>
+  <dd>The word <em>must</em> is used in this reference to mark document-conformance requirements that are normatively defined in the <a href="http://dev.w3.org/html5/spec/">HTML5: A vocabulary and associated APIs for HTML and XHTML</a> full specification. <a href="https://www.w3.org/TR/2012/WD-html-markup-20121025/references.html#refsHTML5" id="refsHTML5_xref2">[HTML5]</a>.
+    <p>This reference does not itself normatively define any requirements.</p>
+  </dd>
+  <dt>newline</dt>
+  <dd>Any of the following:
+    <ul>
+      <li>a U+000D CARRIAGE RETURN (CR) character</li>
+      <li>a U+000A LINE FEED (LF) character</li>
+      <li>a U+000D CARRIAGE RETURN (CR) followed by a U+000A LINE FEED (LF) character</li>
+    </ul>
+  </dd>
+  <dt>phrasing content</dt>
+  <dd>Consists of <a href="https://www.w3.org/TR/2012/WD-html-markup-20121025/common-models.html#common.elem.phrasing">phrasing elements</a> intermixed with <a href="https://www.w3.org/TR/2012/WD-html-markup-20121025/syntax.html#normal-character-data" id="normal-character-data_xref2">normal character data</a>.</dd>
+  <dt>resolve a URL</dt>
+  <dd>To resolve a URL to an absolute URL, as defined in <a href="https://www.w3.org/TR/2012/WD-html-markup-20121025/references.html#refsHTML5" id="refsHTML5_xref3">[HTML5]</a>.</dd>
+  <dt>space</dt>
+  <dd>Any of the following:
+    <ul>
+      <li>U+0020 SPACE</li>
+      <li>U+0009 CHARACTER TABULATION (tab)</li>
+      <li>U+000A LINE FEED (LF)</li>
+      <li>U+000C FORM FEED (FF)</li>
+      <li>U+000D CARRIAGE RETURN (CR)</li>
+    </ul>
+  </dd>
+  <dt>top-level browsing context</dt>
+  <dd>As defined in <a href="https://www.w3.org/TR/2012/WD-html-markup-20121025/references.html#refsHTML5" id="refsHTML5_xref4">[HTML5]</a>.</dd>
+  <dt>transparent</dt>
+  <dd>If the content model of a particular element foo is described as <em>transparent</em>, it means:
+    <ul>
+      <li>when element foo is a child of a parent element bar whose content model is allowed to contain <a href="https://www.w3.org/TR/2012/WD-html-markup-20121025/common-models.html#common.elem.flow">flow elements</a>, then the contents of element foo may also contain <a href="https://www.w3.org/TR/2012/WD-html-markup-20121025/common-models.html#common.elem.flow">flow elements</a></li>
+      <li>when element foo is a child of a parent element baz whose content model restricts its child elements to only being <a href="https://www.w3.org/TR/2012/WD-html-markup-20121025/common-models.html#common.elem.phrasing">phrasing elements</a>, then any child elements of element foo are also restricted to only being<a href="https://www.w3.org/TR/2012/WD-html-markup-20121025/common-models.html#common.elem.phrasing">phrasing elements</a></li>
+    </ul>
+  </dd>
+  <dt>UA</dt>
+  <dd>An HTML user agent; that is, an application (such as a Web browser) which consumes HTML content.</dd>
+</dl>
+</body>
+</html>

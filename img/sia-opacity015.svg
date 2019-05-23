@@ -3,20 +3,20 @@
     <defs>
         <style>
         .cls-1,.cls-3{
-        fill:#f7931e1a;
-        stroke:#855a0b33;
+        fill:#c0a32222;
+        stroke:#9b3e0822;
         stroke-miterlimit:10;
         stroke-width:10px;
         }
 
         .cls-2{
         font-size:898.79px;
-        fill:#ed1c241a;
-        font-family:MajorMonoDisplay-Regular, Major Mono Display;
-        letter-spacing:-0.18em;
+        fill:#ff020222;
+        stroke:#ff020222;
         stroke-miterlimit:10;
         stroke-width:10px;
-        stroke:#855a0b33
+        font-family:MajorMonoDisplay-Regular, Major Mono Display;
+        letter-spacing:-0.18em;
         }
 
         .cls-3{

@@ -1,5 +1,10 @@
 @import "_cadvance_variables";
-// @import "elegant-fonts.scss";
+@import "lesson";
+@import "elegant-fonts";
+
+#_a{
+  color: #0000ff;
+}
 
 body {
   margin: 50px;
@@ -23,6 +28,23 @@ body {
   }
 }
 
+body {
+	background-image: "../img/sia-opacity015.svg";
+	background-position: left 50px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: $base-font-family;
+	scroll-behavior: smooth;
+	font-size: $base-font-size;
+	// opacity: .3;
+	background-color: $content-bg;
+	// outline: #7ac943 ;
+	// outline-style: dashed;
+	// outline-width: 3px;
+}
+
+
 /* .box
 {
 background: linear-gradient(left, rgba(30,87,153,0.3) 0%,rgba(125,185,232,0.1) 100%);
@@ -32,9 +54,9 @@ background: linear-gradient(left, rgba(30,87,153,0.3) 0%,rgba(125,185,232,0.1) 1
 .horizontal-hr {
   width: 95%;
   height: 0px;
-  border: 2px solid orangered;
+  border: 2px solid orange;
   background: {
-    color: rgba(orangered, 0.5);
+    color: rgba(orange, 0.5);
   }
 }
 
@@ -53,6 +75,7 @@ background: linear-gradient(left, rgba(30,87,153,0.3) 0%,rgba(125,185,232,0.1) 1
   color: rgb(93, 69, 1);
   //padding-top: 100px;
   /* margin: 150px auto; */
+  //color: #c0a8227a;
 }
 
 ul.centered {
@@ -91,6 +114,7 @@ span.emph {
   background-color: rgba(221, 18, 18, 0.438);
 }
 
+
 summary {
   outline: none;
   font-size: 0.8em;
@@ -102,15 +126,12 @@ summary::-webkit-details-marker {
 }
 
 summary:after {
-  /* background: #da291c;
-border-color: #da291c; */
   border-radius: 15px;
   content: "+";
   //&#xe044; elegant font 선택
   color: rgb(255, 255, 255);
   float: left;
   font-size: 1em;
-  font-weight: bold;
   margin: -2px 10px 0 0;
   padding: 1px 0 3px 0;
   text-align: center;

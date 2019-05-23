@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProjectMessage>
+<IsEditor>1</IsEditor>
+<SettingMessage>
+    <Screen enabled="1" selectIndex="0">
+        <ScreenCapture>
+            <CaptureType>0</CaptureType>
+            <FrameRate>30</FrameRate>
+            <CropRect>0 0 1920 1080</CropRect>
+            <RecordLogicPixel>0</RecordLogicPixel>
+        </ScreenCapture>
+        <Game>
+            <GameName></GameName>
+            <FrameRate>60</FrameRate>
+        </Game>
+    </Screen>
+    <Camera enabled="0">
+        <CameraName></CameraName>
+        <Resolution>
+            <ResolutionWidth>0</ResolutionWidth>
+            <ResolutionHeight>0</ResolutionHeight>
+        </Resolution>
+        <FrameRate>25</FrameRate>
+    </Camera>
+    <Audio enabled="1">
+        <Microphone>Microphone (2- High Definition Audio Device)</Microphone>
+        <ComputerAudio>1</ComputerAudio>
+    </Audio>
+</SettingMessage>
+
+<PreviewMessage/>
+
+<MatterMessage>
+ <MediaInfo Path="I:/YouTubeProject/FilmoraScrn/section-html/html-spec/Rec_18.05.45 20190522.mp4" Title="Rec_18.05.45 20190522"></MediaInfo>
+ <MediaInfo Path="I:/YouTubeProject/FilmoraScrn/section-html/html-spec/Rec_18.31.04 20190522.mp4" Title="Rec_18.31.04 20190522"></MediaInfo>
+</MatterMessage>
+
+<ProjectSettings><ExportName>My Project</ExportName><ResolutionWidth>1920</ResolutionWidth><ResolutionHeight>1080</ResolutionHeight><PlaybackResolution>1</PlaybackResolution><BackgroundColor>#000000</BackgroundColor><FrameRate>30</FrameRate></ProjectSettings>
+<TimelineMessage>
+<TimeLine>
+<Properties Count="53">
+<Property key="Composition.Mode" type="int" value="0"/>
+<Property key="Composition.Opacity" type="double" value="1.000000"/>
+<Property key="Key_FreezenTracks" type="std::wstring" value=""/>
+<Property key="Key_HidenTracks" type="std::wstring" value=""/>
+<Property key="Key_TrackMarkers" type="std::wstring" value=""/>
+<Property key="Level" type="int" value="0"/>
+<Property key="NLEVersion" type="std::wstring" value="(5, 5, 1, 110)"/>
+<Property key="Name" type="std::wstring" value="TopTimeline"/>
+<Property key="REFCLSID" type="GUID" value="{CD61E0E4-0074-3FD5-4915-951546E34A03}"/>
+<Property key="REFIID" type="GUID" value="{29FDB4EE-DE39-151E-ED38-06C8CFB45CDA}"/>
+<Property key="Render.AnchorPoint" type="NLEPointF" value="x:0.000000, y:0.000000"/>
+<Property key="Render.BackgroundColor" type="int" value="-16777216"/>
+<Property key="Render.Backplay.BOOL" type="int" value="0"/>
+<Property key="Render.BitsPerSample" type="int" value="16"/>
+<Property key="Render.Channels" type="int" value="2"/>
+<Property key="Render.EnableAudio" type="int" value="1"/>
+<Property key="Render.EnableVideo" type="int" value="1"/>
+<Property key="Render.Framerate" type="NLERational" value="[30000000, 1000000]: 30.0000000 "/>
+<Property key="Render.Hidden" type="int" value="0"/>
+<Property key="Render.Mode" type="int" value="0"/>
+<Property key="Render.Position" type="int" value="0"/>
+<Property key="Render.RangeFrameNumber" type="NLERange" value="Start:0, End:2147483640"/>
+<Property key="Render.Region" type="NLERectF" value="left:0.000000, top:0.000000, width:1.000000, height:1.000000"/>
+<Property key="Render.SampleRate" type="int" value="44100"/>
+<Property key="Render.Scale" type="NLERational" value="[1, 1]: 1.0000000 "/>
+<Property key="Render.Size" type="NLESize" value="Width:977, cy:549"/>
+<Property key="Render.TotalFrameCount" type="int" value="11087"/>
+<Property key="Render.Using.Taskpool" type="int" value="1"/>
+<Property key="Render.VideoStabilizer.BOOL" type="int" value="0"/>
+<Property key="Source.BitsPerSample" type="int" value="16"/>
+<Property key="Source.Channles" type="int" value="2"/>
+<Property key="Source.Framerate" type="NLERational" value="[30000000, 1000000]: 30.0000000 "/>
+<Property key="Source.Framerate.Audio" type="NLERational" value="[30000000, 1000000]: 30.0000000 "/>
+<Property key="Source.HasAudioStream" type="int" value="0"/>
+<Property key="Source.HasVideoStream" type="int" value="0"/>
+<Property key="Source.RangeFrameNumber" type="NLERange" value="Start:0, End:2147483640"/>
+<Property key="Source.Region" type="NLERectF" value="left:0.000000, top:0.000000, width:1.000000, height:1.000000"/>
+<Property key="Source.SampleRate" type="int" value="44100"/>
+<Property key="Source.Size" type="NLESize" value="Width:977, cy:549"/>
+<Property key="Source.TotalFrameCount" type="int" value="0"/>
+<Property key="Source_FileType" type="int" value="0"/>
+<Property key="Transform.Angle" type="double" value="0.000000"/>
+<Property key="Transform.CenterPoint" type="NLEPointF" value="x:0.500000, y:0.500000"/>
+<Property key="Transform.Enabled" type="int" value="1"/>
+<Property key="Transform.KeepRatio" type="int" value="1"/>
+<Property key="Transform.ResizeScale" type="NLESizeF" value="Width:1.000000, cy:1.000000"/>
+<Property key="fade.in.enabled" type="int" value="1"/>
+<Property key="fade.in.range" type="int" value="0"/>
+<Property key="fade.out.enabled" type="int" value="1"/>
+<Property key="fade.out.range" type="int" value="0"/>
+<Property key="kGPU.GPUFirst" type="int" value="1"/>
+<Property key="xfer.left.range.Video" type="int" value="0"/>
+<Property key="xfer.right.range.Video" type="int" value="0"/>
+</Properties>
+<TimeLine>
+<Properties Count="109">
+<Property key="Absolute.FilePath" type="std::wstring" value="I:/YouTubeProject/FilmoraScrn/section-html/html-spec/Rec_18.31.04 20190522.mp4"/>
+<Property key="Border.Distance" type="double" value="0.000000"/>
+<Property key="Border.Gradient.Color" type="NLERange" value="Start:-1, End:-1"/>
+<Property key="Composition.Enabled" type="int" value="1"/>
+<Property key="Composition.Mode" type="int" value="0"/>
+<Property key="Composition.Opacity" type="double" value="1.000000"/>
+<Property key="Key_AncestralGuid" type="std::wstring" value="{45630588-ce16-467d-84ab-294eb99086f4}"/>
+<Property key="Key_BackGroundColor" type="std::wstring" value="78,104,115"/>
+<Property key="Key_CaptionThumnnail" type="CNLEValue" value="t:NLEBlob, v:uDataSize:6966, bCopy:1, pData:iVBORw0KGgoAAAANSUhEUgAAAI4AAABQCAYAAADPyU1XAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAa6ElEQVR4nO2deZxdVZXvv2ufc++tITVkqDk1ZSBBmYIgCs0gk/AIODaIIlMUBUSfPpuOYJRBBOU5tID9aQWSMLUIDwUC2oDSjcogTStqhCSV1DwmlUqNt+695+z1/ji3plSl5kolpH6fz/nce8/Zwzr3rLP32mvasmbNGvWtjyAMhwUMAAooBqPJX6JDSr75l9cRo6jKoHoWXwyu2v66VuwI/fTBcP55H6GmpoaSkpJhVxXtp1NVERmBZgnI2+f1wUWNYBQMwaeLEFIhZIWwCGd4IeaJ5Q0TI1thgVHq5ofxQlGOX7IAfXc2W6s62VzXgVtQSGtNG7Eei3o+CT+FSOp8Yp0xNBZH6EX9OEpiVJomi/Hc73jqfvvb38ZPJGkUAdURKiDOqlWrbrrzX/+ZrW+18Lk1n6S+I4JnPb587VUc9b7T6WpuI3thBm5XN/PT8zn+lNOoqHyLb9zyDWzCUlVbgwrEYt0sXLsR/dN/EE9fxAfPOJYPnn8lJx9dQjwWInNhFjkxh0RqiJSU1GHHddd9kc1/e4vCwmKuueZafvWrX5OVlU3ACYKIGfH73ocqiJj+MqOVFQyiwfewG0Y9JSQuBZ7h3YSxCv/lJshEWQQUZjk0pvu8KzuFtPcUEHND1NT1sNsKXR1REp5PwnPBmU8oLRu/ByShONbH2ATgIar7oGZqh+l7pVT7v4/70IH6Lc3N5ObkkpuTS86iReTm5pKXm0dOTk7/586dO2+Wiz7xUTXiIkZBTZLTLKhBCEaKvt/gDGU8O8CNTS11A+XEMphPpa9dQGVgFINhAxdHHHkkjgntzePDYK3FmEHtGEnSM/DW6UhvywhwVXAch4gvpBuXIg2h8Rj1ToKQsRQnEuSlRYjMExrTlILC+disCB29cbY299Dl+USjMby4Q5xUIqn5xOIW2+NhPA+xPfi2C0RHpEnU3+tEclTWwf/9oHsbfH3vOntjcJm+csmXZcR2hpQb+fwPv3+3uC0tzWRnprGns4eEuLg2hkFYd3Iut/x+F5cdkc2Gzbtpaewgv2gxDQ0N3H7H7dx555207mpFRLjl+q+y7jvfQ5JcEHJdcnNyqG9q5P+suZLv37eeuLGE/OFDqapiMFgsrjG88MIfBs47oFaG/GmqyoUXfZzHHnt04F5wEfHBCr6QZPfJDdszBRHh4k9ezCMPP8J1113HXXfd1T9FZKQZ5s3LpLjw3dQ2/pV7qpfzhZJtXP4/PaxfZYnYeTzx6BOc96mP8qNUj2t7QziqZGSeS2fHr3jt1i5OWDePiy66iEcfDf6XgvwCGpsa+fHd93LNtVfx1S9+ljt/tB6RXtbd/Blu/eb9dHdFSZ+XyoMbH+GYY47lyKMPI/+202i68SUuv+wzPPDAeqz6HLvqvWx6ehOFi3O56cQifgjIB844SbE+mKGjSdiPE3fCJEghpHHa2zvpiQVvxsDbTTC6+CHE+KCKiCJqUBMHdRFNYE0okHrUAAZrPFzPwTMhrEQxuFggpIpnwFEPoy5iDdZYcCxqwSeMi48qqIkjNoIawdgEioNjHXwnHrDN+AabAwK5uZk4g0bh4DUSEMWx4BswFqwB8EDDqMCbZ3ydY35zC564uOoN1LeGt29ey2E33YGKQfCSr1LfqDR01Me6qPEQTcqhJhhtVBUxAQ3zcxaxq3UXvrG89PwrIvF4/CD6i+cwgIFReO8JZcikta8pZwoIh8PiTmuLc9iPGJiKR1unTjfT9GFmWp3DOx5zjDOHSWGOceYwKcwxzhwmhTnGmcOkMMc4c5gU5pbjBAq39uYmTKKDmNcNQCScSShjEeGMhYyx4D0kccgrAHc3VJPobSE7ryhpRxuAg0dHUysLS49AnAiH9B81COFw+NDWHHc2VBLOFnSUgVcUdjc2kpVdQtqivP1I3YGLcDgsh6yMs6epntRsF38M5bkKzC8soK29mhD+qGUPJRySjOOIEuuuxUs6cI0HCwsKaK7ZNrOEHUQ4JBlnd0M1WYVFE6wlGDeOEW/soocADknGicc7ks5ME0NK9gJ2NtTNAEUHHw5JxlEvvm+PuTHgzq3MgUOUcYTp91E51HCQ/nujTTNjT0GhUOqk+jEI6jojljTj7HukdkcrNcgNf5T6ChLMvvvLYfaA1hyvOS8NK1D27gvY8fen2Ph0D5dekMbhhx+PGp8b73gFVR+rvay5IBNfXM49/wou/uw9XLE6rb8dz8CDT/X0/1Y3DcRyxSXHE4638+PHtuDYoQxhcUhE27nuimP5yc+2AtDW0kxh6TFDFuWXXpCCi+X+J3sDF1hRdlb/geuvPQuAB57pxlPL23/7PSuPPBUR4ZLVKTz0VHRof75gHAWxXLo6HVGHjZu6ePWVZzjhpHNxbQcXnV9MhAQiilrh/qdjXHJBGo5VxHg4Ilz1tV9wz+0X8+BT7dP8NIbiwGUcsVz2v2/glLNvoLH6ddZe+0Rw3he2bn49WcYDFVzTw9rbHgPj8/qrvwGxrN/Uw+UXpLPhqW4+fUFKsqzL5avDPLCpl6Ztf2DDg68Fehy1fPYTK7HW4f6f/5XLLlpJqnr8y8Y/41hLPNHDNZcch9heNj4b5crVKSiGR57s4cFfJvAcweBjNRCAFpWcyPpnurjk/HmBLGUNKLz067sQLI4OCEq+sVx+fhohH+7f1AtqePCZThp2/BUVqNq8ifxsoezw8zEmgbUG0cAn+ZLzszGuh3UCv2CL4Z7vfIRHNiXw7cwKYwfuVKWG0868ASNCcfmJqKbyp1d+jUMCcXwMcMnqrP7ihx1zAYcdeSGONRgVPMdy36PVWPExWAQHATY8k8BiaGnvxk94QUCeGu7/9z9x72N/p7V1J1dd83/58c93BGSoIgo/+OGzGOMgOGx4OoqKR9wBNR2EbTcMChUSEa6/6v1sfLqzX5a6/cb/xb33XM+//Xgt1grGBu/sGy8/xwNPd3P/M51s+Om3ADAKi8uPxTHKJ9fczQ3/fBkqPg891Y04IRCXkiWreHhTGzEyEesQs0VYtbg2kowMmVkcuIwDWDF4YvG9OJgYx5x0NlbCOJnLuP+ZLh5+sisoqFm01b5GyLSh4mMRPv/xYkKpC3j2598OIjtRFPjUebmAcsRx5/C5S1eR6GkD9VjzifcQb6snJ3sB6++6HtcksAasQM+uVvJLVqFisaJglAee8vjZvbez9nOn8NjGtRh3QL9zw9XH8p2fvIIZFId26TV38+BTUR5+MsoDz0axJij/q1/ex21f/QTfWvtpqiveRDBcujoziL/yHDw3xNdu+C5GLa6F5e/5R3ptOmu+dDdoiEd/sRNXDKmmmZR5i9jwdAcQn/Fnc8Dbql558Uc8tP673L2xGhGHxsrXUBO8UcWLT8J3hobUbrzvy1y25gdDzl2+OouNm9pHNFL27NlJ9+4asvPy8M2g1ZZYulv3EDZhMgtX9tfd3VTJ/LwS1LEYOyhw0PhghwvOYgTrW7rbd9HZUQ3WBydGQfFp7Mvq7qBc/KF53HnX0xSUnB6c8wXCPuq5qPgIQXCfMS6WLkTT8cWlbsfzrP3SBTz8VOdYf+2kccgbOfsggLUe7Y0NOMmALN/AgvxiLC5g+/U+Rg0tLU3k5uZiD9ABO4janznMMc44oDI8TPlQxyFtHR8vDgqmmYVo5xlZjosmM2R4lmhNIyFrg7BWCVYMagSLQfIXEEoL9C1zmvxJQize1lrc5aX7tdtpZByD39GGs6uVeEUNfiRCWmE+KRKkAOhjGiAQGcTHtDQTq25Be3sxyxYTKi9GTXgKFFj2NM2+EVIUMgqG5/eZCfiJGFJZg1levF9lrqnLOKLYilr86irCxUXJAHmTzKQxMZuQTfRCcxssLcGULJ7UNNFc+RpZ+QUTrziN6GpsY9GSo2e8HxWD+etb2IiDug6mvHzG+4QpyzhCT10N3nMv42BxS4rxALEGR5VoTT1eVSNuLI6xPiqCNYHVxaggniVe20C8pg6T1HKaUApmcQHSEyX28uu4/sQ97ibhLXHQQojTvacTxMFW1LI/1XKTHnFkWyVOVzeJjAxELRghWlVP+uI8bGYWFOTgKAQpcfa9QDRYbEsbsnsn8frdhEqKksY6j3hNIxQXE57A/N1U9RrZeYfGiONVbO9Pj2LEYt0IUrp4xvud9IgjWyvxxCORkY6oJV7TDFZJOev92BXLoCAH6GMaGE30tRjIXYiseBehM9+LqE+0th4VCJUWEDIxZFv1AZYm6cCAX93c/92qIba9br+NuBNmHFuxHRUwuAiW3uY20j9wAiwvR+xAc29U1PHB960g5LUlXQKErj1/wajT3+2OVx/H9UI8+tO7sMbH9SPI8mXYE95DvLoJCLJtWfGRrYHQ66jBaKAt9twEBiXhBFOg78YHyUUHwzp68tCKakKl+QD4nYHl3y1ZRLx9937pf0KM011Z2+8BZ9TiqCH15GNImOFsnta5hW/dfisnnXchNbva0Vg3G+77OaoJVHw00YOaGBqybHvzTdrEpZMoVQ2tZKSmkHLiYfz7w/fx8a/cgYflRz++ifiOeh584QXEjXDr128j7IXoFo+zzv1HLrz4UkKeS7tafrbhEWZFubGfYLD4lTUIghVwemMAuOrAtqr9QsMEZBzFPvd7ZMliFHCiPciRhxPcxtThqo8nSVuPuhjxSBgI/e1tEpEQRg09dc1knfxefMfgGYMzgutAS9UfyczNn1W+mWkZJ1FRiSsWa8GrbiL16BXQ2o7vGqSjA3PU4Vh38mqNsTAhGcfbth1duhgwJGoakSNXYKeJaYABpgEQDwtB/rvDV5CoasBYIW1xHl2vvoHoyEwDyUyj79zBBsRDd9SDGkIYnKVFaM4iuhsaANDMTNhRNeNkjJtx/KpmjIJvfJzSQixjp5SdDogIkZOPw9nTgSik5s4n1lhHkIZy+EEyceRsHmD2Sd9Uj97tdYSWFKAC3Q2NhMrLsAJaXopjLSpKtLEVR3VGF+fj0hwL4KRHAPAamkk5+fiRM24PQlPNH4n29k6ZwD44e+pIdFtQh2hnlHmHLx8xk3hbw9u0d86ftn4ng3hbD52JdmZi6JM/b0YWZgEWJ2Fp3tKn6zI0vr4ZtyAbK2BfrMYtLB45X75Ylh52Ev4U1HjjYhzb0EJK3kISCk5PIkiBOoZk9JObzhqSGHva8cuZa3o6sHcCgwMN69a3Tun5jK9md+BwDRApLRiy7B6zA1FO+dBnsGK59o7nULGHxHGgQ6eorhgfB0iw/QaAus6ElEy5S1axZXMFiPD9r58zxDd3DrOHwdsZTAbjm6oGWbatnZj9qH7HnzEoghLxbL/b5xxmF9baIT7RE8W42E6RwEkbsE27x2m1Nqj0LdiDCgfDEH4oQBRCTE3PM74RJxwiHIuhgNcbw1UzJhN88/4ulES/s7ZxTP+n2qSj9aBz1h/YDcZaO+yaiCBW4c0tYMBv2U3o7JMCvY0ycj+qqB3ejxhBZHj51tr/IWVBYGfr6vBZmFcytP993Avso/993OdE2hLPYrZtIx4KYxTilfVEznw/dhQZxcGn93d/JpyfQ8haulIc0krK+q+rgKdxZAoqlXGNOOGSfKINgUEtvCSfnqSyaTT0beilNtghZfAnMOyciAQPWoeX71t2WyOwahkcvQLn7BPwVbEEU6mvihoZ8mlh2LnA+3B4eQ/FJ4jwRCwhhve/r3uZ6H1OpC0jSlfdruClASjLS27o4ezzsIRxFmZgDSSMwU/a/XwhubsOU2IaGCfjiLq4KenJuwqhb1WwH2K+htMBKG4gMenk5+cR2z5AZXavopaUksBNJLG9hvCyZeOq565cinR2owIZOQvwd02v8XOcMg44K8ox0UChFykvIPy3bQdocMg7C5p0MRHALB2/r42YMHQE8eleKATVNePe+G08GPezN1kZSDgSbMOnBj8cpvOVNwiNoQ/QpHZSDHzmkx9BfQ+1wWZknhdEM3oqfHzNjahM7yhysEMrqqFvtKmuxywtZbyPzAKJlUv6FzUYh7A3fYuTCQwagl2xBO2NJrdctKQuysZ//jX8yirUjEyUEDCHqsf9j/w/jAMnrFrB3U/8ltZd/43nGCLaSI9v2Xj3LdNxT+8MiMWrrEMUFItbXDBhuSScuxCtrEVUIWMednvF9JE3YddRUeTtStSAiiAoRqGnupHI0iJMcSHihgOred+uiIPqojIsyO1ACXprrdtC+sIgd06s3ZKVXzZrtHRsryHDxkEcYrWNpJ72XsBJjsrjHzm8yhpMUvcWr20g9fQTp5yUYHKuoyroiiUkQhFsRQ0qim+USFkh4inxmlpiL/wBfbsCZ2vNsLownEkOBKY50OBW1+EkFXTz8vOxYtBJbA/tlpdgd9QjCuGiAnTL9IQPTVq+DZUV4ZxzKhaDX1mXtNGAaw1uWSG4Dp749Lz8OolnX8S8vR2/YguuN7Pm/ncCEs3NpJXm44tB9+zBP6xkUPjGxOUUp6wQ0aTuqmpHMHVNEdMUO26INdQhbe3Q0EqkNA8rfboZkroLxaiA7xGtbwbjECkuxKZHcIsWY2c5llOB9pqthBekABDdY8gpmvmIgZEQ/cMbpOQtQFXx2toJHX/UlNpTMfQ89xop5fmIVTzHEFpaNun2ZibpgPhIQyu33LD8kIpxOvChDAicws33dgVpXSaBmUk6oA5akJtkGsPio86nIKechElh9ce+jG/g6q9/n1POOxtr54HEuWVDF+vu7gIMZ15wJevuq+KTV9+cbNDyT3f/hs9+9T7+6a4qbl3fwVVff4jPf2MD5374O1y97gFKlhxD/uIiwHDJ154ngcWahXz+tidIGIMljuDz+W88DH4mRoVb1ge7xGQdeTPx+CrUBHEbnqv8wxFnIVb5yMe+MmbK/oMHQp8foRUhPkX30hkXNxYe9UV217cQsj0UrDoDUfAlgljhtgequfWBKOJYPPERtZz6se+BpuCmn8Il1/8WcHlhw83EVWipexEQYn6MnkQcQkJPIsz2ys201NZhxfLEv3wYnAwu/8pjdLdl4qjFNSmIdShccg7G6eQDH76cl355PWKgu+pejjrqNHybimoC8Sxnf+nLqAgvPPtLZD9kt5oNeJX1U6o/46/Tmw+dBZE4RsP85MbzwAjPP/4o0d4WznRq+d3jn6Yj7TOcd85qVAzrLltIakYxp5/7MYKh1bL6U+uofftFNvzbHZzz8bf49ePfRdXHJMl3RfFNCPDo6enmjvUvccsXLuTs1ZcDlpLD/oHKv/+Ob1yZh29CvPDEvay76z957ql70M56tvzlGcLhGMXvPp2qv7+EOLkg0BmtImQN/jtQmo+U5sGOalgyuSwXM5ZY6ZYrs5j53FAHH/5rWzGnLq+dVRqswE1r/0pvfTWRD5wahHBPADOakaul+vf0xJrHLjgK1EBoayWaNg8rweqsq6OD9OVLAxvGdMJ4JBqaCGcETvk25iFZudPbx2jd72zDaqCoS7S24h6xcvrvETDRXvzaNspWnkkoAbGiPJyMzAm1cVCkclMBZ0tFkILWBOlTEo4SLl8yzT0Zdte/TVrfcrzNY37hdPcxMgRIPP87nPJg+e9jcZctnZG+DBB78WXc4iIQj0RHN6FVR00oHuOgSOUmCv7ypfTagXSwXkUt9h20/Y+3vZJwWZJpKutwl5ejyRT7030A6IpSQp4PaoLFwySkiVEZZ7CGW2fRLiAihA9fQXd9YMJILyvB1rbMGj3TCQNoZWMQ4yQWd0kp6MwFFVogLb+IaF1j0H9mFmbr9gnTPeqqKl5RjewIHlZk0Xz8VUdMuIPpgqKkLQz2xLQCbvf0BfvNJrzKRtzSXFQ8onVNpJ32foYsKGYgNs0zYEoL+2zORBt3knL4MrwJmCJGpcpgccuKcMoX0xuNTZngqUAREukDu754jVMTvA8UeJWVQeSHGtLzcvpT9QfuBzMnSTjLy+mtDlZ3TkkOvdsqJ1R/VMp81+23yEp39yRJnEbkZvYLcZI4+BVziV27CZfmgRr8znbs8nIQi9lPe2mZssX9eRpj1XUTclMYlcKU8kJIJjEiOQfPJlIy0vGSviX+PpYBKmZSx96JmPqSB0z+GBtmRzU2+SrYqI84oSEWpZlGaPkyEjsCWSelNI/Q1upx1x1VxrHWobt2J+klhZjCXEI+JGZxHeajiOME4TD7+Hd3bvsjTHLFJaQCwXI83ruLlh1Nk2rHkUwWlo8uD0osihsKY1VAfULLy4D9m0dM1GKWFWD9QAvfXV1L+LCScU2RY5oc+rzHCIeI76hGlu2flKgjIVq3k9QBA++IUEfJyi+ccl+ZhfmTrtvV2DbqdQG0ohbNCJKDx+qaSFk+vuiF6UZoyTK6//NlUosKCZcVkqisIVRWNma9MVkrtawYCG7Wq2ocT5UZw7yegZHET4nMGh1ThbE+3a27AHDUR8uLZ40WRUkvyAsSNmFga824ZJ0xuSC8pAivOXiDwovzSOzaNXVqJwEBehqa++O50vMWzQodU4UAdnst4cJAtRCvaiStbPYYBwVZWkqipQ0rEFpSTDyp4xkNYzKOLymEI06gPHINsc1/7w952Z9QzyeSGsEoOL4PefvPjjSdECyJ6hbc5DYFTmkxOss7XKojpKSl4STD/L2qGsZKCjUmB1ix6Kp34bYGG2fNKyrAvD19YRbjggCbt2AXBpm2orUN+JkTM8wdKIhtr8UtWwiAW1GHWV7MbHsQKAZvZTniB37jGYsW4baNvRmsjnUYRJPJivc6P9o5M7ytEdrY5zG4rBglyB+V/O6M3H7/ORmRFjMCDZLclTM47+zVnrMXHQP1h7Ulgz9Hom3k/2Ck//BAOFavXq35+fl6/PHHj3Q9YJz58+f3n/ztb387pNCu1p9p7671/Q/jo3c2afa8VAV05UOX6b8+9kJ/2T/94nFt/8vZwQMxji4+4WqV5LWjr/6Buv0PC/3Q01/V41+5qr/ut9Z+vv/7HVnz9NRnvtf/e+2Fn9P8ZcsU0ONOP12vaHtRTfLh3HpFpp6weOChHMP7VJIP5+zyL+g3z3u8v537bo/q1764KfgdQc97NbP/WvqKIzVj5dH9v5fftVFT8vID2k4UXb0yo/9a6bKVuqTsmOBenJDmFBYpEjBd6xc/pVU3DtxX7G+v6p4f3dhPX/dbtf3X3nzyOH3yp8dN+0N/6aWXhr4cIvriiy+qiAw5jj766P7rgPq+P94+5jCHyeH/Awf3nKRDPa8uAAAAAElFTkSuQmCC, pExtend:"/>
+<Property key="Key_ClipMarkers" type="std::wstring" value="11085"/>
+<Property key="Key_DisplayName" type="std::wstring" value="Rec_18.31.04 20190522"/>
+<Property key="Key_RecordAncestralGuid" type="std::wstring" value="{5d2b24a9-14c7-4f79-9ab9-ec031dc22fb8}"/>
+<Property key="Key_TimelineType" type="int" value="4"/>
+<Property key="Level" type="int" value="0"/>
+<Property key="NLEVersion" type="std::wstring" value="(5, 5, 1, 110)"/>
+<Property key="PProcess.Mix2Mono" type="int" value="0"/>
+<Property key="REFCLSID" type="GUID" value="{CD61E0E4-0074-3FD5-4915-951546E34A03}"/>
+<Property key="REFIID" type="GUID" value="{29FDB4EE-DE39-151E-ED38-06C8CFB45CDA}"/>
+<Property key="Render.AnchorPoint" type="NLEPointF" value="x:0.500000, y:0.500000"/>
+<Property key="Render.Backplay.BOOL" type="int" value="0"/>
+<Property key="Render.BitsPerSample" type="int" value="16"/>
+<Property key="Render.Channels" type="int" value="2"/>
+<Property key="Render.Denoise" type="int" value="0"/>
+<Property key="Render.EnableAudio" type="int" value="1"/>
+<Property key="Render.EnableVideo" type="int" value="1"/>
+<Property key="Render.Framerate" type="NLERational" value="[30000000, 1000000]: 30.0000000 "/>
+<Property key="Render.Hidden" type="int" value="0"/>
+<Property key="Render.Mode" type="int" value="2"/>
+<Property key="Render.Position" type="int" value="0"/>
+<Property key="Render.RangeFrameNumber" type="NLERange" value="Start:0, End:2147483640"/>
+<Property key="Render.RangeFrameNumber.Audio" type="NLERange" value="Start:0, End:11083"/>
+<Property key="Render.RangeFrameNumber.Copy" type="NLEPointF" value="x:0.000000, y:1.000000"/>
+<Property key="Render.RangeFrameNumber.Video" type="NLERange" value="Start:0, End:11086"/>
+<Property key="Render.Region" type="NLERectF" value="left:0.000000, top:0.000000, width:1.000000, height:1.000000"/>
+<Property key="Render.ResizeScaleF" type="NLESizeF" value="Width:1.000000, cy:1.000000"/>
+<Property key="Render.SampleRate" type="int" value="44100"/>
+<Property key="Render.Scale" type="NLERational" value="[1, 1]: 1.0000000 "/>
+<Property key="Render.Size" type="NLESize" value="Width:977, cy:549"/>
+<Property key="Render.TotalFrameCount" type="int" value="11087"/>
+<Property key="Render.TotalFrameCount.Audio" type="int" value="11084"/>
+<Property key="Render.TotalFrameCount.Video" type="int" value="11087"/>
+<Property key="Render.Using.Taskpool" type="int" value="1"/>
+<Property key="Render.VideoStabilizer.BOOL" type="int" value="0"/>
+<Property key="Source.BitsPerSample" type="int" value="16"/>
+<Property key="Source.Channles" type="int" value="2"/>
+<Property key="Source.Framerate" type="NLERational" value="[30, 1]: 30.0000000 "/>
+<Property key="Source.Framerate.Audio" type="NLERational" value="[30000000, 1000000]: 30.0000000 "/>
+<Property key="Source.Framerate.Video" type="NLERational" value="[30, 1]: 30.0000000 "/>
+<Property key="Source.HasAudioStream" type="int" value="1"/>
+<Property key="Source.HasVideoStream" type="int" value="1"/>
+<Property key="Source.RangeFrameNumber" type="NLERange" value="Start:0, End:2147483640"/>
+<Property key="Source.RangeFrameNumber.Audio" type="NLERange" value="Start:0, End:11083"/>
+<Property key="Source.RangeFrameNumber.Video" type="NLERange" value="Start:0, End:11086"/>
+<Property key="Source.Region" type="NLERectF" value="left:0.000000, top:0.000000, width:1.000000, height:1.000000"/>
+<Property key="Source.SampleRate" type="int" value="48000"/>
+<Property key="Source.Size" type="NLEPoint" value="x:1920, y:1080"/>
+<Property key="Source.TotalFrameCount" type="int" value="11087"/>
+<Property key="Source.TotalFrameCount.Audio" type="int" value="11084"/>
+<Property key="Source.TotalFrameCount.Video" type="int" value="11087"/>
+<Property key="SourceRender_CurrentAudioStreamIndex" type="int" value="4"/>
+<Property key="SourceRender_CurrentKeybStreamIndex" type="int" value="2"/>
+<Property key="SourceRender_CurrentMouseStreamIndex" type="int" value="1"/>
+<Property key="SourceRender_CurrentVideoStreamIndex" type="int" value="0"/>
+<Property key="Source_FileType" type="int" value="1"/>
+<Property key="Source_ScreenRecordingHasKeybStream" type="int" value="1"/>
+<Property key="Source_ScreenRecordingHasMouseStream" type="int" value="1"/>
+<Property key="Transform.Angle" type="double" value="0.000000"/>
+<Property key="Transform.Enabled" type="int" value="1"/>
+<Property key="Transform.KeepRatio" type="int" value="1"/>
+<Property key="Transform.ResizeScale" type="NLESizeF" value="Width:1.000000, cy:1.000000"/>
+<Property key="fade.in.enabled" type="int" value="1"/>
+<Property key="fade.in.range" type="int" value="0"/>
+<Property key="fade.out.enabled" type="int" value="1"/>
+<Property key="fade.out.range" type="int" value="0"/>
+<Property key="kAudio_Disable" type="int" value="0"/>
+<Property key="kCodec_FourCC" type="unsigned long" value="877677891"/>
+<Property key="kGPU.GPUFirst" type="int" value="1"/>
+<Property key="kGPU.UsingGPU.Video" type="int" value="1"/>
+<Property key="kKeyboard_FilterType" type="int" value="7"/>
+<Property key="kKeyboard_SampleTextStatus" type="int" value="0"/>
+<Property key="kKeyboard_ShowText" type="int" value="0"/>
+<Property key="kKeyboard_TextColor" type="NLEColorF" value="r:254.000000, g:48.000000, b:97.000000"/>
+<Property key="kKeyboard_TextOpacity" type="double" value="1.000000"/>
+<Property key="kKeyboard_TextPosition" type="NLEPointF" value="x:0.489000, y:0.900000"/>
+<Property key="kKeyboard_TextSize" type="int" value="16"/>
+<Property key="kKeyboard_TextStyle" type="std::wstring" value="HotKeys_01"/>
+<Property key="kMedia.Info.SerializedString" type="std::wstring" value="{
+	&quot;MediaInfo&quot;:	{
+		&quot;FileCreateData&quot;:	&quot;2019:5:22:9:37:0,2019:5:22:9:31:0\n&quot;,
+		&quot;FOURCC&quot;:	&quot;877677891&quot;,
+		&quot;FileName&quot;:	&quot;&quot;,
+		&quot;Description&quot;:	&quot;&quot;,
+		&quot;MediaLength&quot;:	&quot;371011&quot;,
+		&quot;Bitrate&quot;:	&quot;0&quot;,
+		&quot;AVScanType&quot;:	&quot;2&quot;,
+		&quot;ProgramCount&quot;:	&quot;1&quot;,
+		&quot;ProgramInfos&quot;:	[{
+				&quot;Number&quot;:	&quot;1&quot;,
+				&quot;ID&quot;:	&quot;1&quot;,
+				&quot;MediaLength&quot;:	&quot;371011&quot;,
+				&quot;Bitrate&quot;:	&quot;0&quot;,
+				&quot;TimeStampReferenceStreamID&quot;:	&quot;0&quot;,
+				&quot;VideoStreamCount&quot;:	&quot;3&quot;,
+				&quot;VideoStreamInfos&quot;:	[{
+						&quot;StreamType&quot;:	&quot;2&quot;,
+						&quot;StreamID&quot;:	&quot;0&quot;,
+						&quot;FourCC&quot;:	&quot;875967048&quot;,
+						&quot;State&quot;:	&quot;0&quot;,
+						&quot;Name&quot;:	&quot;cuda&quot;,
+						&quot;Description&quot;:	&quot;cuda H.264&quot;,
+						&quot;StreamLength&quot;:	&quot;369566&quot;,
+						&quot;Bitrate&quot;:	&quot;1806024&quot;,
+						&quot;VideoInfo&quot;:	{
+							&quot;Width&quot;:	&quot;1920&quot;,
+							&quot;Height&quot;:	&quot;1080&quot;,
+							&quot;FrameRate&quot;:	&quot;30000&quot;,
+							&quot;TotalFrame&quot;:	&quot;11087&quot;,
+							&quot;xratio&quot;:	&quot;0&quot;,
+							&quot;yratio&quot;:	&quot;0&quot;,
+							&quot;Compression&quot;:	&quot;842094169&quot;,
+							&quot;BitsDepth&quot;:	&quot;24&quot;,
+							&quot;CapsFlag&quot;:	&quot;0&quot;,
+							&quot;ColorRange&quot;:	&quot;0&quot;,
+							&quot;ColorPrimary&quot;:	&quot;0&quot;
+						},
+						&quot;VideoSrcInfo&quot;:	{
+							&quot;StreamSrcInfoScanType&quot;:	&quot;2&quot;,
+							&quot;StreamSrcInfoSrcScanType&quot;:	&quot;2&quot;,
+							&quot;StreamSrcInfoSrcRotate&quot;:	&quot;0&quot;,
+							&quot;VideoInfo&quot;:	{
+								&quot;Width&quot;:	&quot;1920&quot;,
+								&quot;Height&quot;:	&quot;1080&quot;,
+								&quot;FrameRate&quot;:	&quot;30000&quot;,
+								&quot;TotalFrame&quot;:	&quot;11087&quot;,
+								&quot;xratio&quot;:	&quot;0&quot;,
+								&quot;yratio&quot;:	&quot;0&quot;,
+								&quot;Compression&quot;:	&quot;842094169&quot;,
+								&quot;BitsDepth&quot;:	&quot;24&quot;,
+								&quot;CapsFlag&quot;:	&quot;0&quot;,
+								&quot;ColorRange&quot;:	&quot;0&quot;,
+								&quot;ColorPrimary&quot;:	&quot;0&quot;
+							}
+						},
+						&quot;AudioInfo&quot;:	{
+							&quot;SampleRate&quot;:	&quot;0&quot;,
+							&quot;Channels&quot;:	&quot;0&quot;,
+							&quot;Bitspersample&quot;:	&quot;0&quot;,
+							&quot;Bytespersecond&quot;:	&quot;0&quot;,
+							&quot;Length&quot;:	&quot;0&quot;,
+							&quot;CapsFlag&quot;:	&quot;0&quot;
+						},
+						&quot;ptsStart&quot;:	&quot;0&quot;,
+						&quot;ptsOffset&quot;:	&quot;0&quot;
+					}, {
+						&quot;StreamType&quot;:	&quot;2&quot;,
+						&quot;StreamID&quot;:	&quot;256&quot;,
+						&quot;FourCC&quot;:	&quot;1701013869&quot;,
+						&quot;State&quot;:	&quot;0&quot;,
+						&quot;Name&quot;:	&quot;&quot;,
+						&quot;Description&quot;:	&quot;&quot;,
+						&quot;StreamLength&quot;:	&quot;371011&quot;,
+						&quot;Bitrate&quot;:	&quot;0&quot;,
+						&quot;VideoInfo&quot;:	{
+							&quot;Width&quot;:	&quot;0&quot;,
+							&quot;Height&quot;:	&quot;0&quot;,
+							&quot;FrameRate&quot;:	&quot;0&quot;,
+							&quot;TotalFrame&quot;:	&quot;0&quot;,
+							&quot;xratio&quot;:	&quot;0&quot;,
+							&quot;yratio&quot;:	&quot;0&quot;,
+							&quot;Compression&quot;:	&quot;0&quot;,
+							&quot;BitsDepth&quot;:	&quot;0&quot;,
+							&quot;CapsFlag&quot;:	&quot;0&quot;,
+							&quot;ColorRange&quot;:	&quot;0&quot;,
+							&quot;ColorPrimary&quot;:	&quot;0&quot;
+						},
+						&quot;VideoSrcInfo&quot;:	{
+							&quot;StreamSrcInfoScanType&quot;:	&quot;2&quot;,
+							&quot;StreamSrcInfoSrcScanType&quot;:	&quot;2&quot;,
+							&quot;StreamSrcInfoSrcRotate&quot;:	&quot;0&quot;,
+							&quot;VideoInfo&quot;:	{
+								&quot;Width&quot;:	&quot;0&quot;,
+								&quot;Height&quot;:	&quot;0&quot;,
+								&quot;FrameRate&quot;:	&quot;0&quot;,
+								&quot;TotalFrame&quot;:	&quot;0&quot;,
+								&quot;xratio&quot;:	&quot;0&quot;,
+								&quot;yratio&quot;:	&quot;0&quot;,
+								&quot;Compression&quot;:	&quot;0&quot;,
+								&quot;BitsDepth&quot;:	&quot;0&quot;,
+								&quot;CapsFlag&quot;:	&quot;0&quot;,
+								&quot;ColorRange&quot;:	&quot;0&quot;,
+								&quot;ColorPrimary&quot;:	&quot;0&quot;
+							}
+						},
+						&quot;AudioInfo&quot;:	{
+							&quot;SampleRate&quot;:	&quot;0&quot;,
+							&quot;Channels&quot;:	&quot;0&quot;,
+							&quot;Bitspersample&quot;:	&quot;0&quot;,
+							&quot;Bytespersecond&quot;:	&quot;0&quot;,
+							&quot;Length&quot;:	&quot;0&quot;,
+							&quot;CapsFlag&quot;:	&quot;0&quot;
+						},
+						&quot;ptsStart&quot;:	&quot;0&quot;,
+						&quot;ptsOffset&quot;:	&quot;0&quot;
+					}, {
+						&quot;StreamType&quot;:	&quot;2&quot;,
+						&quot;StreamID&quot;:	&quot;257&quot;,
+						&quot;FourCC&quot;:	&quot;1652122987&quot;,
+						&quot;State&quot;:	&quot;0&quot;,
+						&quot;Name&quot;:	&quot;&quot;,
+						&quot;Description&quot;:	&quot;&quot;,
+						&quot;StreamLength&quot;:	&quot;371011&quot;,
+						&quot;Bitrate&quot;:	&quot;0&quot;,
+						&quot;VideoInfo&quot;:	{
+							&quot;Width&quot;:	&quot;0&quot;,
+							&quot;Height&quot;:	&quot;0&quot;,
+							&quot;FrameRate&quot;:	&quot;0&quot;,
+							&quot;TotalFrame&quot;:	&quot;0&quot;,
+							&quot;xratio&quot;:	&quot;0&quot;,
+							&quot;yratio&quot;:	&quot;0&quot;,
+							&quot;Compression&quot;:	&quot;0&quot;,
+							&quot;BitsDepth&quot;:	&quot;0&quot;,
+							&quot;CapsFlag&quot;:	&quot;0&quot;,
+							&quot;ColorRange&quot;:	&quot;0&quot;,
+							&quot;ColorPrimary&quot;:	&quot;0&quot;
+						},
+						&quot;VideoSrcInfo&quot;:	{
+							&quot;StreamSrcInfoScanType&quot;:	&quot;2&quot;,
+							&quot;StreamSrcInfoSrcScanType&quot;:	&quot;2&quot;,
+							&quot;StreamSrcInfoSrcRotate&quot;:	&quot;0&quot;,
+							&quot;VideoInfo&quot;:	{
+								&quot;Width&quot;:	&quot;0&quot;,
+								&quot;Height&quot;:	&quot;0&quot;,
+								&quot;FrameRate&quot;:	&quot;0&quot;,
+								&quot;TotalFrame&quot;:	&quot;0&quot;,
+								&quot;xratio&quot;:	&quot;0&quot;,
+								&quot;yratio&quot;:	&quot;0&quot;,
+								&quot;Compression&quot;:	&quot;0&quot;,
+								&quot;BitsDepth&quot;:	&quot;0&quot;,
+								&quot;CapsFlag&quot;:	&quot;0&quot;,
+								&quot;ColorRange&quot;:	&quot;0&quot;,
+								&quot;ColorPrimary&quot;:	&quot;0&quot;
+							}
+						},
+						&quot;AudioInfo&quot;:	{
+							&quot;SampleRate&quot;:	&quot;0&quot;,
+							&quot;Channels&quot;:	&quot;0&quot;,
+							&quot;Bitspersample&quot;:	&quot;0&quot;,
+							&quot;Bytespersecond&quot;:	&quot;0&quot;,
+							&quot;Length&quot;:	&quot;0&quot;,
+							&quot;CapsFlag&quot;:	&quot;0&quot;
+						},
+						&quot;ptsStart&quot;:	&quot;0&quot;,
+						&quot;ptsOffset&quot;:	&quot;0&quot;
+					}],
+				&quot;AudioStreamCount&quot;:	&quot;2&quot;,
+				&quot;AudioStreamInfos&quot;:	[{
+						&quot;StreamType&quot;:	&quot;3&quot;,
+						&quot;StreamID&quot;:	&quot;1&quot;,
+						&quot;FourCC&quot;:	&quot;541278529&quot;,
+						&quot;State&quot;:	&quot;0&quot;,
+						&quot;Name&quot;:	&quot;aac&quot;,
+						&quot;Description&quot;:	&quot;AAC (MPEG-2/MPEG-4 Audio)&quot;,
+						&quot;StreamLength&quot;:	&quot;369452&quot;,
+						&quot;Bitrate&quot;:	&quot;128048&quot;,
+						&quot;VideoInfo&quot;:	{
+							&quot;Width&quot;:	&quot;0&quot;,
+							&quot;Height&quot;:	&quot;0&quot;,
+							&quot;FrameRate&quot;:	&quot;0&quot;,
+							&quot;TotalFrame&quot;:	&quot;0&quot;,
+							&quot;xratio&quot;:	&quot;0&quot;,
+							&quot;yratio&quot;:	&quot;0&quot;,
+							&quot;Compression&quot;:	&quot;0&quot;,
+							&quot;BitsDepth&quot;:	&quot;0&quot;,
+							&quot;CapsFlag&quot;:	&quot;0&quot;,
+							&quot;ColorRange&quot;:	&quot;0&quot;,
+							&quot;ColorPrimary&quot;:	&quot;0&quot;
+						},
+						&quot;VideoSrcInfo&quot;:	{
+							&quot;StreamSrcInfoScanType&quot;:	&quot;0&quot;,
+							&quot;StreamSrcInfoSrcScanType&quot;:	&quot;0&quot;,
+							&quot;StreamSrcInfoSrcRotate&quot;:	&quot;0&quot;,
+							&quot;VideoInfo&quot;:	{
+								&quot;Width&quot;:	&quot;0&quot;,
+								&quot;Height&quot;:	&quot;0&quot;,
+								&quot;FrameRate&quot;:	&quot;0&quot;,
+								&quot;TotalFrame&quot;:	&quot;0&quot;,
+								&quot;xratio&quot;:	&quot;0&quot;,
+								&quot;yratio&quot;:	&quot;0&quot;,
+								&quot;Compression&quot;:	&quot;0&quot;,
+								&quot;BitsDepth&quot;:	&quot;0&quot;,
+								&quot;CapsFlag&quot;:	&quot;0&quot;,
+								&quot;ColorRange&quot;:	&quot;0&quot;,
+								&quot;ColorPrimary&quot;:	&quot;0&quot;
+							}
+						},
+						&quot;AudioInfo&quot;:	{
+							&quot;SampleRate&quot;:	&quot;44100&quot;,
+							&quot;Channels&quot;:	&quot;2&quot;,
+							&quot;Bitspersample&quot;:	&quot;16&quot;,
+							&quot;Bytespersecond&quot;:	&quot;16006&quot;,
+							&quot;Length&quot;:	&quot;369452&quot;,
+							&quot;CapsFlag&quot;:	&quot;0&quot;
+						},
+						&quot;ptsStart&quot;:	&quot;0&quot;,
+						&quot;ptsOffset&quot;:	&quot;0&quot;
+					}, {
+						&quot;StreamType&quot;:	&quot;3&quot;,
+						&quot;StreamID&quot;:	&quot;2&quot;,
+						&quot;FourCC&quot;:	&quot;541278529&quot;,
+						&quot;State&quot;:	&quot;0&quot;,
+						&quot;Name&quot;:	&quot;aac&quot;,
+						&quot;Description&quot;:	&quot;AAC (MPEG-2/MPEG-4 Audio)&quot;,
+						&quot;StreamLength&quot;:	&quot;369493&quot;,
+						&quot;Bitrate&quot;:	&quot;3368&quot;,
+						&quot;VideoInfo&quot;:	{
+							&quot;Width&quot;:	&quot;0&quot;,
+							&quot;Height&quot;:	&quot;0&quot;,
+							&quot;FrameRate&quot;:	&quot;0&quot;,
+							&quot;TotalFrame&quot;:	&quot;0&quot;,
+							&quot;xratio&quot;:	&quot;0&quot;,
+							&quot;yratio&quot;:	&quot;0&quot;,
+							&quot;Compression&quot;:	&quot;0&quot;,
+							&quot;BitsDepth&quot;:	&quot;0&quot;,
+							&quot;CapsFlag&quot;:	&quot;0&quot;,
+							&quot;ColorRange&quot;:	&quot;0&quot;,
+							&quot;ColorPrimary&quot;:	&quot;0&quot;
+						},
+						&quot;VideoSrcInfo&quot;:	{
+							&quot;StreamSrcInfoScanType&quot;:	&quot;0&quot;,
+							&quot;StreamSrcInfoSrcScanType&quot;:	&quot;0&quot;,
+							&quot;StreamSrcInfoSrcRotate&quot;:	&quot;0&quot;,
+							&quot;VideoInfo&quot;:	{
+								&quot;Width&quot;:	&quot;0&quot;,
+								&quot;Height&quot;:	&quot;0&quot;,
+								&quot;FrameRate&quot;:	&quot;0&quot;,
+								&quot;TotalFrame&quot;:	&quot;0&quot;,
+								&quot;xratio&quot;:	&quot;0&quot;,
+								&quot;yratio&quot;:	&quot;0&quot;,
+								&quot;Compression&quot;:	&quot;0&quot;,
+								&quot;BitsDepth&quot;:	&quot;0&quot;,
+								&quot;CapsFlag&quot;:	&quot;0&quot;,
+								&quot;ColorRange&quot;:	&quot;0&quot;,
+								&quot;ColorPrimary&quot;:	&quot;0&quot;
+							}
+						},
+						&quot;AudioInfo&quot;:	{
+							&quot;SampleRate&quot;:	&quot;48000&quot;,
+							&quot;Channels&quot;:	&quot;2&quot;,
+							&quot;Bitspersample&quot;:	&quot;16&quot;,
+							&quot;Bytespersecond&quot;:	&quot;421&quot;,
+							&quot;Length&quot;:	&quot;369493&quot;,
+							&quot;CapsFlag&quot;:	&quot;0&quot;
+						},
+						&quot;ptsStart&quot;:	&quot;0&quot;,
+						&quot;ptsOffset&quot;:	&quot;0&quot;
+					}],
+				&quot;SubPicStreamCount&quot;:	&quot;0&quot;,
+				&quot;SubPicInfos&quot;:	[]
+			}]
+	}
+}"/>
+<Property key="kMedia.Info.SerializedStringSize" type="int" value="6647"/>
+<Property key="kMouse_AudioEnable" type="int" value="0"/>
+<Property key="kMouse_AudioVolume" type="int" value="0"/>
+<Property key="kMouse_Event" type="int" value="1"/>
+<Property key="kMouse_HightlightColor" type="NLEColorF" value="r:0.000000, g:255.000000, b:255.000000"/>
+<Property key="kMouse_HightlightOn" type="int" value="0"/>
+<Property key="kMouse_HightlightOpacity" type="double" value="0.700000"/>
+<Property key="kMouse_Opacity" type="double" value="1.000000"/>
+<Property key="kMouse_RingsColor" type="NLEColorF" value="r:0.000000, g:255.000000, b:255.000000"/>
+<Property key="kMouse_RingsOn" type="int" value="0"/>
+<Property key="kMouse_Scale" type="double" value="1.000000"/>
+<Property key="kMouse_SoundFilePath" type="std::wstring" value=""/>
+<Property key="kSource.StreamCount" type="int" value="5"/>
+<Property key="kSource.Stream_0" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:0000026A0AB02760">
+<Properties Count="17">
+<Property key="Source_ScreenRecordingStreamType" type="unsigned int" value="1"/>
+<Property key="kStream_Type" type="int" value="2"/>
+<Property key="kVideo_Bitrate" type="int" value="1806024"/>
+<Property key="kVideo_BitsDepth" type="int" value="24"/>
+<Property key="kVideo_CapsFlag" type="unsigned long" value="0"/>
+<Property key="kVideo_Compression" type="unsigned long" value="842094169"/>
+<Property key="kVideo_Description" type="std::wstring" value="cuda H.264"/>
+<Property key="kVideo_Disable" type="int" value="0"/>
+<Property key="kVideo_Duration" type="long long" value="3695666666"/>
+<Property key="kVideo_FourCC" type="unsigned int" value="875967048"/>
+<Property key="kVideo_FrameRate" type="double" value="30.000000"/>
+<Property key="kVideo_Height" type="int" value="1080"/>
+<Property key="kVideo_ID" type="unsigned int" value="0"/>
+<Property key="kVideo_Name" type="std::wstring" value="cuda"/>
+<Property key="kVideo_State" type="int" value="0"/>
+<Property key="kVideo_TotalFrames" type="int" value="11087"/>
+<Property key="kVideo_Width" type="int" value="1920"/>
+</Properties>
+</Property>
+<Property key="kSource.Stream_1" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:0000026A0AB03360">
+<Properties Count="5">
+<Property key="Source_ScreenRecordingStreamType" type="unsigned int" value="5"/>
+<Property key="kStream_RelatedStreamID" type="int" value="0"/>
+<Property key="kStream_Type" type="int" value="6"/>
+<Property key="kVideo_FourCC" type="unsigned int" value="1701013869"/>
+<Property key="kVideo_ID" type="unsigned int" value="256"/>
+</Properties>
+</Property>
+<Property key="kSource.Stream_2" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:0000026A0AB02EE0">
+<Properties Count="5">
+<Property key="Source_ScreenRecordingStreamType" type="unsigned int" value="6"/>
+<Property key="kStream_RelatedStreamID" type="int" value="0"/>
+<Property key="kStream_Type" type="int" value="7"/>
+<Property key="kVideo_FourCC" type="unsigned int" value="1652122987"/>
+<Property key="kVideo_ID" type="unsigned int" value="257"/>
+</Properties>
+</Property>
+<Property key="kSource.Stream_3" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:0000026A0AB02940">
+<Properties Count="15">
+<Property key="Source_ScreenRecordingStreamType" type="unsigned int" value="4"/>
+<Property key="kAduio_CapsFlag" type="unsigned long" value="0"/>
+<Property key="kAudio_Bitrate" type="int" value="128048"/>
+<Property key="kAudio_BitsPerSample" type="int" value="16"/>
+<Property key="kAudio_BytesPerSecond" type="int" value="176400"/>
+<Property key="kAudio_Channels" type="int" value="2"/>
+<Property key="kAudio_Description" type="std::wstring" value="AAC (MPEG-2/MPEG-4 Audio)"/>
+<Property key="kAudio_Disable" type="int" value="0"/>
+<Property key="kAudio_Duration" type="long long" value="3694526984"/>
+<Property key="kAudio_FourCC" type="unsigned int" value="541278529"/>
+<Property key="kAudio_ID" type="unsigned int" value="1"/>
+<Property key="kAudio_Name" type="std::wstring" value="aac"/>
+<Property key="kAudio_SampleRate" type="int" value="44100"/>
+<Property key="kAudio_State" type="int" value="0"/>
+<Property key="kStream_Type" type="int" value="3"/>
+</Properties>
+</Property>
+<Property key="kSource.Stream_4" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:0000026A0AB03900">
+<Properties Count="15">
+<Property key="Source_ScreenRecordingStreamType" type="unsigned int" value="3"/>
+<Property key="kAduio_CapsFlag" type="unsigned long" value="0"/>
+<Property key="kAudio_Bitrate" type="int" value="3368"/>
+<Property key="kAudio_BitsPerSample" type="int" value="16"/>
+<Property key="kAudio_BytesPerSecond" type="int" value="192000"/>
+<Property key="kAudio_Channels" type="int" value="2"/>
+<Property key="kAudio_Description" type="std::wstring" value="AAC (MPEG-2/MPEG-4 Audio)"/>
+<Property key="kAudio_Disable" type="int" value="0"/>
+<Property key="kAudio_Duration" type="long long" value="3694933333"/>
+<Property key="kAudio_FourCC" type="unsigned int" value="541278529"/>
+<Property key="kAudio_ID" type="unsigned int" value="2"/>
+<Property key="kAudio_Name" type="std::wstring" value="aac"/>
+<Property key="kAudio_SampleRate" type="int" value="48000"/>
+<Property key="kAudio_State" type="int" value="0"/>
+<Property key="kStream_Type" type="int" value="3"/>
+</Properties>
+</Property>
+<Property key="kStream_ProgramID" type="int" value="1"/>
+<Property key="kVideo_Disable" type="int" value="0"/>
+<Property key="xfer.left.range.Video" type="int" value="0"/>
+<Property key="xfer.right.range.Video" type="int" value="0"/>
+</Properties>
+</TimeLine>
+<TimeLine>
+<Properties Count="77">
+<Property key="Absolute.FilePath" type="std::wstring" value="I:/YouTubeProject/FilmoraScrn/section-html/html-spec/Rec_18.31.04 20190522.mp4"/>
+<Property key="Composition.Mode" type="int" value="0"/>
+<Property key="Composition.Opacity" type="double" value="1.000000"/>
+<Property key="Key_AncestralGuid" type="std::wstring" value="{45630588-ce16-467d-84ab-294eb99086f4}"/>
+<Property key="Key_BackGroundColor" type="std::wstring" value="60,103,76"/>
+<Property key="Key_DisplayName" type="std::wstring" value="Rec_18.31.04 20190522"/>
+<Property key="Key_RecordAncestralGuid" type="std::wstring" value="{4d7cd31a-b018-48c2-96f4-a6fa126c0900}"/>
+<Property key="Key_TimelineType" type="int" value="3"/>
+<Property key="Level" type="int" value="1"/>
+<Property key="NLEVersion" type="std::wstring" value="(5, 5, 1, 110)"/>
+<Property key="PProcess.Mix2Mono" type="int" value="0"/>
+<Property key="REFCLSID" type="GUID" value="{CD61E0E4-0074-3FD5-4915-951546E34A03}"/>
+<Property key="REFIID" type="GUID" value="{29FDB4EE-DE39-151E-ED38-06C8CFB45CDA}"/>
+<Property key="Render.AnchorPoint" type="NLEPointF" value="x:0.000000, y:0.000000"/>
+<Property key="Render.Backplay.BOOL" type="int" value="0"/>
+<Property key="Render.BitsPerSample" type="int" value="16"/>
+<Property key="Render.Channels" type="int" value="2"/>
+<Property key="Render.Denoise" type="int" value="0"/>
+<Property key="Render.EnableAudio" type="int" value="1"/>
+<Property key="Render.EnableVideo" type="int" value="1"/>
+<Property key="Render.Framerate" type="NLERational" value="[30000000, 1000000]: 30.0000000 "/>
+<Property key="Render.Hidden" type="int" value="0"/>
+<Property key="Render.Mode" type="int" value="0"/>
+<Property key="Render.Position" type="int" value="0"/>
+<Property key="Render.RangeFrameNumber" type="NLERange" value="Start:0, End:2147483640"/>
+<Property key="Render.RangeFrameNumber.Audio" type="NLERange" value="Start:0, End:11082"/>
+<Property key="Render.RangeFrameNumber.Copy" type="NLEPointF" value="x:0.000000, y:1.000000"/>
+<Property key="Render.RangeFrameNumber.Video" type="NLERange" value="Start:0, End:2147483640"/>
+<Property key="Render.SampleRate" type="int" value="44100"/>
+<Property key="Render.Scale" type="NLERational" value="[1, 1]: 1.0000000 "/>
+<Property key="Render.Size" type="NLESize" value="Width:977, cy:549"/>
+<Property key="Render.TotalFrameCount" type="int" value="11083"/>
+<Property key="Render.TotalFrameCount.Audio" type="int" value="11083"/>
+<Property key="Render.TotalFrameCount.Video" type="int" value="0"/>
+<Property key="Render.Using.Taskpool" type="int" value="1"/>
+<Property key="Render.VideoStabilizer.BOOL" type="int" value="0"/>
+<Property key="Source.BitsPerSample" type="int" value="16"/>
+<Property key="Source.Channles" type="int" value="2"/>
+<Property key="Source.Framerate" type="NLERational" value="[30000000, 1000000]: 30.0000000 "/>
+<Property key="Source.Framerate.Audio" type="NLERational" value="[30000000, 1000000]: 30.0000000 "/>
+<Property key="Source.HasAudioStream" type="int" value="1"/>
+<Property key="Source.HasVideoStream" type="int" value="0"/>
+<Property key="Source.RangeFrameNumber" type="NLERange" value="Start:0, End:2147483640"/>
+<Property key="Source.RangeFrameNumber.Audio" type="NLERange" value="Start:0, End:11082"/>
+<Property key="Source.RangeFrameNumber.Video" type="NLERange" value="Start:0, End:2147483640"/>
+<Property key="Source.Region" type="NLERectF" value="left:0.000000, top:0.000000, width:1.000000, height:1.000000"/>
+<Property key="Source.SampleRate" type="int" value="44100"/>
+<Property key="Source.Size" type="NLESize" value="Width:977, cy:549"/>
+<Property key="Source.TotalFrameCount" type="int" value="11083"/>
+<Property key="Source.TotalFrameCount.Audio" type="int" value="11083"/>
+<Property key="Source.TotalFrameCount.Video" type="int" value="0"/>
+<Property key="SourceRender_CurrentAudioStreamIndex" type="int" value="3"/>
+<Property key="Source_FileType" type="int" value="1"/>
+<Property key="Transform.Angle" type="double" value="0.000000"/>
+<Property key="Transform.CenterPoint" type="NLEPointF" value="x:0.500000, y:0.500000"/>
+<Property key="Transform.Enabled" type="int" value="1"/>
+<Property key="Transform.KeepRatio" type="int" value="1"/>
+<Property key="Transform.ResizeScale" type="NLESizeF" value="Width:1.000000, cy:1.000000"/>
+<Property key="fade.in.enabled" type="int" value="1"/>
+<Property key="fade.in.range" type="int" value="0"/>
+<Property key="fade.out.enabled" type="int" value="1"/>
+<Property key="fade.out.range" type="int" value="0"/>
+<Property key="kAudio_Disable" type="int" value="0"/>
+<Property key="kCodec_FourCC" type="unsigned long" value="877677891"/>
+<Property key="kGPU.GPUFirst" type="int" value="1"/>
+<Property key="kMedia.Info.SerializedString" type="std::wstring" value="{
+	&quot;MediaInfo&quot;:	{
+		&quot;FileCreateData&quot;:	&quot;2019:5:22:9:37:0,2019:5:22:9:31:0\n&quot;,
+		&quot;FOURCC&quot;:	&quot;877677891&quot;,
+		&quot;FileName&quot;:	&quot;&quot;,
+		&quot;Description&quot;:	&quot;&quot;,
+		&quot;MediaLength&quot;:	&quot;371011&quot;,
+		&quot;Bitrate&quot;:	&quot;0&quot;,
+		&quot;AVScanType&quot;:	&quot;2&quot;,
+		&quot;ProgramCount&quot;:	&quot;1&quot;,
+		&quot;ProgramInfos&quot;:	[{
+				&quot;Number&quot;:	&quot;1&quot;,
+				&quot;ID&quot;:	&quot;1&quot;,
+				&quot;MediaLength&quot;:	&quot;371011&quot;,
+				&quot;Bitrate&quot;:	&quot;0&quot;,
+				&quot;TimeStampReferenceStreamID&quot;:	&quot;0&quot;,
+				&quot;VideoStreamCount&quot;:	&quot;3&quot;,
+				&quot;VideoStreamInfos&quot;:	[{
+						&quot;StreamType&quot;:	&quot;2&quot;,
+						&quot;StreamID&quot;:	&quot;0&quot;,
+						&quot;FourCC&quot;:	&quot;875967048&quot;,
+						&quot;State&quot;:	&quot;0&quot;,
+						&quot;Name&quot;:	&quot;cuda&quot;,
+						&quot;Description&quot;:	&quot;cuda H.264&quot;,
+						&quot;StreamLength&quot;:	&quot;369566&quot;,
+						&quot;Bitrate&quot;:	&quot;1806024&quot;,
+						&quot;VideoInfo&quot;:	{
+							&quot;Width&quot;:	&quot;1920&quot;,
+							&quot;Height&quot;:	&quot;1080&quot;,
+							&quot;FrameRate&quot;:	&quot;30000&quot;,
+							&quot;TotalFrame&quot;:	&quot;11087&quot;,
+							&quot;xratio&quot;:	&quot;0&quot;,
+							&quot;yratio&quot;:	&quot;0&quot;,
+							&quot;Compression&quot;:	&quot;842094169&quot;,
+							&quot;BitsDepth&quot;:	&quot;24&quot;,
+							&quot;CapsFlag&quot;:	&quot;0&quot;,
+							&quot;ColorRange&quot;:	&quot;0&quot;,
+							&quot;ColorPrimary&quot;:	&quot;0&quot;
+						},
+						&quot;VideoSrcInfo&quot;:	{
+							&quot;StreamSrcInfoScanType&quot;:	&quot;2&quot;,
+							&quot;StreamSrcInfoSrcScanType&quot;:	&quot;2&quot;,
+							&quot;StreamSrcInfoSrcRotate&quot;:	&quot;0&quot;,
+							&quot;VideoInfo&quot;:	{
+								&quot;Width&quot;:	&quot;1920&quot;,
+								&quot;Height&quot;:	&quot;1080&quot;,
+								&quot;FrameRate&quot;:	&quot;30000&quot;,
+								&quot;TotalFrame&quot;:	&quot;11087&quot;,
+								&quot;xratio&quot;:	&quot;0&quot;,
+								&quot;yratio&quot;:	&quot;0&quot;,
+								&quot;Compression&quot;:	&quot;842094169&quot;,
+								&quot;BitsDepth&quot;:	&quot;24&quot;,
+								&quot;CapsFlag&quot;:	&quot;0&quot;,
+								&quot;ColorRange&quot;:	&quot;0&quot;,
+								&quot;ColorPrimary&quot;:	&quot;0&quot;
+							}
+						},
+						&quot;AudioInfo&quot;:	{
+							&quot;SampleRate&quot;:	&quot;0&quot;,
+							&quot;Channels&quot;:	&quot;0&quot;,
+							&quot;Bitspersample&quot;:	&quot;0&quot;,
+							&quot;Bytespersecond&quot;:	&quot;0&quot;,
+							&quot;Length&quot;:	&quot;0&quot;,
+							&quot;CapsFlag&quot;:	&quot;0&quot;
+						},
+						&quot;ptsStart&quot;:	&quot;0&quot;,
+						&quot;ptsOffset&quot;:	&quot;0&quot;
+					}, {
+						&quot;StreamType&quot;:	&quot;2&quot;,
+						&quot;StreamID&quot;:	&quot;256&quot;,
+						&quot;FourCC&quot;:	&quot;1701013869&quot;,
+						&quot;State&quot;:	&quot;0&quot;,
+						&quot;Name&quot;:	&quot;&quot;,
+						&quot;Description&quot;:	&quot;&quot;,
+						&quot;StreamLength&quot;:	&quot;371011&quot;,
+						&quot;Bitrate&quot;:	&quot;0&quot;,
+						&quot;VideoInfo&quot;:	{
+							&quot;Width&quot;:	&quot;0&quot;,
+							&quot;Height&quot;:	&quot;0&quot;,
+							&quot;FrameRate&quot;:	&quot;0&quot;,
+							&quot;TotalFrame&quot;:	&quot;0&quot;,
+							&quot;xratio&quot;:	&quot;0&quot;,
+							&quot;yratio&quot;:	&quot;0&quot;,
+							&quot;Compression&quot;:	&quot;0&quot;,
+							&quot;BitsDepth&quot;:	&quot;0&quot;,
+							&quot;CapsFlag&quot;:	&quot;0&quot;,
+							&quot;ColorRange&quot;:	&quot;0&quot;,
+							&quot;ColorPrimary&quot;:	&quot;0&quot;
+						},
+						&quot;VideoSrcInfo&quot;:	{
+							&quot;StreamSrcInfoScanType&quot;:	&quot;2&quot;,
+							&quot;StreamSrcInfoSrcScanType&quot;:	&quot;2&quot;,
+							&quot;StreamSrcInfoSrcRotate&quot;:	&quot;0&quot;,
+							&quot;VideoInfo&quot;:	{
+								&quot;Width&quot;:	&quot;0&quot;,
+								&quot;Height&quot;:	&quot;0&quot;,
+								&quot;FrameRate&quot;:	&quot;0&quot;,
+								&quot;TotalFrame&quot;:	&quot;0&quot;,
+								&quot;xratio&quot;:	&quot;0&quot;,
+								&quot;yratio&quot;:	&quot;0&quot;,
+								&quot;Compression&quot;:	&quot;0&quot;,
+								&quot;BitsDepth&quot;:	&quot;0&quot;,
+								&quot;CapsFlag&quot;:	&quot;0&quot;,
+								&quot;ColorRange&quot;:	&quot;0&quot;,
+								&quot;ColorPrimary&quot;:	&quot;0&quot;
+							}
+						},
+						&quot;AudioInfo&quot;:	{
+							&quot;SampleRate&quot;:	&quot;0&quot;,
+							&quot;Channels&quot;:	&quot;0&quot;,
+							&quot;Bitspersample&quot;:	&quot;0&quot;,
+							&quot;Bytespersecond&quot;:	&quot;0&quot;,
+							&quot;Length&quot;:	&quot;0&quot;,
+							&quot;CapsFlag&quot;:	&quot;0&quot;
+						},
+						&quot;ptsStart&quot;:	&quot;0&quot;,
+						&quot;ptsOffset&quot;:	&quot;0&quot;
+					}, {
+						&quot;StreamType&quot;:	&quot;2&quot;,
+						&quot;StreamID&quot;:	&quot;257&quot;,
+						&quot;FourCC&quot;:	&quot;1652122987&quot;,
+						&quot;State&quot;:	&quot;0&quot;,
+						&quot;Name&quot;:	&quot;&quot;,
+						&quot;Description&quot;:	&quot;&quot;,
+						&quot;StreamLength&quot;:	&quot;371011&quot;,
+						&quot;Bitrate&quot;:	&quot;0&quot;,
+						&quot;VideoInfo&quot;:	{
+							&quot;Width&quot;:	&quot;0&quot;,
+							&quot;Height&quot;:	&quot;0&quot;,
+							&quot;FrameRate&quot;:	&quot;0&quot;,
+							&quot;TotalFrame&quot;:	&quot;0&quot;,
+							&quot;xratio&quot;:	&quot;0&quot;,
+							&quot;yratio&quot;:	&quot;0&quot;,
+							&quot;Compression&quot;:	&quot;0&quot;,
+							&quot;BitsDepth&quot;:	&quot;0&quot;,
+							&quot;CapsFlag&quot;:	&quot;0&quot;,
+							&quot;ColorRange&quot;:	&quot;0&quot;,
+							&quot;ColorPrimary&quot;:	&quot;0&quot;
+						},
+						&quot;VideoSrcInfo&quot;:	{
+							&quot;StreamSrcInfoScanType&quot;:	&quot;2&quot;,
+							&quot;StreamSrcInfoSrcScanType&quot;:	&quot;2&quot;,
+							&quot;StreamSrcInfoSrcRotate&quot;:	&quot;0&quot;,
+							&quot;VideoInfo&quot;:	{
+								&quot;Width&quot;:	&quot;0&quot;,
+								&quot;Height&quot;:	&quot;0&quot;,
+								&quot;FrameRate&quot;:	&quot;0&quot;,
+								&quot;TotalFrame&quot;:	&quot;0&quot;,
+								&quot;xratio&quot;:	&quot;0&quot;,
+								&quot;yratio&quot;:	&quot;0&quot;,
+								&quot;Compression&quot;:	&quot;0&quot;,
+								&quot;BitsDepth&quot;:	&quot;0&quot;,
+								&quot;CapsFlag&quot;:	&quot;0&quot;,
+								&quot;ColorRange&quot;:	&quot;0&quot;,
+								&quot;ColorPrimary&quot;:	&quot;0&quot;
+							}
+						},
+						&quot;AudioInfo&quot;:	{
+							&quot;SampleRate&quot;:	&quot;0&quot;,
+							&quot;Channels&quot;:	&quot;0&quot;,
+							&quot;Bitspersample&quot;:	&quot;0&quot;,
+							&quot;Bytespersecond&quot;:	&quot;0&quot;,
+							&quot;Length&quot;:	&quot;0&quot;,
+							&quot;CapsFlag&quot;:	&quot;0&quot;
+						},
+						&quot;ptsStart&quot;:	&quot;0&quot;,
+						&quot;ptsOffset&quot;:	&quot;0&quot;
+					}],
+				&quot;AudioStreamCount&quot;:	&quot;2&quot;,
+				&quot;AudioStreamInfos&quot;:	[{
+						&quot;StreamType&quot;:	&quot;3&quot;,
+						&quot;StreamID&quot;:	&quot;1&quot;,
+						&quot;FourCC&quot;:	&quot;541278529&quot;,
+						&quot;State&quot;:	&quot;0&quot;,
+						&quot;Name&quot;:	&quot;aac&quot;,
+						&quot;Description&quot;:	&quot;AAC (MPEG-2/MPEG-4 Audio)&quot;,
+						&quot;StreamLength&quot;:	&quot;369452&quot;,
+						&quot;Bitrate&quot;:	&quot;128048&quot;,
+						&quot;VideoInfo&quot;:	{
+							&quot;Width&quot;:	&quot;0&quot;,
+							&quot;Height&quot;:	&quot;0&quot;,
+							&quot;FrameRate&quot;:	&quot;0&quot;,
+							&quot;TotalFrame&quot;:	&quot;0&quot;,
+							&quot;xratio&quot;:	&quot;0&quot;,
+							&quot;yratio&quot;:	&quot;0&quot;,
+							&quot;Compression&quot;:	&quot;0&quot;,
+							&quot;BitsDepth&quot;:	&quot;0&quot;,
+							&quot;CapsFlag&quot;:	&quot;0&quot;,
+							&quot;ColorRange&quot;:	&quot;0&quot;,
+							&quot;ColorPrimary&quot;:	&quot;0&quot;
+						},
+						&quot;VideoSrcInfo&quot;:	{
+							&quot;StreamSrcInfoScanType&quot;:	&quot;0&quot;,
+							&quot;StreamSrcInfoSrcScanType&quot;:	&quot;0&quot;,
+							&quot;StreamSrcInfoSrcRotate&quot;:	&quot;0&quot;,
+							&quot;VideoInfo&quot;:	{
+								&quot;Width&quot;:	&quot;0&quot;,
+								&quot;Height&quot;:	&quot;0&quot;,
+								&quot;FrameRate&quot;:	&quot;0&quot;,
+								&quot;TotalFrame&quot;:	&quot;0&quot;,
+								&quot;xratio&quot;:	&quot;0&quot;,
+								&quot;yratio&quot;:	&quot;0&quot;,
+								&quot;Compression&quot;:	&quot;0&quot;,
+								&quot;BitsDepth&quot;:	&quot;0&quot;,
+								&quot;CapsFlag&quot;:	&quot;0&quot;,
+								&quot;ColorRange&quot;:	&quot;0&quot;,
+								&quot;ColorPrimary&quot;:	&quot;0&quot;
+							}
+						},
+						&quot;AudioInfo&quot;:	{
+							&quot;SampleRate&quot;:	&quot;44100&quot;,
+							&quot;Channels&quot;:	&quot;2&quot;,
+							&quot;Bitspersample&quot;:	&quot;16&quot;,
+							&quot;Bytespersecond&quot;:	&quot;16006&quot;,
+							&quot;Length&quot;:	&quot;369452&quot;,
+							&quot;CapsFlag&quot;:	&quot;0&quot;
+						},
+						&quot;ptsStart&quot;:	&quot;0&quot;,
+						&quot;ptsOffset&quot;:	&quot;0&quot;
+					}, {
+						&quot;StreamType&quot;:	&quot;3&quot;,
+						&quot;StreamID&quot;:	&quot;2&quot;,
+						&quot;FourCC&quot;:	&quot;541278529&quot;,
+						&quot;State&quot;:	&quot;0&quot;,
+						&quot;Name&quot;:	&quot;aac&quot;,
+						&quot;Description&quot;:	&quot;AAC (MPEG-2/MPEG-4 Audio)&quot;,
+						&quot;StreamLength&quot;:	&quot;369493&quot;,
+						&quot;Bitrate&quot;:	&quot;3368&quot;,
+						&quot;VideoInfo&quot;:	{
+							&quot;Width&quot;:	&quot;0&quot;,
+							&quot;Height&quot;:	&quot;0&quot;,
+							&quot;FrameRate&quot;:	&quot;0&quot;,
+							&quot;TotalFrame&quot;:	&quot;0&quot;,
+							&quot;xratio&quot;:	&quot;0&quot;,
+							&quot;yratio&quot;:	&quot;0&quot;,
+							&quot;Compression&quot;:	&quot;0&quot;,
+							&quot;BitsDepth&quot;:	&quot;0&quot;,
+							&quot;CapsFlag&quot;:	&quot;0&quot;,
+							&quot;ColorRange&quot;:	&quot;0&quot;,
+							&quot;ColorPrimary&quot;:	&quot;0&quot;
+						},
+						&quot;VideoSrcInfo&quot;:	{
+							&quot;StreamSrcInfoScanType&quot;:	&quot;0&quot;,
+							&quot;StreamSrcInfoSrcScanType&quot;:	&quot;0&quot;,
+							&quot;StreamSrcInfoSrcRotate&quot;:	&quot;0&quot;,
+							&quot;VideoInfo&quot;:	{
+								&quot;Width&quot;:	&quot;0&quot;,
+								&quot;Height&quot;:	&quot;0&quot;,
+								&quot;FrameRate&quot;:	&quot;0&quot;,
+								&quot;TotalFrame&quot;:	&quot;0&quot;,
+								&quot;xratio&quot;:	&quot;0&quot;,
+								&quot;yratio&quot;:	&quot;0&quot;,
+								&quot;Compression&quot;:	&quot;0&quot;,
+								&quot;BitsDepth&quot;:	&quot;0&quot;,
+								&quot;CapsFlag&quot;:	&quot;0&quot;,
+								&quot;ColorRange&quot;:	&quot;0&quot;,
+								&quot;ColorPrimary&quot;:	&quot;0&quot;
+							}
+						},
+						&quot;AudioInfo&quot;:	{
+							&quot;SampleRate&quot;:	&quot;48000&quot;,
+							&quot;Channels&quot;:	&quot;2&quot;,
+							&quot;Bitspersample&quot;:	&quot;16&quot;,
+							&quot;Bytespersecond&quot;:	&quot;421&quot;,
+							&quot;Length&quot;:	&quot;369493&quot;,
+							&quot;CapsFlag&quot;:	&quot;0&quot;
+						},
+						&quot;ptsStart&quot;:	&quot;0&quot;,
+						&quot;ptsOffset&quot;:	&quot;0&quot;
+					}],
+				&quot;SubPicStreamCount&quot;:	&quot;0&quot;,
+				&quot;SubPicInfos&quot;:	[]
+			}]
+	}
+}"/>
+<Property key="kMedia.Info.SerializedStringSize" type="int" value="6647"/>
+<Property key="kSource.StreamCount" type="int" value="5"/>
+<Property key="kSource.Stream_0" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:0000026A0AB11B20">
+<Properties Count="17">
+<Property key="Source_ScreenRecordingStreamType" type="unsigned int" value="1"/>
+<Property key="kStream_Type" type="int" value="2"/>
+<Property key="kVideo_Bitrate" type="int" value="1806024"/>
+<Property key="kVideo_BitsDepth" type="int" value="24"/>
+<Property key="kVideo_CapsFlag" type="unsigned long" value="0"/>
+<Property key="kVideo_Compression" type="unsigned long" value="842094169"/>
+<Property key="kVideo_Description" type="std::wstring" value="cuda H.264"/>
+<Property key="kVideo_Disable" type="int" value="0"/>
+<Property key="kVideo_Duration" type="long long" value="3695666666"/>
+<Property key="kVideo_FourCC" type="unsigned int" value="875967048"/>
+<Property key="kVideo_FrameRate" type="double" value="30.000000"/>
+<Property key="kVideo_Height" type="int" value="1080"/>
+<Property key="kVideo_ID" type="unsigned int" value="0"/>
+<Property key="kVideo_Name" type="std::wstring" value="cuda"/>
+<Property key="kVideo_State" type="int" value="0"/>
+<Property key="kVideo_TotalFrames" type="int" value="11087"/>
+<Property key="kVideo_Width" type="int" value="1920"/>
+</Properties>
+</Property>
+<Property key="kSource.Stream_1" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:0000026A0AB119A0">
+<Properties Count="5">
+<Property key="Source_ScreenRecordingStreamType" type="unsigned int" value="5"/>
+<Property key="kStream_RelatedStreamID" type="int" value="0"/>
+<Property key="kStream_Type" type="int" value="6"/>
+<Property key="kVideo_FourCC" type="unsigned int" value="1701013869"/>
+<Property key="kVideo_ID" type="unsigned int" value="256"/>
+</Properties>
+</Property>
+<Property key="kSource.Stream_2" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:0000026A0AB11F40">
+<Properties Count="5">
+<Property key="Source_ScreenRecordingStreamType" type="unsigned int" value="6"/>
+<Property key="kStream_RelatedStreamID" type="int" value="0"/>
+<Property key="kStream_Type" type="int" value="7"/>
+<Property key="kVideo_FourCC" type="unsigned int" value="1652122987"/>
+<Property key="kVideo_ID" type="unsigned int" value="257"/>
+</Properties>
+</Property>
+<Property key="kSource.Stream_3" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:0000026A0AB03180">
+<Properties Count="15">
+<Property key="Source_ScreenRecordingStreamType" type="unsigned int" value="4"/>
+<Property key="kAduio_CapsFlag" type="unsigned long" value="0"/>
+<Property key="kAudio_Bitrate" type="int" value="128048"/>
+<Property key="kAudio_BitsPerSample" type="int" value="16"/>
+<Property key="kAudio_BytesPerSecond" type="int" value="176400"/>
+<Property key="kAudio_Channels" type="int" value="2"/>
+<Property key="kAudio_Description" type="std::wstring" value="AAC (MPEG-2/MPEG-4 Audio)"/>
+<Property key="kAudio_Disable" type="int" value="0"/>
+<Property key="kAudio_Duration" type="long long" value="3694526984"/>
+<Property key="kAudio_FourCC" type="unsigned int" value="541278529"/>
+<Property key="kAudio_ID" type="unsigned int" value="1"/>
+<Property key="kAudio_Name" type="std::wstring" value="aac"/>
+<Property key="kAudio_SampleRate" type="int" value="44100"/>
+<Property key="kAudio_State" type="int" value="0"/>
+<Property key="kStream_Type" type="int" value="3"/>
+</Properties>
+</Property>
+<Property key="kSource.Stream_4" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:0000026A0AB033C0">
+<Properties Count="15">
+<Property key="Source_ScreenRecordingStreamType" type="unsigned int" value="3"/>
+<Property key="kAduio_CapsFlag" type="unsigned long" value="0"/>
+<Property key="kAudio_Bitrate" type="int" value="3368"/>
+<Property key="kAudio_BitsPerSample" type="int" value="16"/>
+<Property key="kAudio_BytesPerSecond" type="int" value="192000"/>
+<Property key="kAudio_Channels" type="int" value="2"/>
+<Property key="kAudio_Description" type="std::wstring" value="AAC (MPEG-2/MPEG-4 Audio)"/>
+<Property key="kAudio_Disable" type="int" value="0"/>
+<Property key="kAudio_Duration" type="long long" value="3694933333"/>
+<Property key="kAudio_FourCC" type="unsigned int" value="541278529"/>
+<Property key="kAudio_ID" type="unsigned int" value="2"/>
+<Property key="kAudio_Name" type="std::wstring" value="aac"/>
+<Property key="kAudio_SampleRate" type="int" value="48000"/>
+<Property key="kAudio_State" type="int" value="0"/>
+<Property key="kStream_Type" type="int" value="3"/>
+</Properties>
+</Property>
+<Property key="kStream_ProgramID" type="int" value="1"/>
+<Property key="kVideo_Disable" type="int" value="0"/>
+<Property key="xfer.left.range.Video" type="int" value="0"/>
+<Property key="xfer.right.range.Video" type="int" value="0"/>
+</Properties>
+</TimeLine>
+</TimeLine>
+</TimelineMessage>
+
+</ProjectMessage>
