@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Architects+Daughter|Bubblegum+Sans|Fredericka+the+Great|Saira+Extra+Condensed|Shadows+Into+Light|Shadows+Into+Light+Two");
 @import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
 @import url("http://fonts.googleapis.com/earlyaccess/jejugothic.css");
@@ -115,9 +114,9 @@ h6,
   clear: both;
 }
 
-/*
- sass
-*/
+/**
+ * sass
+ * */
 body > p {
   color: #333;
 }
@@ -225,121 +224,117 @@ span.warnSign {
   border-top: 1px solid #704216;
 }
 
-body {
-  margin: 50px;
-  padding: 0;
-  /* 100vh를 사용할 경우 hr 같은 tag이 100vh 위치에 달라 붙어 고정된다.  */
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-image: url("../../img/sia-opacity015.svg");
-  background-position: 0 50px;
+h1 {
+  font-weight: 700;
+  margin-left: 0.5em;
+  border-left: 7px dotted #c2c2c2;
+  padding-left: 3px;
+  margin-bottom: 0;
+  background-color: #fff;
 }
 
-body .sia {
-  opacity: 0.12;
-  position: fixed;
-  top: 60px;
-  z-index: -10;
+h1 ~ p {
+  padding-left: 1em;
+  margin-bottom: 10px;
 }
 
-body {
-  background-image: "../img/sia-opacity015.svg";
-  background-position: left 50px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: "Noto Sans KR";
-  scroll-behavior: smooth;
-  font-size: 14px;
-  background-color: #fafafa;
+h2 {
+  font-weight: 600;
+  margin-left: 1em;
+  border-left: 6px dotted #c2c2c2;
+  padding-left: 3px;
+  margin-bottom: 0;
+  background-color: #fff;
 }
 
-/* .box
-{
-background: linear-gradient(left, rgba(30,87,153,0.3) 0%,rgba(125,185,232,0.1) 100%);
-} */
-/* asdf */
-.horizontal-hr {
-  width: 95%;
-  height: 0px;
-  border: 2px solid orange;
-  background-color: rgba(255, 165, 0, 0.5);
+h2 ~ p {
+  padding-left: 2em;
+  margin-bottom: 10px;
 }
 
-.main-wrap {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  z-index: 10;
-  font: normal normal bold 25px/2.5 "Noto Sans KR";
+h3 {
+  font-weight: 500;
+  margin-left: 1.5em;
+  border-left: 5px dotted #c2c2c2;
+  padding-left: 3px;
+  margin-bottom: 0;
+  background-color: #fff;
 }
 
-.main-wrap > h1 {
-  text-align: center;
-  font: normal normal bold 46px/2.5 "Noto Sans KR";
-  color: #5d4501;
-  /* margin        : 150px auto; */
+h3 ~ p {
+  padding-left: 3em;
+  margin-bottom: 10px;
 }
 
-ul.centered {
-  margin: auto 150px;
-  color: #855a0b;
+h4 {
+  font-weight: 400;
+  margin-left: 2em;
+  border-left: 4px dotted #c2c2c2;
+  padding-left: 3px;
+  margin-bottom: 0;
+  background-color: #fff;
 }
 
-ul.centered li {
-  font-size: 36px;
+h4 ~ p {
+  padding-left: 4em;
+  margin-bottom: 10px;
 }
 
-ul.centered li p {
-  font: normal normal bold 24px/1.6 "Noto Sans KR";
-  color: initial;
+h5 {
+  font-weight: 300;
+  margin-left: 2.5em;
+  border-left: 3px dotted #c2c2c2;
+  padding-left: 3px;
+  margin-bottom: 0;
+  background-color: #fff;
 }
 
-ul.centered li ul > li {
-  font-size: 18px;
-  list-style-type: disc;
+h5 ~ p {
+  padding-left: 5em;
+  margin-bottom: 10px;
 }
 
-.red {
-  color: red;
+h6 {
+  font-weight: 200;
+  margin-left: 3em;
+  border-left: 2px dotted #c2c2c2;
+  padding-left: 3px;
+  margin-bottom: 0;
+  background-color: #fff;
 }
 
-ul,
-ol {
-  line-height: 1.7;
+h6 ~ p {
+  padding-left: 6em;
+  margin-bottom: 10px;
 }
 
-ul li,
-ol li {
-  font-size: 16px;
+.settings {
+  border-left: 2px solid #067a37;
+  padding-left: 3px;
+  background-color: rgba(17, 199, 62, 0.267);
+  display: block;
+  padding: 3px;
+  line-height: 1.6;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #6e430a;
+  font-family: monospace;
 }
 
-span.emph {
-  background-color: rgba(221, 18, 18, 0.438);
+p + ul {
+  margin-left: 30px;
 }
 
-summary {
-  outline: none;
-  font-size: 0.8em;
-  cursor: pointer;
+code {
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
-summary::-webkit-details-marker {
-  display: none;
+li li {
+  color: #333;
 }
 
-summary:after {
-  border-radius: 15px;
-  content: '+';
-  color: red;
-  float: left;
-  font-size: 1em;
-  margin: -2px 10px 0 0;
-  padding: 1px 0 3px 0;
-  text-align: center;
-  width: 30px;
+section {
+  background-color: #fff;
 }
-
-details[open] summary:after {
-  content: '-';
-}
-/*# sourceMappingURL=normal-documents.css.map */
+/*# sourceMappingURL=main.css.map */
