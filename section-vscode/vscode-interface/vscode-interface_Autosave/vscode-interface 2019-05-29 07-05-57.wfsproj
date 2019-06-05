@@ -2,7 +2,7 @@
 <ProjectMessage>
 <IsEditor>1</IsEditor>
 <SettingMessage>
-    <Screen enabled="1" selectIndex="0">
+    <Screen selectIndex="0" enabled="1">
         <ScreenCapture>
             <CaptureType>0</CaptureType>
             <FrameRate>30</FrameRate>
@@ -31,6 +31,11 @@
 <PreviewMessage/>
 
 <MatterMessage>
+ <MediaInfo Path="I:/YouTubeProject/FilmoraScrn/section-vscode/vscode-interface/terminal창-설명이후.mp4" Title="terminal창-설명이후"></MediaInfo>
+ <MediaInfo Path="I:/YouTubeProject/FilmoraScrn/section-vscode/vscode-interface/terminal창-설명직전.mp4" Title="terminal창-설명직전"></MediaInfo>
+ <MediaInfo Path="I:/YouTubeProject/FilmoraScrn/section-vscode/vscode-interface/Rec_21.18.53 20190514.mp4" Title="Rec_21.18.53 20190514"></MediaInfo>
+ <MediaInfo Path="I:/YouTubeProject/FilmoraScrn/section-vscode/vscode-interface/Rec_21.41.11 20190514.mp4" Title="Rec_21.41.11 20190514"></MediaInfo>
+ <MediaInfo Path="I:/YouTubeProject/FilmoraScrn/section-vscode/vscode-interface/Rec_21.42.30 20190514.mp4" Title="Rec_21.42.30 20190514"></MediaInfo>
  <MediaInfo Path="I:/YouTubeProject/FilmoraScrn/section-vscode/vscode-interface/vscode-interface-진짜 마지막 결정판.mp4" Title="vscode-interface-진짜 마지막 결정판"></MediaInfo>
 </MatterMessage>
 
@@ -63,7 +68,7 @@
 <Property key="Render.Region" type="NLERectF" value="left:0.000000, top:0.000000, width:1.000000, height:1.000000"/>
 <Property key="Render.SampleRate" type="int" value="44100"/>
 <Property key="Render.Scale" type="NLERational" value="[1, 1]: 1.0000000 "/>
-<Property key="Render.Size" type="NLESize" value="Width:529, cy:331"/>
+<Property key="Render.Size" type="NLESize" value="Width:1920, cy:1200"/>
 <Property key="Render.TotalFrameCount" type="int" value="38037"/>
 <Property key="Render.Using.Taskpool" type="int" value="1"/>
 <Property key="Render.VideoStabilizer.BOOL" type="int" value="0"/>
@@ -76,7 +81,7 @@
 <Property key="Source.RangeFrameNumber" type="NLERange" value="Start:0, End:2147483640"/>
 <Property key="Source.Region" type="NLERectF" value="left:0.000000, top:0.000000, width:1.000000, height:1.000000"/>
 <Property key="Source.SampleRate" type="int" value="44100"/>
-<Property key="Source.Size" type="NLESize" value="Width:529, cy:331"/>
+<Property key="Source.Size" type="NLESize" value="Width:1920, cy:1200"/>
 <Property key="Source.TotalFrameCount" type="int" value="0"/>
 <Property key="Source_FileType" type="int" value="0"/>
 <Property key="Transform.Angle" type="double" value="0.000000"/>
@@ -93,7 +98,7 @@
 <Property key="xfer.right.range.Video" type="int" value="0"/>
 </Properties>
 <TimeLine>
-<Properties Count="110">
+<Properties Count="109">
 <Property key="Absolute.FilePath" type="std::wstring" value="I:/YouTubeProject/FilmoraScrn/section-vscode/vscode-interface/vscode-interface-진짜 마지막 결정판.mp4"/>
 <Property key="Border.Distance" type="double" value="0.000000"/>
 <Property key="Border.Gradient.Color" type="NLERange" value="Start:-1, End:-1"/>
@@ -110,14 +115,13 @@
 <Property key="Level" type="int" value="0"/>
 <Property key="NLEVersion" type="std::wstring" value="(5, 5, 1, 110)"/>
 <Property key="PProcess.Mix2Mono" type="int" value="0"/>
-<Property key="PProcess.Volume" type="int" value="0"/>
 <Property key="REFCLSID" type="GUID" value="{CD61E0E4-0074-3FD5-4915-951546E34A03}"/>
 <Property key="REFIID" type="GUID" value="{29FDB4EE-DE39-151E-ED38-06C8CFB45CDA}"/>
 <Property key="Render.AnchorPoint" type="NLEPointF" value="x:0.500000, y:0.500000"/>
 <Property key="Render.Backplay.BOOL" type="int" value="0"/>
 <Property key="Render.BitsPerSample" type="int" value="16"/>
 <Property key="Render.Channels" type="int" value="2"/>
-<Property key="Render.Denoise" type="int" value="1"/>
+<Property key="Render.Denoise" type="int" value="0"/>
 <Property key="Render.EnableAudio" type="int" value="1"/>
 <Property key="Render.EnableVideo" type="int" value="1"/>
 <Property key="Render.Framerate" type="NLERational" value="[30000000, 1000000]: 30.0000000 "/>
@@ -132,7 +136,7 @@
 <Property key="Render.ResizeScaleF" type="NLESizeF" value="Width:1.000000, cy:1.000000"/>
 <Property key="Render.SampleRate" type="int" value="44100"/>
 <Property key="Render.Scale" type="NLERational" value="[1, 1]: 1.0000000 "/>
-<Property key="Render.Size" type="NLESize" value="Width:529, cy:331"/>
+<Property key="Render.Size" type="NLESize" value="Width:1920, cy:1200"/>
 <Property key="Render.TotalFrameCount" type="int" value="38037"/>
 <Property key="Render.TotalFrameCount.Audio" type="int" value="38037"/>
 <Property key="Render.TotalFrameCount.Video" type="int" value="38036"/>
@@ -173,13 +177,13 @@
 <Property key="kCodec_FourCC" type="unsigned long" value="877677891"/>
 <Property key="kGPU.GPUFirst" type="int" value="1"/>
 <Property key="kGPU.UsingGPU.Video" type="int" value="1"/>
-<Property key="kKeyboard_FilterType" type="int" value="4"/>
+<Property key="kKeyboard_FilterType" type="int" value="7"/>
 <Property key="kKeyboard_SampleTextStatus" type="int" value="0"/>
-<Property key="kKeyboard_ShowText" type="int" value="1"/>
+<Property key="kKeyboard_ShowText" type="int" value="0"/>
 <Property key="kKeyboard_TextColor" type="NLEColorF" value="r:254.000000, g:48.000000, b:97.000000"/>
 <Property key="kKeyboard_TextOpacity" type="double" value="1.000000"/>
 <Property key="kKeyboard_TextPosition" type="NLEPointF" value="x:0.489000, y:0.900000"/>
-<Property key="kKeyboard_TextSize" type="int" value="20"/>
+<Property key="kKeyboard_TextSize" type="int" value="16"/>
 <Property key="kKeyboard_TextStyle" type="std::wstring" value="HotKeys_01"/>
 <Property key="kMedia.Info.SerializedString" type="std::wstring" value="{
 	&quot;MediaInfo&quot;:	{
@@ -460,16 +464,16 @@
 <Property key="kMouse_AudioEnable" type="int" value="0"/>
 <Property key="kMouse_AudioVolume" type="int" value="0"/>
 <Property key="kMouse_Event" type="int" value="1"/>
-<Property key="kMouse_HightlightColor" type="NLEColorF" value="r:202.000000, g:226.000000, b:106.000000"/>
-<Property key="kMouse_HightlightOn" type="int" value="1"/>
+<Property key="kMouse_HightlightColor" type="NLEColorF" value="r:0.000000, g:255.000000, b:255.000000"/>
+<Property key="kMouse_HightlightOn" type="int" value="0"/>
 <Property key="kMouse_HightlightOpacity" type="double" value="0.700000"/>
 <Property key="kMouse_Opacity" type="double" value="1.000000"/>
-<Property key="kMouse_RingsColor" type="NLEColorF" value="r:148.000000, g:148.000000, b:148.000000"/>
-<Property key="kMouse_RingsOn" type="int" value="1"/>
+<Property key="kMouse_RingsColor" type="NLEColorF" value="r:0.000000, g:255.000000, b:255.000000"/>
+<Property key="kMouse_RingsOn" type="int" value="0"/>
 <Property key="kMouse_Scale" type="double" value="1.000000"/>
 <Property key="kMouse_SoundFilePath" type="std::wstring" value=""/>
 <Property key="kSource.StreamCount" type="int" value="5"/>
-<Property key="kSource.Stream_0" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:0000022DB1FFEC30">
+<Property key="kSource.Stream_0" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:000001B139B3DD90">
 <Properties Count="17">
 <Property key="Source_ScreenRecordingStreamType" type="unsigned int" value="1"/>
 <Property key="kStream_Type" type="int" value="2"/>
@@ -490,7 +494,7 @@
 <Property key="kVideo_Width" type="int" value="1920"/>
 </Properties>
 </Property>
-<Property key="kSource.Stream_1" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:0000022DB1FFDEB0">
+<Property key="kSource.Stream_1" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:000001B139B3DC10">
 <Properties Count="5">
 <Property key="Source_ScreenRecordingStreamType" type="unsigned int" value="5"/>
 <Property key="kStream_RelatedStreamID" type="int" value="0"/>
@@ -499,7 +503,7 @@
 <Property key="kVideo_ID" type="unsigned int" value="256"/>
 </Properties>
 </Property>
-<Property key="kSource.Stream_2" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:0000022DB1FFD8B0">
+<Property key="kSource.Stream_2" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:000001B163CED030">
 <Properties Count="5">
 <Property key="Source_ScreenRecordingStreamType" type="unsigned int" value="6"/>
 <Property key="kStream_RelatedStreamID" type="int" value="0"/>
@@ -508,7 +512,7 @@
 <Property key="kVideo_ID" type="unsigned int" value="257"/>
 </Properties>
 </Property>
-<Property key="kSource.Stream_3" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:0000022DB1FFEC90">
+<Property key="kSource.Stream_3" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:000001B163CED8D0">
 <Properties Count="15">
 <Property key="Source_ScreenRecordingStreamType" type="unsigned int" value="4"/>
 <Property key="kAduio_CapsFlag" type="unsigned long" value="0"/>
@@ -527,7 +531,7 @@
 <Property key="kStream_Type" type="int" value="3"/>
 </Properties>
 </Property>
-<Property key="kSource.Stream_4" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:0000022DB1FFE570">
+<Property key="kSource.Stream_4" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:000001B130812BA0">
 <Properties Count="15">
 <Property key="Source_ScreenRecordingStreamType" type="unsigned int" value="3"/>
 <Property key="kAduio_CapsFlag" type="unsigned long" value="0"/>
@@ -584,7 +588,7 @@
 <Property key="Render.RangeFrameNumber.Video" type="NLERange" value="Start:0, End:2147483640"/>
 <Property key="Render.SampleRate" type="int" value="44100"/>
 <Property key="Render.Scale" type="NLERational" value="[1, 1]: 1.0000000 "/>
-<Property key="Render.Size" type="NLESize" value="Width:529, cy:331"/>
+<Property key="Render.Size" type="NLESize" value="Width:1920, cy:1200"/>
 <Property key="Render.TotalFrameCount" type="int" value="38029"/>
 <Property key="Render.TotalFrameCount.Audio" type="int" value="38029"/>
 <Property key="Render.TotalFrameCount.Video" type="int" value="0"/>
@@ -601,7 +605,7 @@
 <Property key="Source.RangeFrameNumber.Video" type="NLERange" value="Start:0, End:2147483640"/>
 <Property key="Source.Region" type="NLERectF" value="left:0.000000, top:0.000000, width:1.000000, height:1.000000"/>
 <Property key="Source.SampleRate" type="int" value="44100"/>
-<Property key="Source.Size" type="NLESize" value="Width:529, cy:331"/>
+<Property key="Source.Size" type="NLESize" value="Width:1920, cy:1200"/>
 <Property key="Source.TotalFrameCount" type="int" value="38029"/>
 <Property key="Source.TotalFrameCount.Audio" type="int" value="38029"/>
 <Property key="Source.TotalFrameCount.Video" type="int" value="0"/>
@@ -896,7 +900,7 @@
 }"/>
 <Property key="kMedia.Info.SerializedStringSize" type="int" value="6657"/>
 <Property key="kSource.StreamCount" type="int" value="5"/>
-<Property key="kSource.Stream_0" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:0000022DB49D6D80">
+<Property key="kSource.Stream_0" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:000001B13825A1C0">
 <Properties Count="17">
 <Property key="Source_ScreenRecordingStreamType" type="unsigned int" value="1"/>
 <Property key="kStream_Type" type="int" value="2"/>
@@ -917,7 +921,7 @@
 <Property key="kVideo_Width" type="int" value="1920"/>
 </Properties>
 </Property>
-<Property key="kSource.Stream_1" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:0000022DB49D7D40">
+<Property key="kSource.Stream_1" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:000001B138259620">
 <Properties Count="5">
 <Property key="Source_ScreenRecordingStreamType" type="unsigned int" value="5"/>
 <Property key="kStream_RelatedStreamID" type="int" value="0"/>
@@ -926,7 +930,7 @@
 <Property key="kVideo_ID" type="unsigned int" value="256"/>
 </Properties>
 </Property>
-<Property key="kSource.Stream_2" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:0000022DB49D7020">
+<Property key="kSource.Stream_2" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:000001B138259800">
 <Properties Count="5">
 <Property key="Source_ScreenRecordingStreamType" type="unsigned int" value="6"/>
 <Property key="kStream_RelatedStreamID" type="int" value="0"/>
@@ -935,7 +939,7 @@
 <Property key="kVideo_ID" type="unsigned int" value="257"/>
 </Properties>
 </Property>
-<Property key="kSource.Stream_3" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:0000022DB49D68A0">
+<Property key="kSource.Stream_3" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:000001B138259AA0">
 <Properties Count="15">
 <Property key="Source_ScreenRecordingStreamType" type="unsigned int" value="4"/>
 <Property key="kAduio_CapsFlag" type="unsigned long" value="0"/>
@@ -954,7 +958,7 @@
 <Property key="kStream_Type" type="int" value="3"/>
 </Properties>
 </Property>
-<Property key="kSource.Stream_4" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:0000022DB49D7320">
+<Property key="kSource.Stream_4" type="CNLEPtr&lt;IUnknown&gt;" value="Interface:000001B13825A640">
 <Properties Count="15">
 <Property key="Source_ScreenRecordingStreamType" type="unsigned int" value="3"/>
 <Property key="kAduio_CapsFlag" type="unsigned long" value="0"/>
