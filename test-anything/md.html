@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>vscode-builtin-extensions</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet"
+		href="file:///E:\Users\Administrator\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.4.1\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+
+
+
+
+
+
+
+
+
+
+	<style>
+		@import url('http    ://fonts.googleapis.com/earlyaccess/jejugothic.css');
+
+		/**
+* prism.js Github theme based on GitHub's theme.
+* @author Sam Clarke
+*/
+		code[class*="language-"],
+		pre[class*="language-"] {
+			color: #333;
+			background: none;
+			font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+			text-align: left;
+			white-space: pre;
+			word-spacing: normal;
+			word-break: normal;
+			word-wrap: normal;
+			line-height: 1.4;
+
+			-moz-tab-size: 8;
+			-o-tab-size: 8;
+			tab-size: 8;
+
+			-webkit-hyphens: none;
+			-moz-hyphens: none;
+			-ms-hyphens: none;
+			hyphens: none;
+		}
+
+		/* Code blocks */
+		pre[class*="language-"] {
+			padding: .8em;
+			overflow: auto;
+			/* border: 1px solid #ddd; */
+			border-radius: 3px;
+			/* background: #fff; */
+			background: #f5f5f5;
+		}
+
+		/* Inline code */
+		:not(pre)>code[class*="language-"] {
+			padding: .1em;
+			border-radius: .3em;
+			white-space: normal;
+			background: #f5f5f5;
+		}
+
+		.token.comment,
+		.token.blockquote {
+			color: #969896;
+		}
+
+		.token.cdata {
+			color: #183691;
+		}
+
+		.token.doctype,
+		.token.punctuation,
+		.token.variable,
+		.token.macro.property {
+			color: #333;
+		}
+
+		.token.operator,
+		.token.important,
+		.token.keyword,
+		.token.rule,
+		.token.builtin {
+			color: #a71d5d;
+		}
+
+		.token.string,
+		.token.url,
+		.token.regex,
+		.token.attr-value {
+			color: #183691;
+		}
+
+		.token.property,
+		.token.number,
+		.token.boolean,
+		.token.entity,
+		.token.atrule,
+		.token.constant,
+		.token.symbol,
+		.token.command,
+		.token.code {
+			color: #0086b3;
+		}
+
+		.token.tag,
+		.token.selector,
+		.token.prolog {
+			color: #63a35c;
+		}
+
+		.token.function,
+		.token.namespace,
+		.token.pseudo-element,
+		.token.class,
+		.token.class-name,
+		.token.pseudo-class,
+		.token.id,
+		.token.url-reference .token.variable,
+		.token.attr-name {
+			color: #795da3;
+		}
+
+		.token.entity {
+			cursor: help;
+		}
+
+		.token.title,
+		.token.title .token.punctuation {
+			font-weight: bold;
+			color: #1d3e81;
+		}
+
+		.token.list {
+			color: #ed6a43;
+		}
+
+		.token.inserted {
+			background-color: #eaffea;
+			color: #55a532;
+		}
+
+		.token.deleted {
+			background-color: #ffecec;
+			color: #bd2c00;
+		}
+
+		.token.bold {
+			font-weight: bold;
+		}
+
+		.token.italic {
+			font-style: italic;
+		}
+
+
+		/* JSON */
+		.language-json .token.property {
+			color: #183691;
+		}
+
+		.language-markup .token.tag .token.punctuation {
+			color: #333;
+		}
+
+		/* CSS */
+		code.language-css,
+		.language-css .token.function {
+			color: #0086b3;
+		}
+
+		/* YAML */
+		.language-yaml .token.atrule {
+			color: #63a35c;
+		}
+
+		code.language-yaml {
+			color: #183691;
+		}
+
+		/* Ruby */
+		.language-ruby .token.function {
+			color: #333;
+		}
+
+		/* Markdown */
+		.language-markdown .token.url {
+			color: #795da3;
+		}
+
+		/* Makefile */
+		.language-makefile .token.symbol {
+			color: #795da3;
+		}
+
+		.language-makefile .token.variable {
+			color: #183691;
+		}
+
+		.language-makefile .token.builtin {
+			color: #0086b3;
+		}
+
+		/* Bash */
+		.language-bash .token.keyword {
+			color: #0086b3;
+		}
+
+		/* highlight */
+		pre[data-line] {
+			position: relative;
+			padding: 1em 0 1em 3em;
+		}
+
+		pre[data-line] .line-highlight-wrapper {
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: transparent;
+			display: block;
+			width: 100%;
+		}
+
+		pre[data-line] .line-highlight {
+			position: absolute;
+			left: 0;
+			right: 0;
+			padding: inherit 0;
+			margin-top: 1em;
+			background: hsla(24, 20%, 50%, .08);
+			background: linear-gradient(to right, hsla(24, 20%, 50%, .1) 70%, hsla(24, 20%, 50%, 0));
+			pointer-events: none;
+			line-height: inherit;
+			white-space: pre;
+		}
+
+		pre[data-line] .line-highlight:before,
+		pre[data-line] .line-highlight[data-end]:after {
+			content: attr(data-start);
+			position: absolute;
+			top: .4em;
+			left: .6em;
+			min-width: 1em;
+			padding: 0 .5em;
+			background-color: hsla(24, 20%, 50%, .4);
+			color: hsl(24, 20%, 95%);
+			font: bold 65%/1.5 sans-serif;
+			text-align: center;
+			vertical-align: .3em;
+			border-radius: 999px;
+			text-shadow: none;
+			box-shadow: 0 1px white;
+		}
+
+		pre[data-line] .line-highlight[data-end]:after {
+			content: attr(data-end);
+			top: auto;
+			bottom: .4em;
+		}
+
+		html body {
+			font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+			font-size: 16px;
+			line-height: 1.6;
+			color: #333;
+			background-color: #fff;
+			overflow: initial;
+			box-sizing: border-box;
+			word-wrap: break-word
+		}
+
+		html body>:first-child {
+			margin-top: 0
+		}
+
+		html body h1,
+		html body h2,
+		html body h3,
+		html body h4,
+		html body h5,
+		html body h6 {
+			line-height: 1.2;
+			margin-top: 1em;
+			margin-bottom: 16px;
+			color: #000
+		}
+
+		html body h1 {
+			font-size: 2.25em;
+			font-weight: 300;
+			padding-bottom: .3em
+		}
+
+		html body h2 {
+			font-size: 1.75em;
+			font-weight: 400;
+			padding-bottom: .3em
+		}
+
+		html body h3 {
+			font-size: 1.5em;
+			font-weight: 500
+		}
+
+		html body h4 {
+			font-size: 1.25em;
+			font-weight: 600
+		}
+
+		html body h5 {
+			font-size: 1.1em;
+			font-weight: 600
+		}
+
+		html body h6 {
+			font-size: 1em;
+			font-weight: 600
+		}
+
+		html body h1,
+		html body h2,
+		html body h3,
+		html body h4,
+		html body h5 {
+			font-weight: 600
+		}
+
+		html body h5 {
+			font-size: 1em
+		}
+
+		html body h6 {
+			color: #5c5c5c
+		}
+
+		html body strong {
+			color: #000
+		}
+
+		html body del {
+			color: #5c5c5c
+		}
+
+		html body a:not([href]) {
+			color: inherit;
+			text-decoration: none
+		}
+
+		html body a {
+			color: #08c;
+			text-decoration: none
+		}
+
+		html body a:hover {
+			color: #00a3f5;
+			text-decoration: none
+		}
+
+		html body img {
+			max-width: 100%
+		}
+
+		html body>p {
+			margin-top: 0;
+			margin-bottom: 16px;
+			word-wrap: break-word
+		}
+
+		html body>ul,
+		html body>ol {
+			margin-bottom: 16px
+		}
+
+		html body ul,
+		html body ol {
+			padding-left: 2em
+		}
+
+		html body ul.no-list,
+		html body ol.no-list {
+			padding: 0;
+			list-style-type: none
+		}
+
+		html body ul ul,
+		html body ul ol,
+		html body ol ol,
+		html body ol ul {
+			margin-top: 0;
+			margin-bottom: 0
+		}
+
+		html body li {
+			margin-bottom: 0
+		}
+
+		html body li.task-list-item {
+			list-style: none
+		}
+
+		html body li>p {
+			margin-top: 0;
+			margin-bottom: 0
+		}
+
+		html body .task-list-item-checkbox {
+			margin: 0 .2em .25em -1.8em;
+			vertical-align: middle
+		}
+
+		html body .task-list-item-checkbox:hover {
+			cursor: pointer
+		}
+
+		html body blockquote {
+			margin: 16px 0;
+			font-size: inherit;
+			padding: 0 15px;
+			color: #5c5c5c;
+			border-left: 4px solid #d6d6d6
+		}
+
+		html body blockquote>:first-child {
+			margin-top: 0
+		}
+
+		html body blockquote>:last-child {
+			margin-bottom: 0
+		}
+
+		html body hr {
+			height: 4px;
+			margin: 32px 0;
+			background-color: #d6d6d6;
+			border: 0 none
+		}
+
+		html body table {
+			margin: 10px 0 15px 0;
+			border-collapse: collapse;
+			border-spacing: 0;
+			display: block;
+			width: 100%;
+			overflow: auto;
+			word-break: normal;
+			word-break: keep-all
+		}
+
+		html body table th {
+			font-weight: bold;
+			color: #000
+		}
+
+		html body table td,
+		html body table th {
+			border: 1px solid #d6d6d6;
+			padding: 6px 13px
+		}
+
+		html body dl {
+			padding: 0
+		}
+
+		html body dl dt {
+			padding: 0;
+			margin-top: 16px;
+			font-size: 1em;
+			font-style: italic;
+			font-weight: bold
+		}
+
+		html body dl dd {
+			padding: 0 16px;
+			margin-bottom: 16px
+		}
+
+		html body code {
+			font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+			font-size: .85em !important;
+			color: #000;
+			background-color: #f0f0f0;
+			border-radius: 3px;
+			padding: .2em 0
+		}
+
+		html body code::before,
+		html body code::after {
+			letter-spacing: -0.2em;
+			content: "\00a0"
+		}
+
+		html body pre>code {
+			padding: 0;
+			margin: 0;
+			font-size: .85em !important;
+			word-break: normal;
+			white-space: pre;
+			background: transparent;
+			border: 0
+		}
+
+		html body .highlight {
+			margin-bottom: 16px
+		}
+
+		html body .highlight pre,
+		html body pre {
+			padding: 1em;
+			overflow: auto;
+			font-size: .85em !important;
+			line-height: 1.45;
+			border: #d6d6d6;
+			border-radius: 3px
+		}
+
+		html body .highlight pre {
+			margin-bottom: 0;
+			word-break: normal
+		}
+
+		html body pre code,
+		html body pre tt {
+			display: inline;
+			max-width: initial;
+			padding: 0;
+			margin: 0;
+			overflow: initial;
+			line-height: inherit;
+			word-wrap: normal;
+			background-color: transparent;
+			border: 0
+		}
+
+		html body pre code:before,
+		html body pre tt:before,
+		html body pre code:after,
+		html body pre tt:after {
+			content: normal
+		}
+
+		html body p,
+		html body blockquote,
+		html body ul,
+		html body ol,
+		html body dl,
+		html body pre {
+			margin-top: 0;
+			margin-bottom: 16px
+		}
+
+		html body kbd {
+			color: #000;
+			border: 1px solid #d6d6d6;
+			border-bottom: 2px solid #c7c7c7;
+			padding: 2px 4px;
+			background-color: #f0f0f0;
+			border-radius: 3px
+		}
+
+		@media print {
+			html body {
+				background-color: #fff
+			}
+
+			html body h1,
+			html body h2,
+			html body h3,
+			html body h4,
+			html body h5,
+			html body h6 {
+				color: #000;
+				page-break-after: avoid
+			}
+
+			html body blockquote {
+				color: #5c5c5c
+			}
+
+			html body pre {
+				page-break-inside: avoid
+			}
+
+			html body table {
+				display: table
+			}
+
+			html body img {
+				display: block;
+				max-width: 100%;
+				max-height: 100%
+			}
+
+			html body pre,
+			html body code {
+				word-wrap: break-word;
+				white-space: pre
+			}
+		}
+
+		.markdown-preview {
+			width: 100%;
+			height: 100%;
+			box-sizing: border-box
+		}
+
+		.markdown-preview .pagebreak,
+		.markdown-preview .newpage {
+			page-break-before: always
+		}
+
+		.markdown-preview pre.line-numbers {
+			position: relative;
+			padding-left: 3.8em;
+			counter-reset: linenumber
+		}
+
+		.markdown-preview pre.line-numbers>code {
+			position: relative
+		}
+
+		.markdown-preview pre.line-numbers .line-numbers-rows {
+			position: absolute;
+			pointer-events: none;
+			top: 1em;
+			font-size: 100%;
+			left: 0;
+			width: 3em;
+			letter-spacing: -1px;
+			border-right: 1px solid #999;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none
+		}
+
+		.markdown-preview pre.line-numbers .line-numbers-rows>span {
+			pointer-events: none;
+			display: block;
+			counter-increment: linenumber
+		}
+
+		.markdown-preview pre.line-numbers .line-numbers-rows>span:before {
+			content: counter(linenumber);
+			color: #999;
+			display: block;
+			padding-right: .8em;
+			text-align: right
+		}
+
+		.markdown-preview .mathjax-exps .MathJax_Display {
+			text-align: center !important
+		}
+
+		.markdown-preview:not([for="preview"]) .code-chunk .btn-group {
+			display: none
+		}
+
+		.markdown-preview:not([for="preview"]) .code-chunk .status {
+			display: none
+		}
+
+		.markdown-preview:not([for="preview"]) .code-chunk .output-div {
+			margin-bottom: 16px
+		}
+
+		.scrollbar-style::-webkit-scrollbar {
+			width: 8px
+		}
+
+		.scrollbar-style::-webkit-scrollbar-track {
+			border-radius: 10px;
+			background-color: transparent
+		}
+
+		.scrollbar-style::-webkit-scrollbar-thumb {
+			border-radius: 5px;
+			background-color: rgba(150, 150, 150, 0.66);
+			border: 4px solid rgba(150, 150, 150, 0.66);
+			background-clip: content-box
+		}
+
+		html body[for="html-export"]:not([data-presentation-mode]) {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			margin: 0;
+			padding: 0;
+			overflow: auto
+		}
+
+		html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview {
+			position: relative;
+			top: 0
+		}
+
+		@media screen and (min-width:914px) {
+			html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview {
+				padding: 2em calc(50% - 457px + 2em)
+			}
+		}
+
+		@media screen and (max-width:914px) {
+			html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview {
+				padding: 2em
+			}
+		}
+
+		@media screen and (max-width:450px) {
+			html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview {
+				font-size: 14px !important;
+				padding: 1em
+			}
+		}
+
+		@media print {
+			html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn {
+				display: none
+			}
+		}
+
+		html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn {
+			position: fixed;
+			bottom: 8px;
+			left: 8px;
+			font-size: 28px;
+			cursor: pointer;
+			color: inherit;
+			z-index: 99;
+			width: 32px;
+			text-align: center;
+			opacity: .4
+		}
+
+		html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn {
+			opacity: 1
+		}
+
+		html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 300px;
+			height: 100%;
+			padding: 32px 0 48px 0;
+			font-size: 14px;
+			box-shadow: 0 0 4px rgba(150, 150, 150, 0.33);
+			box-sizing: border-box;
+			overflow: auto;
+			background-color: inherit
+		}
+
+		html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar {
+			width: 8px
+		}
+
+		html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track {
+			border-radius: 10px;
+			background-color: transparent
+		}
+
+		html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb {
+			border-radius: 5px;
+			background-color: rgba(150, 150, 150, 0.66);
+			border: 4px solid rgba(150, 150, 150, 0.66);
+			background-clip: content-box
+		}
+
+		html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a {
+			text-decoration: none
+		}
+
+		html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul {
+			padding: 0 1.6em;
+			margin-top: .8em
+		}
+
+		html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li {
+			margin-bottom: .8em
+		}
+
+		html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul {
+			list-style-type: none
+		}
+
+		html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview {
+			left: 300px;
+			width: calc(100% - 300px);
+			padding: 2em calc(50% - 457px - 150px);
+			margin: 0;
+			box-sizing: border-box
+		}
+
+		@media screen and (max-width:1274px) {
+			html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview {
+				padding: 2em
+			}
+		}
+
+		@media screen and (max-width:450px) {
+			html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview {
+				width: 100%
+			}
+		}
+
+		html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview {
+			left: 50%;
+			transform: translateX(-50%)
+		}
+
+		html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc {
+			display: none
+		}
+
+		/* Please visit the URL below for more information: */
+		/*   https          ://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+		.markdown-preview.markdown-preview {
+
+			font-family: 'NanumGothic';
+			background-color: #333;
+			background-image: url('I:\\YouTubeProject\\utube-documents\\img\\sia-opacity016.svg');
+			background-size: 90%;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: 1000px 30px;
+			color: #efefef;
+			/*   h1 {
+  margin-bottom: -10px;
+}
+*/
+		}
+
+		.markdown-preview.markdown-preview html body {
+			font-family: 'NanumGothic';
+			height: 100vh;
+		}
+
+		.markdown-preview.markdown-preview p {
+			margin-left: 15px;
+			color: #bbb;
+		}
+
+		.markdown-preview.markdown-preview h1,
+		.markdown-preview.markdown-preview h2,
+		.markdown-preview.markdown-preview h3,
+		.markdown-preview.markdown-preview h4,
+		.markdown-preview.markdown-preview h5,
+		.markdown-preview.markdown-preview h6 {
+			color: #efefef;
+		}
+
+		.markdown-preview.markdown-preview h3 {
+			font-size: 18px;
+			margin-left: 10px;
+		}
+
+		.markdown-preview.markdown-preview table {
+			width: 100%;
+		}
+
+		.markdown-preview.markdown-preview th {
+			color: rgba(245, 245, 245, 0.986);
+			background-color: rgba(85, 107, 47, 0.541);
+		}
+
+		.markdown-preview.markdown-preview tr:nth-child(odd) {
+			background-color: #555;
+		}
+
+		.markdown-preview.markdown-preview tr:nth-child(even) {
+			background-color: #444;
+		}
+
+		.markdown-preview.markdown-preview body {
+			background-color: #353535;
+		}
+
+		.markdown-preview.markdown-preview hr {
+			background-color: #c4640c;
+			height: 2px;
+			margin-top: 0;
+		}
+
+		.markdown-preview.markdown-preview blockquote {
+			background-color: #cfd3065b;
+			border-left: 3px solid #d5d511;
+			border-radius: 0 6px 6px 0;
+		}
+
+		.markdown-preview.markdown-preview blockquote>p {
+			color: #f0efee;
+			padding: 3px;
+		}
+
+		.markdown-preview.markdown-preview sup,
+		.markdown-preview.markdown-preview sub {
+			color: #fff;
+			font-size: 0.8em;
+			padding: 2px 5px;
+			margin-left: 5px;
+			border-radius: 3px;
+			background-color: b86920;
+		}
+
+		.markdown-preview.markdown-preview .warn {
+			color: #d66010;
+			text-decoration: underline;
+			font-weight: bold;
+		}
+
+		.markdown-preview.markdown-preview .emph {
+			color: #c4640c;
+		}
+
+		.markdown-preview.markdown-preview .filename {
+			color: #d5d511;
+		}
+
+		.markdown-preview.markdown-preview img[alt='SIA Logo'] {
+			width: 100px;
+			float: right;
+			position: relative;
+			top: -10px;
+		}
+
+		.markdown-preview.markdown-preview li>p {
+			color: #fff;
+		}
+
+		.markdown-preview.markdown-preview li li {
+			color: #bbbbbb;
+		}
+	</style>
+</head>
+
+<body for="html-export">
+	<div class="mume markdown-preview  ">
+		<html>
+
+		<head></head>
+
+		<body>
+			<div>
+				<h1 class="mume-header"
+					id="vscode-built-in-extensions-%EB%82%B4%EC%9E%A5-%ED%99%95%EC%9E%A5%ED%8C%A9-sia-logoimgsia-logo-firstsvg-stack-it-all">
+					VSCode Built-in Extensions &#xB0B4;&#xC7A5; &#xD655;&#xC7A5;&#xD329; <img
+						src="file:///I:\YouTubeProject\utube-documents\img\sia-logo-first.svg" alt="SIA Logo"
+						title="Stack It All"></h1>
+
+				<hr>
+				<p>VSCode&#xB97C; &#xC124;&#xCE58;&#xD560; &#xB54C; &#xD568;&#xAED8; &#xC124;&#xCE58;&#xB418;&#xB294;
+					&#xB0B4;&#xC7A5; &#xD655;&#xC7A5;&#xD329;&#xB4E4;&#xC5D0; &#xB300;&#xD574;
+					&#xC54C;&#xC544;&#xBCF8;&#xB2E4;.<br>
+					&#xB0B4;&#xC7A5; &#xD655;&#xC7A5;&#xD329;&#xACFC; &#xADF8; &#xAE30;&#xB2A5;&#xC5D0; &#xB300;&#xD574;
+					&#xC54C;&#xC544;&#xBCF4;&#xB294; &#xC774;&#xC720;&#xB294;</p>
+				<ul>
+					<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox">
+						&#xB0B4;&#xC7A5;&#xB41C; &#xD655;&#xC7A5;&#xD329;&#xC758; &#xAE30;&#xB2A5;(built-in extensions)
+						&#xC790;&#xCCB4;&#xB97C; &#xC54C;&#xC544;&#xBD04;&#xC73C;&#xB85C;&#xC368;</li>
+					<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox">
+						&apos;&#xBD88;&#xD544;&#xC694;&#xD55C; &#xD655;&#xC7A5;&#xD329;&#xB4E4;&#xC744;
+						&#xC124;&#xCE58;&#xD558;&#xC9C0; &#xC54A;&#xC544;&#xB3C4; &#xB41C;&#xB2E4;&#xB294;
+						&#xC0AC;&#xC2E4;&apos;&#xC744; &#xC54C;&#xAC8C; &#xB418;&#xBBC0;&#xB85C;&#xC368;</li>
+					<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox">
+						&#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC774; &#xBE44;&#xB300;&#xD574; &#xC838;&#xC11C;
+						&#xC0DD;&#xAE30;&#xB294; &apos;&#xAE30;&#xB2A5;&#xC800;&#xD558;&apos;&#xB97C; &#xAC00;&#xB2A5;&#xD55C;
+						&#xAC10;&#xC18C;&#xC2DC;&#xD0A4;&#xAC8C; &#xB420; &#xAC83;&#xC774;&#xB2E4;.</li>
+				</ul>
+				<p>VSCode built-in extensions&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; 3&#xAC1C;&#xC758;
+					&#xC139;&#xC158;&#xC73C;&#xB85C; &#xAD6C;&#xBD84;&#xB41C;&#xB2E4;.</p>
+				<h2 class="mume-header" id="programming-language">Programming Language</h2>
+
+				<p>&#xAC01; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D; &#xC5B8;&#xC5B4;&#xC5D0; &#xB300;&#xD55C; &apos;tag
+					pair&apos;, &apos;&#xAD6C;&#xBB38;&apos;, &apos;&#xAD04;&#xD638;&#xC30D;&apos; &#xB4F1;&#xC744;
+					&#xAC15;&#xC870;(HighLight)&#xD558;&#xB294; &#xAE30;&#xB2A5;&#xC744; &#xC81C;&#xACF5;&#xD55C;&#xB2E4;.
+				</p>
+				<h2 class="mume-header" id="features">Features</h2>
+
+				<p>VSCode&#xAC00; &#xAE30;&#xBCF8;&#xC73C;&#xB85C; &#xC81C;&#xACF5;&#xD558;&#xB294; &#xAE30;&#xB2A5;</p>
+				<ul>
+					<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> IntelliSense</li>
+					<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Syntax coloring &amp;
+						color preview</li>
+					<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Folding</li>
+					<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Emmet snippets</li>
+					<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Syntax Verification
+						&amp; Linting</li>
+					<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Go to Symbol in file
+					</li>
+					<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Hovers</li>
+					<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Go to Declaration and
+						Find References</li>
+					<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Transpiling Sass and
+						Less into CSS</li>
+					<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Automating Sass/Less
+						compilation</li>
+					<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> Customizing CSS, SCSS
+						and Less Settings</li>
+				</ul>
+				<h2 class="mume-header" id="themes">Themes</h2>
+
+			</div>
+		</body>
+
+		</html>
+	</div>
+
+
+</body>
+
+
+
+
+
+
+
+</html>

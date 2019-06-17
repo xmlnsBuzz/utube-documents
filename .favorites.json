@@ -1,0 +1,62 @@
+[
+    {
+        "type": "Group",
+        "name": "YouTube",
+        "parent_id": null,
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "sl8cuovk2Tg6K0Y3"
+    },
+    {
+        "type": "Group",
+        "name": "markdown",
+        "parent_id": "sl8cuovk2Tg6K0Y3",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "EZA3yYt6wO5XGLao"
+    },
+    {
+        "type": "Group",
+        "name": "등록 내용",
+        "parent_id": "sl8cuovk2Tg6K0Y3",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "YFHEPhWR5I84xi27"
+    },
+    {
+        "type": "File",
+        "name": "i:\\YouTubeProject\\utube-documents\\section-extensions\\vscode-builtin-extensions\\vscode-builtin-extensions.md",
+        "parent_id": "EZA3yYt6wO5XGLao",
+        "fsPath": "i:\\YouTubeProject\\utube-documents\\section-extensions\\vscode-builtin-extensions\\vscode-builtin-extensions.md",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "s3F4ByiLecC09Nq8"
+    },
+    {
+        "type": "File",
+        "name": "i:\\YouTubeProject\\utube-documents\\section-extensions\\vscode-builtin-extensions\\vscode-builtin-extensions-유튜브 등록 내용.md",
+        "parent_id": "YFHEPhWR5I84xi27",
+        "fsPath": "i:\\YouTubeProject\\utube-documents\\section-extensions\\vscode-builtin-extensions\\vscode-builtin-extensions-유튜브 등록 내용.md",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "VeZaQrpoFRzmwAyI"
+    },
+    {
+        "type": "File",
+        "name": "i:\\YouTubeProject\\utube-documents\\vscode-settings\\settings-text-editor\\settings-text-editor.md",
+        "parent_id": "EZA3yYt6wO5XGLao",
+        "fsPath": "i:\\YouTubeProject\\utube-documents\\vscode-settings\\settings-text-editor\\settings-text-editor.md",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "FENnp016YPCfLuiw"
+    },
+    {
+        "type": "File",
+        "name": "i:\\YouTubeProject\\utube-documents\\section-vscode-settings\\나머지 좋은 세팅.md",
+        "parent_id": null,
+        "fsPath": "i:\\YouTubeProject\\utube-documents\\section-vscode-settings\\나머지 좋은 세팅.md",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "dSCQheO2IXTHFmP0"
+    }
+]

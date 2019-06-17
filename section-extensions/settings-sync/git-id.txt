@@ -1,0 +1,32 @@
+CODE SETTINGS SYNC UPLOAD SUMMARY
+Version: 3.2.9
+--------------------
+GitHub Token: fc9abe7dcd6b74bd302ce5836a9a63900a509e23
+GitHub Gist: f94339cb7ca018162b50150cf0c1a360
+GitHub Gist Type: Secret
+
+Restarting Visual Studio Code may be required to apply color and file icon theme.
+--------------------
+Files Uploaded:
+  extensions.json > extensions.json
+  keybindings.json > keybindings.json
+  locale.json > locale.json
+  settings.json > settings.json
+  html.json > snippets|html.json
+  markdown.json > snippets|markdown.json
+
+Extensions Ignored:
+  No extensions ignored.
+
+Extensions Removed:
+  No extensions removed.
+
+Extensions Added:
+  code-settings-sync v3.2.9
+  formate v1.1.1
+  korean-translator v0.4.5
+  markdown-preview-enhanced v0.4.1
+  vscode-icons v8.7.0
+  vscode-language-pack-ko v1.35.1
+--------------------
+Done.

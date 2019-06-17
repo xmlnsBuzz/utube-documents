@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Window Object</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<style>
+		/* 		html {
+			padding: 30px;
+		}
+ */
+		body {
+			padding: 20px;
+
+
+		}
+
+		.win {
+			border: 1px solid red;
+			height: 90vh;
+			position: relative;
+			padding: 50px;
+			margin: 10px;
+		}
+
+		.html {
+			border: 1px solid blue;
+		}
+
+		.head {
+			border: 1px solid green;
+		}
+
+		.body {
+			border: 1px solid rgb(121, 121, 8);
+		}
+
+		.win,
+		.html,
+		.head,
+		.body {
+			margin: 10px;
+			min-height: 200px;
+		}
+
+		.text {
+			font-size: 26px;
+			margin: 5px;
+		}
+
+		.rel {
+			position: relative;
+			border: 1px solid pink;
+		}
+
+		.abs1,
+		.abs2,
+		.abs3 {
+			position: absolute;
+			width: 25%;
+			max-height: 150px;
+			border: 1px solid rgb(155, 133, 7);
+		}
+
+		.abs1 {
+			overflow: hidden;
+		}
+
+		.abs2 {
+			left: 35%;
+			overflow: auto;
+		}
+
+		.abs3 {
+			left: 70%;
+			overflow: scroll;
+		}
+		iframe {
+			border-style: solid;
+			border-color: rgb(253, 0, 0);
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Windows, Viewport & Canvas</h1>
+	<div class="win"><span class="text">window</span>
+		<div class="html"><span class="text">html</span>
+			<div class="head"><span class="text">head</span></div>
+			<div class="body"><span class="text">body</span></div>
+		</div>
+	
+
+	<iframe src="iframe-sample.html" frameborder="3"></iframe>
+	
+		<div class="abs1">
+			<p>
+				<h2>
+					abs1
+				</h2>
+			</p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ipsum dolorem aliquid molestias dicta
+			tempore. Error, vel corporis enim inventore facilis minima soluta maiores blanditiis molestiae laborum
+			excepturi culpa velit tenetur voluptas? Soluta quae est adipisci officia! Nesciunt incidunt quam soluta quo
+			numquam doloribus, rem ullam quod. Numquam temporibus nisi officiis ex officia assumenda provident vel,
+			cupiditate eos laborum repellendus ipsam aliㅍas sint optio exercitationem nihil neque odit quisquam pariatur
+			quod rerum consectetur. Quidem amet inventore quod voluptates molestias modi eos quis, culpa voluptas, ullam
+			sunt molestiae tempora explicabo. Possimus qui quas vero quod commodi, doloribus quisquam enim rem ipsa.
+		</div>
+		<div class="abs2">
+			<h2>
+				abs2
+			</h2>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe aliquam sint sequi numquam, error
+			eligendi voluptates nobis debitis earum a, officiis blanditiis rem eveniet delectus laboriosam, temporibus
+			iusto necessitatibus ad molestiae tenetur fugiat. Corrupti tempore magnam, assumenda, similique earum libero
+			recusandae maxime dolore, alias explicabo voluptatum labore.
+			Laudantium qui assumenda nihil, illum cupiditate numquam laboriosam quae vitae dolores ducimus explicabo
+			delectus eius quasi neque iste repellat aspernatur et tenetur ipsa. Esse corporis sunt error distinctio
+			optio animi id voluptatibus dolorum eos adipisci molestias odit unde deserunt laudantium perferendis, modi
+			accusantium temporibus in, itaque rerum consectetur velit. Labore, repudiandae officiis.
+		</div>
+		<div class="abs3">
+			<h2>
+				abs3
+			</h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum optio suscipit dolores, dignissimos
+			dolorem, magni sit voluptas sed, unde aspernatur ex! Quidem corporis odio nam reprehenderit aliquid velit
+			id, illo explicabo. <p style="word-break: keep-all">Quo, sapiente vel veniam
+				voluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibusvoluptatibus
+				eveniet molestias facilis quod architecto nobis inventore repellendus sequi praesentium optio ad
+				similique libero odio nostrum voluptatem consectetur modi.</p> Possimus ex veritatis, porro numquam,
+			aperiam optio a ab laborum aut vero vel molestiae sit voluptate, corporis distinctio itaque. Accusantium
+			autem cumque esse vero! Sit placeat quibusdam delectus tempore iste sequi assumenda, totam repellat nihil
+			dignissimos impedit sed expedita laboriosam dolor ab omnis eos doloribus maiores quo fuga. Soluta porro
+			magnam ad hic, similique praesentium quod, voluptatem debitis eius accusantium vitae, qui quia eaque
+			aliquam?
+		</div>
+
+
+	</div>
+</body>
+
+</html>
