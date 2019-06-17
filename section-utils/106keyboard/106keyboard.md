@@ -12,7 +12,7 @@
 
 하지만 오른쪽 control key를 쓸 경우, 선택의 폭은 훨씬 넓어진다. 특히 뽀샵, 일러같은 그래픽 프로그램을 쓸 때는 더욱 편리할 것이다.
 
-## 윈도우 10에서의 103/106key 전환 '전환
+## 윈도우 10에서의 103/106key 전환 
 
 윈도우 10에서 keyboard type을 전환하는 것은 매우 간단하다. 
 
@@ -39,4 +39,4 @@ OverrideKeyboardType | DWORD | 8
 - Registry key 변경후 Logout(Sign out)하거나 재부팅한다.
 
 
-시아,웹표준,웹접근성,w3c,visual studio code,vscode,developer,sia,channel,fullstack,design,specification,web standard,html,html5,html5.2,css,css3,css4,markup,folder tree,tree size,clipboard manager,screen calipers,management,framework,web accessibility,w3c compliant,w3c standard documents conformance,node.js,git,git-scm,101 key,103/106 keyㅍㅍ
+시아,웹표준,웹접근성,w3c,visual studio code,vscode,developer,sia,channel,fullstack,design,specification,web standard,html,html5,html5.2,css,css3,css4,markup,folder tree,tree size,clipboard manager,screen calipers,management,framework,web accessibility,w3c compliant,w3c standard documents conformance,node.js,git,git-scm,101 key,103/106 key
