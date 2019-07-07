@@ -1,0 +1,30 @@
+/* * {
+    all   : inherit;
+    //all : default;
+    //all : initial;
+} 
+*,
+html,
+body {
+    all: unset;
+}
+
+div {
+    all             : unset;
+    background-color: gold;
+    width           : 500px;
+}
+*/
+/* ul, li, a {
+   all: unset;
+ }
+*, html, title {
+     //display: block;
+     //visibility: visible;
+     all :unset;
+ }
+ */
+
+ * {
+     all:unset !important;
+ }
