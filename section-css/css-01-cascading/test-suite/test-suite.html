@@ -7,37 +7,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="test-suite.css" />
-    <style>
-        
-        html  {
-            color: red;
-            font-family: sans-serif;
-            font-size: 36px;
+<!--     <style>
+        html,
+        body {
+            direction: rtl;
         }
-        div {
-            color:initial;
-            font: inherit;
-            /* color: steelblue; */
-        }        
 
-        p {
-            all: unset;
-            color: green;
+        p.amim {
+            line-height: 2;
+            color: rgb(23, 105, 182);
+            font-weight: bold;
+            background-color: #693;
+            animation-name: pamim;
+            animation-duration: 1s;
+
+            animation-fill-mode: both;
+            animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+            animation-iteration-count: infinite;
         }
-        span {
-            all: initial;
-            color: inherit;
+
+        p.anim:hover {
+            line-height: 10;
+            color: red;
+            font-size: 50px;
+            transition: 1s ease-in ease-out;
         }
-    </style>
+
+        @keyframes panim {
+            from {
+                color: #00f;
+            }
+
+            to {
+                olor: #0f0;
+                line-height: 1;
+            }
+        }
+    </style> -->
 </head>
 
 <body>
-    <div>division marker 
-        <p>
-            Paragraph
-            <span>Span</span>
-        </p>
+    <div class="container">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa ea ut, delectus quaerat eos repellat eveniet quas voluptates ratione? Ab iste consequatur similique, odio cupiditate natus. Vitae ea quaerat saepe fugit reprehenderit veniam atque distinctio harum voluptas ab accusamus laboriosam architecto inventore commodi voluptatibus rerum et ipsa, fuga eveniet. Earum?</p>
     </div>
+<div>division marker
+    <p class="anim">
+        Paragraph
+        <span>Span</span>
+    </p>
+</div>
+<div class="git">
+    <div class="push"></div>
+</div>
+
 </body>
 
 </html>

@@ -1,8 +1,9 @@
 # W3C HTML5++ Spec 강해 01 - Excerptions for W3C HTML5++ Spec
 ---
-## Video URL 1 : https://youtu.be/JubKObtW4W4
-			URL 2 : https://youtu.be/yxCzA0jhKPw
-			URL 3 : https://youtu.be/am1_YGmWdZk
+## Video 
+URL 1 : https://youtu.be/JubKObtW4W4
+URL 2 : https://youtu.be/yxCzA0jhKPw
+URL 3 : https://youtu.be/am1_YGmWdZk
 
 ## Description
 HTML은 웹 언어의 기본입니다.

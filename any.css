@@ -1,0 +1,31 @@
+/* #para {
+    color: red;
+}
+ */
+
+
+
+
+
+section p {
+    color: blue;
+}
+
+p {
+    color: red;
+}
+
+/* .graph {
+    color           : blue;
+    background-color: violet;
+} */
+
+
+
+/* section p {
+    color: green !important;
+}
+
+section>p {
+    color: orange !important;
+} */

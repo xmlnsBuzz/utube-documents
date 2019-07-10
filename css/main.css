@@ -5,53 +5,55 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR");
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Noto+Sans+KR");
 body {
-  background-image: url("http://cadvance.org/Mayan_symbol.svg");
-  background-position: left top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: "Noto Sans KR";
-  scroll-behavior: smooth;
-  font-size: 14px;
-  background-color: #fafafa;
+    background-image: url("http://cadvance.org/Mayan_symbol.svg");
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Noto Sans KR";
+    scroll-behavior: smooth;
+    font-size: 14px;
+    background-color: #fafafa;
 }
+
 
 /* SASS style sheet */
+
 a.btn.btn-default {
-  padding: 3px 6px;
-  font-weight: normal;
+    padding: 3px 6px;
+    font-weight: normal;
 }
 
-.archive-description > p {
-  background-color: transparent;
+.archive-description>p {
+    background-color: transparent;
 }
 
 a,
 .well a {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  font-size: 14px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    font-size: 14px;
 }
 
 a:link,
 .well a:link {
-  text-decoration: none;
-  color: #1990df;
+    text-decoration: none;
+    color: #1990df;
 }
 
 a:visited,
 .well a:visited {
-  color: #c549f7e3;
+    color: #c549f7e3;
 }
 
 a:hover,
 .well a:hover {
-  color: #DA4453;
-  text-decoration: underline;
+    color: #DA4453;
+    text-decoration: underline;
 }
 
-div#logo > h1.site-name > a.navbar-brand {
-  text-shadow: 1px 1px 12px #DA4453;
+div#logo>h1.site-name>a.navbar-brand {
+    text-shadow: 1px 1px 12px #DA4453;
 }
 
 h1,
@@ -66,126 +68,133 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "jeju gothic";
-  color: #333333;
+    font-family: "jeju gothic";
+    color: #333333;
 }
 
 h1,
-.h1, h1.entry-title {
-  font-size: 24px;
-  font-weight: 700;
+.h1,
+h1.entry-title {
+    font-size: 24px;
+    font-weight: 700;
 }
 
 h2,
 .h2 {
-  font-size: 21px;
-  font-weight: 600;
+    font-size: 21px;
+    font-weight: 600;
 }
 
 h2.entry-title {
-  font-size: 21px;
-  font-weight: 500;
-  margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 15px;
 }
 
 h3,
 .h3 {
-  font-size: 18px;
-  font-weight: 600;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 h4,
 .h4 {
-  font-size: 16px;
-  font-weight: 500;
-  margin-top: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 15px;
 }
 
 h5,
 .h5 {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 h6,
 .h6 {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 .clearfix {
-  clear: both;
+    clear: both;
 }
 
 body {
-  margin: 50px;
-  padding: 0;
-  /* 100vh를 사용할 경우 hr 같은 tag이 100vh 위치에 달라 붙어 고정된다.  */
+    margin: 50px;
+    padding: 0;
+    /* 100vh를 사용할 경우 hr 같은 tag이 100vh 위치에 달라 붙어 고정된다.  */
 }
 
 body body {
-  background-image: url("../../img/sia-opacity015.svg");
-  background-position: 0 50px;
+    background-image: url("../../img/sia-opacity015.svg");
+    background-position: 0 50px;
 }
 
 body .sia {
-  opacity: 0.12;
-  position: fixed;
-  top: 60px;
-  z-index: -10;
+    opacity: 0.12;
+    position: fixed;
+    top: 60px;
+    z-index: -10;
 }
+
 
 /* .box
 {
 background: linear-gradient(left, rgba(30,87,153,0.3) 0%,rgba(125,185,232,0.1) 100%);
 } */
+
+
 /* asdf */
+
 .horizontal-hr {
-  width: 95%;
-  height: 0px;
-  border: 2px solid orangered;
-  background-color: rgba(255, 69, 0, 0.5);
+    width: 95%;
+    height: 0px;
+    border: 2px solid orangered;
+    background-color: rgba(255, 69, 0, 0.5);
 }
 
 .main-wrap {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  z-index: 10;
-  font: normal normal bold 25px/2.5 "Noto Sans KR";
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    z-index: 10;
+    font: normal normal bold 25px/2.5 "Noto Sans KR";
 }
 
-.main-wrap > h1 {
-  text-align: center;
-  font: normal normal bold 46px/2.5 "Noto Sans KR";
-  color: #5d4501;
-  /* margin: 150px auto; */
+.main-wrap>h1 {
+    text-align: center;
+    font: normal normal bold 46px/2.5 "Noto Sans KR";
+    color: #5d4501;
+    /* margin: 150px auto; */
 }
 
 ul.centered {
-  margin: auto 150px;
-  color: #855a0b;
+    margin: auto 150px;
+    color: #855a0b;
 }
 
 ul.centered li {
-  font-size: 36px;
+    font-size: 36px;
 }
 
 ul.centered li p {
-  font: normal normal bold 24px/1.6 "Noto Sans KR";
-  color: initial;
+    font: normal normal bold 24px/1.6 "Noto Sans KR";
+    color: initial;
 }
 
-ul.centered li ul > li {
-  font-size: 18px;
-  list-style-type: disc;
+ul.centered li ul>li {
+    font-size: 18px;
+    list-style-type: disc;
 }
 
 .red {
-  color: red;
+    color: red;
 }
 
 .big-font {
-  text-align: center;
-  font-size: 150px;
-  margin: 0 auto;
+    text-align: center;
+    font-size: 150px;
+    margin: 0 auto;
 }
+
+
 /*# sourceMappingURL=main.css.map */

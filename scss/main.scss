@@ -4,13 +4,11 @@ body {
   margin: 50px;
   //margin-top: 30px;
   padding: 0;
+  font-family: $base-font-family;
   //height: 100vh;
   /* 100vh를 사용할 경우 hr 같은 tag이 100vh 위치에 달라 붙어 고정된다.  */
   //background-color: $content-bg;
-  body {
-    background-image: url("../../img/sia-opacity015.svg");
-    background-position: 0 50px;
-  }
+  
   //opacity: 0.1;
 
   .sia {

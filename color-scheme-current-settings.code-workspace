@@ -89,6 +89,7 @@
 		//"editor.rangeHighlightBackground": "#ffffff0b",
 		//"editor.snippetFinalTabstopHighlightBorder": "#525252",
 		//"editor.snippetTabstopHighlightBackground": "#7c7c7c4d",
+		// tabStop 강조색 - $0과 같은 tabstop들의 강조색
 		//"editor.stackFrameHighlightBackground": "#ffff0033",
 		//"editor.wordHighlightBackground": "#575757b8",
 		//"editor.wordHighlightStrongBackground": "#004972b8",

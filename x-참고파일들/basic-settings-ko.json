@@ -1,0 +1,2638 @@
+{
+    // diff 편집기에서 선행 공백 또는 후행 공백 변경을 diff로 표시할지 여부를 제어합니다.
+    "diffEditor.ignoreTrimWhitespace": true,
+
+    // diff 편집기에서 추가/제거된 변경 내용에 대해 +/- 표시기를 표시하는지 여부를 제어합니다.
+    "diffEditor.renderIndicators": true,
+
+    // diff 편집기에서 diff를 나란히 표시할지 인라인으로 표시할지를 제어합니다.
+    "diffEditor.renderSideBySide": true,
+
+    // 커밋 문자에 대한 제안을 허용할지를 제어합니다. 예를 들어 JavaScript에서는 세미콜론(';')이 제안을 허용하고 해당 문자를 입력하는 커밋 문자일 수 있습니다.
+    "editor.acceptSuggestionOnCommitCharacter": true,
+
+    // 'Tab' 키 외에 'Enter' 키에 대한 제안도 허용할지를 제어합니다. 새 줄을 삽입하는 동작과 제안을 허용하는 동작 간의 모호함을 없앨 수 있습니다.
+    //  - on
+    //  - smart: 텍스트를 변경할 때 `Enter` 키를 사용한 제안만 허용합니다.
+    //  - off
+    "editor.acceptSuggestionOnEnter": "on",
+
+    // 편집기를 스크린 리더를 위해 최적화된 모드로 실행할지 결정합니다.
+    //  - auto: 편집기가 스크린 리더가 연결되면 플랫폼 API를 사용하여 감지합니다.
+    //  - on: 편집기가 스크린 리더 사용을 위해 영구적으로 최적화됩니다.
+    //  - off: 편집기가 스크린 리더 사용을 위해 최적화되지 않습니다.
+    "editor.accessibilitySupport": "auto",
+
+    // 사용자가 여는 괄호를 추가한 후 편집기에서 괄호를 자동으로 닫을지 여부를 제어합니다.
+    //  - always
+    //  - languageDefined: 언어 구성을 사용하여 대괄호를 자동으로 닫을 경우를 결정합니다.
+    //  - beforeWhitespace: 커서가 공백의  왼쪽에 있는 경우에만 대괄호를 자동으로 닫습니다.
+    //  - never
+    "editor.autoClosingBrackets": "languageDefined",
+
+    // 사용자가 여는 따옴표를 추가한 후 편집기에서 따옴표를 자동으로 닫을지 여부를 제어합니다.
+    //  - always
+    //  - languageDefined: 언어 구성을 사용하여 따옴표를 자동으로 닫을 경우를 결정합니다.
+    //  - beforeWhitespace: 커서가 공백의 왼쪽에 있는 경우에만 따옴표를 자동으로 닫습니다.
+    //  - never
+    "editor.autoClosingQuotes": "languageDefined",
+
+    // 사용자가 줄을 입력하거나 붙여넣거나 이동할 때 편집기에서 자동으로 들여쓰기를 조정할지 여부를 제어합니다. 언어의 들여쓰기 규칙이 있는 확장을 사용할 수 있어야 합니다.
+    "editor.autoIndent": true,
+
+    // 편집기에서 선택 항목을 자동으로 둘러쌀지 여부를 제어합니다.
+    //  - languageDefined: 언어 구성을 사용하여 선택 항목을 자동으로 둘러쌀 경우를 결정합니다.
+    //  - brackets: 따옴표가 아닌 대괄호로 둘러쌉니다.
+    //  - quotes: 대괄호가 아닌 따옴표로 둘러쌉니다.
+    //  - never
+    "editor.autoSurround": "languageDefined",
+
+    // 저장할 때 실행되는 코드 동작 종류입니다.
+    "editor.codeActionsOnSave": {},
+
+    // 저상 시 실행되는 코드 동작이 취소되기 전까의 제한 시간(밀리초)입니다.
+    "editor.codeActionsOnSaveTimeout": 750,
+
+    // 편집기에서 CodeLens를 표시할 것인지 여부를 제어합니다.
+    "editor.codeLens": true,
+
+    // 편집기에서 인라인 색 데코레이터 및 색 선택을 렌더링할지를 제어합니다.
+    "editor.colorDecorators": true,
+
+    // 터미널에서 선택한(블록 지정한) 텍스트가 클립보드로 자동 복사 여부를 제어합니다.
+    // 'true'로 설정 할 시 선택할 때마다 클립보드로 복사 됩니다.
+    "editor.copyWithSyntaxHighlighting": true,
+
+    // 커서 애니메이션 스타일을 제어합니다.
+    "editor.cursorBlinking": "blink",
+
+    // 매끄러운 캐럿 애니메이션의 사용 여부를 제어합니다.
+    "editor.cursorSmoothCaretAnimation": false,
+
+    // 커서 스타일을 제어합니다.
+    "editor.cursorStyle": "line",
+
+    // `editor.cursorStyle` 설정이 'line'으로 설정되어 있을 때 커서의 넓이를 제어합니다.
+    "editor.cursorWidth": 0,
+
+    // 다른 모든 포맷터 설정보다 우선하는 기본 포맷터를 정의합니다. 포맷터를 제공하는 확장 프로그램의 식별자 여야합니다.
+    //  - null: None
+    //  - vscode.configuration-editing: 설정, 시작 및 확장 추천 파일과 같은 구성 파일에서 기능(고급 IntelliSense, 자동 수정)을 제공합니다.
+    //  - vscode.css-language-features: CSS, LESS 및 SCSS 파일에 대한 다양한 언어 지원을 제공합니다.
+    //  - vscode.debug-auto-launch: 노드 디버그 확장이 비활성화될 때 자동 연결 기능을 위한 도우미입니다.
+    //  - vscode.debug-server-ready: 디버깅 중인 서버가 준비되면 브라우저에서 URI를 엽니다.
+    //  - vscode.emmet: VS Code에 대한 Emmet 지원
+    //  - vscode.extension-editing: 확장 제작을 위한 Lint 기능을 제공합니다.
+    //  - vscode.git: Git SCM 통합
+    //  - vscode.grunt: Extension to add Grunt capabilities to VS Code.
+    //  - vscode.gulp: VSCode에 Gulp 기능을 추가할 확장입니다.
+    //  - vscode.html-language-features: HTML 및 Handlebar 파일에 대해 다양한 언어 지원을 제공합니다.
+    //  - vscode.jake: VS Code에 Jake 기능을 추가할 확장입니다.
+    //  - vscode.json-language-features: JSON 파일에 대한 다양한 언어 지원을 제공합니다.
+    //  - vscode.markdown-language-features: Markdown에 대한 다양한 언어 지원을 제공합니다.
+    //  - vscode.merge-conflict: 인라인 병합 충돌에 대한 강조 표시 및 명령입니다.
+    //  - ms-vscode.node-debug: Node.js 디버깅 지원(버전 8.0 미만)
+    //  - ms-vscode.node-debug2: Node.js 디버깅 지원
+    //  - ms-vscode.references-view: Reference Search results as separate, stable view in the sidebar
+    //  - vscode.npm: npm 스크립트에 대한 작업 지원을 추가할 확장입니다.
+    //  - vscode.php-language-features: PHP 파일에 대한 다양한 언어 지원을 제공합니다.
+    //  - vscode.python: Python 파일에서 구문 강조 표시, 괄호 일치 및 접기를 제공합니다.
+    //  - vscode.typescript-language-features: JavaScript 및 TypeScript에 대한 다양한 언어 지원을 제공합니다.
+    //  - auchenberg.vscode-browser-preview: A real browser preview inside your editor that you can debug.
+    //  - codemooseus.vscode-devtools-for-chrome: Open the chrome devtools as a dockable webview
+    //  - cssho.vscode-svgviewer: SVG Viewer for Visual Studio Code.
+    //  - eg2.vscode-npm-script: npm support for VS Code
+    //  - henoc.svgeditor: Visual and literal SVG editor for VSCode.
+    //  - HookyQR.beautify: Beautify code in place for VS Code
+    //  - kdcro101.favorites: Add files and directories to workspace favorites. Create groups of directories and files. Time saver for complex projects.
+    //  - kisstkondoros.vscode-gutter-preview: Shows image preview in the gutter and on hover
+    //  - pranaygp.vscode-css-peek: Allow peeking to css ID and class strings as definitions from html files to respective CSS. Allows peek and goto definition.
+    //  - ritwickdey.live-sass: Compile Sass or Scss to CSS at realtime with live browser reload.
+    //  - ritwickdey.LiveServer: Launch a development local Server with live reload feature for static & dynamic pages
+    //  - sandorengholm.csspreview: CSS Preview is a tool for previewing selected CSS selectors in a separate column inside the vscode editor. The purpose of the tool is to give you a visual idea of your styling without leaving your editor.
+    //  - shd101wyy.markdown-preview-enhanced: Markdown Preview Enhanced ported to vscode
+    //  - spikespaz.vscode-smoothtype: Extension to modify Visual Studio Code to allow for a smooth cursor animation while typing.
+    //  - techer.open-in-browser: This allows you to open the current file in your default browser or application.
+    //  - tht13.html-preview-vscode: Provides ability to preview HTML documents.
+    //  - vscode-icons-team.vscode-icons: Icons for Visual Studio Code
+    "editor.defaultFormatter": null,
+
+    // 파일을 열 때 파일 콘텐츠를 기반으로 `editor.tabSize#`와  `#editor.insertSpaces`가 자동으로 검색되는지 여부를 제어합니다.
+    "editor.detectIndentation": true,
+
+    // 편집기에서 끌어서 놓기로 선택 영역을 이동할 수 있는지 여부를 제어합니다.
+    "editor.dragAndDrop": true,
+
+    // 선택 영역 없이 현재 줄 복사 여부를 제어합니다.
+    "editor.emptySelectionClipboard": true,
+
+    // `Alt` 키를 누르면 스크롤 속도가 배가됩니다.
+    "editor.fastScrollSensitivity": 5,
+
+    // 위젯 찾기에서 편집기 맨 위에 줄을 추가해야 하는지 여부를 제어합니다. true인 경우 위젯 찾기가 표시되면 첫 번째 줄 위로 스크롤할 수 있습니다.
+    "editor.find.addExtraSpaceOnTop": true,
+
+    // 편집기에서 찾기 작업을 할 때 선택한 텍스트에서 할지 전체 파일에서 할지 제어합니다.
+    "editor.find.autoFindInSelection": false,
+
+    // 편집기 선택에서 Find Widget의 검색 문자열을 시딩할지 여부를 제어합니다.
+    "editor.find.seedSearchStringFromSelection": true,
+
+    // 편집기에 코드 접기가 사용하도록 설정되는지 여부를 제어합니다.
+    "editor.folding": true,
+
+    // 접기 범위를 계산하는 전략을 제어합니다. '자동'이면 사용 가능한 경우 언어 관련 접기 전략을 사용합니다. '들여쓰기'이면 들여쓰기 기반 접기 전략을 사용합니다.
+    "editor.foldingStrategy": "auto",
+
+    // 글꼴 패밀리를 제어합니다.
+    "editor.fontFamily": "Consolas, 'Courier New', monospace",
+
+    // 글꼴 합자 사용하거나 사용하지 않도록 설정합니다.
+    "editor.fontLigatures": false,
+
+    // 픽셀 단위로 글꼴 크기를 제어합니다.
+    "editor.fontSize": 14,
+
+    // 글꼴 두께를 조정합니다.
+    "editor.fontWeight": "normal",
+
+    // 붙여넣은 콘텐츠의 서식을 편집기에서 자동으로 지정할지 여부를 제어합니다. 포맷터를 사용할 수 있어야 하며 포맷터가 문서에서 범위의 서식을 지정할 수 있어야 합니다.
+    "editor.formatOnPaste": false,
+
+    // 파일 저장 시 서식을 지정합니다. 포맷터를 사용할 수 있어야 하며, 파일이 지연 후에 자동으로 저장되지 않아야 하고, 편집기가 종료되지 않아야 합니다.
+    "editor.formatOnSave": false,
+
+    // 파일 저장 시 실행되는 서식 지정이 취소되기 전까의 제한 시간(밀리초)입니다.
+    "editor.formatOnSaveTimeout": 750,
+
+    // 입력 후 편집기에서 자동으로 줄의 서식을 지정할지 여부를 제어합니다.
+    "editor.formatOnType": false,
+
+    // 편집기에서 세로 문자 모양 여백을 렌더링할지 여부를 제어합니다. 문자 모양 여백은 주로 디버깅에 사용됩니다.
+    "editor.glyphMargin": true,
+
+    // 여러 대상 위치가 존재할 때 정의로 이동과 같은 '이동' 명령의 동작을 제어합니다.
+    //  - peek: 결과 Peek 뷰 표시(기본)
+    //  - gotoAndPeek: 기본 결과로 이동하여 Peek 보기를 표시합니다.
+    //  - goto: 기본 결과로 이동하고 다른 결과 무시
+    "editor.gotoLocation.multiple": "peek",
+
+    // 커서가 개요 눈금자에서 가려져야 하는지 여부를 제어합니다.
+    "editor.hideCursorInOverviewRuler": false,
+
+    // 편집기에서 활성 들여쓰기 가이드를 강조 표시할지 여부를 제어합니다.
+    "editor.highlightActiveIndentGuide": true,
+
+    // 호버가 표시되기 전까지의 지연 시간(밀리초)을 제어합니다.
+    "editor.hover.delay": 300,
+
+    // 호버 표시 여부를 제어합니다.
+    "editor.hover.enabled": true,
+
+    // 마우스를 해당 항목 위로 이동할 때 호버를 계속 표시할지 여부를 제어합니다.
+    "editor.hover.sticky": true,
+
+    // '탭' 키를 누를 때 공백을 삽입합니다. `editor.detectIndentation`이 켜져 있는 경우 이 설정은 파일 콘텐츠에 따라 재정의됩니다.
+    "editor.insertSpaces": true,
+
+    // 큰 파일에 대한 특수 처리로, 메모리를 많이 사용하는 특정 기능을 사용하지 않도록 설정합니다.
+    "editor.largeFileOptimizations": true,
+
+    // 픽셀 단위로 문자 간격을 제어 합니다.
+    "editor.letterSpacing": 0,
+
+    // 편집기에서 코드 동작 전구를 사용하도록 설정합니다.
+    "editor.lightbulb.enabled": true,
+
+    // 줄 높이를 제어합니다. 글꼴 크기에서 줄 높이를 계산하려면 0을 사용합니다.
+    "editor.lineHeight": 0,
+
+    // 줄 번호의 표시 여부를 제어합니다.
+    //  - off: 줄 번호는 렌더링되지 않습니다.
+    //  - on: 줄 번호는 절대값으로 렌더링 됩니다.
+    //  - relative: 줄 번호는 커서 위치에서 줄 간격 거리로 렌더링 됩니다.
+    //  - interval: 줄 번호는 매 10 줄마다 렌더링이 이루어집니다.
+    "editor.lineNumbers": "on",
+
+    // 편집기에서 링크를 감지하고 클릭할 수 있게 만들지 여부를 제어합니다.
+    "editor.links": true,
+
+    // 대괄호 중 하나를 선택할 때 일치하는 대괄호를 강조 표시합니다.
+    "editor.matchBrackets": true,
+
+    // 이 길이를 초과하는 줄은 성능상의 이유로 토큰화되지 않습니다.
+    "editor.maxTokenizationLineLength": 20000,
+
+    // 미니맵 표시 여부를 제어합니다.
+    "editor.minimap.enabled": true,
+
+    // 최대 특정 수의 열을 렌더링하도록 미니맵의 너비를 제한합니다.
+    "editor.minimap.maxColumn": 120,
+
+    // 줄의 실제 문자(색 블록 아님)를 렌더링합니다.
+    "editor.minimap.renderCharacters": true,
+
+    // 미니맵 슬라이더를 자동으로 숨길지 결정합니다.
+    "editor.minimap.showSlider": "mouseover",
+
+    // 미니맵을 렌더링할 측면을 제어합니다.
+    "editor.minimap.side": "right",
+
+    // 마우스 휠 스크롤 이벤트의 `deltaX` 및 `deltaY`에서 사용할 승수입니다.
+    "editor.mouseWheelScrollSensitivity": 1,
+
+    // 마우스 휠을 사용할 때 'Ctrl' 키를 누르고 있으면 편집기의 글꼴을 확대/축소합니다.
+    "editor.mouseWheelZoom": false,
+
+    // 여러 커서가 겹치는 경우 커서를 병합합니다.
+    "editor.multiCursorMergeOverlapping": true,
+
+    // 마우스로 여러 커서를 추가할 때 사용할 수정자입니다. [정의로 이동] 및 [링크 열기] 마우스 제스처가 멀티커서 수정자와 충돌하지 않도록 조정됩니다. [자세한 정보](https://code.visualstudio.com/docs/editor/codebasics#_multicursor-modifier).
+    //  - ctrlCmd: Windows와 Linux의 'Control'을 macOS의 'Command'로 매핑합니다.
+    //  - alt: Windows와 Linux의 'Alt'를 macOS의 'Option'으로 매핑합니다.
+    "editor.multiCursorModifier": "alt",
+
+    // 편집기에서 의미 체계 기호 항목을 강조 표시할지 여부를 제어합니다.
+    "editor.occurrencesHighlight": true,
+
+    // 개요 눈금자 주위에 테두리를 그릴지 여부를 제어합니다.
+    "editor.overviewRulerBorder": true,
+
+    // 개요 눈금자에서 동일한 위치에 표시될 수 있는 장식 수를 제어합니다.
+    "editor.overviewRulerLanes": 3,
+
+    //  매개변수 힌트 메뉴의 주기 혹은 목록의 끝에 도달하였을때 종료할 것인지 여부를 결정합니다.
+    "editor.parameterHints.cycle": false,
+
+    // 입력과 동시에 매개변수 문서와 유형 정보를 표시하는 팝업을 사용하도록 설정합니다.
+    "editor.parameterHints.enabled": true,
+
+    // 입력하는 동안 제안을 자동으로 표시할지 여부를 제어합니다.
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    },
+
+    // 빠른 제안을 표시하기 전까지의 지연 시간(밀리초)을 제어합니다.
+    "editor.quickSuggestionsDelay": 10,
+
+    // 편집기에서 제어 문자를 렌더링할지를 제어합니다.
+    "editor.renderControlCharacters": false,
+
+    // 파일이 줄 바꿈으로 끝나면 마지막 줄 번호를 렌더링합니다.
+    "editor.renderFinalNewline": true,
+
+    // 편집기에서 들여쓰기 가이드를 렌더링할지를 제어합니다.
+    "editor.renderIndentGuides": true,
+
+    // 편집기가 현재 줄 강조 표시를 렌더링하는 방식을 제어합니다.
+    //  - none
+    //  - gutter
+    //  - line
+    //  - all: 제본용 여백과 현재 줄을 모두 강조 표시합니다.
+    "editor.renderLineHighlight": "line",
+
+    // 편집기에서 공백 문자를 렌더링할 방법을 제어합니다.
+    //  - none
+    //  - boundary: 단어 사이의 단일 공백을 제외하고 공백 문자를 렌더링합니다.
+    //  - all
+    "editor.renderWhitespace": "none",
+
+    // 선택 항목의 모서리를 둥글게 할지 여부를 제어합니다.
+    "editor.roundedSelection": true,
+
+    // 특정 수의 고정 폭 문자 뒤에 세로 눈금자를 렌더링합니다. 여러 눈금자의 경우 여러 값을 사용합니다. 배열이 비어 있는 경우 눈금자가 그려지지 않습니다.
+    "editor.rulers": [],
+
+    // 편집기에서 가로로 스크롤되는 범위를 벗어나는 추가 문자의 수를 제어합니다.
+    "editor.scrollBeyondLastColumn": 5,
+
+    // 편집기에서 마지막 줄 이후로 스크롤할지 여부를 제어합니다.
+    "editor.scrollBeyondLastLine": true,
+
+    // 편집기가 선택 항목과 유사한 일치 항목을 강조 표시해야하는지 여부를 제어합니다.
+    "editor.selectionHighlight": true,
+
+    // 거터의 폴드 컨트롤을 자동으로 숨길지 결정합니다.
+    "editor.showFoldingControls": "mouseover",
+
+    // 사용하지 않는 코드의 페이드 아웃을 제어합니다.
+    "editor.showUnused": true,
+
+    // 편집기에서 애니메이션을 사용하여 스크롤할지 여부를 제어합니다.
+    "editor.smoothScrolling": false,
+
+    // 코드 조각이 다른 추천과 함께 표시되는지 여부 및 정렬 방법을 제어합니다.
+    //  - top: 다른 제안 위에 조각 제안을 표시합니다.
+    //  - bottom: 다른 제안 아래에 조각 제안을 표시합니다.
+    //  - inline: 다른 제안과 함께 조각 제안을 표시합니다.
+    //  - none: 코드 조각 제안을 표시하지 않습니다.
+
+    "editor.snippetSuggestions": "inline",
+
+    // 해당 콘텐츠를 두 번 클릭하거나 'Esc' 키를 누르더라도 Peek 편집기를 열린 상태로 유지합니다.
+    "editor.stablePeek": false,
+
+    // 일부 제안 유형을 IntelliSense에서 필터링할지 여부를 제어합니다. 제안 유형 목록은 https://code.visualstudio.com/docs/editor/intellisense#_types-of-completions.에서 확인할 수 있습니다.
+    "editor.suggest.filteredTypes": {
+        "keyword": true
+    },
+
+    // 제안 필터링 및 정렬에서 작은 오타를 설명하는지 여부를 제어합니다.
+    "editor.suggest.filterGraceful": true,
+
+    // 정렬할 때 커서 근처에 표시되는 단어를 우선할지 여부를 제어합니다.
+    "editor.suggest.localityBonus": false,
+
+    // 스크롤바를 표시하기 전에 IntelliSense가 표시할 제안 수를 제어합니다(최대 15개).
+    "editor.suggest.maxVisibleSuggestions": 12,
+
+    // 저장된 제안 사항 선택 항목을 여러 작업 영역 및 창에서 공유할 것인지 여부를 제어합니다(`editor.suggestSelection` 필요).
+    "editor.suggest.shareSuggestSelections": false,
+
+    // 제안의 아이콘을 표시할지 여부를 제어합니다.
+    "editor.suggest.showIcons": true,
+
+    // 활성 코드 조각이 빠른 제안을 할 수 없도록 하는지 여부를 제어합니다.
+    "editor.suggest.snippetsPreventQuickSuggestions": true,
+
+    // 제안 위젯의 글꼴 크기입니다. '0'으로 설정하면 '#editor.fontSize#'의 값이 사용됩니다.
+    "editor.suggestFontSize": 0,
+
+    // 제안 위젯의 줄 높이입니다. '0'으로 설정하면 `editor.lineHeight`의 값이 사용됩니다.
+    "editor.suggestLineHeight": 0,
+
+    // 트리거 문자를 입력할 때 제안을 자동으로 표시할지 여부를 제어합니다.
+    "editor.suggestOnTriggerCharacters": true,
+
+    // 제안 목록을 표시할 때 제한이 미리 선택되는 방식을 제어합니다.
+    //  - first: 항상 첫 번째 제안을 선택합니다.
+    //  - recentlyUsed: `log`가 최근에 완료되었으므로 추가 입력에서 제안을 선택하지 않은 경우 최근 제안을 선택하세요(예: `console.| -> console.log`).
+    //  - recentlyUsedByPrefix: 해당 제안을 완료한 이전 접두사에 따라 제안을 선택합니다(예: `co -> console` 및 `con -> const`).
+    "editor.suggestSelection": "recentlyUsed",
+
+    // 탭 완성을 사용하도록 설정합니다.
+    //  - on: 탭 완료는 탭을 누를 때 가장 일치하는 제안을 삽입합니다.
+    //  - off: 탭 완성을 사용하지 않도록 설정합니다.
+    //  - onlySnippets: 접두사가 일치하는 경우 코드 조각을 탭 완료합니다. 'quickSuggestions'를 사용하지 않을 때 가장 잘 작동합니다.
+    "editor.tabCompletion": "off",
+
+    // 탭 한 개에 해당하는 공백 수입니다. `editor.detectIndentation`이 켜져 있는 경우 이 설정은 파일 콘텐츠에 따라 재정의됩니다.
+    "editor.tabSize": 4,
+
+    // 현재 선택된 색 테마에서 편집기 색상과 글꼴 스타일을 재정의합니다.
+    "editor.tokenColorCustomizations": {},
+
+    // 끝에 자동 삽입된 공백을 제거합니다.
+    "editor.trimAutoWhitespace": true,
+
+    // 탭 정지 뒤에 공백을 삽입 및 삭제합니다.
+    "editor.useTabStops": true,
+
+    // 문서 내 단어를 기반으로 완성을 계산할지 여부를 제어합니다.
+    "editor.wordBasedSuggestions": true,
+
+    // 단어 관련 탐색 또는 작업을 수행할 때 단어 구분 기호로 사용할 문자입니다.
+    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+
+    // 줄 바꿈 여부를 제어합니다.
+    //  - off: 줄이 바뀌지 않습니다.
+    //  - on: 뷰포트 너비에서 줄이 바뀝니다.
+    //  - wordWrapColumn: `editor.wordWrapColumn`에서 줄이 바뀝니다.
+    //  - bounded: 뷰포트의 최소값 및 `editor.wordWrapColumn`에서 줄이 바뀝니다.
+    "editor.wordWrap": "off",
+
+    // `editor.wordWrap`이 `wordWrapColumn` 또는 'bounded'인 경우 편집기의 열 줄 바꿈을 제어합니다.
+    "editor.wordWrapColumn": 80,
+
+    // 줄 바꿈 행의 들여쓰기를 제어합니다.
+    //  - none: 들여쓰기가 없습니다. 줄 바꿈 행이 열 1에서 시작됩니다.
+    //  - same: 줄 바꿈 행의 들여쓰기가 부모와 동일합니다.
+    //  - indent: 줄 바꿈 행이 부모 쪽으로 +1만큼 들여쓰기됩니다.
+    //  - deepIndent: 줄 바꿈 행이 부모 쪽으로 +2만큼 들여쓰기됩니다.
+    "editor.wrappingIndent": "same",
+
+    // 소스 제어 뷰에 인라인 작업을 항상 표시할지 여부를 제어합니다.
+    "scm.alwaysShowActions": false,
+
+    // 소스 제어 공급자 섹션을 항상 표시할지 여부를 제어합니다.
+    "scm.alwaysShowProviders": false,
+
+    // 편집기에서 차이점 장식을 제어합니다.
+    "scm.diffDecorations": "all",
+
+    // 제본용 여백의 diff 장식 너비(px)를 제어합니다(추가 및 수정).
+    "scm.diffDecorationsGutterWidth": 3,
+
+    // 소스 제어 공급자 섹션에 표시되는 공급자 수를 제어합니다. 보기 크기를 수동으로 조정하려면 '0'으로 설정합니다.
+    "scm.providers.visible": 10,
+
+    // 워크벤치에서 작업 막대의 표시 유형을 제어합니다.
+    "workbench.activityBar.visible": true,
+
+    // 현재 선택한 색 테마에서 색을 재정의합니다.
+    "workbench.colorCustomizations": {},
+
+    // Specifies the color theme used in the workbench.
+    "workbench.colorTheme": "Default Dark+",
+
+    // 명령 팔레트 기록을 유지하기 위해 최근 사용한 명령 개수를 제어합니다. 0으로 설정하면 명령 기록을 사용하지 않습니다.
+    "workbench.commandPalette.history": 50,
+
+    // 다음에 열 때 마지막으로 명령 팔레트에 입력한 내용을 복원할지 여부를 제어합니다.
+    "workbench.commandPalette.preserveInput": false,
+
+    // 가운데 맞춤 레이아웃에서 둘 이상의 그룹을 열 때 최대 너비에 맞게 자동으로 크기를 조정할지 여부를 제어합니다. 하나의 그룹만 열면 원래 가운데 맞춤 너비로 되돌아옵니다.
+    "workbench.editor.centeredLayoutAutoResize": true,
+
+    // 그룹의 마지막 탭을 닫을 때 빈 편집기 그룹의 동작을 제어합니다. 사용하도록 설정하면 그룹이 자동으로 닫히고 사용하지 않도록 설정하면 빈 그룹이 그리드의 일부로 남습니다.
+    "workbench.editor.closeEmptyGroups": true,
+
+    // 세션 동안 열린 파일을 표시하는 편집기가 다른 프로세스에서 삭제하거나 이름을 바꾸는 경우 자동으로 닫혀야 하는지 여부를 제어합니다. 이 기능을 사용하지 않으면 해당 이벤트에서 편집기가 계속 열려 있습니다. 애플리케이션 내에서 삭제하는 경우 항상 편집기를 닫으며 더티 파일은 데이터가 보존되도록 닫히지 않습니다.
+    "workbench.editor.closeOnFileDelete": false,
+
+    // 열려 있는 편집기를 미리 보기로 표시할지 여부를 제어합니다. 미리 보기 편집기는 두 번 클릭이나 편집을 통해 고정될 때까지 다시 사용되며 기울임꼴 글꼴 스타일로 표시됩니다.
+    "workbench.editor.enablePreview": true,
+
+    // Quick Open에서 연 편집기를 미리 보기로 표시할지 여부를 제어합니다. 미리 보기 편집기는 두 번 클릭이나 편집을 통해 고정될 때까지 다시 사용됩니다.
+    "workbench.editor.enablePreviewFromQuickOpen": true,
+
+    // 탭을 최근에 사용한 순서대로 닫을 것인지 왼쪽에서 오른쪽으로 닫을 것인지를 제어합니다.
+    "workbench.editor.focusRecentEditorAfterClose": true,
+
+    // 수정된(더티) 편집기 탭에서 위쪽 테두리를 그릴지 여부를 제어합니다.
+    "workbench.editor.highlightModifiedTabs": false,
+
+    // 편집기 레이블의 형식을 제어합니다.
+    //  - default: 파일 이름을 표시합니다. 탭이 사용하도록 설정되어 있고 하나의 그룹에서 파일 2개의 이름이 동일하면, 각 파일 경로의 고유한 섹션이 추가됩니다. 탭이 사용하도록 설정되어 있지 않으면, 작업 영역 폴더에 대한 경로는 편집기가 활성 상태일 때 표시됩니다.
+    //  - short: 파일 이름과 파일의 디렉터리 이름을 차례로 표시합니다.
+    //  - medium: 파일 이름과 작업 영역 폴더에 상대적인 파일 경로를 차례로 표시합니다.
+    //  - long: 파일 이름과 절대 경로를 차례로 표시합니다.
+    "workbench.editor.labelFormat": "default",
+
+    // 편집기가 열리는 위치를 제어합니다. 현재 활성 편집기의 왼쪽 또는 오른쪽에서 편집기를 열려면 'left' 또는 'right'를 선택합니다. 현재 활성 편집기와 독립적으로 편집기를 열려면 'first' 또는 'last'를 선택합니다.
+    "workbench.editor.openPositioning": "right",
+
+    // 탐색기 등에서 나란히 열리는 편집기의 기본 방향을 제어합니다. 기본적으로 편집기는 현재 활성 편집기 오른쪽에 열립니다. `down`으로 변경하는 경우 편집기가 현재 활성 편집기 아래에 열립니다.
+    "workbench.editor.openSideBySideDirection": "right",
+
+    // 파일을 닫은 후 다시 열 때 마지막 보기 상태(예: 스크롤 위치)를 복원합니다.
+    "workbench.editor.restoreViewState": true,
+
+    // 편집기를 여는 경우 보이는 그룹 중 하나에 표시할지 여부를 제어합니다. 사용하지 않도록 설정하면 편집기가 기본적으로 현재 활성 편집기 그룹에 열립니다. 사용하도록 설정하면 현재 활성 편집기 그룹에서 편집기가 다시 열리지 않고 이미 열린 편집기가 표시됩니다. 강제로 편집기가 특정 그룹에서 열리거나 현재 활성 그룹 옆에 열리도록 하는 등의 일부 경우에는 이 설정이 무시됩니다.
+    "workbench.editor.revealIfOpen": false,
+
+    // 열려 있는 편집기를 아이콘과 함께 표시할지 여부를 제어합니다. 이를 위해서는 아이콘 테마도 사용하도록 설정해야 합니다.
+    "workbench.editor.showIcons": true,
+
+    // 열려 있는 편집기를 탭에서 열지 여부를 제어합니다.
+    "workbench.editor.showTabs": true,
+
+    // 편집기의 탭 닫기 단추의 위치를 제어하거나 'off'로 설정된 경우 이 단추를 사용하지 않도록 설정합니다.
+    "workbench.editor.tabCloseButton": "right",
+
+    // 편집기 탭 크기를 제어합니다.
+    //  - fit: 항상 전체 편집기 레이블을 표시할 만큼 큰 탭을 유지합니다.
+    //  - shrink: 한 번에 모든 탭을 표시할 만큼 사용 가능한 공간이 없는 경우 탭을 작게 만들 수 있습니다.
+    "workbench.editor.tabSizing": "fit",
+
+    // Microsoft 온라인 서비스에서 실행할 실험을 가져옵니다.
+    "workbench.enableExperiments": true,
+
+    // 워크벤치에서 사용되는 아이콘 테마를 지정합니다. 'null'로 지정하면 파일 아이콘을 표시하지 않습니다.
+    //  - null: No file icons
+    //  - vs-minimal
+    //  - vs-seti
+    //  - vscode-icons
+    "workbench.iconTheme": "vs-seti",
+
+    // 목록 및 트리에서 키보드 탐색이 입력만으로 자동 트리거되는지 여부를 제어합니다. 'false'로 설정하면 'list.toggleKeyboardNavigation' 명령을 실행할 때만 키보드 탐색이 트리거되어 바로 가기 키를 할당할 수 있습니다.
+    "workbench.list.automaticKeyboardNavigation": true,
+
+    // Workbench에서 목록 및 트리가 가로 스크롤을 지원하는지 여부를 제어합니다.
+    "workbench.list.horizontalScrolling": false,
+
+    // 워크벤치의 목록 및 트리 키보드 탐색 스타일을 제어합니다. 간소화하고, 강조 표시하고, 필터링할 수 있습니다.
+    //  - simple: 간단한 키보드 탐색에서는 키보드 입력과 일치하는 요소에 집중합니다. 일치는 접두사에서만 수행됩니다.
+    //  - highlight: 키보드 탐색 강조 표시에서는 키보드 입력과 일치하는 요소를 강조 표시합니다. 이후로 탐색에서 위 및 아래로 이동하는 경우 강조 표시된 요소만 트래버스합니다.
+    //  - filter: 키보드 탐색 필터링에서는 키보드 입력과 일치하지 않는 요소를 모두 필터링하여 숨깁니다.
+    "workbench.list.keyboardNavigation": "highlight",
+
+    // 마우스로 트리와 목록의 항목을 다중 선택에 추가할 때 사용할 한정자입니다(예를 들어 탐색기에서 편집기와 SCM 보기를 여는 경우). '옆에서 열기' 마우스 제스처(지원되는 경우)는 다중 선택 한정자와 충돌하지 않도록 조정됩니다.
+    //  - ctrlCmd: Windows와 Linux의 'Control'을 macOS의 'Command'로 매핑합니다.
+    //  - alt: Windows와 Linux의 'Alt'를 macOS의 'Option'으로 매핑합니다.
+    "workbench.list.multiSelectModifier": "ctrlCmd",
+
+    // 트리와 목록에서 마우스를 사용하여 항목을 여는 방법을 제어합니다(지원되는 경우). 트리에서 자식 항목이 있는 부모 항목의 경우 이 설정은 부모 항목을 한 번 클릭으로 확장할지 또는 두 번 클릭으로 확장할지 여부를 제어합니다. 일부 트리와 목록에서는 이 설정을 적용할 수 없는 경우  무시하도록 선택할 수 있습니다.
+    "workbench.list.openMode": "singleClick",
+
+    // 패널(터미널, 디버그 콘솔, 출력, 문제)의 기본 위치를 제어합니다. 워크벤치의 아래 또는 오른쪽에 표시될 수 있습니다.
+    "workbench.panel.defaultLocation": "bottom",
+
+    // Quick Open가 포커스를 잃으면 해당 Quick Open을 자동으로 닫을지 여부를 제어합니다.
+    "workbench.quickOpen.closeOnFocusLost": true,
+
+    // 다음에 열 때 마지막으로 Quick Open에 입력한 내용을 복원할지 여부를 제어합니다.
+    "workbench.quickOpen.preserveInput": false,
+
+    // 기본적으로 사용할 설정 편집기를 결정합니다.
+    //  - ui: 설정 UI 편집기를 사용합니다.
+    //  - json: JSON 파일 편집기를 사용합니다.
+    "workbench.settings.editor": "ui",
+
+    // 설정에 대한 자연어 검색 모드를 사용할지 여부를 제어합니다. 자연어 검색은 Microsoft 온라인 서비스에 의해 제공됩니다.
+    "workbench.settings.enableNaturalLanguageSearch": true,
+
+    // 키 바인딩 설정을 열면 모든 기본 키 바인딩 설정을 표시하는 편집기도 열리는지 여부를 제어합니다.
+    "workbench.settings.openDefaultKeybindings": false,
+
+    // 설정을 열면 모든 기본 설정을 표시하는 편집기도 열리는지 여부를 제어합니다.
+    "workbench.settings.openDefaultSettings": false,
+
+    // 검색하는 동안 설정 편집기 목차의 동작을 제어합니다.
+    //  - hide: 검색하는 동안 목차를 숨깁니다.
+    //  - filter: 일치하는 설정이 있는 범주로 목차를 필터링합니다. 범주를 클릭하면 해당 범주로 결과가 필터링됩니다.
+    "workbench.settings.settingsSearchTocBehavior": "filter",
+
+    // JSON으로 설정을 편집할 때 분할 JSON 편집기를 사용할지 여부를 제어합니다.
+    "workbench.settings.useSplitJSON": false,
+
+    // 사이드바의 위치를 제어합니다. 워크벤치의 왼쪽이나 오른쪽에 표시될 수 있습니다.
+    "workbench.sideBar.location": "left",
+
+    // 이전 세션에서 복원된 편집기가 없는 경우 시작 시 편집기의 표시 여부를 제어합니다.
+    //  - none: 편집기를 사용하지 않고 시작합니다.
+    //  - welcomePage: 시작 페이지를 엽니다(기본값).
+    //  - readme: 추가 정보가 있는 폴더를 열면 추가 정보를 열고, 그렇지 않으면 'welcomePage'로 대체합니다.
+    //  - newUntitledFile: 새로운 제목 없는 파일을 엽니다(빈 작업 영역을 여는 경우에만 적용됨).
+    //  - welcomePageInEmptyWorkbench: 빈 워크벤치를 열 때 시작 페이지를 엽니다.
+    "workbench.startupEditor": "welcomePage",
+
+    // 워크벤치의 아래쪽에 있는 상태 표시줄에 Twitter 피드백(스마일 기호)의 표시 여부를 제어합니다.
+    "workbench.statusBar.feedback.visible": true,
+
+    // 워크벤치 아래쪽에서 상태 표시줄의 표시 유형을 제어합니다.
+    "workbench.statusBar.visible": true,
+
+    // 사용하도록 설정되면 편집기가 열리지 않았을 때 워터마크 팁이 표시됩니다.
+    "workbench.tips.enabled": true,
+
+    // 이 설정은 사용되지 않습니다. 대신 'workbench.list.horizontalScrolling'을(를) 사용하세요.
+    // 워크벤치에서 수평 스크롤 지원 여부를 제어 합니다.
+    "workbench.tree.horizontalScrolling": false,
+
+    // 트리 들여쓰기를 픽셀 단위로 제어합니다.
+    "workbench.tree.indent": 8,
+
+    // 워크벤치에 대해 그리드 레이아웃을 사용하도록 설정합니다. 이렇게 설정하면 워크벤치 구성 요소에 대해 추가 레이아웃 옵션을 사용할 수 있습니다.
+    "workbench.useExperimentalGridLayout": false,
+
+    // 보기 머리글 작업의 표시 여부를 제어합니다. 보기 머리글 작업은 항상 표시할 수도 있고 보기에 포커스가 있거나 보기를 마우스로 가리킬 때만 표시할 수도 있습니다.
+    "workbench.view.alwaysShowHeaderActions": false,
+
+    // 사용하도록 설정한 경우 Windows에서 고대비 테마를 사용 중이면 고대비 테마로 자동으로 변경되고 Windows 고대비 테마를 해제하면 어두운 테마로 변경됩니다.
+    "window.autoDetectHighContrast": true,
+
+    // 마지막 편집기를 닫을 때 창도 닫을지 여부를 제어합니다. 이 설정은 폴더를 표시하지 않는 창에만 적용됩니다.
+    "window.closeWhenEmpty": false,
+
+    // 사용하도록 설정하는 경우 제목 표시줄에서 애플리케이션 아이콘을 두 번 클릭하면 창을 닫으며 해당 창은 아이콘을 사용하여 끌어올 수 없습니다. 이 설정은 `window.titleBarStyle`이 `custom`으로 설정된 경우에만 영향을 줍니다.
+    "window.doubleClickIconToClose": false,
+
+    // 사용하도록 설정하는 경우 Alt 키 바로 가기를 통해 주 메뉴를 열 수 있습니다. 니모닉을 사용하지 않도록 설정하면 대신 이러한 Alt 키 바로 가기를 편집기 명령에 바인딩할 수 있습니다.
+    "window.enableMenuBarMnemonics": true,
+
+    // 메뉴 모음의 표시 여부를 제어합니다. '설정/해제'를 설정함으로써 메뉴 모음이 숨겨지고 <Alt> 키를 누를 때마다 메뉴 모음이 표시됩니다. 기본값으로, 창이 전체 화면인 경우를 제외하고 메뉴 모음이 표시됩니다.
+    //  - default: 메뉴가 전체 화면 모드에서만 숨겨집니다.
+    //  - visible: 메뉴가 전체 화면 모드에서도 항상 표시됩니다.
+    //  - toggle: 메뉴가 숨겨져 있지만 <Alt> 키를 통해 메뉴를 표시할 수 있습니다.
+    //  - hidden: 메뉴가 항상 숨겨집니다.
+    "window.menuBarVisibility": "default",
+
+    // 하나 이상의 창이 이미 열려 있을 때 여는 새 새 창의 크기를 제어합니다. 이 설정은 여는 첫 번째 창에는 적용되지 않습니다. 첫 번째 창의 경우 항상 창을 닫기 전의 크기와 위치가 복원됩니다.
+    //  - default: 화면 가운데에서 새 창을 엽니다.
+    //  - inherit: 마지막 활성 창과 동일한 크기로 새 창을 엽니다.
+    //  - maximized: 최대화된 새 창을 엽니다.
+    //  - fullscreen: 전체 화면 모드에서 새 창을 엽니다.
+    "window.newWindowDimensions": "default",
+
+    // 파일을 새 창에서 열지 여부를 제어합니다.
+    // 이 설정이 무시되는 경우도 있을 수 있습니다(예: '--new-window' 또는 '--reuse-window' 명령줄 옵션을 사용할 경우).
+    //  - on: 파일이 새 창에서 열립니다.
+    //  - off: 파일이 파일의 폴더가 열려 있는 창 또는 마지막 활성 창에서 열립니다.
+    //  - default: 애플리케이션 내에서 선택(예: 파일 메뉴를 통해)하는 경우를 제외하고 파일이 새 창에서 열립니다.
+    "window.openFilesInNewWindow": "off",
+
+    // 폴더를 새 창에서 열거나 마지막 활성 창을 바꿀지 여부를 제어합니다.
+    // 이 설정이 무시되는 경우도 있을 수 있습니다(예: '--new-window' 또는 '--reuse-window' 명령줄 옵션을 사용할 경우).
+    //  - on: 폴더가 새 창에서 열립니다.
+    //  - off: 폴더가 마지막 활성 창을 바꿉니다.
+    //  - default: 폴더를 애플리케이션 내에서 선택(예: 파일 메뉴를 통해)하는 경우를 제외하고 폴더가 새 창에서 열립니다.
+    "window.openFoldersInNewWindow": "default",
+
+    // 인수 없이 두 번째 인스턴스를 시작할 때 새로운 빈 창을 열지 또는 실행 중인 마지막 인스턴스에 포커스가 생기는지 여부를 제어합니다.
+    // 이 설정이 무시되는 경우도 있을 수 있습니다(예: '--new-window' 또는 '--reuse-window' 명령줄 옵션을 사용할 경우).
+    //  - on: 빈 창을 새로 엽니다.
+    //  - off: 실행 중인 마지막 활성 인스턴스에 포커스가 생깁니다.
+    "window.openWithoutArgumentsInNewWindow": "on",
+
+    // 창이 전체 화면 모드에서 종료된 경우 창을 전체 화면 모드로 복원할지 여부를 제어합니다.
+    "window.restoreFullscreen": false,
+
+    // 다시 시작한 후 창이 다시 열리는 방법을 제어합니다.
+    //  - all: 모든 창을 다시 엽니다.
+    //  - folders: 모든 폴더를 다시 엽니다. 빈 작업 영역은 복원되지 않습니다.
+    //  - one: 마지막 활성 창을 다시 엽니다.
+    //  - none: 창을 다시 열지 않고 항상 빈 창으로 시작합니다.
+    "window.restoreWindows": "one",
+
+    // 활성 편집기를 기준으로 창 제목을 제어합니다. 변수는 컨텍스트를 기준으로 대체됩니다.`${activeEditorShort}`: 파일 이름(예: myFile.txt).
+    // - '${activeEditorMedium}: 작업 영역 폴더(예: myFolder/myFileFolder/myFile.txt)와 관련된 파일의 경로입니다.
+    // - `${activeEditorLong}`: 파일 전체 경로(예: /Users/Development/myFolder/myFileFolder/myFile.txt).
+    // - '${activeFolderShort}: 파일이 포함된 폴더 이름(예: myFileFolder)입니다.
+    // - `${activeFolderMedium}`: 파일이 포함된 관련된 작업 영역 폴더(예: myFolder/myFileFolder))에 포함된 폴더 경로.
+    // - `${activeFolderLong}`: 파일이 포함된 폴더 전체 경로(예: /Users/Development/myFolder/myFileFolder).
+    // - `${folderName}`: 파일이 포함된 작업 영역 폴더의 이름(예 : myFolder).
+    // - `${folderPath}`: 파일이 포함된 작업 영역 폴더의 파일 경도(예: /Users/Development/myFolder).
+    // - '${rootName}: 작업 공간의 이름입니다(예: myFolder 또는 myWorkspace).
+    // - `${rootPath}`: 작업 영역 파일 경로(예: /Users/Development/myWorkspace).
+    // - `${appName}`: 예: VS Code.
+    // - `${dirty}`: 활성 편집기가 더러울 경우 더티 표시기.
+    // - `${separator}`: 값 또는 정적 텍스트가 있는 변수로 둘러싸인 경우에만 표시되는 조건부 구분 기호 ( "-").
+    "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName}",
+
+    // 창 제목 표시줄의 모양을 조정합니다. Linux와 Windows에서 이 설정은 애플리케이션 및 상황에 맞는 메뉴 모양에도 영향을 미칩니다. 변경 내용을 적용하려면 전체 다시 시작해야 합니다.
+    "window.titleBarStyle": "custom",
+
+    // 창의 확대/축소 수준을 조정합니다. 원래 크기는 0이고 각 상한 증분(예: 1) 또는 하한 증분(예: -1)은 20% 더 크거나 더 작게 확대/축소하는 것을 나타냅니다. 10진수를 입력하여 확대/축소 수준을 세부적으로 조정할 수도 있습니다.
+    "window.zoomLevel": 0,
+
+    // Zen 모드를 켜면 레이아웃도 가운데로 맞춰지는지 여부를 제어합니다.
+    "zenMode.centerLayout": true,
+
+    // Zen 모드를 켜면 워크벤치도 전체 화면 모드로 전환되는지 여부를 제어합니다.
+    "zenMode.fullScreen": true,
+
+    // Zen 모드를 켜면 워크벤치의 왼쪽에 있는 작업 막대도 숨길지 여부를 제어합니다.
+    "zenMode.hideActivityBar": true,
+
+    // Zen 모드를 설정하면 편집기 줄 번호도 숨길 것인지 여부를 제어합니다.
+    "zenMode.hideLineNumbers": true,
+
+    // Zen 모드를 켜면 워크벤치 하단에서 상태 표시줄도 숨길지 여부를 제어합니다.
+    "zenMode.hideStatusBar": true,
+
+    // Zen 모드를 켜면 워크벤치 탭도 숨길지 여부를 제어합니다.
+    "zenMode.hideTabs": true,
+
+    // 창이 Zen 모드에서 종료된 경우 Zen 모드로 복원할지 여부를 제어합니다.
+    "zenMode.restore": false,
+
+    // 파일과 언어의 연결을 구성합니다(예: "*.extension": "html"). 이러한 구성은 설치된 언어의 기본 연결보다 우선 순위가 높습니다.
+    "files.associations": {},
+
+    // 사용하도록 설정하는 경우 파일을 열 때 편집기에서 문자 집합 인코딩을 추측합니다. 이 설정은 언어별로 구성할 수도 있습니다.
+    "files.autoGuessEncoding": false,
+
+    // 더티 파일의 자동 저장을 제어합니다. 자동 저장에 대한 자세한 내용은 [여기](https://code.visualstudio.com/docs/editor/codebasics#_save-auto-save)를 참조하세요.
+    //  - off: 더티 파일이 자동으로 저장되지 않습니다.
+    //  - afterDelay: `files.autoSaveDelay` 구성 후 더티 파일이 자동으로 저장됩니다.
+    //  - onFocusChange: 편집기가 포커스를 잃으면 더티 파일이 자동으로 저장됩니다.
+    //  - onWindowChange: 창이 포커스를 잃으면 더티 파일이 자동으로 저장됩니다.
+    "files.autoSave": "off",
+
+    // 더티 파일을 자동으로 저장할 때까지의 지연(밀리초)을 제어합니다. `files.autoSave`를 'afterDelay'(으)로 설정한 경우에만 적용됩니다.
+    "files.autoSaveDelay": 1000,
+
+    // 새 파일에 할당되는 기본 언어 모드입니다.
+    "files.defaultLanguage": "",
+
+    // 파일/폴더를 삭제하면 OS 휴지통(Windows의 휴지통)으로 이동합니다.  사용하지 않도록 설정하면 파일/폴더를 영구적으로 삭제합니다.
+    "files.enableTrash": true,
+
+    // 파일을 읽고 쓸 때 사용할 기본 문자 집합 인코딩입니다. 이 설정은 언어별로 구성할 수도 있습니다.
+    //  - utf8: UTF-8
+    //  - utf8bom: UTF-8 with BOM
+    //  - utf16le: UTF-16 LE
+    //  - utf16be: UTF-16 BE
+    //  - windows1252: Western (Windows 1252)
+    //  - iso88591: Western (ISO 8859-1)
+    //  - iso88593: Western (ISO 8859-3)
+    //  - iso885915: Western (ISO 8859-15)
+    //  - macroman: Western (Mac Roman)
+    //  - cp437: DOS (CP 437)
+    //  - windows1256: Arabic (Windows 1256)
+    //  - iso88596: Arabic (ISO 8859-6)
+    //  - windows1257: Baltic (Windows 1257)
+    //  - iso88594: Baltic (ISO 8859-4)
+    //  - iso885914: Celtic (ISO 8859-14)
+    //  - windows1250: Central European (Windows 1250)
+    //  - iso88592: Central European (ISO 8859-2)
+    //  - cp852: Central European (CP 852)
+    //  - windows1251: Cyrillic (Windows 1251)
+    //  - cp866: Cyrillic (CP 866)
+    //  - iso88595: Cyrillic (ISO 8859-5)
+    //  - koi8r: Cyrillic (KOI8-R)
+    //  - koi8u: Cyrillic (KOI8-U)
+    //  - iso885913: Estonian (ISO 8859-13)
+    //  - windows1253: Greek (Windows 1253)
+    //  - iso88597: Greek (ISO 8859-7)
+    //  - windows1255: Hebrew (Windows 1255)
+    //  - iso88598: Hebrew (ISO 8859-8)
+    //  - iso885910: Nordic (ISO 8859-10)
+    //  - iso885916: Romanian (ISO 8859-16)
+    //  - windows1254: Turkish (Windows 1254)
+    //  - iso88599: Turkish (ISO 8859-9)
+    //  - windows1258: Vietnamese (Windows 1258)
+    //  - gbk: Simplified Chinese (GBK)
+    //  - gb18030: Simplified Chinese (GB18030)
+    //  - cp950: Traditional Chinese (Big5)
+    //  - big5hkscs: Traditional Chinese (Big5-HKSCS)
+    //  - shiftjis: Japanese (Shift JIS)
+    //  - eucjp: Japanese (EUC-JP)
+    //  - euckr: Korean (EUC-KR)
+    //  - windows874: Thai (Windows 874)
+    //  - iso885911: Latin/Thai (ISO 8859-11)
+    //  - koi8ru: Cyrillic (KOI8-RU)
+    //  - koi8t: Tajik (KOI8-T)
+    //  - gb2312: Simplified Chinese (GB 2312)
+    //  - cp865: Nordic DOS (CP 865)
+    //  - cp850: Western European DOS (CP 850)
+    "files.encoding": "utf8",
+
+    // 줄 바꿈 문자의 기본 끝입니다.
+    //  - \n: LF
+    //  - \r\n: CRLF
+    //  - auto: 운영 체제별 줄 바꿈 문자를 사용합니다.
+    "files.eol": "auto",
+
+    // 파일 및 폴더를 제외하기 위한 GLOB 패턴을 구성합니다. 예를 들어 파일 탐색기는 이 설정에 따라 표시하거나 숨길 파일 및 폴더를 결정합니다. GLOB 패턴에 대한 자세한 내용은 [여기](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options)를 참조하세요.
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true
+    },
+
+    // 저장하지 않은 파일을 세션 간에 기억하여, 편집기를 종료할 때 저장할지 묻는 메시지를 건너뛸지 여부를 제어합니다.
+    //  - off: 핫 종료를 사용하지 않습니다.
+    //  - onExit: Hot Exit는 Windows/Linux에서 마지막 창을 닫을 때나 'workbench.action.quit' 명령이 트리거될 때(명령 팔레트, 키 바인딩, 메뉴) 트리거됩니다. 다음 실행 시 백업을 포함한 모든 창이 복원됩니다.
+    //  - onExitAndWindowClose: Hot Exit는 Windows/Linux에서 마지막 창을 닫을 때나 'workbench.action.quit' 명령이 트리거될 때(명령 팔레트, 키 바인딩, 메뉴) 트리거됩니다. 또한 마지막 창인지 여부에 상관없이 폴더가 열려 있는 모든 창의 경우에도 트리거됩니다. 열린 폴더가 없는 모든 창은 다음 실행 시 복원됩니다. 종료되기 전 상태로 폴더 창을 복원하려면 `window.restoreWindows`를 'all'로 설정합니다.
+    "files.hotExit": "onExit",
+
+    // 사용하도록 설정되면 저장할 때 파일 끝에 마지막 줄바꿈을 삽입합니다.
+    "files.insertFinalNewline": false,
+
+    // 큰 파일을 열려고 할 때 다시 시작한 후 VS Code에 사용 가능한 메모리를 제어합니다. 명령줄에 '--max-memory=NEWSIZE'를 지정하는 것과 결과가 같습니다.
+    "files.maxMemoryForLargeFilesMB": 4096,
+
+    // Enables the simple file dialog. The simple file dialog replaces the system file dialog when enabled.
+    "files.simpleDialog.enable": false,
+
+    // 사용하도록 설정되면 저장할 때 파일 끝에 마지막 줄 바꿈 이후의 모든 줄 바꿈이 잘립니다.
+    "files.trimFinalNewlines": false,
+
+    // 사용하도록 설정되면 파일을 저장할 때 후행 공백이 잘립니다.
+    "files.trimTrailingWhitespace": false,
+
+    // 파일 감시에서 제외할 파일 경로의 GLOB 패턴을 구성하세요. 패턴은 절대 경로(**접두사가 있는 경로 또는 전체 경로)여야 합니다. 이 설정을 변경하려면 다시 시작해야 합니다. 시작 시 Code에서 CPU 시간을 많이 차지하면 대용량 폴더를 제외하여 초기 로드를 줄일 수 있습니다.
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true
+    },
+
+    // 탐색기에서 파일을 열 때 자동으로 표시하고 선택할지 여부를 제어합니다.
+    "explorer.autoReveal": true,
+
+    // 파일을 휴지통에서 삭제할 때 탐색기에서 확인을 요청해야 하는지 여부를 제어합니다.
+    "explorer.confirmDelete": true,
+
+    // 끌어서 놓기를 사용하여 파일 및 폴더를 이동하기 위해 탐색기에서 확인을 요청해야 하는지 여부를 제어합니다.
+    "explorer.confirmDragAndDrop": true,
+
+    // 파일 장식에 배지를 사용할지 여부를 제어합니다.
+    "explorer.decorations.badges": true,
+
+    // 파일 장식에 색을 사용할지 여부를 제어합니다.
+    "explorer.decorations.colors": true,
+
+    // 탐색기에서 끌어서 놓기를 통한 파일 및 폴더 이동을 허용하는지 여부를 제어합니다.
+    "explorer.enableDragAndDrop": true,
+
+    // 열려 있는 편집기 창에 표시되는 편집기 수입니다.
+    "explorer.openEditors.visible": 9,
+
+    // 탐색기에서 파일 및 폴더의 정렬 순서를 제어합니다.
+    //  - default: 파일 및 폴더가 이름을 기준으로 사전순으로 정렬됩니다. 폴더가 파일 앞에 표시됩니다.
+    //  - mixed: 파일 및 폴더가 이름을 기준으로 사전순으로 정렬됩니다. 파일이 폴더와 결합됩니다.
+    //  - filesFirst: 파일 및 폴더가 이름을 기준으로 사전순으로 정렬됩니다. 파일이 폴더 앞에 표시됩니다.
+    //  - type: 파일 및 폴더가 확장명을 기준으로 사전순으로 정렬됩니다. 폴더가 파일 앞에 표시됩니다.
+    //  - modified: 파일 및 폴더가 마지막으로 수정한 날짜를 기준으로 내림차순 정렬됩니다. 폴더가 파일 앞에 표시됩니다.
+    "explorer.sortOrder": "default",
+
+    // 검색 보기에서 행의 작업 모음 위치를 제어합니다.
+    //  - auto: 검색 보기가 좁을 때는 오른쪽에, 그리고 검색 보기가 넓을 때는 콘텐츠 바로 뒤에 작업 모음을 배치합니다.
+    //  - right: 작업 모음을 항상 오른쪽에 배치합니다.
+    "search.actionsPosition": "auto",
+
+    // 검색 결과를 축소 또는 확장할지 여부를 제어합니다.
+    //  - auto: Files with less than 10 results are expanded. Others are collapsed.
+    //  - alwaysCollapse
+    //  - alwaysExpand
+    "search.collapseResults": "auto",
+
+    // 검색에서 파일 및 폴더를 제외하기 위한 GLOB 패턴을 구성합니다. `files.exclude` 설정에서 모든 GLOB 패턴을 상속합니다. GLOB 패턴에 대한 자세한 내용은 [여기](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options)를 참조하세요.
+    //
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true
+    },
+
+    // 검색하는 동안 symlink를 누를지 여부를 제어합니다.
+    "search.followSymlinks": true,
+
+    // 검색을 사이드바의 보기로 표시할지 또는 가로 간격을 늘리기 위해 패널 영역의 패널로 표시할지를 제어합니다.
+    "search.location": "sidebar",
+
+    // 사용하도록 설정하면 searchService 프로세스가 1시간의 비활성 상태 이후 종료되지 않고 계속 유지됩니다. 메모리에 파일 검색 캐시가 유지됩니다.
+    "search.maintainFileSearchCache": false,
+
+    // Quick Open에 대한 파일 결과에 최근에 연 파일의 결과를 포함할지 여부입니다.
+    "search.quickOpen.includeHistory": true,
+
+    // Quick Open에 대한 파일 결과에 전역 기호 검색 결과를 포함할지 여부입니다.
+    "search.quickOpen.includeSymbols": false,
+
+    // 확장 호스트에서 검색을 실행할지 여부입니다. 적용하려면 다시 시작해야 합니다.
+    "search.runInExtensionHost": false,
+
+    // 검색 결과의 줄 번호를 표시할지 여부를 제어합니다.
+    "search.showLineNumbers": false,
+
+    // 패턴이 모두 소문자인 경우 대/소문자를 구분하지 않고 검색하고, 그렇지 않으면 대/소문자를 구분하여 검색합니다.
+    "search.smartCase": false,
+
+    // 파일을 검색할 때 전역 '.gitignore' 및 '.ignore' 파일을 사용할지 여부를 제어합니다.
+    "search.useGlobalIgnoreFiles": false,
+
+    // 파일을 검색할 때 '.gitignore' 파일 및 '.ignore' 파일을 사용할지 여부를 제어합니다.
+    "search.useIgnoreFiles": true,
+
+    // 텍스트 검색에서 PCRE2 regex 엔진을 사용할지 여부입니다. 사용하도록 설정하면 lookahead 및 backreferences와 같은 몇 가지 고급 regex 기능을 사용할 수 있습니다. 하지만 모든 PCRE2 기능이 지원되지는 않으며, JavaScript에서도 지원되는 기능만 지원됩니다.
+    "search.usePCRE2": false,
+
+    // 일치하는 항목을 선택하거나 바꿀 때 미리 보기 바꾸기를 열지 여부를 제어합니다.
+    "search.useReplacePreview": true,
+
+    // 사용되지 않습니다. 고급 regex 기능을 지원하려면 "search.usePCRE2"를 사용해 보세요.
+    // 이 설정은 사용되지 않으며 이제 "search.usePCRE2"로 대체됩니다.
+    "search.useRipgrep": true,
+
+    // 사용되지 않습니다. 대신 "search.runInExtensionHost"를 사용합니다.
+    // 확장 호스트에서 검색을 실행할지 여부
+    "searchRipgrep.enable": false,
+
+    // 사용할 프록시 설정합니다. 설정되지 않으면 http_proxy 및 https_proxy 환경 변수에서 가져옵니다.
+    "http.proxy": "",
+
+    // 모든 네트워크 요청에 대해 'Proxy-Authorization' 헤더로 보낼 값입니다.
+    "http.proxyAuthorization": null,
+
+    // 제공된 CA 목록에 대해 프록시 서버 인증서를 확인해야 하는지 여부를 제어합니다.
+    "http.proxyStrictSSL": true,
+
+    // 확장에 대해 프록시 지원을 사용합니다.
+    //  - off: 확장에 대한 프록시 지원을 사용하지 않도록 설정합니다.
+    //  - on: 확장에 대한 프록시 지원을 사용하도록 설정합니다.
+    //  - override: 확장에 대한 프록시 지원을 사용하지 않도록 설정하고 요청 옵션을 재정의합니다.
+    "http.proxySupport": "override",
+
+    // OS에서 CA 인증서를 로드해야 하는지 여부를 제어합니다(윈도우즈 및 macOS에서는 이 기능을 끈 후 창을 다시 로드해야 함).
+    "http.systemCertificates": true,
+
+    // 이 설정은 사용되지 않습니다. 대신 'update.mode'을(를) 사용하세요.
+    // 자동 업데이트를 받을지 여부를 구성합니다. 변경 후 다시 시작해야 합니다. 업데이트는 Microsoft 온라인 서비스에서 가져옵니다.
+    "update.channel": "default",
+
+    // Windows 배경을 업데이트를 사용하도록 설정합니다. 업데이트는 Microsoft 온라인 서비스에서 가져옵니다.
+    "update.enableWindowsBackgroundUpdates": true,
+
+    // 자동 업데이트를 받을지 여부를 구성합니다. 변경 후 다시 시작해야 합니다. 업데이트는 Microsoft 온라인 서비스에서 가져옵니다.
+    //  - none: 업데이트를 사용하지 않도록 설정합니다.
+    //  - manual: 자동 백그라운드 업데이트 확인을 사용하지 않도록 설정합니다. 업데이트를 수동으로 확인하여 진행할 수 있습니다.
+    //  - default: 자동 업데이트 확인을 사용하도록 설정합니다. Code에서 정기적으로 업데이트를 자동 확인합니다.
+    "update.mode": "default",
+
+    // 업데이트 후 릴리스 노트를 표시합니다. 릴리스 노트는 Microsoft 온라인 서비스에서 가져옵니다.
+    "update.showReleaseNotes": true,
+
+    // HTML 태그의 자동 닫기를 사용하거나 사용하지 않습니다.
+    "html.autoClosingTags": true,
+
+    // A list of JSON file paths that define custom tags, properties and other HTML syntax constructs. Only workspace folder setting will be read.
+    "html.experimental.customData": [],
+
+    // 쉼표로 분리된 태그 목록으로, 콘텐츠의 서식을 다시 지정해서는 안 됩니다. 'pre' 태그의 기본값은 'null'로 설정됩니다.
+    "html.format.contentUnformatted": "pre,code,textarea",
+
+    // 기본 HTML 포맷터를 사용하거나 사용하지 않도록 설정합니다.
+    "html.format.enable": true,
+
+    // 줄 바꿈으로 끝납니다.
+    "html.format.endWithNewline": false,
+
+    // 쉼표로 분리된 태그 목록으로 앞에 줄 바꿈을 추가로 넣어야 합니다. '"head, body, /html"'의 기본값은 'null'로 설정됩니다.
+    "html.format.extraLiners": "head, body, /html",
+
+    // `{{#foo}}` 및 `{{/foo}}`를 서식 지정하고 들여쓰기합니다.
+    "html.format.indentHandlebars": false,
+
+    // `<헤드>` 및 `<본문>` 섹션을 들여씁니다.
+    "html.format.indentInnerHtml": false,
+
+    // 청크 한 개에 유지할 수 있는 최대 줄 바꿈 수입니다. 무제한일 때는 'null'을 사용합니다.
+    "html.format.maxPreserveNewLines": null,
+
+    // 요소 앞에 있는 기존 줄 바꿈을 유지해야 하는지 제어합니다. 요소 앞에만 적용되며 태그 안에서나 텍스트에는 적용되지 않습니다.
+    "html.format.preserveNewLines": true,
+
+    // 쉼표로 분리된 태그 목록으로, 서식을 다시 지정해서는 안 됩니다. https://www.w3.org/TR/html5/dom.html#phrasing-content에 나열된 모든 태그의 기본값은 'null'로 설정됩니다.
+    "html.format.unformatted": "wbr",
+
+    // 특성을 래핑합니다.
+    //  - auto: 줄 길이를 초과하는 경우에만 특성을 래핑합니다.
+    //  - force: 첫 번째 특성을 제외한 각 특성을 래핑합니다.
+    //  - force-aligned: 첫 번째 특성을 제외한 각 특성을 래핑하고 정렬된 상태를 유지합니다.
+    //  - force-expand-multiline: 각 특성을 래핑합니다.
+    //  - aligned-multiple: 줄 길이를 초과하는 경우 줄 바꿈하여 특성을 세로로 정렬합니다.
+    //  - preserve: 특성 줄 바꿈 유지
+    //  - preserve-aligned: 특성의 줄 바꿈을 유지하되 정렬합니다.
+    "html.format.wrapAttributes": "auto",
+
+    // 한 줄당 최대 문자 수입니다(0 = 사용 안 함).
+    "html.format.wrapLineLength": 120,
+
+    // Double click in the html preview to switch to the editor.
+    "html.preview.doubleClickToSwitchToEditor": true,
+
+    // Mark the current editor selection in the html preview.
+    "html.preview.markEditorSelection": true,
+
+    // When a html preview is scrolled, update the view of the editor.
+    "html.preview.scrollEditorWithPreview": true,
+
+    // When a html editor is scrolled, update the view of the preview.
+    "html.preview.scrollPreviewWithEditor": true,
+
+    // 기본으로 제공하는 HTML 언어 지원에서 HTML5 태그와 속성 및 값을 제안할지 여부를 제어합니다.
+    "html.suggest.html5": true,
+
+    // Enable debug logging for the html extension.
+    "html.trace": "off",
+
+    // VS Code와 HTML 언어 서버 간 통신을 추적합니다.
+    "html.trace.server": "off",
+
+    // 기본으로 제공하는 HTML 언어 지원에서 포함된 스크립트 유효성을 검사할지 여부를 제어합니다.
+    "html.validate.scripts": true,
+
+    // 기본으로 제공하는 HTML 언어 지원에서 포함된 스타일의 유효성을 검사할지 여부를 제어합니다.
+    "html.validate.styles": true,
+
+    // `json.colorDecorators.enable` 설정은 `editor.colorDecorators`를 위해 사용되지 않습니다.
+    // 색 데코레이터 사용 또는 사용 안 함
+    "json.colorDecorators.enable": true,
+
+    // 기본 JSON 포맷터를 사용하거나 사용하지 않습니다.
+    "json.format.enable": true,
+
+    // 현재 프로젝트에서 스키마를 JSON 파일에 연결
+    "json.schemas": [],
+
+    // VS Code와 JSON 언어 서버 간 통신을 추적합니다.
+    "json.trace.server": "off",
+
+    // Markdown 미리 보기에서 줄 바꿈 렌더링 방법을 설정합니다. 'true'로 설정하면 모든 줄 바꿈에 대해 <br>를 만듭니다.
+    "markdown.preview.breaks": false,
+
+    // markdown 미리 보기에서 두 번 클릭하여 편집기로 전환합니다.
+    "markdown.preview.doubleClickToSwitchToEditor": true,
+
+    // markdown 미리 보기에서 사용되는 글꼴 패밀리를 제어합니다.
+    "markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif",
+
+    // markdown 미리 보기에서 사용되는 글꼴 크기(픽셀)를 제어합니다.
+    "markdown.preview.fontSize": 14,
+
+    // markdown 미리 보기에 사용되는 줄 높이를 제어합니다. 이 숫자는 글꼴 크기에 상대적입니다.
+    "markdown.preview.lineHeight": 1.6,
+
+    // Markdown 미리 보기에서 URL 같은 텍스트를 링크로 변환을 사용하거나 사용하지 않도록 설정합니다.
+    "markdown.preview.linkify": true,
+
+    // markdown 미리 보기에 현재 편집기 선택을 표시합니다.
+    "markdown.preview.markEditorSelection": true,
+
+    // 미리 보기에서 markdown 파일에 대한 링크를 클릭할 때 처리할 방법입니다.
+    //  - inPreview: Markdown 미리 보기에서 링크를 열어 보세요.
+    //  - inEditor: 편집기에서 링크를 열어 보세요.
+    "markdown.preview.openMarkdownLinks": "inPreview",
+
+    // Markdown 미리 보기를 스크롤할 때 편집기의 보기를 업데이트합니다.
+    "markdown.preview.scrollEditorWithPreview": true,
+
+    // Markdown 편집기를 스크롤할 때 미리 보기의 보기를 업데이트합니다.
+    "markdown.preview.scrollPreviewWithEditor": true,
+
+    // 이 설정은 'markdown.preview.scrollPreviewWithEditor'로 대체되었으며 더 이상 영향을 주지 않습니다.
+    // [사용되지 않음] markdown 미리 보기를 스크롤하여 편집기에서 현재 선택한 줄을 표시합니다.
+    "markdown.preview.scrollPreviewWithEditorSelection": true,
+
+    // markdown 미리 보기에서 사용할 CSS 스타일시트의 URL 또는 로컬 경로 목록입니다. 상대 경로는 탐색기에서 열린 폴더를 기준으로 해석됩니다. 열린 폴더가 없으면 markdown 파일의 위치를 기준으로 해석됩니다. 모든 '\'는 '\\'로 써야 합니다.
+    "markdown.styles": [],
+
+    // Markdown 확장에 대해 디버그 로깅을 사용하도록 설정합니다.
+    "markdown.trace": "off",
+
+    // 기본 제공 PHP 언어 제안을 사용하는지 여부를 구성합니다. 지원에서는 PHP 전역 및 변수를 제안합니다.
+    "php.suggest.basic": true,
+
+    // 기본 제공 PHP 유효성 검사를 사용하거나 사용하지 않습니다.
+    "php.validate.enable": true,
+
+    // PHP 실행 파일을 가리킵니다.
+    "php.validate.executablePath": null,
+
+    // 저장 시 또는 입력 시 Linter의 실행 여부입니다.
+    "php.validate.run": "onSave",
+
+    // JSX 태그 자동 닫기를 사용하거나 사용하지 않도록 설정합니다. 작업 영역에서 TypeScript 3.0 이상을 사용해야 합니다.
+    "javascript.autoClosingTags": true,
+
+    // 기본 JavaScript 포맷터를 사용하거나 사용하지 않습니다.
+    "javascript.format.enable": true,
+
+    // 쉼표 구분 기호 뒤에 오는 공백 처리를 정의합니다.
+    "javascript.format.insertSpaceAfterCommaDelimiter": true,
+
+    // 생성자 키워드 뒤에 오는 공백 처리를 정의합니다. 작업 영역에서 TypeScript 2.3.0 이상을 사용해야 합니다.
+    "javascript.format.insertSpaceAfterConstructor": false,
+
+    // 익명 함수의 function 키워드 뒤에 오는 공백 처리를 정의합니다.
+    "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+
+    // 제어 흐름 문의 키워드 뒤에 오는 공백 처리를 정의합니다.
+    "javascript.format.insertSpaceAfterKeywordsInControlFlowStatements": true,
+
+    // JSX 식의 여는 중괄호 뒤와 닫는 중괄호 앞의 공백 처리를 정의합니다.
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
+
+    // 비어 있지 않은 여는 중괄호 뒤와 닫는 중괄호 앞의 공백 처리를 정의합니다. 작업 영역에서 TypeScript 2.3.0 이상을 사용해야 합니다.
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+
+    // 비어 있지 않은 여는 대괄호 뒤와 닫는 대괄호 앞에 오는 공백 처리를 정의합니다.
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+
+    // 비어 있지 않은 여는 괄호 뒤와 닫는 괄호 앞에 오는 공백 처리를 정의합니다.
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+
+    // 템플릿 문자열의 여는 중괄호 뒤와 닫는 중괄호 앞의 공백 처리를 정의합니다.
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+
+    // for 문에서 세미콜론 뒤에 오는 공백 처리를 정의합니다.
+    "javascript.format.insertSpaceAfterSemicolonInForStatements": true,
+
+    // 이항 연산자 뒤에 오는 공백 처리를 정의합니다.
+    "javascript.format.insertSpaceBeforeAndAfterBinaryOperators": true,
+
+    // 함수 인수 괄호 앞에 오는 공백 처리를 정의합니다.
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+
+    // 제어 블록의 새 줄에 여는 중괄호를 넣을지 정의합니다.
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+
+    // 함수의 새 줄에 여는 중괄호를 넣을지 정의합니다.
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": false,
+
+    // JavaScript 파일의 의미 체계 검사를 사용하거나 사용하지 않도록 설정합니다. 기존 jsconfig.json 또는 tsconfig.json 파일은 이 설정을 재정의합니다. 작업 영역에서 TypeScript 2.3.1 이상을 사용해야 합니다.
+    "javascript.implicitProjectConfig.checkJs": false,
+
+    // 프로젝트의 일부가 아닌 JavaScript 파일에 대해 'experimentalDecorators'를 사용하거나 사용하지 않도록 설정합니다. 기존 jsconfig.json 또는 tsconfig.json 파일은 이 설정을 재정의합니다. 작업 영역에서 TypeScript 2.3.1 이상을 사용해야 합니다.
+    "javascript.implicitProjectConfig.experimentalDecorators": false,
+
+    // 자동 가져오기의 기본 경로 스타일입니다.
+    //  - auto: 최단 경로 유형을 유추합니다.
+    //  - relative: 파일 위치를 기준으로 합니다.
+    //  - non-relative: `jsconfig.json`/`tsconfig.json`에 구성된 `baseUrl`을 기준으로 합니다.
+    "javascript.preferences.importModuleSpecifier": "auto",
+
+    // 빠른 수정에 사용할 기본 따옴표 스타일은 '작은' 따옴표, '큰' 따옴표 또는 '자동'입니다. '자동'이면 기존 가져오기에서 따옴표 형식이 유추됩니다. 작업 영역에서 TypeScript 2.9 이상을 사용해야 합니다.
+    "javascript.preferences.quoteStyle": "auto",
+
+    // 이름을 바꾸는 중 개체 줄임 속성의 별칭 지정을 사용하거나 사용하지 않도록 설정합니다. 작업 영역에서 TypeScript 3.4 이상을 사용해야 합니다.
+    "javascript.preferences.renameShorthandProperties": true,
+
+    // JavaScript 파일에서 CodeLense 참조를 사용/사용 안 함으로 설정합니다.
+    "javascript.referencesCodeLens.enabled": false,
+
+    // 자동 가져오기 제안을 사용하거나 사용하지 않도록 설정합니다. 작업 영역에서 TypeScript 2.6.1 이상을 사용해야 합니다.
+    "javascript.suggest.autoImports": true,
+
+    // 매개 변수 서명으로 함수를 완료하세요.
+    "javascript.suggest.completeFunctionCalls": false,
+
+    // 제안을 사용하거나 사용하지 않도록 설정하여 JSDoc 주석을 완료합니다.
+    "javascript.suggest.completeJSDocs": true,
+
+    // 자동 완성 제안을 사용하거나 사용하지 않도록 설정합니다.
+    "javascript.suggest.enabled": true,
+
+    // JavaScript 제안의 파일에서 고유한 이름 포함을 사용/사용 안 함으로 설정합니다.
+    "javascript.suggest.names": true,
+
+    // import 문 및 요청 호출의 경로에 대한 제안을 사용하거나 사용하지 않도록 설정합니다.
+    "javascript.suggest.paths": true,
+
+    // 편집기에서 JavaScript 파일에 대한 제안 진단을 사용하거나 사용하지 않도록 설정합니다. 작업 영역에서 TypeScript 2.8 이상을 사용해야 합니다.
+    "javascript.suggestionActions.enabled": true,
+
+    // VS Code에서 파일을 이동하거나 이름을 바꿀 때 가져오기 경로의 자동 업데이트를 사용하거나 사용하지 않도록 설정합니다. 작업 영역에서 TypeScript 2.9 이상을 사용해야 합니다.
+    //  - prompt: 이름을 바꿀 때마다 프롬프트를 표시합니다.
+    //  - always: 항상 경로를 자동으로 업데이트합니다.
+    //  - never: 경로 이름을 바꾸지 않고 메시지를 표시하지 않습니다.
+    "javascript.updateImportsOnFileMove.enabled": "prompt",
+
+    // JavaScript 유효성 검사를 사용하거나 사용하지 않습니다.
+    "javascript.validate.enable": true,
+
+    // JSX 태그 자동 닫기를 사용하거나 사용하지 않도록 설정합니다. 작업 영역에서 TypeScript 3.0 이상을 사용해야 합니다.
+    "typescript.autoClosingTags": true,
+
+    // 자동 입력 인식에 대해 NPM이 설치되어 있는지 확인합니다.
+    "typescript.check.npmIsInstalled": true,
+
+    // 자동 형식 인식을 사용하지 않도록 설정합니다. 자동 형식 인식은 npm에서 `@types` 패키지를 가져와 외부 라이브러리의 IntelliSense를 향상합니다.
+    "typescript.disableAutomaticTypeAcquisition": false,
+
+    // 기본 TypeScript 포맷터를 사용하거나 사용하지 않습니다.
+    "typescript.format.enable": true,
+
+    // 쉼표 구분 기호 뒤에 오는 공백 처리를 정의합니다.
+    "typescript.format.insertSpaceAfterCommaDelimiter": true,
+
+    // 생성자 키워드 뒤에 오는 공백 처리를 정의합니다. 작업 영역에서 TypeScript 2.3.0 이상을 사용해야 합니다.
+    "typescript.format.insertSpaceAfterConstructor": false,
+
+    // 익명 함수의 function 키워드 뒤에 오는 공백 처리를 정의합니다.
+    "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+
+    // 제어 흐름 문의 키워드 뒤에 오는 공백 처리를 정의합니다.
+    "typescript.format.insertSpaceAfterKeywordsInControlFlowStatements": true,
+
+    // JSX 식의 여는 중괄호 뒤와 닫는 중괄호 앞의 공백 처리를 정의합니다.
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
+
+    // 비어 있지 않은 여는 중괄호 뒤와 닫는 중괄호 앞의 공백 처리를 정의합니다. 작업 영역에서 TypeScript 2.3.0 이상을 사용해야 합니다.
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+
+    // 비어 있지 않은 여는 대괄호 뒤와 닫는 대괄호 앞에 오는 공백 처리를 정의합니다.
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+
+    // 비어 있지 않은 여는 괄호 뒤와 닫는 괄호 앞에 오는 공백 처리를 정의합니다.
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+
+    // 템플릿 문자열의 여는 중괄호 뒤와 닫는 중괄호 앞의 공백 처리를 정의합니다.
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+
+    // for 문에서 세미콜론 뒤에 오는 공백 처리를 정의합니다.
+    "typescript.format.insertSpaceAfterSemicolonInForStatements": true,
+
+    // TypeScript에서 형식 어설션 뒤에 오는 공백 처리를 정의합니다. 작업 영역에서 TypeScript 2.4 이상을 사용해야 합니다.
+    "typescript.format.insertSpaceAfterTypeAssertion": false,
+
+    // 이항 연산자 뒤에 오는 공백 처리를 정의합니다.
+    "typescript.format.insertSpaceBeforeAndAfterBinaryOperators": true,
+
+    // 함수 인수 괄호 앞에 오는 공백 처리를 정의합니다.
+    "typescript.format.insertSpaceBeforeFunctionParenthesis": false,
+
+    // 제어 블록의 새 줄에 여는 중괄호를 넣을지 정의합니다.
+    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+
+    // 함수의 새 줄에 여는 중괄호를 넣을지 정의합니다.
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": false,
+
+    // CodeLens 구현을 사용하거나 사용하지 않습니다. 이 CodeLens는 인터페이스의 구현자를 표시합니다.
+    "typescript.implementationsCodeLens.enabled": false,
+
+    // JavaScript 및 TypeScript 오류를 보고하는 데 사용하는 로캘을 설정합니다. 작업 영역에서 TypeScript 2.6.0 이상을 사용해야 합니다. 기본값 'null'을 설정하면 VS Code의 로캘이 사용됩니다.
+    "typescript.locale": null,
+
+    // 자동 형식 인식에 사용되는 NPM 실행 파일의 경로를 지정합니다. 작업 영역에서 TypeScript 2.3.4 이상을 사용해야 합니다.
+    "typescript.npm": null,
+
+    // 자동 가져오기의 기본 경로 스타일입니다.
+    //  - auto: 최단 경로 유형을 유추합니다.
+    //  - relative: 파일 위치를 기준으로 합니다.
+    //  - non-relative: `jsconfig.json`/`tsconfig.json`에 구성된 `baseUrl`을 기준으로 합니다.
+    "typescript.preferences.importModuleSpecifier": "auto",
+
+    // 빠른 수정에 사용할 기본 따옴표 스타일은 '작은' 따옴표, '큰' 따옴표 또는 '자동'입니다. '자동'이면 기존 가져오기에서 따옴표 형식이 유추됩니다. 작업 영역에서 TypeScript 2.9 이상을 사용해야 합니다.
+    "typescript.preferences.quoteStyle": "auto",
+
+    // 이름을 바꾸는 중 개체 줄임 속성의 별칭 지정을 사용하거나 사용하지 않도록 설정합니다. 작업 영역에서 TypeScript 3.4 이상을 사용해야 합니다.
+    "typescript.preferences.renameShorthandProperties": true,
+
+    // TypeScript 파일에서 참조 CodeLens를 사용하거나 사용하지 않도록 설정합니다.
+    "typescript.referencesCodeLens.enabled": false,
+
+    // 스타일 검사를 경고로 보고합니다.
+    "typescript.reportStyleChecksAsWarnings": true,
+
+    // 자동 가져오기 제안을 사용하거나 사용하지 않도록 설정합니다. 작업 영역에서 TypeScript 2.6.1 이상을 사용해야 합니다.
+    "typescript.suggest.autoImports": true,
+
+    // 매개 변수 서명으로 함수를 완료하세요.
+    "typescript.suggest.completeFunctionCalls": false,
+
+    // 제안을 사용하거나 사용하지 않도록 설정하여 JSDoc 주석을 완료합니다.
+    "typescript.suggest.completeJSDocs": true,
+
+    // 자동 완성 제안을 사용하거나 사용하지 않도록 설정합니다.
+    "typescript.suggest.enabled": true,
+
+    // import 문 및 요청 호출의 경로에 대한 제안을 사용하거나 사용하지 않도록 설정합니다.
+    "typescript.suggest.paths": true,
+
+    // 편집기에서 TypeScript 파일에 대한 제안 진단을 사용하거나 사용하지 않도록 설정합니다. 작업 영역에서 TypeScript 2.8 이상을 사용해야 합니다.
+    "typescript.suggestionActions.enabled": true,
+
+    // VS Code의 Javascript 및 Typescript 지원을 개선하는 데 도움이 되는 가끔 있는 설문을 사용하거나 사용하지 않도록 설정합니다.
+    "typescript.surveys.enabled": true,
+
+    // tsc 작업의 자동 검색을 제어합니다.
+    //  - on: 빌드 및 조사식 작업을 모두 만듭니다.
+    //  - off: 이 기능을 사용하지 않도록 설정합니다.
+    //  - build: 단일 실행 컴파일 작업만 만듭니다.
+    //  - watch: 컴파일 및 조사식 작업만 만듭니다.
+    "typescript.tsc.autoDetect": "on",
+
+    // 사용할 tsserver 및 lib*.d.ts 파일이 들어 있는 폴더 경로를 지정합니다.
+    "typescript.tsdk": null,
+
+    // 파일에 대해 TS 서버 로깅을 사용하도록 설정합니다. 이 로그는 TS 서버 문제를 진단하는 데 사용될 수 있습니다. 로그에는 파일 경로, 소스 코드 및 프로젝트에서 잠재적으로 중요한 기타 정보가 포함될 수 있습니다.
+    "typescript.tsserver.log": "off",
+
+    // Typescript 언어 서비스 플러그 인을 검색할 추가 경로입니다. 작업 영역에서 TypeScript 2.3.0 이상을 사용해야 합니다.
+    "typescript.tsserver.pluginPaths": [],
+
+    // TS 서버로 전송한 메시지 추적을 사용하도록 설정합니다. 이
+    //  추적은 TS 서버 문제를 진단하는 데 사용될 수 있습니다. 추적에는 파일 경로, 소스 코드 및 프로젝트에서 잠재적으로 중요한
+    //  기타 정보가 포함될 수 있습니다.
+    "typescript.tsserver.trace": "off",
+
+    // VS Code에서 파일을 이동하거나 이름을 바꿀 때 가져오기 경로의 자동 업데이트를 사용하거나 사용하지 않도록 설정합니다. 작업 영역에서 TypeScript 2.9 이상을 사용해야 합니다.
+    //  - prompt: 이름을 바꿀 때마다 프롬프트를 표시합니다.
+    //  - always: 항상 경로를 자동으로 업데이트합니다.
+    //  - never: 경로 이름을 바꾸지 않고 메시지를 표시하지 않습니다.
+    "typescript.updateImportsOnFileMove.enabled": "prompt",
+
+    // TypeScript 유효성 검사를 사용하거나 사용하지 않습니다.
+    "typescript.validate.enable": true,
+
+    // 모든 파일에서 중단점을 설정할 수 있습니다.
+    "debug.allowBreakpointsEverywhere": false,
+
+    // 디버그 콘솔에서 글꼴 패밀리를 제어합니다.
+    "debug.console.fontFamily": "default",
+
+    // 디버그 콘솔에서 글꼴 크기(픽셀)를 제어합니다.
+    "debug.console.fontSize": 14,
+
+    // 디버그 콘솔에서 줄 높이(픽셀)를 제어합니다. 글꼴 크기에서 줄 높이를 계산하려면 0을 사용합니다.
+    "debug.console.lineHeight": 0,
+
+    // 디버그할 때 디버그가 아닌 가리키기를 사용하도록 설정할지 여부를 제어합니다. 사용하도록 설정되면 가리키기를 제공하기 위해 가리키기 공급자를 호출합니다. 이 설정이 사용하도록 설정된 경우에도 일반 가리키기는 표시되지 않습니다.
+    "debug.enableAllHovers": false,
+
+    // 디버그하는 동안 편집기에서 변수 값을 인라인으로 표시합니다.
+    "debug.inlineValues": false,
+
+    // 내부 디버그 콘솔을 열어야 할 경우를 제어합니다.
+    "debug.internalConsoleOptions": "openOnFirstSessionStart",
+
+    // 디버그 보기를 열 경우를 제어합니다.
+    "debug.openDebug": "openOnSessionStart",
+
+    // 디버그 세션 끝에 자동으로 탐색기 뷰를 엽니다.
+    "debug.openExplorerOnEnd": false,
+
+    // 디버그 상태 표시줄을 표시할 경우를 제어합니다.
+    //  - never: 상태 표시줄에 디버그 표시 안 함
+    //  - always: 상태 표시줄에 디버그 항상 표시
+    //  - onFirstSessionStart: 디버그가 처음으로 시작된 후에만 상태 표시줄에 디버그 표시
+    "debug.showInStatusBar": "onFirstSessionStart",
+
+    // 디버그 도구 모음에서 디버그 하위 세션을 표시할지 여부를 제어합니다. 이 설정이 false이면 하위 세션의 중지 명령이 부모 세션도 중지합니다.
+    "debug.showSubSessionsInToolBar": false,
+
+    // 디버그 도구 모음의 위치를 제어합니다. '부동'(모든 뷰), '고정'(디버그 뷰) 또는 '숨김'입니다.
+    "debug.toolBarLocation": "floating",
+
+    // 전역 디버그 시작 구성입니다. 작업 영역에서 공유되는 'launch.json' 대신 사용되어야 합니다.
+    "launch": {
+        "configurations": [],
+        "compounds": []
+    },
+
+    // 주석 패널을 열어야 하는 경우를 제어합니다.
+    "comments.openPanel": "openOnSessionStartWithComments",
+
+    // 기본적으로 VS Code는 CSS 속성을 선택한 후 속성 값 완료를 트리거합니다. 이 동작을 비활성화하려면 이 설정을 사용합니다.
+    "css.completion.triggerPropertyValueCompletion": true,
+
+    // A list of JSON file paths that define custom CSS data that loads custom properties, at directives, pseudo classes / elements.
+    "css.experimental.customData": [],
+
+    // 잘못된 매개 변수 수입니다.
+    "css.lint.argumentsInColorFunction": "error",
+
+    // 'padding' 또는 'border'를 사용하는 경우 'width' 또는 'height'를 사용하지 마세요.
+    "css.lint.boxModel": "ignore",
+
+    // 공급업체 관련 접두사를 사용할 경우 다른 모든 공급업체 관련 속성도 포함합니다.
+    "css.lint.compatibleVendorPrefixes": "ignore",
+
+    // 중복된 스타일 정의를 사용하지 마세요.
+    "css.lint.duplicateProperties": "ignore",
+
+    // 빈 규칙 집합을 사용하지 마세요.
+    "css.lint.emptyRules": "warning",
+
+    // 'float'를 사용하지 않도록 합니다. Float를 사용하면 레이아웃의 한쪽이 바뀔 경우 CSS가 쉽게 깨질 수 있습니다.
+    "css.lint.float": "ignore",
+
+    // `@font-face` 규칙에서 'src' 및 'font-family' 속성을 정의해야 합니다.
+    "css.lint.fontFaceProperties": "warning",
+
+    // 16진수 색은 3개 또는 6개의 16진수로 구성되어야 합니다.
+    "css.lint.hexColorLength": "error",
+
+    // 이러한 규칙은 HTML과 긴밀하게 결합되므로 선택기에 ID를 포함하면 안 됩니다.
+    "css.lint.idSelector": "ignore",
+
+    // IE 핵(Hack)은 IE7 이상을 지원할 때만 필요합니다.
+    "css.lint.ieHack": "ignore",
+
+    // '!important'는 사용하지 않도록 합니다. 이것은 전체 CSS의 특정성에 문제가 있어서 리팩터링해야 함을 나타냅니다.
+    "css.lint.important": "ignore",
+
+    // Import 문은 병렬로 로드되지 않습니다.
+    "css.lint.importStatement": "ignore",
+
+    // display 때문에 속성이 무시됩니다. 예를 들어 'display: inline'을 사용할 경우 'width', 'height', 'margin-top', 'margin-bottom' 및 'float' 속성은 적용되지 않습니다.
+    "css.lint.propertyIgnoredDueToDisplay": "warning",
+
+    // 범용 선택기(*)는 느린 것으로 알려져 있습니다.
+    "css.lint.universalSelector": "ignore",
+
+    // 알 수 없는 @ 규칙 입니다.
+    "css.lint.unknownAtRules": "warning",
+
+    // 알 수 없는 속성입니다.
+    "css.lint.unknownProperties": "warning",
+
+    // 알 수 없는 공급업체 관련 속성입니다.
+    "css.lint.unknownVendorSpecificProperties": "ignore",
+
+    // `unknownProperties` 규칙에 따라 유효성이 검사되지 않은 속성 목록입니다.
+    "css.lint.validProperties": [],
+
+    // 공급업체 관련 접두사를 사용할 경우 표준 속성도 포함합니다.
+    "css.lint.vendorPrefix": "warning",
+
+    // 0에는 단위가 필요하지 않습니다.
+    "css.lint.zeroUnits": "ignore",
+
+    // VS Code와 CSS 언어 서버 간 통신을 추적합니다.
+    "css.trace.server": "off",
+
+    // 모든 유효성 검사를 사용하거나 사용하지 않습니다.
+    "css.validate": true,
+
+    // 잘못된 매개 변수 수입니다.
+    "less.lint.argumentsInColorFunction": "error",
+
+    // 'padding' 또는 'border'를 사용하는 경우 'width' 또는 'height'를 사용하지 마세요.
+    "less.lint.boxModel": "ignore",
+
+    // 공급업체 관련 접두사를 사용할 경우 다른 모든 공급업체 관련 속성도 포함합니다.
+    "less.lint.compatibleVendorPrefixes": "ignore",
+
+    // 중복된 스타일 정의를 사용하지 마세요.
+    "less.lint.duplicateProperties": "ignore",
+
+    // 빈 규칙 집합을 사용하지 마세요.
+    "less.lint.emptyRules": "warning",
+
+    // 'float'를 사용하지 않도록 합니다. Float를 사용하면 레이아웃의 한쪽이 바뀔 경우 CSS가 쉽게 깨질 수 있습니다.
+    "less.lint.float": "ignore",
+
+    // `@font-face` 규칙에서 'src' 및 'font-family' 속성을 정의해야 합니다.
+    "less.lint.fontFaceProperties": "warning",
+
+    // 16진수 색은 3개 또는 6개의 16진수로 구성되어야 합니다.
+    "less.lint.hexColorLength": "error",
+
+    // 이러한 규칙은 HTML과 긴밀하게 결합되므로 선택기에 ID를 포함하면 안 됩니다.
+    "less.lint.idSelector": "ignore",
+
+    // IE 핵(Hack)은 IE7 이상을 지원할 때만 필요합니다.
+    "less.lint.ieHack": "ignore",
+
+    // '!important'는 사용하지 않도록 합니다. 이것은 전체 CSS의 특정성에 문제가 있어서 리팩터링해야 함을 나타냅니다.
+    "less.lint.important": "ignore",
+
+    // Import 문은 병렬로 로드되지 않습니다.
+    "less.lint.importStatement": "ignore",
+
+    // display 때문에 속성이 무시됩니다. 예를 들어 'display: inline'을 사용할 경우 'width', 'height', 'margin-top', 'margin-bottom' 및 'float' 속성은 적용되지 않습니다.
+    "less.lint.propertyIgnoredDueToDisplay": "warning",
+
+    // 범용 선택기(*)는 느린 것으로 알려져 있습니다.
+    "less.lint.universalSelector": "ignore",
+
+    // 알 수 없는 속성입니다.
+    "less.lint.unknownProperties": "warning",
+
+    // 알 수 없는 공급업체 관련 속성입니다.
+    "less.lint.unknownVendorSpecificProperties": "ignore",
+
+    // `unknownProperties` 규칙에 따라 유효성이 검사되지 않은 속성 목록입니다.
+    "less.lint.validProperties": [],
+
+    // 공급업체 관련 접두사를 사용할 경우 표준 속성도 포함합니다.
+    "less.lint.vendorPrefix": "warning",
+
+    // 0에는 단위가 필요하지 않습니다.
+    "less.lint.zeroUnits": "ignore",
+
+    // 모든 유효성 검사를 사용하거나 사용하지 않습니다.
+    "less.validate": true,
+
+    // 잘못된 매개 변수 수입니다.
+    "scss.lint.argumentsInColorFunction": "error",
+
+    // 'padding' 또는 'border'를 사용하는 경우 'width' 또는 'height'를 사용하지 마세요.
+    "scss.lint.boxModel": "ignore",
+
+    // 공급업체 관련 접두사를 사용할 경우 다른 모든 공급업체 관련 속성도 포함합니다.
+    "scss.lint.compatibleVendorPrefixes": "ignore",
+
+    // 중복된 스타일 정의를 사용하지 마세요.
+    "scss.lint.duplicateProperties": "ignore",
+
+    // 빈 규칙 집합을 사용하지 마세요.
+    "scss.lint.emptyRules": "warning",
+
+    // 'float'를 사용하지 않도록 합니다. Float를 사용하면 레이아웃의 한쪽이 바뀔 경우 CSS가 쉽게 깨질 수 있습니다.
+    "scss.lint.float": "ignore",
+
+    // `@font-face` 규칙에서 'src' 및 'font-family' 속성을 정의해야 합니다.
+    "scss.lint.fontFaceProperties": "warning",
+
+    // 16진수 색은 3개 또는 6개의 16진수로 구성되어야 합니다.
+    "scss.lint.hexColorLength": "error",
+
+    // 이러한 규칙은 HTML과 긴밀하게 결합되므로 선택기에 ID를 포함하면 안 됩니다.
+    "scss.lint.idSelector": "ignore",
+
+    // IE 핵(Hack)은 IE7 이상을 지원할 때만 필요합니다.
+    "scss.lint.ieHack": "ignore",
+
+    // '!important'는 사용하지 않도록 합니다. 이것은 전체 CSS의 특정성에 문제가 있어서 리팩터링해야 함을 나타냅니다.
+    "scss.lint.important": "ignore",
+
+    // Import 문은 병렬로 로드되지 않습니다.
+    "scss.lint.importStatement": "ignore",
+
+    // display 때문에 속성이 무시됩니다. 예를 들어 'display: inline'을 사용할 경우 'width', 'height', 'margin-top', 'margin-bottom' 및 'float' 속성은 적용되지 않습니다.
+    "scss.lint.propertyIgnoredDueToDisplay": "warning",
+
+    // 범용 선택기(*)는 느린 것으로 알려져 있습니다.
+    "scss.lint.universalSelector": "ignore",
+
+    // 알 수 없는 속성입니다.
+    "scss.lint.unknownProperties": "warning",
+
+    // 알 수 없는 공급업체 관련 속성입니다.
+    "scss.lint.unknownVendorSpecificProperties": "ignore",
+
+    // `unknownProperties` 규칙에 따라 유효성이 검사되지 않은 속성 목록입니다.
+    "scss.lint.validProperties": [],
+
+    // 공급업체 관련 접두사를 사용할 경우 표준 속성도 포함합니다.
+    "scss.lint.vendorPrefix": "warning",
+
+    // 0에는 단위가 필요하지 않습니다.
+    "scss.lint.zeroUnits": "ignore",
+
+    // 모든 유효성 검사를 사용하거나 사용하지 않습니다.
+    "scss.validate": true,
+
+    // 사용하도록 설정하면 확장의 업데이트가 있는지를 자동으로 확인합니다.  확장의 업데이트가 있으면 확장 보기에서 오래된 것으로 표시됩니다. 업데이트는 Microsoft 온라인 서비스에서 가져옵니다.
+    "extensions.autoCheckUpdates": true,
+
+    // 사용하도록 설정하면 확장의 업데이트를 자동으로 설치합니다. 업데이트는 Microsoft 온라인 서비스에서 가져옵니다.
+    "extensions.autoUpdate": true,
+
+    // 사용하도록 설정하는 경우 확장 뷰에서 나가면 확장 정보가 포함된 편집기가 자동으로 닫힙니다.
+    "extensions.closeExtensionDetailsOnViewChange": false,
+
+    // 사용하도록 설정하면 확장 권장 사항에 대한 알림이 표시되지 않습니다.
+    "extensions.ignoreRecommendations": false,
+
+    // 사용하도록 설정하면 사용자가 특별히 요청하는 경우가 아니면 권장 사항을 가져오거나 표시하지 않습니다. 몇 가지 권장 사항은 Microsoft 온라인 서비스에서 가져옵니다.
+    "extensions.showRecommendationsOnlyOnDemand": false,
+
+    // 실행할 터미널 종류를 사용자 지정합니다.
+    //  - integrated: VS Code의 통합 터미널을 사용합니다.
+    //  - external: 구성된 외부 터미널을 사용합니다.
+    "terminal.explorerKind": "integrated",
+
+    // Linux에서 실행할 터미널을 사용자 지정합니다.
+    "terminal.external.linuxExec": "xterm",
+
+    // macOS에서 실행할 터미널 애플리케이션을 사용자 지정합니다.
+    "terminal.external.osxExec": "Terminal.app",
+
+    // Windows에서 실행할 터미널을 사용자 지정합니다.
+    "terminal.external.windowsExec": "C:\\Windows\\System32\\cmd.exe",
+
+    // 키 바인딩이 셸에 전송되지 않고 항상 Code에서 처리되는 명령 ID 집합입니다. 따라서 셸에서 정상적으로 사용되어 터미널에 포커스가 없을 때와 동일하게 작동하는 키 바인딩을 사용할 수 있습니다(예: <Ctrl+P>를 사용하여 Quick Open 시작).
+    // 기본적으로 건너뛰는 명령:
+    //
+    // - editor.action.toggleTabFocusMode
+    // - workbench.action.debug.continue
+    // - workbench.action.debug.pause
+    // - workbench.action.debug.restart
+    // - workbench.action.debug.run
+    // - workbench.action.debug.start
+    // - workbench.action.debug.stepInto
+    // - workbench.action.debug.stepOut
+    // - workbench.action.debug.stepOver
+    // - workbench.action.debug.stop
+    // - workbench.action.firstEditorInGroup
+    // - workbench.action.focusActiveEditorGroup
+    // - workbench.action.focusEighthEditorGroup
+    // - workbench.action.focusFifthEditorGroup
+    // - workbench.action.focusFirstEditorGroup
+    // - workbench.action.focusFourthEditorGroup
+    // - workbench.action.focusLastEditorGroup
+    // - workbench.action.focusSecondEditorGroup
+    // - workbench.action.focusSeventhEditorGroup
+    // - workbench.action.focusSixthEditorGroup
+    // - workbench.action.focusThirdEditorGroup
+    // - workbench.action.lastEditorInGroup
+    // - workbench.action.navigateDown
+    // - workbench.action.navigateLeft
+    // - workbench.action.navigateRight
+    // - workbench.action.navigateUp
+    // - workbench.action.nextPanelView
+    // - workbench.action.nextSideBarView
+    // - workbench.action.openNextRecentlyUsedEditorInGroup
+    // - workbench.action.openPreviousRecentlyUsedEditorInGroup
+    // - workbench.action.previousPanelView
+    // - workbench.action.previousSideBarView
+    // - workbench.action.quickOpen
+    // - workbench.action.quickOpenPreviousEditor
+    // - workbench.action.quickOpenView
+    // - workbench.action.showCommands
+    // - workbench.action.tasks.build
+    // - workbench.action.tasks.reRunTask
+    // - workbench.action.tasks.restartTask
+    // - workbench.action.tasks.runTask
+    // - workbench.action.tasks.showLog
+    // - workbench.action.tasks.showTasks
+    // - workbench.action.tasks.terminate
+    // - workbench.action.tasks.test
+    // - workbench.action.terminal.clear
+    // - workbench.action.terminal.clearSelection
+    // - workbench.action.terminal.copySelection
+    // - workbench.action.terminal.deleteToLineStart
+    // - workbench.action.terminal.deleteWordLeft
+    // - workbench.action.terminal.deleteWordRight
+    // - workbench.action.terminal.findNextTerminalFocus
+    // - workbench.action.terminal.findPreviousTerminalFocus
+    // - workbench.action.terminal.focus
+    // - workbench.action.terminal.focusAtIndex1
+    // - workbench.action.terminal.focusAtIndex2
+    // - workbench.action.terminal.focusAtIndex3
+    // - workbench.action.terminal.focusAtIndex4
+    // - workbench.action.terminal.focusAtIndex5
+    // - workbench.action.terminal.focusAtIndex6
+    // - workbench.action.terminal.focusAtIndex7
+    // - workbench.action.terminal.focusAtIndex8
+    // - workbench.action.terminal.focusAtIndex9
+    // - workbench.action.terminal.focusFindWidget
+    // - workbench.action.terminal.focusNext
+    // - workbench.action.terminal.focusNextPane
+    // - workbench.action.terminal.focusPrevious
+    // - workbench.action.terminal.focusPreviousPane
+    // - workbench.action.terminal.hideFindWidget
+    // - workbench.action.terminal.kill
+    // - workbench.action.terminal.moveToLineEnd
+    // - workbench.action.terminal.moveToLineStart
+    // - workbench.action.terminal.new
+    // - workbench.action.terminal.newInActiveWorkspace
+    // - workbench.action.terminal.paste
+    // - workbench.action.terminal.resizePaneDown
+    // - workbench.action.terminal.resizePaneLeft
+    // - workbench.action.terminal.resizePaneRight
+    // - workbench.action.terminal.resizePaneUp
+    // - workbench.action.terminal.runActiveFile
+    // - workbench.action.terminal.runSelectedText
+    // - workbench.action.terminal.scrollDown
+    // - workbench.action.terminal.scrollDownPage
+    // - workbench.action.terminal.scrollToBottom
+    // - workbench.action.terminal.scrollToNextCommand
+    // - workbench.action.terminal.scrollToPreviousCommand
+    // - workbench.action.terminal.scrollToTop
+    // - workbench.action.terminal.scrollUp
+    // - workbench.action.terminal.scrollUpPage
+    // - workbench.action.terminal.selectAll
+    // - workbench.action.terminal.selectToNextCommand
+    // - workbench.action.terminal.selectToNextLine
+    // - workbench.action.terminal.selectToPreviousCommand
+    // - workbench.action.terminal.selectToPreviousLine
+    // - workbench.action.terminal.sendSequence
+    // - workbench.action.terminal.split
+    // - workbench.action.terminal.splitInActiveWorkspace
+    // - workbench.action.terminal.toggleFindCaseSensitiveTerminalFocus
+    // - workbench.action.terminal.toggleFindRegexTerminalFocus
+    // - workbench.action.terminal.toggleFindWholeWordTerminalFocus
+    // - workbench.action.terminal.toggleTerminal
+    // - workbench.action.toggleFullScreen
+    // - workbench.action.toggleMaximizedPanel
+    // - workbench.action.togglePanel
+    "terminal.integrated.commandsToSkipShell": [],
+
+    // 끝낼 때 활성 터미널 세션이 있는지 확인할지 여부를 제어합니다.
+    "terminal.integrated.confirmOnExit": false,
+
+    // 터미널에서 선택한 텍스트가 클립보드로 복사되는지 여부를 제어합니다.
+    "terminal.integrated.copyOnSelection": false,
+
+    // 터미널 커서 깜박임 여부를 제어합니다.
+    "terminal.integrated.cursorBlinking": false,
+
+    // 터미널 커서의 스타일을 제어합니다.
+    "terminal.integrated.cursorStyle": "block",
+
+    // 터미널이 시작될 명시적 시작 경로입니다. 셸 프로세스의 현재 작업 디렉터리(cwd)로 사용됩니다. 루트 디렉터리가 편리한 cwd가 아닌 경우 작업 영역 설정에서 특히 유용하게 사용할 수 있습니다.
+    "terminal.integrated.cwd": "",
+
+    // 터미널의 굵은 텍스트에서 "밝게" ANSI 색 변형을 항상 사용하는지 여부를 제어합니다.
+    "terminal.integrated.drawBoldTextInBrightColors": true,
+
+    // 터미널 벨을 사용하도록 설정할지 여부를 제어합니다.
+    "terminal.integrated.enableBell": false,
+
+    // Whether to enable the latency mitigation feature for high-latency terminals.
+    "terminal.integrated.enableLatencyMitigation": false,
+
+    // Linux의 터미널에서 사용할 VS Code 프로세스에 추가되는 환경 변수를 포함한 개체입니다. 환경 변수를 삭제하려면 'null'로 설정합니다.
+    "terminal.integrated.env.linux": {},
+
+    // macOS의 터미널에서 사용할 VS Code 프로세스에 추가되는 환경 변수를 포함한 개체입니다. 환경 변수를 삭제하려면 'null'로 설정합니다.
+    "terminal.integrated.env.osx": {},
+
+    // Windows의 터미널에서 사용할 VS Code 프로세스에 추가되는 환경 변수를 포함한 개체입니다. 환경 변수를 삭제하려면 'null'로 설정합니다.
+    "terminal.integrated.env.windows": {},
+
+    // An experimental setting that will refresh the terminal renderer when the system is resumed.
+    "terminal.integrated.experimentalRefreshOnResume": false,
+
+    // 터미널의 글꼴 패밀리를 제어하며, 기본값은 `#editor.fontFamily#의 값입니다.
+    "terminal.integrated.fontFamily": "",
+
+    // 터미널의 글꼴 크기(픽셀)를 제어합니다.
+    "terminal.integrated.fontSize": 14,
+
+    // 터미널 내에서 굵은 글꼴이 아닌 텍스트에 사용할 글꼴 두께입니다.
+    "terminal.integrated.fontWeight": "normal",
+
+    // 터미널 내에서 굵은 글꼴 텍스트에 사용할 글꼴 두께입니다.
+    "terminal.integrated.fontWeightBold": "bold",
+
+    // 터미널의 문자 간격을 제어하며, 문자  사이에 추가할 픽셀의 양을 나타내는 정수 값입니다.
+    "terminal.integrated.letterSpacing": 0,
+
+    // 터미널의 줄 높이를 제어합니다. 이 숫자에 터미널 글꼴 크기를 곱해 실제 줄 높이(픽셀)를 얻습니다.
+    "terminal.integrated.lineHeight": 1,
+
+    // macOS에서 <option> 키를 누른 채 클릭할 때 강제로 선택할지 여부를 제어합니다. 이 경우 일반(줄) 선택이 사용되고 열 선택 모드 사용은 허용되지 않습니다. 따라서 일반 터미널 선택을 사용하여 복사 및 붙여넣을 수 있습니다. tmux에서 마우스 모드를 사용할 수 있는 경우를 예로 들 수 있습니다.
+    "terminal.integrated.macOptionClickForcesSelection": false,
+
+    // macOS의 터미널에서 <option> 키를 메타 키로 처리할지 여부를 제어합니다.
+    "terminal.integrated.macOptionIsMeta": false,
+
+    // 터미널을 렌더링하는 방법을 제어합니다.
+    //  - auto: VS Code에서 사용할 렌더러를 추측하게 합니다.
+    //  - canvas: 표준 GPU/캔버스 기반 렌더러 사용
+    //  - dom: 대체 DOM 기반 렌더러를 사용합니다.
+    "terminal.integrated.rendererType": "auto",
+
+    // 터미널이 마우스 오른쪽 단추 클릭에 반능하는 방법을 제어합니다.
+    //  - default: 상황에 맞는 메뉴를 표시합니다.
+    //  - copyPaste: 선택 항목이 있으면 복사하고 그렇지 않으면 붙여넣습니다.
+    //  - selectWord: 커서 아래에 있는 단어를 선택하고 상황에 맞는 메뉴를 표시합니다.
+    "terminal.integrated.rightClickBehavior": "copyPaste",
+
+    // 터미널에서 버퍼에 유지하는 최대 줄 수를 제어합니다.
+    "terminal.integrated.scrollback": 1000,
+
+    // 터미널을 시작할 때 로캘 변수를 설정할 것인지 여부를 제어합니다.
+    "terminal.integrated.setLocaleVariables": true,
+
+    // Linux에서 터미널이 사용하는 셸의 경로입니다. [셸 구성에 대한 자세한 정보](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).
+    "terminal.integrated.shell.linux": null,
+
+    // macOS에서 터미널이 사용하는 셸의 경로입니다. [셸 구성에 대한 자세한 정보](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).
+    "terminal.integrated.shell.osx": null,
+
+    // Windows에서 터미널이 사용하는 셸의 경로입니다. [셸 구성에 대한 자세한 정보](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).
+    "terminal.integrated.shell.windows": null,
+
+    // Linux 터미널에 있을 때 사용할 명령줄 인수입니다. [셸 구성에 대한 자세한 정보](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).
+    "terminal.integrated.shellArgs.linux": [],
+
+    // macOS 터미널에 있을 때 사용할 명령줄 인수입니다. [셸 구성에 대한 자세한 정보](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).
+    "terminal.integrated.shellArgs.osx": [
+        "-l"
+    ],
+
+    // Windows 터미널에 있을 때 사용할 명령줄 인수입니다. [셸 구성에 대한 자세한 정보](https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration).
+    "terminal.integrated.shellArgs.windows": [],
+
+    // 종료 코드가 0이 아닌 경우 "터미널 프로세스가 종료 코드로 종료되었습니다" 경고를 표시할지 여부를 제어합니다.
+    "terminal.integrated.showExitAlert": true,
+
+    // 분할 터미널이 시작되는 작업 디렉터리를 제어합니다.
+    //  - workspaceRoot: 새로운 분할 터미널에서는 작업 영역 루트를 작업 디렉터리로 사용합니다. 여러 루트 작업 영역에서는 사용할 루트 폴더를 선택할 수 있습니다.
+    //  - initial: 새 분할 터미널에서는 부모 터미널이 시작된 작업 디렉터리를 사용합니다.
+    //  - inherited: macOS 및 Linux에서는 새 분할 터미널이 부모 터미널의 작업 디렉터리를 사용합니다. Windows에서는 처음처럼  동작합니다.
+    "terminal.integrated.splitCwd": "inherited",
+
+    // Windows 터미널 프로세스 통신에 ConPTY를 사용할 것인지 여부입니다(Windows 10 빌드 번호 18309 이상이 필요함). false인 경우 Winpty가 사용됩니다.
+    "terminal.integrated.windowsEnableConpty": true,
+
+    // 문제 보기를 열 때 문제 보기에 자동으로 파일을 표시할지 여부를 제어합니다.
+    "problems.autoReveal": true,
+
+    // 파일 및 폴더에 오류와 경고를 표시합니다.
+    "problems.decorations.enabled": true,
+
+    // 탐색 이동 경로를 사용하도록/사용하지 않도록 설정합니다.
+    "breadcrumbs.enabled": true,
+
+    // 이동 경로 보기에서 파일 경로를 표시할지 여부와 표시 방법을 제어합니다.
+    //  - on: 이동 경로 뷰에서 파일 경로를 표시합니다.
+    //  - off: 이동 경로 뷰에서 파일 경로를 표시하지 않습니다.
+    //  - last: 이동 경로 뷰에서 파일 경로의 마지막 요소만 표시합니다.
+    "breadcrumbs.filePath": "on",
+
+    // 이동 경로 보기에서 기호를 표시할지 여부와 표시 방법을 제어합니다.
+    //  - on: 이동 경로 뷰에서 모든 기호를 표시합니다.
+    //  - off: 이동 경로 뷰에서 기호를 표시하지 않습니다.
+    //  - last: 이동 경로 뷰에서 현재 기호만 표시합니다.
+    "breadcrumbs.symbolPath": "on",
+
+    // 이동 경로 개요 보기에서 기호를 정렬하는 방법을 제어합니다.
+    //  - position: 파일 위치 순서로 기호 개요를 표시합니다.
+    //  - name: 사전순으로 기호 개요를 표시합니다.
+    //  - type: 기호 형식 순서로 기호 개요를 표시합니다.
+    "breadcrumbs.symbolSortOrder": "position",
+
+    // 충돌 보고서를 Microsoft 온라인 서비스에 전송할 수 있도록 설정합니다.
+    // 이 옵션을 적용하려면 다시 시작해야 합니다.
+    "telemetry.enableCrashReporter": true,
+
+    // 사용자 데이터와 에러를 Microsoft 온라인 서비스로 보내는 것을 허용합니다.
+    "telemetry.enableTelemetry": true,
+
+    // 아이콘으로 윤곽 요소를 렌더링합니다.
+    "outline.icons": true,
+
+    // 오류 및 경고에 배지를 사용하세요.
+    "outline.problems.badges": true,
+
+    // 오류 및 경고에 색을 사용합니다.
+    "outline.problems.colors": true,
+
+    // 개요 요소에 오류 및 경고를 표시합니다.
+    "outline.problems.enabled": true,
+
+    // This setting will let you change the default file icon for dark themes.
+    "vsicons.associations.fileDefault.file": null,
+
+    // This setting will let you change the default file icon for light themes.
+    "vsicons.associations.fileDefault.file_light": null,
+
+    // These custom associations will override the file icon associations defined by default.
+    "vsicons.associations.files": [],
+
+    // This setting will let you change the default folder icon for dark themes.
+    "vsicons.associations.folderDefault.folder": null,
+
+    // This setting will let you change the default folder icon for light themes.
+    "vsicons.associations.folderDefault.folder_light": null,
+
+    // This setting will let you change the default root folder icon for dark themes.
+    "vsicons.associations.folderDefault.root_folder": null,
+
+    // This setting will let you change the default root folder icon for light themes.
+    "vsicons.associations.folderDefault.root_folder_light": null,
+
+    // These custom associations will override the folder icon associations defined by default.
+    "vsicons.associations.folders": [],
+
+    // The physical path to the parent folder where the custom icons folder resides on your local machine.
+    "vsicons.customIconFolderPath": "",
+
+    // If set to 'true', when manually changing the configurations, the 'restart' message won't be shown.
+    "vsicons.dontShowConfigManuallyChangedMessage": false,
+
+    // If set to 'true', the new version message won't be shown anymore.
+    "vsicons.dontShowNewVersionMessage": false,
+
+    // If set to 'true', the extension will match some of the common Angular patterns.
+    "vsicons.presets.angular": false,
+
+    // If set to 'true', all folders will have the default folder icon.
+    "vsicons.presets.foldersAllDefaultIcon": false,
+
+    // If set to 'true', the extension will hide the folder arrows in the 'Explorer'.
+    "vsicons.presets.hideExplorerArrows": false,
+
+    // If set to 'true', all folders will be hidden.
+    "vsicons.presets.hideFolders": false,
+
+    // If set to 'true', the extension will use the official JS icon.
+    "vsicons.presets.jsOfficial": false,
+
+    // If set to 'true', the extension will use the official JSON icon.
+    "vsicons.presets.jsonOfficial": false,
+
+    // If set to 'true', the extension will match some of the common NestJS patterns.
+    "vsicons.presets.nestjs": false,
+
+    // If set to 'true', the extension will use the official TS icon.
+    "vsicons.presets.tsOfficial": false,
+
+    // If set to 'true', the extension will restart automatically on project detection.
+    "vsicons.projectDetection.autoReload": false,
+
+    // If set to 'true', the extension will disable the project detection.
+    "vsicons.projectDetection.disableDetect": false,
+
+    // npm bin name
+    "npm.bin": "npm",
+
+    // Enable npm commands in the macOS touchbar.
+    "npm.enableTouchbar": false,
+
+    // Look for 'package.json' files in these directories
+    "npm.includeDirectories": [],
+
+    // Run npm commands in a terminal, otherwise shows the output in the output panel
+    "npm.runInTerminal": true,
+
+    // Look for 'package.json' in the root directory of the workspace
+    "npm.useRootDirectory": true,
+
+    // Validate installed modules
+    "npm.validate.enable": true,
+
+    // [git-commit] 언어에 대해 재정의할 편집기 설정을 구성합니다.
+    "[git-commit]": {
+        "editor.rulers": [
+            72
+        ]
+    },
+
+    // [go] 언어에 대해 재정의할 편집기 설정을 구성합니다.
+    "[go]": {
+        "editor.insertSpaces": false
+    },
+
+    // [json] 언어에 대해 재정의할 편집기 설정을 구성합니다.
+    "[json]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        }
+    },
+
+    // [makefile] 언어에 대해 재정의할 편집기 설정을 구성합니다.
+    "[makefile]": {
+        "editor.insertSpaces": false
+    },
+
+    // [markdown] 언어에 대해 재정의할 편집기 설정을 구성합니다.
+    "[markdown]": {
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": false
+    },
+
+    // [yaml] 언어에 대해 재정의할 편집기 설정을 구성합니다.
+    "[yaml]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": false
+    },
+
+    // Additional resource directory paths SVG Editor can access.
+    "svgeditor.additionalResourcePaths": [],
+
+    // Collect two or more transform functions into a matrix.
+    "svgeditor.collectTransformMatrix": true,
+
+    // The number of decimal places.
+    "svgeditor.decimalPlaces": 1,
+
+    // Specifies the unit when creating some shapes.
+    "svgeditor.defaultUnit": null,
+
+    // Initial filename extension of new untitled file.
+    "svgeditor.filenameExtension": "svg",
+
+    // Initial height of new untitled file.
+    "svgeditor.height": "400px",
+
+    // Indent size of spaces for auto-formatting.
+    "svgeditor.indentSize": 4,
+
+    // Indent style for auto-formatting.
+    "svgeditor.indentStyle": "space",
+
+    // Use style attribute instead of presentation attriubte when there are no previous specifications.
+    "svgeditor.useStyleAttribute": false,
+
+    // Initial width of new untitled file.
+    "svgeditor.width": "400px",
+
+    // Gulp 작업의 자동 검색을 사용할지 여부를 제어합니다. 기본값은 [켜기]입니다.
+    "gulp.autoDetect": "on",
+
+    // A path to a file, or an object containing the configuration options for js-beautify. If the .jsbeautifyrc file exists in project root, it overrides this configuration.
+    "beautify.config": null,
+
+    // List of paths to ignore when using VS Code format command, including format on save. Uses glob pattern matching.
+    "beautify.ignore": [],
+
+    // Link file types to the beautifier type
+    "beautify.language": {
+        "js": {
+            "type": [
+                "javascript",
+                "json",
+                "jsonc"
+            ],
+            "filename": [
+                ".jshintrc",
+                ".jsbeautifyrc"
+            ]
+        },
+        "css": [
+            "css",
+            "less",
+            "scss"
+        ],
+        "html": [
+            "htm",
+            "html"
+        ]
+    },
+
+    // Jake 작업에 대한 자동 검색 사용 여부를 설정합니다. 기본값은 [켜기]입니다.
+    "jake.autoDetect": "on",
+
+    // Display favorite groups before (above) favorite files and directories
+    "favorites.groupsFirst": true,
+
+    // Specify an order for all favorites
+    "favorites.sortDirection": "ASC",
+
+    // Storage file path relative to workspace
+    "favorites.storageFilePath": ".favorites.json",
+
+    // List of alternative storage paths relative to workspace
+    "favorites.storageRegistry": [],
+
+    // Should 'files.exclude' setting be used
+    "favorites.useFilesExclude": true,
+
+    // Move to trash when resource gets deleted
+    "favorites.useTrash": false,
+
+    // Index of workspace where to look for storage file
+    "favorites.useWorkspace": 0,
+
+    // Emmet 약어는 확장하면 안 되는 언어의 배열입니다.
+    "emmet.excludeLanguages": [
+        "markdown"
+    ],
+
+    // Emmet 프로필과 코드 조각이 있는 폴더의 경로입니다.
+    "emmet.extensionsPath": null,
+
+    // 기본적으로 지원하지 않는 언어에서 Emmet 약어를 사용하도록 설정합니다. 여기에서 해당 언어와 emmet 지원 언어 사이의 매핑을 추가합니다.
+    // 예: {"vue-html": "html", "javascript": "javascriptreact"}
+    "emmet.includeLanguages": {},
+
+    // 'False'로 설정할 경우 전체 파일이 구문 분석되어 현재 위치가 Emmet 약어 확장에 유효한지 확인합니다. 'True'로 설정할 경우 css/scss/less 파일에서 현재 위치 주변의 콘텐츠만 구문 분석합니다.
+    "emmet.optimizeStylesheetParsing": true,
+
+    // Emmet의 일부 작업 및 해결 프로그램의 동작을 수정하는 데 사용되는 기본 설정입니다.
+    "emmet.preferences": {},
+
+    // 가능한 Emmet 약어를 제안으로 표시합니다. 스타일시트에는 적용되지 않고 emmet.showExpandedAbbreviation이 "never"로 설정되어 있을 때도 적용되지 않습니다.
+    "emmet.showAbbreviationSuggestions": true,
+
+    // 확장된 Emmet 약어를 제안으로 표시합니다.
+    // "inMarkupAndStylesheetFilesOnly" 옵션은 html, haml, jade, slim, xml, xsl, css, scss, sass, less 및 stylus에 적용됩니다.
+    // "always" 옵션은 마크업/css에 관계없이 파일의 모든 부분에 적용됩니다.
+    "emmet.showExpandedAbbreviation": "always",
+
+    // 'True'이면 Emmet 제안이 코드 조각으로 표시되며 `editor.snippetSuggestions` 설정에 따라 코드 조각을 정렬할 수 있습니다.
+    "emmet.showSuggestionsAsSnippets": false,
+
+    // 지정된 구문에 대한 프로필을 정의하거나 특정 규칙이 포함된 고유한 프로필을 사용하세요.
+    "emmet.syntaxProfiles": {},
+
+    // 사용하도록 설정하면 emmet 약어는 Tab 키를 눌렀을 때 확장됩니다.
+    "emmet.triggerExpansionOnTab": false,
+
+    // emmet 조각에 사용되는 변수
+    "emmet.variables": {},
+
+    // The maximum height of the image preview
+    "gutterpreview.imagePreviewMaxHeight": "100",
+
+    // Specify path mapping to be computed relative to project root.
+    "gutterpreview.paths": {},
+
+    // A flag which indicates whether the image preview should be shown on the gutter
+    "gutterpreview.showImagePreviewOnGutter": true,
+
+    // A flag which indicates whether to underline recognized URLs
+    "gutterpreview.showUnderline": true,
+
+    // Additional folder to consider when resolving relative urls
+    "gutterpreview.sourceFolder": "src",
+
+    // Controls whether 'Peek References' or 'Find References' is invoked when selecting code lens references
+    //  - peek: Show references in peek editor.
+    //  - view: Show references in separate view.
+    "references.preferredLocation": "peek",
+
+    // A list of vscode language names where the extension should be used.
+    "css_peek.activeLanguages": [
+        "html",
+        "ejs",
+        "erb",
+        "php",
+        "javascriptreact",
+        "typescriptreact",
+        "typescript",
+        "javascript"
+    ],
+
+    // Controls the enablement.
+    "css_peek.enable": true,
+
+    // Files are ignored from the CSS lookup if they match any of these Regular Expressions (regex).
+    "css_peek.exclude": [
+        "node_modules",
+        "bower_components"
+    ],
+
+    // A list of extensions that should be tried for finding peeked files.
+    "css_peek.searchFileExtensions": [
+        ".css",
+        ".scss",
+        ".less"
+    ],
+
+    // Traces the communication between VSCode and the language server.
+    "css_peek.trace.server": "off",
+
+    // 통합 터미널의 디버그 모드에서 node.js가 시작될 때 노드 디버거를 자동 연결합니다.
+    //  - disabled: 자동 연결이 사용하지 않도록 설정되어 있고 상태 표시줄에 표시되지 않습니다.
+    //  - on: 자동 연결이 활성 상태입니다.
+    //  - off: 자동 연결이 비활성 상태입니다.
+    "debug.node.autoAttach": "disabled",
+
+    // Automatically add vendor prefixes to unsupported CSS properties (e. g. transform -> -ms-transform). Specify what browsers to target with an array of strings (uses [Browserslist](https://github.com/ai/browserslist)). Pass `null` to turn off.
+    // Default is `null`
+    "liveSassCompile.settings.autoprefix": [
+        "> 1%",
+        "last 2 versions"
+    ],
+
+    // All Sass/Scss files inside the folders will be excluded.
+    //
+    // Examples:
+    // '**/node_modules/**',
+    // '.vscode/**',
+    // '.history/**'
+    //
+    // Glob Patterns are accepted.
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        ".vscode/**"
+    ],
+
+    // Set your exported CSS Styles, Formats & save location.
+    "liveSassCompile.settings.formats": [{
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": null
+    }],
+
+    // Set it as `false` if you don't want `.map` file for compiled CSS.
+    // Default is `true`
+    "liveSassCompile.settings.generateMap": true,
+
+    // This setting is useful when you deals with only few of sass files. Only mentioned Sass files will be included.
+    // NOTE: No need to include partial sass files.
+    "liveSassCompile.settings.includeItems": null,
+
+    // Set this to `false` if you do not want the output window to show.
+    // Note: You can use the command palette to open the Live Sass output window.
+    // Default is `true`
+    "liveSassCompile.settings.showOutputWindow": true,
+
+    // The full path to the executable, including the complete filename of the exectuable
+    "browser-preview.chromeExecutable": "",
+
+    // The type of image used in rendering preview. Supported values are: `jpeg` (default) and `png`
+    "browser-preview.format": "jpeg",
+
+    // The default start url for new Browser Preview instances
+    "browser-preview.startUrl": "https://code.visualstudio.com",
+
+    // Toggles verbose logging
+    "browser-preview.verbose": "",
+
+    // Note: If it is not Null, It will override CustomBrowser and ChromeDebuggingAttachment settings.
+    //
+    //  Examples :
+    // chrome --incognito --headless --remote-debugging-port=9222
+    //  C:\\Program Files\\Firefox Developer Edition\\firefox.exe --private-window
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": null,
+
+    // Enable Chrome Debugging Attachment to Live Server at Debuging Port 9222.
+    //  NOTE: You have to install 'Debugger for Chrome'
+    // If the value is true, Select 'Attach to Chrome' from Debug Window to start debugging.
+    //
+    //  CAUTION: If it is true, 'Launch Chrome against localhost' may not work.
+    "liveServer.settings.ChromeDebuggingAttachment": false,
+
+    // Specify custom browser settings for Live Server.
+    // By Default it will open your default favorite browser.
+    "liveServer.settings.CustomBrowser": null,
+
+    // To disable information pop up messages.
+    "liveServer.settings.donotShowInfoMsg": false,
+
+    // To turn off prompt warning message if body or head or other supporting tag is missing in your HTML.
+    "liveServer.settings.donotVerifyTags": false,
+
+    // When set, serve this file (server root relative) for every 404 (useful for single-page applications)
+    "liveServer.settings.file": "",
+
+    // By Default Live Server inject CSS changes without full reloading of browser. You can change this behviour by making this setting as `true`
+    "liveServer.settings.fullReload": false,
+
+    // To switch between localhost or 127.0.0.1 or anything else. Default is 127.0.0.1
+    "liveServer.settings.host": "127.0.0.1",
+
+    // Setup https configuration
+    "liveServer.settings.https": {
+        "enable": false,
+        "cert": "",
+        "key": "",
+        "passphrase": ""
+    },
+
+    // To ignore specific file changes
+    "liveServer.settings.ignoreFiles": [
+        ".vscode/**",
+        "**/*.scss",
+        "**/*.sass",
+        "**/*.ts"
+    ],
+
+    // Mount a directory to a route. Such as [['/components', './node_modules']]
+    "liveServer.settings.mount": [],
+
+    // This the entry point of server when you're in multiroot workspace
+    "liveServer.settings.multiRootWorkspaceName": null,
+
+    // If it is true live server will start without browser opened.
+    "liveServer.settings.NoBrowser": false,
+
+    // Set Custom Port Number of Live Server. Set 0 if you want random port.
+    "liveServer.settings.port": 5500,
+
+    // To Setup Proxy
+    "liveServer.settings.proxy": {
+        "enable": false,
+        "baseUri": "/",
+        "proxyUri": "http://127.0.0.1:80"
+    },
+
+    // Set Custom root of Live Server.
+    // To change root the the server to sub folder of workspace, use '/' and relative path from workspace.
+    // Example: /subfolder1/subfolder2
+    "liveServer.settings.root": "/",
+
+    // Change this to false if you don't want the button to show in the statusbar
+    "liveServer.settings.showOnStatusbar": true,
+
+    // Open in Browser Preview inside VS Code, instead of default browser
+    "liveServer.settings.useBrowserPreview": false,
+
+    // Use local IP as host
+    "liveServer.settings.useLocalIp": false,
+
+    // You have to install a browser extension. That will be works for your dynamic pages (like PHP).
+    "liveServer.settings.useWebExt": false,
+
+    // Delay before live reloading. Value in milliseconds. Default is 100
+    "liveServer.settings.wait": 100,
+
+    // Open or not open the preview screen automatically
+    "svgviewer.enableautopreview": false,
+
+    // How to open the screen (vscode.ViewColumn)
+    "svgviewer.previewcolumn": "Beside",
+
+    // Show zoom in/out button in preview windows
+    "svgviewer.showzoominout": false,
+
+    // Color setting for transparency
+    "svgviewer.transparencycolor": null,
+
+    // Show Transparency Grid
+    "svgviewer.transparencygrid": true,
+
+    // 강제 푸시(임대 사용 또는 사용 안 함)가 가능한지 여부를 제어합니다.
+    "git.allowForcePush": false,
+
+    // 스테이징된 변경 내용 리소스 그룹을 항상 표시합니다.
+    "git.alwaysShowStagedChangesResourceGroup": false,
+
+    // 모든 커밋에 대한 확인 플래그를 제어합니다.
+    "git.alwaysSignOff": false,
+
+    // 사용하도록 설정하는 경우 현재 Git 리포지토리의 기본 원격에서 커밋을 자동으로 가져옵니다.
+    "git.autofetch": false,
+
+    // `git.autofetch`가 사용되는 경우 각 자동 git fetch 사이의 시간(초)입니다.
+    "git.autofetchPeriod": 180,
+
+    // 자동 새로 고침을 사용할지 여부입니다.
+    "git.autorefresh": true,
+
+    // 리포지토리가 자동으로 감지되어야 하는 경우를 구성합니다.
+    //  - true: 현재 열려 있는 폴더의 하위 폴더와 열려 있는 파일의 부모 폴더를 모두 검사합니다.
+    //  - false: 자동 리포지토리 검사를 사용하지 않습니다.
+    //  - subFolders: 현재 열려 있는 폴더의 하위 폴더를 검사합니다.
+    //  - openEditors: 열려 있는 파일의 부모 폴더를 검사합니다.
+    "git.autoRepositoryDetection": true,
+
+    // 풀하기 전에 변경 내용을 스태시하고 풀하는 데 성공한 후 변경 내용을 복원합니다.
+    "git.autoStash": false,
+
+    // 새 분기 이름의 유효성을 검사하는 정규식입니다.
+    "git.branchValidationRegex": "",
+
+    // 새 브랜치 이름에서 공백을 대체하는 문자.
+    "git.branchWhitespaceChar": "-",
+
+    // '다음으로 체크 아웃...'을 실행할 때 나열되는 분기 유형을 제어합니다.
+    //  - all: 모든 참조를 표시합니다.
+    //  - local: 로컬 분기만 표시합니다.
+    //  - tags: 태그만 표시합니다.
+    //  - remote: 원격 분기만 표시합니다.
+    "git.checkoutType": "all",
+
+    // 빈 커밋의 생성을 항상 확인합니다.
+    "git.confirmEmptyCommits": true,
+
+    // 강제 푸시하기 전에 확인을 요청할지 여부를 제어합니다.
+    "git.confirmForcePush": true,
+
+    // Git 리포지토리를 동기화하기 전에 확인합니다.
+    "git.confirmSync": true,
+
+    // Git 배지 카운터를 제어합니다.
+    //  - all: 모든 변경 내용을 계산합니다.
+    //  - tracked: 추적된 변경 내용만 계산합니다.
+    //  - off: 카운터를 끕니다.
+    "git.countBadge": "all",
+
+    // Git에서 색과 배지를 탐색기와 열려 있는 편집기 뷰에 적용하는지 여부를 제어합니다.
+    "git.decorations.enabled": true,
+
+    // Git 리포지토리를 복제할 기본 위치입니다.
+    "git.defaultCloneDirectory": null,
+
+    // Git 하위 모듈을 자동으로 검색할지 여부를 제어합니다.
+    "git.detectSubmodules": true,
+
+    // Git submodules 검출 개수의 제한을 제어합니다.
+    "git.detectSubmodulesLimit": 10,
+
+    // GPG를 사용한 커밋 서명을 사용하도록 설정합니다.
+    "git.enableCommitSigning": false,
+
+    // Git을 사용하도록 설정했는지 여부입니다.
+    "git.enabled": true,
+
+    // 단계적 변경 사항이 없는 경우 모든 변경 사항을 저장합니다.
+    "git.enableSmartCommit": false,
+
+    // 풀링할 때 모든 분기를 페치하거나 현재 분기만 페치합니다.
+    "git.fetchOnPull": false,
+
+    // 무시할 Git 리포지토리의 목록입니다.
+    "git.ignoredRepositories": [],
+
+    // 레거시 Git 경고를 무시합니다.
+    "git.ignoreLegacyWarning": false,
+
+    // 리포지토리에 변경 내용이 너무 많으면 경고를 무시합니다.
+    "git.ignoreLimitWarning": false,
+
+    // Git이 없으면 경고를 무시합니다.
+    "git.ignoreMissingGitWarning": false,
+
+    // 커밋 메시지 입력 유효성 검사를 언제 표시할지 제어합니다.
+    "git.inputValidation": "warn",
+
+    // 경고 표시를 위한 커밋 메시지 길이 임계값을 제어합니다.
+    "git.inputValidationLength": 72,
+
+    // 경고 표시를 위한 커밋 메시지 제목 길이 임계값을 제어합니다. `config.inputValidationLength` 값을 상속하려면 이 임계값 설정을 해제하세요.
+    "git.inputValidationSubjectLength": 50,
+
+    // 변경을 클릭할 때 Diff 편집기가 열릴지 여부를 제어합니다. 그렇지 않으면 일반 편집기가 열립니다.
+    "git.openDiffOnClick": true,
+
+    // Git 실행 파일의 경로 및 파일 이름(예: `C:\Program Files\Git\bin\git.exe`(Windows)입니다.
+    "git.path": null,
+
+    // 커밋 후 git 명령을 실행합니다.
+    //  - none: 커밋 후 명령을 실행하지 않습니다.
+    //  - push: 성공적인 커밋 후 'Git Push'를 실행합니다.
+    //  - sync: 성공적인 커밋 후 'Git Sync'를 실행합니다.
+    "git.postCommitCommand": "none",
+
+    // Git가 제출(commit)하기 전에 저장되지 않은 파일을 검사할지를 제어합니다.
+    "git.promptToSaveFilesBeforeCommit": true,
+
+    // Fetch all tags when pulling.
+    "git.pullTags": true,
+
+    // 동기화 명령을 실행할 때 Git에서 다시 지정을 사용하게 합니다.
+    "git.rebaseWhenSync": false,
+
+    // Git 리포지토리를 검색할 경로의 목록입니다.
+    "git.scanRepositories": [],
+
+    // Git 변경점 보기에서 파일 열기 동작 줄을 표시할지의 여부를 제어합니다.
+    "git.showInlineOpenFileAction": true,
+
+    // Git 작업에서 진행률을 표시할지 여부를 제어합니다.
+    "git.showProgress": true,
+
+    // 푸시가 성공했을 때 알림을 표시할지 여부를 제어합니다.
+    "git.showPushSuccessNotification": false,
+
+    // 강제 푸시가 좀 더 안전한 force-with-lease 변형을 사용하는지 여부를 제어합니다.
+    "git.useForcePushWithLease": true,
+
+    // Set default browser
+    "open-in-browser.default": "",
+
+    // Ask before restarting after a command is successfully run.
+    "smoothtype.autoReload": false,
+
+    // Duration in milliseconds for the cursor to travel from one character position (or line) to the next.
+    "smoothtype.duration": 80,
+
+    // Qiniu AccessKey
+    "markdown-preview-enhanced.AccessKey": "",
+
+    // Automatically show preview of markdown being edited.
+    "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
+
+    // In Markdown, a single newline character doesn't cause a line break in the generated HTML. In GitHub Flavored Markdown, that is not true. Enable this config option to insert line breaks in rendered HTML for single newlines in Markdown source.
+    "markdown-preview-enhanced.breakOnSingleNewLine": true,
+
+    // Qiniu Bucket
+    "markdown-preview-enhanced.Bucket": "",
+
+    // Chrome executable path, which is used for Puppeteer export. Leaving it empty means mume will look for the path automatically.
+    "markdown-preview-enhanced.chromePath": "",
+
+    // Code block theme. If `auto.css` is chosen, then the code block theme that best matches the current preview theme will be picked.
+    "markdown-preview-enhanced.codeBlockTheme": "auto.css",
+
+    // Qiniu Domain
+    "markdown-preview-enhanced.Domain": "http://",
+
+    // Enable CriticMarkup syntax. Only works with markdown-it parser. Please check http://criticmarkup.com/users-guide.php for more information.
+    "markdown-preview-enhanced.enableCriticMarkupSyntax": false,
+
+    // Enable emoji & font-awesome plugin. This only works for markdown-it parser, but not pandoc parser.
+    "markdown-preview-enhanced.enableEmojiSyntax": true,
+
+    // Enable extended table syntax to support merging table cells.
+    "markdown-preview-enhanced.enableExtendedTableSyntax": false,
+
+    //  Enables transform audio video link to to html5 embed audio video tags.
+    "markdown-preview-enhanced.enableHTML5Embed": false,
+
+    // Enable or disable conversion of URL-like text to links in the markdown preview.
+    "markdown-preview-enhanced.enableLinkify": true,
+
+    // Enables executing code chunks and importing javascript files.
+    // ⚠️ Please use this feature with caution because it may put your security at risk! Your machine can get hacked if someone makes you open a markdown with malicious code while script execution is enabled.
+    "markdown-preview-enhanced.enableScriptExecution": false,
+
+    // Enable smartypants and other sweet transforms.
+    "markdown-preview-enhanced.enableTypographer": false,
+
+    // Enable Wiki Link syntax support. More information can be found at https://help.github.com/articles/adding-links-to-wikis/
+    "markdown-preview-enhanced.enableWikiLinkSyntax": true,
+
+    // Front matter rendering option
+    "markdown-preview-enhanced.frontMatterRenderingOption": "none",
+
+    // HTML attributes to pass to audio tags.
+    "markdown-preview-enhanced.HTML5EmbedAudioAttributes": "controls preload=\"metadata\" width=\"320\"",
+
+    // When true embed media with http:// schema in URLs. When false ignore and don't embed them.
+    "markdown-preview-enhanced.HTML5EmbedIsAllowedHttp": false,
+
+    //  Enables video/audio embed with ![]() syntax (default).
+    "markdown-preview-enhanced.HTML5EmbedUseImageSyntax": true,
+
+    // Enables video/audio embed with []() syntax.
+    "markdown-preview-enhanced.HTML5EmbedUseLinkSyntax": false,
+
+    // HTML attributes to pass to video tags.
+    "markdown-preview-enhanced.HTML5EmbedVideoAttributes": "controls preload=\"metadata\" width=\"320\" height=\"240\"",
+
+    // When using Image Helper to copy images, by default images will be copied to root image folder path '/assets'
+    "markdown-preview-enhanced.imageFolderPath": "/assets",
+
+    // You can choose different image uploader to upload image
+    "markdown-preview-enhanced.imageUploader": "imgur",
+
+    // Default latex engine for Pandoc export and latex code chunk.
+    "markdown-preview-enhanced.latexEngine": "pdflatex",
+
+    // Re-render the preview as the contents of the source changes, without requiring the source buffer to be saved. If disabled, the preview is re-rendered only when the buffer is saved to disk.
+    "markdown-preview-enhanced.liveUpdate": true,
+
+    // Use customized Math expression block delimiters.
+    "markdown-preview-enhanced.mathBlockDelimiters": [
+        [
+            "$$",
+            "$$"
+        ],
+        [
+            "\\[",
+            "\\]"
+        ]
+    ],
+
+    // Use customized Math expression inline delimiters.
+    "markdown-preview-enhanced.mathInlineDelimiters": [
+        [
+            "$",
+            "$"
+        ],
+        [
+            "\\(",
+            "\\)"
+        ]
+    ],
+
+    // Choose the Math expression rendering method option for GFM markdown export (Save as Markdown).
+    "markdown-preview-enhanced.mathRenderingOnlineService": "https://latex.codecogs.com/gif.latex",
+
+    // Choose the Math expression rendering method here. You can also disable math rendering if you want by choosing 'None'.
+    "markdown-preview-enhanced.mathRenderingOption": "KaTeX",
+
+    // Mermaid theme, you can choose one from ["mermaid.css", "mermaid.dark.css", "mermaid.forest.css"]
+    "markdown-preview-enhanced.mermaidTheme": "mermaid.css",
+
+    // Comma separated pandoc arguments e.g. `--smart, --filter=/bin/exe`. Please use long argument names.
+    "markdown-preview-enhanced.pandocArguments": "",
+
+    // The pandoc markdown flavor you want
+    "markdown-preview-enhanced.pandocMarkdownFlavor": "markdown-raw_tex+tex_math_single_backslash",
+
+    // Pandoc executable path
+    "markdown-preview-enhanced.pandocPath": "pandoc",
+
+    // Preview Theme
+    "markdown-preview-enhanced.previewTheme": "github-light.css",
+
+    // Whether to print background for file export or not. If set to `false`, then `github-light` preview theme will be used. You can also set `print_background` in front-matter for individual files.
+    "markdown-preview-enhanced.printBackground": false,
+
+    // Accepted protocols for links.
+    "markdown-preview-enhanced.protocolsWhiteList": "http://, https://, atom://, file://, mailto:, tel:",
+
+    // RevealJS Presentation Theme
+    "markdown-preview-enhanced.revealjsTheme": "white.css",
+
+    // Automatic scroll sync. This is now partially supported.
+    "markdown-preview-enhanced.scrollSync": true,
+
+    // Qiniu SecretKey
+    "markdown-preview-enhanced.SecretKey": "",
+
+    // Open Only One Preview.
+    "markdown-preview-enhanced.singlePreview": true,
+
+    // Enable this option will render markdown by pandoc instead of markdown-it.
+    "markdown-preview-enhanced.usePandocParser": false,
+
+    // By default, the extension for wikilink is `.md`. For example: [[test]] will direct to file path `test.md`.
+    "markdown-preview-enhanced.wikiLinkFileExtension": ".md",
+
+    // 병합 충돌을 해결한 후 다음 병합 충돌로 자동으로 이동할지 여부입니다.
+    "merge-conflict.autoNavigateNextConflict.enabled": false,
+
+    // 편집기 내에서 병합 충돌 블록에 대한 Code Lens를 만듭니다.
+    "merge-conflict.codeLens.enabled": true,
+
+    // 편집기 내에서 병합 충돌 블록에 대한 decorator를 만듭니다.
+    "merge-conflict.decorators.enabled": true,
+
+    // Controls where the diff view should be opened when comparing changes in merge conflicts.
+    //  - Current: Open the diff view in the current editor group.
+    //  - Beside: Open the diff view next to the current editor group.
+    //  - Below: Open the diff view below the current editor group.
+    "merge-conflict.diffViewPosition": "Current",
+
+    // Grunt 작업의 자동 검색을 사용할지 여부를 제어합니다. 기본값은 [켜기]입니다.
+    "grunt.autoDetect": "on",
+
+    // The path to Chrome to be used rather than searching for the default
+    "vscode-devtools-for-chrome.chromePath": null,
+
+    // The hostname on which to search for remote debuggable chrome instances
+    "vscode-devtools-for-chrome.hostname": "localhost",
+
+    // The port on which to search for remote debuggable chrome instances
+    "vscode-devtools-for-chrome.port": 9222,
+
+    // Override the kind of an extension. `ui` extensions are installed and run on the local machine while `workspace` extensions are run on the remote. By overriding an extension's default kind using this setting, you specify if that extension should be installed and enabled locally or remotely.
+    "remote.extensionKind": {
+        "pub.name": "ui"
+    },
+
+    // npm 스크립트가 자동으로 감지되어야 하는지 여부를 제어합니다.
+    "npm.autoDetect": "on",
+
+    // npm 스크립트에 대한 탐색기 뷰를 사용하도록 설정합니다.
+    "npm.enableScriptExplorer": false,
+
+    // 자동 스크립트 검색에서 제외할 폴더에 대한 Glob 패턴을 구성합니다.
+    "npm.exclude": "",
+
+    // npm 종속성의 가리키기 기능에 대한 자동 완성 및 정보를 제공하는 https://registry.npmjs/org 및 https://registry.bower.io에서 데이터를 페치합니다.
+    "npm.fetchOnlinePackageInfo": true,
+
+    // 스크립트를 실행하는 데 사용하는 패키지 관리자.
+    "npm.packageManager": "npm",
+
+    //  `--silent` 옵션으로 npm 명령 실행.
+    "npm.runSilent": false,
+
+    // 스크립트 탐색기에서 사용되는 기본 클릭 동작은 '열기' 또는 '실행'이며, 기본값은 '열기'입니다.
+    "npm.scriptExplorerAction": "open",
+
+}

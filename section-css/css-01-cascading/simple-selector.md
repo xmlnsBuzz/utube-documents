@@ -1,0 +1,1 @@
+A simple selector is either a type selector, universal selector, attribute selector, class selector, ID selector, or pseudo-class.

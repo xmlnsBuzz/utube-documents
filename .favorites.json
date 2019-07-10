@@ -52,11 +52,224 @@
     },
     {
         "type": "File",
-        "name": "i:\\YouTubeProject\\utube-documents\\section-vscode-settings\\나머지 좋은 세팅.md",
-        "parent_id": null,
-        "fsPath": "i:\\YouTubeProject\\utube-documents\\section-vscode-settings\\나머지 좋은 세팅.md",
+        "name": "i:\\YouTubeProject\\utube-documents\\section-html\\html5-spec\\html5-sepc-유튜브 등록 내용.md",
+        "parent_id": "YFHEPhWR5I84xi27",
+        "fsPath": "i:\\YouTubeProject\\utube-documents\\section-html\\html5-spec\\html5-sepc-유튜브 등록 내용.md",
         "workspaceRoot": null,
         "workspacePath": null,
-        "id": "dSCQheO2IXTHFmP0"
+        "id": "K2qLUDG8aFReutsA"
+    },
+    {
+        "type": "File",
+        "name": "i:\\YouTubeProject\\utube-documents\\section-install\\install-3programs-유튜브 등록 내용.md",
+        "parent_id": "YFHEPhWR5I84xi27",
+        "fsPath": "i:\\YouTubeProject\\utube-documents\\section-install\\install-3programs-유튜브 등록 내용.md",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "Fi8RJVAr5Im0OPzK"
+    },
+    {
+        "type": "File",
+        "name": "i:\\YouTubeProject\\utube-documents\\section-utils\\106keyboard\\106keyboard-유튜브 등록 내용.md",
+        "parent_id": "YFHEPhWR5I84xi27",
+        "fsPath": "i:\\YouTubeProject\\utube-documents\\section-utils\\106keyboard\\106keyboard-유튜브 등록 내용.md",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "JLpPSRigo820Q7UI"
+    },
+    {
+        "type": "File",
+        "name": "i:\\YouTubeProject\\utube-documents\\section-utils\\change-user-drive\\change-user-drive-and-path-유튜브 등록 내용.md",
+        "parent_id": "YFHEPhWR5I84xi27",
+        "fsPath": "i:\\YouTubeProject\\utube-documents\\section-utils\\change-user-drive\\change-user-drive-and-path-유튜브 등록 내용.md",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "46aJGtR3luWXFTj2"
+    },
+    {
+        "type": "File",
+        "name": "i:\\YouTubeProject\\utube-documents\\section-utils\\type-practice\\type-practice-유튜브 등록 내용.md",
+        "parent_id": "YFHEPhWR5I84xi27",
+        "fsPath": "i:\\YouTubeProject\\utube-documents\\section-utils\\type-practice\\type-practice-유튜브 등록 내용.md",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "avtE72P4KqGYeF3r"
+    },
+    {
+        "type": "File",
+        "name": "i:\\YouTubeProject\\utube-documents\\section-vscode\\vscode-interface\\vscode-interface-유튜브 등록 내용.md",
+        "parent_id": "YFHEPhWR5I84xi27",
+        "fsPath": "i:\\YouTubeProject\\utube-documents\\section-vscode\\vscode-interface\\vscode-interface-유튜브 등록 내용.md",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "oAYdI40HcviFwt5U"
+    },
+    {
+        "type": "File",
+        "name": "i:\\YouTubeProject\\utube-documents\\section-vscode-settings\\settings-basic\\vscode-settings-유튜브 등록 내용.md",
+        "parent_id": "YFHEPhWR5I84xi27",
+        "fsPath": "i:\\YouTubeProject\\utube-documents\\section-vscode-settings\\settings-basic\\vscode-settings-유튜브 등록 내용.md",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "GWkhBViwpvUXramO"
+    },
+    {
+        "type": "File",
+        "name": "i:\\YouTubeProject\\utube-documents\\section-vscode-shortcuts\\vscode-shortcuts-유뷰트 등록 내용.md",
+        "parent_id": "YFHEPhWR5I84xi27",
+        "fsPath": "i:\\YouTubeProject\\utube-documents\\section-vscode-shortcuts\\vscode-shortcuts-유뷰트 등록 내용.md",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "I8lMcUonSgE6tR5d"
+    },
+    {
+        "type": "Group",
+        "name": "중요문서",
+        "parent_id": null,
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "S30yjc7Y6Hbo8dK4"
+    },
+    {
+        "type": "File",
+        "name": "i:\\YouTubeProject\\utube-documents\\강의에서 알려줄 세팅.md",
+        "parent_id": "S30yjc7Y6Hbo8dK4",
+        "fsPath": "i:\\YouTubeProject\\utube-documents\\강의에서 알려줄 세팅.md",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "2LAn8RFuMPOKvbVq"
+    },
+    {
+        "type": "File",
+        "name": "e:\\Users\\Administrator\\.mume\\style.less",
+        "parent_id": null,
+        "fsPath": "e:\\Users\\Administrator\\.mume\\style.less",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "KIP7MFmQ25byNthC"
+    },
+    {
+        "type": "Group",
+        "name": "Settings 관련",
+        "parent_id": null,
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "ua5B387sJHQNoqZ6"
+    },
+    {
+        "type": "File",
+        "name": "i:\\YouTubeProject\\utube-documents\\basic-settings-ko.json",
+        "parent_id": "ua5B387sJHQNoqZ6",
+        "fsPath": "i:\\YouTubeProject\\utube-documents\\basic-settings-ko.json",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "LehwC5mAJprKBbXF"
+    },
+    {
+        "type": "File",
+        "name": "i:\\YouTubeProject\\utube-documents\\color-scheme-current-settings.code-workspace",
+        "parent_id": "ua5B387sJHQNoqZ6",
+        "fsPath": "i:\\YouTubeProject\\utube-documents\\color-scheme-current-settings.code-workspace",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "LegO5t436WRwbKB8"
+    },
+    {
+        "type": "File",
+        "name": "i:\\YouTubeProject\\utube-documents\\section-html\\html5-coding-introduction\\vertigo.html",
+        "parent_id": null,
+        "fsPath": "i:\\YouTubeProject\\utube-documents\\section-html\\html5-coding-introduction\\vertigo.html",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "JUrm9lys0w7u81co"
+    },
+    {
+        "type": "File",
+        "name": "i:\\YouTubeProject\\utube-documents\\유뷰브에 동영상 올리고 할 일들.md",
+        "parent_id": null,
+        "fsPath": "i:\\YouTubeProject\\utube-documents\\유뷰브에 동영상 올리고 할 일들.md",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "6tfecJQvR9gFmX5G"
+    },
+    {
+        "type": "File",
+        "name": "i:\\YouTubeProject\\utube-documents\\section-extensions\\settings-sync\\settings-sync-유튜브 등록 내용.md",
+        "parent_id": "YFHEPhWR5I84xi27",
+        "fsPath": "i:\\YouTubeProject\\utube-documents\\section-extensions\\settings-sync\\settings-sync-유튜브 등록 내용.md",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "9kBEUQPJhHXDNcmd"
+    },
+    {
+        "type": "File",
+        "name": "i:\\YouTubeProject\\utube-documents\\section-vscode-shortcuts\\basic-editing\\basic-editing-tech-유뷰트 등록 내용.md",
+        "parent_id": "YFHEPhWR5I84xi27",
+        "fsPath": "i:\\YouTubeProject\\utube-documents\\section-vscode-shortcuts\\basic-editing\\basic-editing-tech-유뷰트 등록 내용.md",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "OmlxtZfoL8eRUbq2"
+    },
+    {
+        "type": "File",
+        "name": "i:\\YouTubeProject\\utube-documents\\favorite-URL.md",
+        "parent_id": null,
+        "fsPath": "i:\\YouTubeProject\\utube-documents\\favorite-URL.md",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "FqInWw0AifgoT6Dj"
+    },
+    {
+        "type": "Group",
+        "name": "CSS 관련",
+        "parent_id": null,
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "d5Q4S2bngFC3ovGH"
+    },
+    {
+        "type": "File",
+        "name": "i:\\YouTubeProject\\utube-documents\\section-css\\css-01-cascading\\bitsofco.de.important.and.origins.md",
+        "parent_id": "d5Q4S2bngFC3ovGH",
+        "fsPath": "i:\\YouTubeProject\\utube-documents\\section-css\\css-01-cascading\\bitsofco.de.important.and.origins.md",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "9gbGnM7WdLxBaUPp"
+    },
+    {
+        "type": "File",
+        "name": "i:\\YouTubeProject\\utube-documents\\section-css\\css-01-cascading\\cascading-w3c-20180828.md",
+        "parent_id": "d5Q4S2bngFC3ovGH",
+        "fsPath": "i:\\YouTubeProject\\utube-documents\\section-css\\css-01-cascading\\cascading-w3c-20180828.md",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "BpobjR6qiv3Wxm2e"
+    },
+    {
+        "type": "File",
+        "name": "i:\\YouTubeProject\\utube-documents\\section-css\\css-01-cascading\\simple-selector.md",
+        "parent_id": "d5Q4S2bngFC3ovGH",
+        "fsPath": "i:\\YouTubeProject\\utube-documents\\section-css\\css-01-cascading\\simple-selector.md",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "4ypSw3gImn6he0WY"
+    },
+    {
+        "type": "File",
+        "name": "i:\\YouTubeProject\\utube-documents\\section-css\\css-01-cascading\\css-01-cascading.md",
+        "parent_id": "d5Q4S2bngFC3ovGH",
+        "fsPath": "i:\\YouTubeProject\\utube-documents\\section-css\\css-01-cascading\\css-01-cascading.md",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "fNaVR30Tex1JQHq7"
+    },
+    {
+        "type": "File",
+        "name": "i:\\YouTubeProject\\utube-documents\\language-defined하는 방법.md",
+        "parent_id": null,
+        "fsPath": "i:\\YouTubeProject\\utube-documents\\language-defined하는 방법.md",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "rtHKwTmG7SICUZF6"
     }
 ]
