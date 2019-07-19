@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Homework</title>
+    <style>
+    mark {
+        background-color: cornflowerblue;
+    }
+    </style>
+
+<body>
+    <template id="template">
+        <ul>
+            <li id="id_lorem">Lorem ipsum dolor sit amet.</li>
+            <li class="class_lorem">Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor
+                sit amet.</li>
+        </ul>
+        <div>
+
+            <p draggable="true">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia in dolor eligendi
+                consectetur <ruby>
+                    molestiae <rt>ruby text</rt>
+                </ruby> distinctio labore magnam accusantium, rerum quia doloribus eius provident possimus reiciendis
+                fugit
+                nulla at quaerat dolorum.</p>
+            <div><input type="button" value="InputButton"></div>
+        </div>
+
+        <div>
+
+        </div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p lang="en-US">Consider the following quote:</p>
+        <blockquote lang="en-GB">
+            <p>Look around and you will find, no-one's really
+                <mark>colour</mark> blind.</p>
+        </blockquote>
+        <p lang="en-US">As we can tell from the <em>spelling</em> of the word,
+            the person writing this quote is clearly not American.</p>
+    </template>
+    <script>
+        let num = 3;
+        const fragment = document.getElementById('template').content.cloneNode(true);
+        while (num-- > 1) {
+            fragment.firstChild.before(fragment.firstChild.cloneNode(true));
+            fragment.firstChild.textContent += fragment.lastChild.textContent;
+        }
+        document.write(document.body.appendChild(fragment));
+    </script>
+
+</html>

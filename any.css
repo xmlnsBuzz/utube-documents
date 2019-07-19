@@ -1,31 +1,293 @@
-/* #para {
-    color: red;
-}
- */
+/* Please visit the URL below for more information: */
+/*   https          ://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+@import url('https  ://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+@import url('https  ://fonts.googleapis.com/css?family=Nanum+Gothic|Noto+Sans+KR&display=swap');
 
-
-
-
-
-section p {
-    color: blue;
-}
-
-p {
-    color: red;
-}
-
-/* .graph {
-    color           : blue;
-    background-color: violet;
-} */
-
-
-
-/* section p {
-    color: green !important;
+*,
+body,
+p,
+li,
+ul,
+span,
+div {
+    font-family: 'Noto Sans KR';
+    font-weight: 100;
+    font-size  : 16px;
 }
 
-section>p {
-    color: orange !important;
-} */
+pre,
+code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size  : 16px;
+}
+
+
+.token.punctuation,
+.token.doctype {
+    color: #aaaaaa;
+}
+
+.token.attr-value {
+    color: #0988ff;
+
+
+}
+
+.markdown-preview.markdown-preview {
+
+    // modify your style here
+    // eg            : background-color: blue;
+
+    @hr-color            : #943232;
+    @heading-color       : #278eee;
+    @emph-color          : #f37e3b;
+    @warn-color          : rgb(170, 19, 120);
+    font-family          : 'NanumGothic';
+    background-color     : #333;
+    background-image     : url('I:\\YouTubeProject\\utube-documents\\img\\sia-opacity016.svg');
+    background-size      : 90%;
+    background-repeat    : no-repeat;
+    background-attachment: fixed;
+    background-position  : 1000px 30px;
+    color                : #efefef;
+
+    html body {
+        font-family: 'NanumGothic';
+        height     : 100vh;
+    }
+
+    li {
+        font-family: 'Noto Sans KR';
+        line-height: 1.6;
+        margin     : 0;
+        padding    : 0;
+    }
+
+    p {
+        margin-left: 15px;
+        color      : #fff;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color           : #efefef;
+        background-image: linear-gradient();
+
+        &.special {
+            color: @heading-color;
+        }
+    }
+
+    /*   h1 {
+  margin-bottom: -10px;
+}
+*/
+    h3 {
+        font-size  : 18px;
+        margin-left: 10px;
+        color      : #bbb;
+    }
+
+    table {
+        width: 100%
+    }
+
+    th {
+        color           : rgba(245, 245, 245, 0.986);
+        background-color: rgba(85, 107, 47, 0.541);
+        display         : inline-block;
+
+    }
+
+    tr:nth-child(odd) {
+        background-color: #555;
+    }
+
+    tr:nth-child(even) {
+        background-color: #444;
+    }
+
+    body {
+        background-color: #353535;
+    }
+
+    hr {
+        background-color: @hr-color;
+        height          : 2px;
+        margin-top      : 0;
+        background-image: linear-gradient();
+    }
+
+    hr.thin {
+        height          : 1px;
+        background-color: #679787c5;
+    }
+
+    blockquote {
+        background-color: #7a7c0e5b;
+        border-left     : 3px solid #219616;
+        border-radius   : 0 6px 6px 0;
+    }
+
+    blockquote>p {
+        color  : rgb(240, 239, 238);
+        padding: 3px;
+    }
+
+    sup,
+    sub {
+        color           : #fff;
+        font-size       : 0.8em;
+        padding         : 2px 5px;
+        margin-left     : 5px;
+        border-radius   : 3px;
+        background-color: #614c38;
+    }
+
+    .warn {
+        color          : @warn-color;
+        text-decoration: underline;
+        font-weight    : bold;
+    }
+
+    .emph {
+        color        : @emph-color;
+        font-weight  : bold;
+        // font-style: italic;
+    }
+
+    .anBra {
+        color: @emph-color;
+
+        &::before {
+            content: '<';
+        }
+
+        &::after {
+            content: '>'
+        }
+    }
+
+
+    .filename {
+        color: #d5d511;
+    }
+
+    img[title='Stack It All'] {
+        width   : 100px;
+        float   : right;
+        position: relative;
+        top     : -10px;
+    }
+
+    img[title='Classic CSS Icon'] {
+        width: 50%;
+    }
+
+    li>p {
+        color: #bbb;
+    }
+
+    li li {
+        color     : #bbb;
+        list-style: square outside;
+        margin-top: 0;
+    }
+
+    li {
+        margin-top: 15px;
+    }
+
+    strong {
+        font-weight: bold;
+        color      : #ffffff;
+    }
+
+    code {
+        padding         : 0 3px;
+        margin          : 1px;
+        border-radius   : 5px;
+        color           : #ffffff;
+        background-color: #5fbb09b9;
+        border          : 1px solid #b2e97f;
+
+        &.shift,
+        &.ctrl,
+        &.alt {
+            padding: 0;
+        }
+
+        &.shift {
+            background-color: #f10e0e77;
+            border          : 1px solid #f10e0e;
+        }
+
+        &.ctrl {
+            background-color: #e0b42277;
+            border          : 1px solid #e0b422;
+        }
+
+        &.alt {
+            background-color: #0f62af77;
+            border          : 1px solid #0f62af;
+        }
+
+        +span.desc {
+            font-family: consolas;
+            color      : #e07bff;
+        }
+
+        &.attr-name {
+            color           : #e07bff;
+            border-radius   : 0;
+            border          : none;
+            background-color: #333;
+        }
+
+        &.elem-name {
+            color           : #219616;
+            border-radius   : 0;
+            border          : none;
+            background-color: #333;
+        }
+
+    }
+
+    .list-item {
+        display    : list-item;
+        margin-left: 1em;
+    }
+
+    pre[class|=language] {
+        background-color: #222222;
+        color           : #dadada;
+        font-size       : 16px !important;
+        border-radius   : 5px;
+        //box-shadow    : 2px 2px 5px  rgb(179, 130, 40);
+    }
+
+    span.token.punctuation {
+        color: #d1d1d1;
+    }
+
+    span.token.attr-value {
+        color: #df7631;
+    }
+
+    span.token.tag {
+        color: #4380db;
+    }
+
+    span.token.comment {
+        color     : #299137;
+        font-style: italic;
+    }
+
+    .bg-emph {
+        background-color: #fff;
+    }
+}

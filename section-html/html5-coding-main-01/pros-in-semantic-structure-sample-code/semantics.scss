@@ -1,0 +1,35 @@
+body {
+    font-family: sans-serif;
+}
+
+header {
+    color: red;
+    p {
+        color: initial;
+    }
+
+}
+
+nav {
+    color: green;
+    ul {
+        background-color: slategrey;
+        li {
+            background-color: #f0f;
+            color: #000;
+        }
+    }
+}
+
+section {
+    p {color: blue;}
+}
+
+footer {
+    address {
+        font-family: serif;
+    }
+    a:hover {
+        color:tomato;
+    }
+}

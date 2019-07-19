@@ -1,0 +1,41 @@
+body {
+  margin: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+  font-family: verdana;
+}
+
+header p {
+  color: red;
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 5px;
+}
+
+section {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section p {
+  color: blue;
+}
+
+footer {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+footer p {
+  color: salmon;
+}
+
+footer address {
+  color: goldenrod;
+}

@@ -1,4 +1,5 @@
 
+
 ```mermaid
 gantt
         dateFormat  YYYY-MM-DD
@@ -58,13 +59,35 @@ graph TB
     
     linkStyle default stroke-width:2px,fill:none,stroke:gray;
 ```
+
 <!-- 
-linkStyle 0 stroke-width:2px,fill:none,stroke:blue,color:white;
-    linkStyle 1 stroke-width:2px,fill:none,stroke:green;
-    linkStyle 2 stroke-width:2px,fill:none,stroke:yellow;
-    linkStyle 3 stroke-width:2px,fill:none,stroke:pink;
-    linkStyle 4 stroke-width:2px,fill:none,stroke:pink;
+linkStyle 0 stroke-width:2px, fill:none, stroke:blue, color:white; 
+
+    linkStyle 1 stroke - width: 2 px, fill: none, stroke: green;
+    linkStyle 2 stroke - width: 2 px, fill: none, stroke: yellow;
+    linkStyle 3 stroke - width: 2 px, fill: none, stroke: pink;
+    linkStyle 4 stroke - width: 2 px, fill: none, stroke: pink;
+
  -->
+
+```mermaid
+graph LR
+        HTML[Load HTML]-->Parse[Parse HTML];
+        Parse-->domTree[Create DOMtree];
+        Parse-->CSS[Load CSS];
+        CSS-->PCSS[Parse CSS];
+        PCSS-->domTree;
+        domTree-->Display;
+
+     classDef orange fill:#f96,stroke:#333,stroke-width:2px,color:white;
+     classDef green fill:green,stroke:#333,stroke-width:2px,color:white;
+     classDef red fill:#f00,stroke:#333,stroke-width:2px,color:white;
+     classDef common fill:#f00,stroke:#333,stroke-width:2px,color:white;
+     class CSS,PCSS orange;
+     class domTree green;
+     class Display red;
+
+```
 
 ```mermaid
 graph LR;

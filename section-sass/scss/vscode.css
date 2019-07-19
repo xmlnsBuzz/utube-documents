@@ -118,12 +118,8 @@ h6,
 body {
   margin: 50px;
   padding: 0;
+  background: none;
   /* 100vh를 사용할 경우 hr 같은 tag이 100vh 위치에 달라 붙어 고정된다.  */
-}
-
-body body {
-  background-image: url("../../img/sia-opacity015.svg");
-  background-position: 0 50px;
 }
 
 body .sia {
@@ -133,11 +129,16 @@ body .sia {
   z-index: -10;
 }
 
-/* .box
-{
-background: linear-gradient(left, rgba(30,87,153,0.3) 0%,rgba(125,185,232,0.1) 100%);
-} */
-/* asdf */
+.box {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(30, 87, 153, 0.3)), to(rgba(125, 185, 232, 0.1)));
+  background: linear-gradient(left, rgba(30, 87, 153, 0.3) 0%, rgba(125, 185, 232, 0.1) 100%);
+}
+
+.box-shadow {
+  -webkit-box-shadow: none 3px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: none 3px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
 .horizontal-hr {
   width: 95%;
   height: 0px;
@@ -157,7 +158,7 @@ background: linear-gradient(left, rgba(30,87,153,0.3) 0%,rgba(125,185,232,0.1) 1
   text-align: center;
   font: normal normal bold 46px/2.5 "Noto Sans KR";
   color: #5d4501;
-  /* margin: 150px auto; */
+  /* margin        : 150px auto; */
 }
 
 ul.centered {
@@ -176,7 +177,7 @@ ul.centered li p {
 
 ul.centered li ul > li {
   font-size: 18px;
-  list-style-type: disc;
+  list-style-type: square;
 }
 
 .red {
