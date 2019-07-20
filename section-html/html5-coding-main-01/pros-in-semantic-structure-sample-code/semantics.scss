@@ -1,35 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,200,300,400,500,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR:100,200,300,400,500,700,800&display=swap');
+//                :100,200,300,400,500,600,700,800,900 : 글자굵기조절
+$sans             : 'Noto Sans KR',
+sans-serif;
+$serif: 'Noto Serif KR',
+serif;
+
 body {
-    font-family: sans-serif;
+    font-family: $serif;
 }
 
 header {
-    color: red;
+    color: rgb(167, 124, 31);
+
     p {
-        color: initial;
+        color      : initial;
+        font-size  : 36px;
+        font-weight: 800;
     }
 
 }
 
 nav {
     color: green;
+
     ul {
-        background-color: slategrey;
-        li {
-            background-color: #f0f;
-            color: #000;
-        }
+        background-color: rgb(180, 166, 89);
+
+    }
+
+
+    li {
+        background-color: #f0f;
+        color           : #000;
+        font-size       : 30px;
+        font-weight     : 100;
+
+
     }
 }
 
+
 section {
-    p {color: blue;}
+    p {
+        color: blue;
+    }
 }
 
 footer {
     address {
         font-family: serif;
     }
+
     a:hover {
-        color:tomato;
+        color: tomato;
     }
 }

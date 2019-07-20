@@ -1,13 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,200,300,400,500,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+KR:100,200,300,400,500,700,800&display=swap");
 body {
-  font-family: sans-serif;
+  font-family: "Noto Serif KR", serif;
 }
 
 header {
-  color: red;
+  color: #a77c1f;
 }
 
 header p {
   color: initial;
+  font-size: 36px;
+  font-weight: 800;
 }
 
 nav {
@@ -15,12 +19,14 @@ nav {
 }
 
 nav ul {
-  background-color: slategrey;
+  background-color: #b4a659;
 }
 
-nav ul li {
+nav li {
   background-color: #f0f;
   color: #000;
+  font-size: 30px;
+  font-weight: 100;
 }
 
 section p {

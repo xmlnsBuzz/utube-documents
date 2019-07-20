@@ -3,11 +3,11 @@
 
 ## Cascading
 
-W3C에서 Cascading Style Sheet 설계의 기본원리 중 하나가 cascading이다. 만약 하나의 HTML element에 여러 origin(출처)으로부터 여러개의 CSS rule이 지정되는 경우, 모든 지정값을 하나의 HTML element에 모두 지정할 수는 없다. 
+W3C에서 Cascading Style Sheet 설계의 기본원리가 cascading이다. 만약 하나의 HTML element에 여러 origin(출처: UA, Author, User)으로부터 여러 개의 CSS rule이 지정되었다 치자. 하지만 여러개의 값(value)을 하나의 HTML element에 모두 다 지정할 수는 없다. 
 
-또 반대로 어떤 HTML element에 아무런 CSS rule도 지정하지 않았을 경우도 있다. 
+또 반대의 경우는, 어떤 HTML element에 author또는 user가 어떤 CSS rule도 지정하지 않았을 경우다. 
 
-이 때 여러개의 지정값 중 단 하나만을 추려 적용시키는 것이 cascading 이고, 지정값이 없을 경우 조상이나 부모에게 물려 받은 값을 찾아 적용시키는 것이 Inheritance 이다. 하지만 그 마저 없다면 그 때는 브라우저에 내장된 기본값이 적용된다.
+전자의 경우 여러개의 지정값 중 단 하나만을 간택(cascading)해 적용시켜야만 될 것이고, 후자의 경우 조상이나 부모에게 물려 받은 값(inheritance value)을 찾아 적용시켜야 될 것이다. 하지만 그 마저 없다면 그 때는 브라우저에 내장된 기본값을 적용하게 된다.
 
 이 문서는 위에 언급한 사항 중 <span class="emph">CASCADING</span> 부분에 대해 다루려고 한다.
 <!-- 
@@ -22,9 +22,9 @@ W3C에서 Cascading Style Sheet 설계의 기본원리 중 하나가 cascading�
 
 ## 브라우저에 출력되는 CSS value
 
-<span class="emph">출처(CSS Cascading and Inheritance Level 3) : https://www.w3.org/TR/css3-cascade/ 에서 발췌하여 가능한 내용이 원문에 벗어나지 않는 범위내에서 의역했다.</span>
+<span class="emph">출처(CSS Cascading and Inheritance Level 3) : https://www.w3.org/TR/css3-cascade/ 에서 발췌하여 가능한 원문에서 벗어나지 않는 범위내에서 의역했다.</span>
 
-HTML 문서를 coding 하다보면 대부분 CSS를 다루게 될 것이다. 이 때 HTML 문서의 어떤 element (예들 들어 h1, div, p 등등)에 자신이 원하는 CSS property와 value를 지정하다 보면, 같은 element에 지정한 같은 property 값이 중복되게 마련이다. 이 것은 매우 자연스러운 현상이며, W3C가 CSS를 설계하는 의도이며 기본원칙이다. 따라서 문서가 복잡해질수록 더 많은 CSS property와 value들의 중복지정은 필연적이라해도 과언이 아니다.
+HTML 문서를 coding 하다보면 필연적으로 CSS를 다루게 될 것이다. 이 때 HTML 문서의 어떤 element (예들 들어 h1, div, p 등등)에 자신이 원하는 CSS property와 value를 지정하다 보면, 같은 element에 지정한 같은 property 값이 중복되게 마련이다. 이 것은 매우 자연스러운 현상이며, W3C가 CSS 설계할 때 부터 의도이며 기본원칙이다. 따라서 문서가 복잡해질수록 더 많은 CSS property와 value들의 중복지정은 필연적이다.
 
 그런데 이 경우 중복지정된 값들 중에 어떤 값이 Cascaded value(최종간택값)가 되어 브라우저에 출력되느냐 하는 문제가 생길 수 밖에 없는데, 이 문제가 바로 이 번에 다룰 주제이다.
 
@@ -68,7 +68,7 @@ Cascade(三揀擇)는 어떤 HTML element에 어떤 CSS property와 value가 CSS
 
 인데, cascading은 이 3단계가 순서적으로 이루어지는데, 선행단계에서 cascaded value가 결정되지 못할 때 후행단계로 넘어간다. 즉, 1. Important and Origin 단계에서 우선순위를 못 가린다면 다음 단계인 Specificity 단계로 넘어가고 이 단계에서도 안되면 다음 단계인 Order of Appreance 단계에서 결정하게 된다는 말인데, 이 단계까지 오면 반드시 cascaded value가 결정될 수 밖에 없다.
 
-<blockquote class="note">나는 위의 3단계 과정을 보면 과거 궁중에서 했다는 3간택(三揀擇)이라는 것이 생각나곤했다. 3간택이란 전국에서 수집한 왕자나 왕녀의 결혼 상대자를 3번에 걸쳐 추려내는 과정이라고 하니 위에 설명한 CSS cascading과 어찌 이리도 닮은건지...  <br/><br/>
+<blockquote class="note">나는 위의 3단계 과정을 보면 과거 궁중에서 했다는 3간택(三揀擇)이라는 것이 생각나곤 했다. 3간택이란 전국에서 수집한 왕자나 왕녀의 결혼 상대자를 3번에 걸쳐 추려내는 과정이라고 하니 위에 설명한 CSS cascading과 어찌 이리도 닮은건지...  <br/><br/>
 실제 3간택의 경우 배우자를 결정하는데 주변 유력인사들이 간택 과정에 개입하여 영향력을 행사한 사실이 많은데, 적어도 Cascading Style Sheet에서는 절대 그럴 염려가 없다. 컴퓨터라는 것은 원래 반드시 정해진 규칙대로만 실행하는 물건이기 때문이다. 그 것이 내가 컴퓨터를 좋아하는 이유이기도 하다.
 </blockquote>
 
@@ -78,7 +78,8 @@ Cascade(三揀擇)는 어떤 HTML element에 어떤 CSS property와 value가 CSS
 
 ### Importance and Origin : !important 선언과 CSS rule이 선언된 문서의 출처(origin) 
 
-#### !important 선언은 아래처럼
+#### Important 선언
+
 ```css
 section > p {color: orange !important;}
 ```
@@ -118,7 +119,7 @@ display: block;
 
 #### Origin과 Important를 고려한 우선순위
 
-!important 선언 여부와 CSS rule이 어디로 부터 왔는지(origin)에 따라 아래와 같이 8개로 우선순위를 매길 수 있는데, 아래는 우선순위가 가장 높은 것 부터 가장 낮은 것 순으로 내림차순으로 정렬시켰고 주황색으로 표시한 3개는 CSS level 3에서 추가된 것이다.(transition과 animation에 대해서는 이 채널에 section을 두어 설명하기로 한다.) 또한 normal 선언이라는 것은 !important를 선언하지 않은 모든 CSS rule을 말한다.
+!important 선언 여부와 CSS rule이 어디로 부터 왔는지(origin)에 따라 아래와 같이 8개로 우선순위를 매길 수 있는데, 아래는 우선순위가 가장 높은 것 부터 가장 낮은 것 순으로 내림차순으로 정렬시켰고 <span class="emph">주황색</span>으로 표시한 3개는 CSS level 3에서 추가된 것이다.(transition과 animation에 대해서는 이 채널에 section을 두어 설명하기로 한다.) 또한 normal 선언이라는 것은 !important를 선언하지 않은 모든 CSS rule을 말한다.
 
 1. <span class="emph">Transition 선언</span> [transition-level-1]
 1. <span class="emph">UA의 !important 선언 (예: head의 display가 none으로 되어 있는 것)</span>
@@ -131,7 +132,7 @@ display: block;
 
 그런데 이 목록중에 3번 '사용자의 important 선언'과 7번 '사용자의 normal 선언' 부분은 사용경험이 없는 사람에게는 이해하기 힘든 부분일 것이다. 예컨데 브라우저로 인터넷에 연결된 어떤 사이트의 문서를 본다고 치자. 그럴 경우(문서작성자와 사용자가 다를 경우) 사용자가 대체 어떻게 important선언을 한다는 것인지 이해가 쉽지 않을 것이라는 말이다.
 
-이 3번과 7번은 다른 말로 'User CSS'라고도 하는데, 이 것은 인터넷으로 문서를 보는 전세계인들이 사용자에 해당되므로 다루려 해도 다룰 수 없는 부분인 만큼 이해를 돕기 위해 딱 한번만 사용법에 대해 설명하고, 더 이상 다루지 않겠다. User CSS를 경험해 보고 싶다면 아래와 같이
+이 3번과 7번은 다른 말로 'User CSS'라고도 하는데, 이 것은 인터넷으로 문서를 보는 전세계인들이 사용자에 해당되므로 그 많은 경우를 다루려 해도 다룰 수 없는 부분인 만큼 이해를 돕기 위해 딱 한번만 사용법에 대해 설명하고, 더 이상 다루지 않겠다. User CSS를 경험해 보고 싶다면 아래와 같이
 
 ```css
 body {
@@ -151,7 +152,7 @@ Accessibility 단추를 누르면 아래와 같은 박스가 나오는데, 그�
 
 ![Internet Option(IE)](../img/ie-Accessibility.png "IE Accessibility")
 
-뭔가 '<span class="emph">색다른</span>' 느낌이 들 것이다. 만약 색다르지 않게 보인다면 위의 'Internet Options' 메뉴 중 'Accessibility' 윗쪽의 'Browsing history' 그룹에서 'Delete' 단추를 누른 후 원래 체크되어 있는 상태 그대로 'Delet' 단추를 눌러 history를 지우고 브라우저를 닫았다가 다시 열면 된다.
+뭔가 '<span class="emph">색다른</span>' 느낌이 들 것이다. 만약 색다르지 않게 보인다면 위의 'Internet Options' 메뉴 중 'Accessibility' 윗쪽의 'Browsing history' 그룹에서 'Delete' 단추를 누른 후 원래 체크되어 있는 상태 그대로 'Delete' 단추를 눌러 history를 지우고 브라우저를 닫았다가 다시 열면 된다.
 
 이 것은 결국 사용자의 CSS가 작성자의 CSS를 밀어낼 수 있다는 말이다. User CSS는 IE의 경우 초기버전부터 있었고 크롬은 확장을 설치하면 사용할 수 있다고 하며, 이외의 브라우저들은 각자 알아보기 바란다. 이처럼 사용자 마다 각각 다른 User CSS 이기 때문에 더 다루려 해도 할 수 없는 것이다.
 
@@ -183,7 +184,7 @@ Accessibility 단추를 누르면 아래와 같은 박스가 나오는데, 그�
 #para {color: red;}
 .graph {color: blue;}
 ```
-위의 CSS rule에서 처럼 이곳 저곳 여러 class에 동시에 속할 수 있는 class selector .graph 보다, 오직 하나뿐인(one and only) id selector의 specificity가 가장 높아서 #para selector에 지정한 {color: red} 가 브라우저에 rendering되는 actual value로 간택되는 것과 같다. 또한 <span class="emph">보다 구체적</span>이라는 것은
+위의 CSS rule에서 처럼 HTML element 당 하나 이상 사용할 수 있는 c class selector <span class="emph">.graph</span> 보다, 오직 하나만 존재하므로해서(one and only) specificity가 가장 높은 id selector인 <span class="emph">#para</span>에 지정한 {color: red} 가 브라우저에 rendering되는 actual value로 간택되는 것과 같다. 또한 <span class="emph">보다 구체적</span>이라는 것은
 
 ```html
 <section>
@@ -278,7 +279,7 @@ ul ol li.red    /* a=0 b=1 c=3 -> specificity =  13 */
 h1~p:hover      /* a=0 b=1 c=2 -> specificity =  12 */
 li.red.level    /* a=0 b=2 c=1 -> specificity =  21 */
 #x34y           /* a=1 b=0 c=0 -> specificity = 100 */
-#s12:not(span)   /* a=1 b=0 c=1 -> specificity = 101 */
+#s12:not(span)  /* a=1 b=0 c=1 -> specificity = 101 */
 ```
 위의 내용에서는 ID, CLASS, TYPE 3 종류 정도만 기억해 두자. 왜냐하면 세부적인 specificity까지 따져야 될 일은 많지 않기 때문이다. 하지만 그런 일이 생긴다면 이 페이지를 참고 하든지 W3C의  https://www.w3.org/TR/selectors-3/#specificity 부분을 참조하면 된다.
 
