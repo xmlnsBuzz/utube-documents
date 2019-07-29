@@ -1,0 +1,47 @@
+.bob-avatar {
+  background-image: "/img/bob.png";
+}
+
+.john-avatar {
+  background-image: "/img/john.png";
+}
+
+.bill-avatar {
+  background-image: "/img/bill.png";
+}
+
+.mike-avatar {
+  background-image: "/img/mike.png";
+}
+
+.alert-button {
+  color: yellow;
+  background-color: red;
+}
+
+.submit-button {
+  color: white;
+  background-color: green;
+}
+
+.back-button {
+  color: blue;
+  background-color: transparent;
+}
+
+.bob-picture {
+  background-image: url("/img/bob.png");
+}
+
+.john-picture {
+  background-image: url("/img/john.png");
+}
+
+.bill-picture {
+  background-image: url("/img/bill.png");
+}
+
+.mike-picture {
+  background-image: url("/img/mike.png");
+}
+/*# sourceMappingURL=each-loop.css.map */

@@ -1,0 +1,57 @@
+$main-color: #6dcff6;
+$darker-color: darken($main-color, 20%);
+$lighter-color: lighten($main-color, 20%);
+$opaque-color: opacify($main-color, 0.5);
+$transparent-color: transparentize($main-color, 0.3);
+
+.box1 {
+    color: $darker-color;
+    background-color: $lighter-color;
+    border: 1px solid $opaque-color;
+    outline: $transparent-color;
+}
+
+$list: b, c, d, e, f;
+$new-list: prepend($list, k); // a, b, c, d, e, f
+
+
+$list: a, b, c, d z, e, a, f;
+$first-index: index($list, d z); // 1
+$last-index: last-index($list, a); // 6
+$last-index: last-index($list, z); // null
+
+.box2 {
+    content: $first-index;
+}
+
+$list: a, b, c, d, e, f;
+$new-list: slice($list, 3, 5); // c, d, e
+
+.box3 {
+    content: $new-list;
+} 
+
+$list: a, b, c d e, f, g, h;
+$new-list: to-string($list); //abcdefgh
+$new-list: to-string($list, '_'); //a-b-c-e-d-f-g-h
+
+.box4 {
+    content: $new-list;
+}
+
+$border: join(10px 20px, 30px 40px); // 10px 20px 30px 40px
+//$border-color: join((blue red), (#abc #def)); // blue, red, #abc, #def
+@debug join(10px, 20px); // 10px 20px
+@debug join(10px, 20px, $separator: space); // 10px, 20px
+$border-color: join((blue, red), (#abc, #def), $separator: space); // blue red #abc #def
+@debug join([10px], 20px); // [10px 20px]
+@debug join(10px, 20px, $bracketed: true); // [10px 20px]
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    border-width: $border;
+    border-color: $border-color;
+}

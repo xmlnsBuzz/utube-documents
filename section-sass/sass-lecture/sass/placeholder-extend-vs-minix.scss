@@ -1,0 +1,43 @@
+/* Placeholder를 extend 할 때 '%' 빠뜨리지 말 것. */
+%hide-text {
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.foo {
+    @extend %hide-text;
+}
+
+.bar {
+    @extend %hide-text;
+}
+
+.baz {
+    @extend %hide-text;
+}
+
+/* 아래의 mixin은 각각의 border-radius를 가진 class를 만든다. */
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
+
+.foo {
+    @include border-radius(5px);
+}
+
+.bar {
+    @include border-radius(7px);
+}
+
+.baz {
+    @include border-radius(9px);
+}
+
+
+
+
+
+
+
+

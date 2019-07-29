@@ -1,0 +1,25 @@
+p {
+  border: 1px solid;
+}
+
+.firstClass {
+  color: blue;
+}
+
+.secondClass {
+  color: red;
+}
+
+.txt {
+  color: white;
+}
+
+.txt2 {
+  color: white;
+  font-weight: bold;
+}
+
+p {
+  color: black;
+}
+/*# sourceMappingURL=if-and-else-statement.css.map */

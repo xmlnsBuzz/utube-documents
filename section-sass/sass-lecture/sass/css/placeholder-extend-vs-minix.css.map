@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": ";AAAA,oDAAoD;AAMpD,AALA,IAKI,EAIJ,IAAI,EAIJ,IAAI,CAbO;EACP,WAAW,EAAE,OAAO;EACpB,QAAQ,EAAE,MAAM;CACnB;;AAcD,gEAAgE;AAMhE,AAAA,IAAI,CAAC;EAHD,aAAa,EAIU,GAAG;CAC7B;;AAED,AAAA,IAAI,CAAC;EAPD,aAAa,EAQU,GAAG;CAC7B;;AAED,AAAA,IAAI,CAAC;EAXD,aAAa,EAYU,GAAG;CAC7B",
+    "sources": [
+        "../placeholder-extend-vs-minix.scss"
+    ],
+    "names": [],
+    "file": "placeholder-extend-vs-minix.css"
+}

@@ -1,0 +1,24 @@
+.thing-red #ff0000 {
+  content: "red #ff0000";
+}
+
+.thing-green #00ff00 {
+  content: "green #00ff00";
+}
+
+.thing-blue #0000ff {
+  content: "blue #0000ff";
+}
+
+.thing-red {
+  content: "#ff0000";
+}
+
+.thing-green {
+  content: "#00ff00";
+}
+
+.thing-blue {
+  content: "#0000ff";
+}
+/*# sourceMappingURL=maps.css.map */

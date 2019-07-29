@@ -1,0 +1,35 @@
+$background-colors-list: red green blue cyan gold ;
+$border-colors-list: tomato goldenrod steelblue magenta orangered;
+$colors-list: #111 #222 #333 #444 #555;
+
+$font-list: 'Raleway', 'Dosis', 'Lato';
+// Three comma separated elements
+
+$pad-list: 10px 8px 12px;
+// Three space separated elements
+
+$multi-list: 'Roboto', 15px 1.3em;
+// Three multi-list has two lists.
+
+@each $current-color in $colors-list {
+    $i: index($colors-list, $current-color);
+    .stuff-#{$i} {
+        color: $current-color;
+        background-color: nth($background-colors-list, $i);
+        border: 1px solid nth($border-colors-list, $i);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

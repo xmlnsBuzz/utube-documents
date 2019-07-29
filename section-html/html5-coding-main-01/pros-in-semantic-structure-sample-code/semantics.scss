@@ -1,45 +1,52 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,200,300,400,500,700,800&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR:100,200,300,400,500,700,800&display=swap');
-//                :100,200,300,400,500,600,700,800,900 : 글자굵기조절
-$sans             : 'Noto Sans KR',
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,200,300,400,500,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+KR:100,200,300,400,500,700,800&display=swap");
+// ":100,200,~,800,900" 은 글자굵기(font-weight)조절
+$sans: "Noto Sans KR",
 sans-serif;
-$serif: 'Noto Serif KR',
+$serif: "Noto Serif KR",
 serif;
 
 body {
-    font-family: $serif;
+    font-family: $sans;
+    caret-color: rgb(150, 235, 14);
 }
 
 header {
     color: rgb(167, 124, 31);
 
     p {
-        color      : initial;
-        font-size  : 36px;
+        color: initial;
+        font-size: 36px;
         font-weight: 800;
     }
-
 }
 
 nav {
     color: green;
 
+    /* h2:active + ul>li:nth-of-type(1) {
+        color: red;
+        font-size: 50px;
+        font-weight: 900;
+    }
+ */
     ul {
         background-color: rgb(180, 166, 89);
 
-    }
 
-
-    li {
-        background-color: #f0f;
-        color           : #000;
-        font-size       : 30px;
-        font-weight     : 100;
-
+        li {
+            background-color: #f0f;
+            color: #fff;
+            //font-size       : 30px;
+            font-weight: 100;
+            &:nth-of-type(odd) {
+               color: hsl(113, 86%, 45%);
+               font-weight: 700;
+           }
+        }
 
     }
 }
-
 
 section {
     p {
@@ -49,10 +56,16 @@ section {
 
 footer {
     address {
-        font-family: serif;
+        font-family: $sans;
     }
 
-    a:hover {
-        color: tomato;
+    a {
+        &:link {
+            color: #9517c7;
+        }
+
+        &:hover {
+            color: tomato;
+        }
     }
 }

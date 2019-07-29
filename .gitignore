@@ -1,7 +1,9 @@
-기본골격
 .vscode
 icons4FullStack
 desktop.ini
 node_modules
 *.mp4
 git-excluded
+x-참고파일들
+skeleton
+test-anything

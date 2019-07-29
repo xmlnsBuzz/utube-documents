@@ -4,7 +4,7 @@
 
 @for $i from 1 through 6 {
   h#{$i} {
-    font-weight: 800 - $i * 100;
+    font-weight: 8 - $i * 100;
     margin-left: 0.5em * $i;
     border-left: (8px - $i) dotted rgb(194, 194, 194);
     padding-left: 3px;

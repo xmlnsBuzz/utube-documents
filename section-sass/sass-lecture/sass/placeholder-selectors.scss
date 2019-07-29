@@ -1,0 +1,13 @@
+%foo {
+    color: red;
+}
+
+.bar {
+    @extend %foo;
+    background: #00f;
+}
+
+.baz {
+    @extend %foo;
+    background: #0ff;
+}

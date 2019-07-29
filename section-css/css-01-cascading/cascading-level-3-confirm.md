@@ -98,6 +98,7 @@ head, title, meta, link, style, script ... {
 display: none;
 }
 ```
+
 과 같이 브라우저의 default stylesheet에 의해 HTML 문서의 head를 비롯하여 head 속에 들어가는 element들은 {display: none;} 으로 지정되어 있다. 즉, 브라우저 창에는 보이지 않도록 chrome, safari, firefox 등의 브라우저들이 기본적으로 지정해 놓은 값들이다. 그런데 혹시나 해서 말해 두는데 아래와 같이 자신의 CSS rule을 통해
 
 ```css
@@ -105,6 +106,7 @@ head, title ... {
 display: block;
 }
 ```
+
 로 지정하면 볼 수 있지 않을까 해도 역시 보이지 않을 것이다. 브라우저라는 것이 원래 그렇게 설계되었기 때문이다. 뭐 기어코 보이게 하겠다면 방법이 없는 것은 아니겠지만 그 것에 대해서는 언급하지 않기로 한다.
 
 2. Author(문서작성자) : HTML 문서를 만드는 사람.
@@ -172,7 +174,7 @@ Accessibility 단추를 누르면 아래와 같은 박스가 나오는데, 그�
 - 막내
 - 셋째
 - 일식이 둘째 동생
-- 이식이 첫째 동생
+- 이식이 동생
 - 장남도 차남도 아닌 아들
 - 장남과 차남을 제외한 나머지 아들
 - ...
@@ -222,35 +224,9 @@ CSS rule을 적용했을 경우 2개 모두 {color: blue}가 actual value가 되
 따라서 위의 위의 code에서는, 아래에서 설명할 '뒤에 나타나는 selector가 순서상 우선'이라는 cascading 규칙보다 '구체성이 높은 selector가 우선'이라는 규칙이 앞서므로 2개의 <span class="anBra">p</span>element 모두 {color: blue;} 가 적용된 것이다.
 
 또한 위의 明確性과 具體性을 동시에 다루어야 할 경우 명확성과 구체성 두 가지를 모두 합쳐 specificity(구체도)가 높은 selector가 이기게 된다. 여기서 '이긴다'는 말은 '브라우저에 render될 actual value로 간택된다'는 말이고, specificity에 대해서는 뒤에 나오는 구체도 계산방법에서 자세히 설명한다.
-
 <hr class="thin" />
 
-### Order of Appearance : 나타나는 순서(先後관계)
-만약 앞의 두 가지 '!important 선언과 Origin', 'Specificity'를 가지고도 우열을 가릴 수 없다면 그 때는 '나타나는 순서'에 의해 cascaded value가 결정된다.
-
-```html
-<header>
-    <h1>Title</h1>
-    <p>Paragraph</p>
-</header>
-```
-위 code의 <span class="anBra
-">p</span> element는 <span class="anBra
-">header</span>를 부모로 둠과 동시에 <span class="anBra
-">h1</span>을 형으로 둔 형제관계이다.
-```css
-header>p {color: red;}
-/* Specificity 002 */
-
-h1+p {color: green;}
-/* Specificity 002 */
-```
-
-이 경우 나중에 나오는 CSS rule이 앞에 나오는 CSS rule을 'override'하여 h1+p에 지정한 {color: green;}이 cascaded value가 된다. 그러나 만약 위 code에서 순서가 바뀌어 header>p가 나중에 나온다면 반대로 된다. "주인공은 마지막에 나온다"는 말이 여기서도 통하나 보다.
-
-<hr class="thin" />
-
-## Calculating of selector's Specificity : Selector 구체도 계산법
+#### Calculating of selector's Specificity : Selector 구체도 계산법
 
 출처(Calculating of selector's Specificity) : https://www.w3.org/TR/selectors-3/#specificity
 
@@ -282,6 +258,32 @@ li.red.level    /* a=0 b=2 c=1 -> specificity =  21 */
 #s12:not(span)  /* a=1 b=0 c=1 -> specificity = 101 */
 ```
 위의 내용에서는 ID, CLASS, TYPE 3 종류 정도만 기억해 두자. 왜냐하면 세부적인 specificity까지 따져야 될 일은 많지 않기 때문이다. 하지만 그런 일이 생긴다면 이 페이지를 참고 하든지 W3C의  https://www.w3.org/TR/selectors-3/#specificity 부분을 참조하면 된다.
+
+<hr class="thin" />
+
+### Order of Appearance : 나타나는 순서(先後관계)
+만약 앞의 두 가지 '!important 선언과 Origin', 'Specificity'를 가지고도 우열을 가릴 수 없다면 그 때는 '나타나는 순서'에 의해 cascaded value가 결정된다.
+
+```html
+<header>
+    <h1>Title</h1>
+    <p>Paragraph</p>
+</header>
+```
+위 code의 <span class="anBra
+">p</span> element는 <span class="anBra
+">header</span>를 부모로 둠과 동시에 <span class="anBra
+">h1</span>을 형으로 둔 형제관계이다.
+```css
+header>p {color: red;}
+/* Specificity 002 */
+
+h1+p {color: green;}
+/* Specificity 002 */
+```
+
+이 경우 나중에 나오는 CSS rule이 앞에 나오는 CSS rule을 'override'하여 h1+p에 지정한 {color: green;}이 cascaded value가 된다. 그러나 만약 위 code에서 순서가 바뀌어 header>p가 나중에 나온다면 반대로 된다. "주인공은 마지막에 나온다"는 말이 여기서도 통하나 보다.
+
 
 <hr class="thin" />
 

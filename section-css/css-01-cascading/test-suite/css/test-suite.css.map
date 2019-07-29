@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA;;;;;;;;;;;;;;;;EAgBE;AACF;;;;;;;;GAQG;AAEF,AAAA,CAAC,CAAC;EACE,GAAG,EAAC,gBAAgB;CACvB",
+    "sources": [
+        "../test-suite.scss"
+    ],
+    "names": [],
+    "file": "test-suite.css"
+}

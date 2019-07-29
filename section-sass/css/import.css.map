@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,CAAC,CAAC;EACE,KAAK,EAAE,IAAI;CACd",
+    "sources": [
+        "../sass-lecture/import.scss",
+        "../sass-lecture/sass/_mixin.scss"
+    ],
+    "names": [],
+    "file": "import.css"
+}

@@ -1,0 +1,129 @@
+@mixin font-fl($font) {
+    &::after {
+        @if (type-of($font)==string) {
+            content: 'My font is: #{$font}.';
+        }
+
+        @else {
+            content: 'Sorry, the argument #{$font} is a #{type-of($font)}.';
+        }
+    }
+}
+
+// '== string' 대신 '!== false' 같은 표현도 가능
+h2 {
+    @include font-fl(sans-serif);
+}
+
+$padding: 50px;
+
+h2 {
+    @if ($padding <=20px) {
+        padding: $padding;
+    }
+
+    @else {
+        padding: $padding / 3;
+    }
+}
+
+// argument 없이 사용하는 mixin;
+
+$var1: "foo";
+$var2: "bazxsd";
+
+@mixin font-fl() {
+    &::after {
+        @if $var1=="foo"and $var2=="bar" {
+            content: "var1 and var2 are true";
+        }
+
+        @else {
+            content: "var1 and var2 are false";
+        }
+    }
+}
+
+h2 {
+    @include font-fl();
+}
+
+
+$first-name: "Karl";
+$last-name: "Hadwen";
+
+@mixin string-concat-name {
+    &::after {
+        content: "Your name is: "+ $first-name + " "+ $last-name;
+    }
+}
+
+h2 {
+    @include string-concat-name;
+}
+
+
+// 더하는 두 값의 alpha value를 일치시키지 않으면 error 
+h1 {
+    color: rgba(70, 132, 153, .5) + rgba(32, 68, 121, .5);
+}
+
+.button {
+    color: #dc143c + #36b017;
+     span & {
+        background-color: gold;
+    }
+    @import "data-type";
+}
+
+
+/* 
+.before-after::after {
+    content: 'after';
+    width: 200px;
+    height: 200px;
+    background-color: #3c79fc;
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    z-index: -1;
+}
+
+.before-after::before {
+    content: 'before';
+    width: 200px;
+    height: 200px;
+    background-color: #fc423c;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    z-index: -2;
+}
+
+
+div.before-after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    background-color: #d8b00e;
+    z-index: 30;
+} */
+
+
+
+@mixin large-text {
+    font:  {
+        family: sans-serif;
+        size: 20px;
+        weight: bold;
+    }
+}
+
+h1 {
+    @include large-text;
+}
+
+
+

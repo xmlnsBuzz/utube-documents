@@ -1,0 +1,24 @@
+@each $usr in bob, john, bill, mike {
+    .#{$usr}-avatar {
+        background-image:('/img/#{$usr}.png');
+    }
+}
+
+$alt: alert, yellow, red;
+$sub: submit, white, green;
+$bck: back, blue, transparent;
+
+@each $type, $txt, $back in $alt, $sub, $bck {
+    .#{$type}-button {
+        color: $txt;
+        background-color: $back;
+    }
+}
+
+$ppl: (user1: bob, user2:john, user3:bill, user4: mike);
+
+@each $key, $usr in $ppl {
+    .#{$usr}-picture {
+        background-image: url('/img/#{$usr}.png');
+    }
+}

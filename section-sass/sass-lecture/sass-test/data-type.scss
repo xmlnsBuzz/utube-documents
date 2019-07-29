@@ -1,0 +1,21 @@
+// arithmetic operators
+
+h1 {
+    font-size: 4px + 2;
+}
+
+h2 {
+    font-size: 14px - 2; 
+}
+
+h3 {
+    font-size: (10/2);
+    opacity: random(3) / 5;
+    padding-right: 2px / 4px + 3px;;
+}
+
+h4 {
+    width: 3px * 5 + 5px;
+    width: 3 * (5px + 5px);
+    width: 3px + (6px / 2) * 3;
+}

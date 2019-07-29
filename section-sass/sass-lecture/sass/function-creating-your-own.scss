@@ -1,0 +1,15 @@
+@function my-calculation-function($some-number, $another-number) {
+    @return $some-number + $another-number;
+}
+
+@function calc-percent($target, $container) {
+    @return ($target / $container) * 100%;
+}
+
+.box {
+    width: my-calculation-function(10px, 5px);
+}
+
+.box {
+    width: calc-percent(500, 35);
+}

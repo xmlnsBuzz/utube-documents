@@ -1,0 +1,45 @@
+@mixin linx ($link, $visit, $hover, $active) {
+    a {
+        color: $link;
+
+        &:visied {
+            color: $visit;
+        }
+
+        &:hover {
+            color: $hover
+        }
+
+        &:active {
+            color: $active;
+        }
+    }
+}
+
+#main {
+    @include linx (white, blue, green, red);
+}
+
+@mixin sexy-border($color, $width: 1in) {
+    border: {
+        color: $color;
+        width: $width;
+        style: dashed;
+    }
+}
+
+p {
+    @include sexy-border(blue);
+}
+
+h1 {
+    @include sexy-border(blue, 2in);
+}
+
+p {
+    @include sexy-border($color: blue);
+}
+
+h1 {
+    @include sexy-border($color: blue, $width: 2in);
+}
