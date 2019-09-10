@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="demo.xsl"?>
+<Glossary>
+  <!-- Alphabetic order -->
+  <Category Letter="A">
+    <Terms>
+      <Subject>ancestor</Subject>
+      <Description>XPath나 XMLDOM 등의 언어에서 element 자신을 기준으로 2 단계 이상의 상위 element를 부르는 이름</Description>
+    </Terms>
+    <Terms>
+      <Subject>attribute</Subject>
+      <Description> XML을 구성 요소의 하나로서 element에 대한 부가적인 정보나 기능을 부여하기 위해 사용한다. 이 때 attribute 값은 같은 짝을 이루는 이중 따옴표나 단순 따옴표로 반드시 묶어 주어야 한다.
+    </Description>
+    <Terms>
+      <Subject>attribute node</Subject>
+      <Description>Instance화 되어 object가 된 attribute</Description>
+    </Terms>
+    </Terms>
+  </Category>
+  <Category Letter="B">
+    <Terms>
+      <Subject>Bad-formed XML</Subject>
+      <Description>XML 문법을 준수하지 않은 XML 문서</Description>
+    </Terms>
+  </Category>
+  <Category Letter="C">
+    <Terms>
+      <Subject>character</Subject>
+      <Description>문자.</Description>
+    </Terms>
+    <Terms>
+      <Subject>child</Subject>
+      <Description>XPath나 XMLDOM 등의 언어에서 element 자신을 기준으로 직속 하위 element를 부르는 이름</Description>
+    </Terms>
+    <Terms>
+      <Subject>CDATA</Subject>
+      <Description>Parser에 의해 parsing 된지 않는 <b>C</b>haracter <b>DATA</b>
+      </Description>
+    </Terms>
+    <Terms>
+      <Subject>CSS</Subject>
+      <Description>
+        <b>C</b>ascading <b>S</b>tyle <b>S</b>heet의 약자로서 이 사이트의 <a href="../css/">CSS</a> menu 참조</Description>
+    </Terms>
+  </Category>
+  <Category Letter="D">
+    <Terms>
+      <Subject>decendant</Subject>
+      <Description>XPath나 XMLDOM 등의 언어에서 element 자신을 기준으로 2 단계 이상의 하위 element를 부르는 이름</Description>
+    </Terms>
+    <Terms>
+      <Subject>documentElement</Subject>
+      <Description>xml 문서의 최상위 Element로서 HTML의 &lt;html&gt; element와  같다. 'Root element' 라고도 부른다.</Description>
+    </Terms>
+    <Terms>
+      <Subject>document order</Subject>
+      <Description>문서에 나타난 node(<span class="monologue">element, attribute, text 등의 node</span>)들의 순서.</Description>
+    </Terms>
+    <Terms>
+      <Subject>document type declaration</Subject>
+      <Description>DTD 선언, XML Prolog 에 해당한다.</Description>
+    </Terms>
+    <Terms>
+      <Subject>DTD(Document Type Definition)</Subject>
+      <Description>XML 문서의 형식을 정의하는 <b>D</b>ocument <b>T</b>ype <b>D</b>efinition 의 약자로서 XML 문서의 구조에 대한 설명서이자 vocabulary로서의 역할을 한다.</Description>
+    </Terms>
+  </Category>
+  <Category Letter="E">
+    <Terms>
+      <Subject>EDI</Subject>
+      <Description>Electronic Data Interchange 의 약자로서 거래를 위한 전자 문서의 교환.</Description>
+    </Terms>
+    <Terms>
+      <Subject>element</Subject>
+      <Description>XML의 tag을 구성하는 component</Description>
+    </Terms>
+    <Terms>
+      <Subject>element content</Subject>
+      <Description>Element가 가지고 있는 content</Description>
+    </Terms>
+    <Terms>
+      <Subject>element node</Subject>
+      <Description>Instance화 되어 object가 된 element</Description>
+    </Terms>
+    <Terms>
+      <Subject>entity</Subject>
+      <Description>XML에서 반복되는 문자열을 이름을 지정하여 정의해 두었다가 '&amp;'(ampersand) 와 ';' (semi-colon) 사이에 entity name을 공백없이 넣어 사용하는 것. </Description>
+    </Terms>
+    <Terms>
+      <Subject>evaluation(XSLT)</Subject>
+      <Description>XSLT processing에 의해 판별(evaluation)된 값.</Description>
+    </Terms>
+  </Category>
+  <Category Letter="F">
+    <Terms>
+      <Subject>fragment</Subject>
+      <Description>Markup 문서의 조각이라는 뜻으로 markup 문서상의 element를 가리키는데, 이 때 element는 단순히 하나의 element일 수도 있고 subset을 가진 element일 수도 있다.</Description>
+    </Terms>
+    <Terms>
+      <Subject>fragment identifier</Subject>
+      <Description>fragment를 식별할 수 있는 유일한 id를 뜻하며, DTD상에 'ID' type으로 ATTLIST 선언을 한 element에 사용할 수 있다.</Description>
+    </Terms>
+  </Category>
+  <Category Letter="G">
+    <Terms>
+      <Subject></Subject>
+      <Description></Description>
+    </Terms>
+  </Category>
+  <Category Letter="H">
+    <Terms>
+      <Subject></Subject>
+      <Description></Description>
+    </Terms>
+  </Category>
+  <Category Letter="I">
+    <Terms>
+      <Subject>i18n</Subject>
+      <Description>'internationalization'을 줄인 단어로서 XML에서 사용하는 xml:lang과 (x)html 에서 사용하는 lang, xml:lang, dir 등의 언어 코드나 문자의 진행 방향과 관련된attribute들을 뜻 한다. internationalization이라는 단어 중 시작 문자인 'i' 와 마지막 문자인 'n' 사이에 무려 18개 (못 믿겠으면 함 세어 보시라.)나 되는 문자가 들어가므로 이를 줄여서 표현하게 되었으며, 읽을 때는 '인터내셔널라이제이션' 이라고 읽어야 한다. 만약 말을 함부로 하는 사람 앞에서 '아이십팔엔' 이라고 읽으면 무식하고 교양없는 넘(또는 욘)이라는 비난을 지대로 받을 가능성이 무쟈게 많다.</Description>
+    </Terms>
+    <Terms>
+      <Subject>ID</Subject>
+      <Description>어떤 존재(object나 entity)를 식별할 수 있는 단어나 기호로서, HTML의 'id' 와 같이 한 문서 안에서 여러번 나타나는 경우도 있고, DTD의 SYSTEM identifier나 PUBLIC identifier 와 같이 둘 중에 하나일 경우도 있으나, identifier로 사용되는 단어나 기호는 독특(unique)해야 된다.</Description>
+    </Terms>
+    <Terms>
+      <Subject>instance</Subject>
+      <Description>Memory에 읽어 놓은 문서나 어떤 data의 object화 된 복사본</Description>
+    </Terms>
+  </Category>
+  <Category Letter="J">
+    <Terms>
+      <Subject></Subject>
+      <Description></Description>
+    </Terms>
+  </Category>
+  <Category Letter="K">
+    <Terms>
+      <Subject></Subject>
+      <Description></Description>
+    </Terms>
+  </Category>
+  <Category Letter="L">
+    <Terms>
+      <Subject>local name</Subject>
+      <Description>Namespace와 namespace 구분자(delimiter)인 colon 뒤에 오는 element나 attribute name</Description>
+    </Terms>
+  </Category>
+  <Category Letter="M">
+    <Terms>
+      <Subject></Subject>
+      <Description></Description>
+    </Terms>
+  </Category>
+  <Category Letter="N">
+    <Terms>
+      <Subject>namespace</Subject>
+      <Description>xml 문서 교환시 같은 이름을 가진 element 나 attribute 가 있을 경우 서로 구분하기 곤란해 질 것을 대비해 element나 attribute 앞에 붙이는 접두사로서, element나 attribute name 사이에 colon (:)을 넣어 &lt;prefix:elementName&gt;와 같이 표기한다. ex) &lt;star:Gamer&gt;</Description>
+    </Terms>
+    <Terms>
+      <Subject>NCName</Subject>
+      <Description>Colon이 들어가지 않은 local name. 즉, namespace prefix가 붙지 않은 element나 attribute의 local name 말한다.</Description>
+    </Terms>
+    <Terms>
+      <Subject>node</Subject>
+      <Description>Tree 구조로 object화 된 Element, attribute, content 들</Description>
+    </Terms>
+  </Category>
+  <Category Letter="O">
+    <Terms>
+      <Subject>override</Subject>
+      <Description>우선 순위를 차지한다. 예를 들어 &lt;body bgcolor="red" style="background-color:blue;"&gt;로 지정했을 때 style에 지정된 blue가 bgcolor로 지정된 red 를 누르고 body의 background-color가 되는 것 처럼 원래 지정된 값에 다른 값이나 그 값에 대체되는 값이 중복 지정되어 우선 순위를 차지하는 것을 말함.</Description>
+    </Terms>
+  </Category>
+  <Category Letter="P">
+    <Terms>
+      <Subject>parent</Subject>
+      <Description>XPath나 XMLDOM 등의 언어에서 element 자신을 기준으로 직속 상위 element를 부르는 이름</Description>
+    </Terms>
+    <Terms>
+      <Subject>PCDATA</Subject>
+      <Description>Parser에 의해 <b>P</b>arsing 되는 <b>C</b>haracter <b>DATA</b>
+      </Description>
+    </Terms>
+    <Terms>
+      <Subject>PI</Subject>
+      <Description>
+        <b>P</b>rocessing <b>I</b>nstruction의 약자로서 XML 문서의 처리 지시부</Description>
+    </Terms>
+    <Terms>
+      <Subject>Prolog</Subject>
+      <Description>XML 문서의 서두 부분으로서 XML Declatation, Processing Instruction, DOCTYPE Declaration 등이 포함 된다.</Description>
+    </Terms>
+  </Category>
+  <Category Letter="Q">
+    <Terms>
+      <Subject>QName</Subject>
+      <Description>namespace와 연결된 element 과 attribute의 name</Description>
+    </Terms>
+  </Category>
+  <Category Letter="R">
+    <Terms>
+      <Subject>root node</Subject>
+      <Description>Root node는 문서의 최상위 node로써 element가 아니며, root element인 document element와 다르므로 잘 구분해야 하는 root element(<span class="monologue">예를 들면 html 문서에서는 html element가 root element이다.</span>)의 parent node 이다.</Description>
+    </Terms>
+    <Terms>
+      <Subject>result tree(XSLT)</Subject>
+      <Description>XSLT processor가 source document(<span class="monologue">확장자가 .xml인 문서</span>)로 부터 생성한 instance인 source tree와 stylesheet(<span class="monologue">확장자가 .xsl인 문서</span>)으로 부터 생성한 stylesheet tree를 처리하여 얻어진 결과 code로써 결과 문서의 code를 말한다.</Description>
+    </Terms>
+  </Category>
+  <Category Letter="S">
+    <Terms>
+      <Subject>self</Subject>
+      <Description>XPath나 XMLDOM 등의 언어에서 element 자기 자신을 부르는 이름</Description>
+    </Terms>
+    <Terms>
+      <Subject>sibling</Subject>
+      <Description>XPath나 XMLDOM 등의 언어에서 같은 부모(parent) element를 가진 같은 등급의 element(들)를 부르는 이름, 즉 형제 element</Description>
+    </Terms>
+    <Terms>
+      <Subject>SQL</Subject>
+      <Description><b>S</b>tructured <b>Q</b>uery <b>L</b>anguage </Description>
+    </Terms>
+    <Terms>
+      <Subject>subset(부분 집합)</Subject>
+      <Description>하위 markup set, 예를 들어 HTML문서에서 html element의 subset은 head와 body이다.</Description>
+    </Terms>
+    <Terms>
+      <Subject>SVG</Subject>
+      <Description><b>S</b>calable <b>V</b>ector <b>G</b>raphic의 약자로서 XML 기반의 그래픽 언어. 확대나 축소시에 화질의 변동이 없다.</Description>
+    </Terms>
+  </Category>
+  <Category Letter="T">
+    <Terms>
+      <Subject>tree structure</Subject>
+      <Description>XML 문서에서 element node 들이 종속적인 상하위 체계를 이루고 있는 모양</Description>
+    </Terms>
+    <Terms>
+      <Subject>text node</Subject>
+      <Description>Instance화 되어 object가 된 textual content</Description>
+    </Terms>
+    <Terms>
+      <Subject>textual content</Subject>
+      <Description>text 만으로 구성된 element content</Description>
+    </Terms>
+  </Category>
+  <Category Letter="U">
+      <Terms>
+      <Subject>Unicode</Subject>
+      <Description>세계 각국의 다양한 현대 언어로 작성된 텍스트에 대해 상호교환, 처리, 및 표현를 위한 통합적 문자 체계</Description>
+    </Terms>
+  </Category>
+  <Category Letter="V">
+    <Terms>
+      <Subject></Subject>
+      <Description></Description>
+    </Terms>
+  </Category>
+  <Category Letter="W">
+    <Terms>
+      <Subject>well-formedness</Subject>
+      <Description>문법 준수</Description>
+    </Terms>
+    <Terms>
+      <Subject>Well-formed XML</Subject>
+      <Description>XML 문법을 준수한 XML 문서</Description>
+    </Terms>
+    <Terms>
+      <Subject>white-space</Subject>
+      <Description>문자와 문자 사이를 분리하는 공백문자로서 space와 줄바꿈 문자(line feed, carriage return)가  있다.</Description>
+    </Terms>
+  </Category>
+  <Category Letter="X">
+    <Terms>
+      <Subject>XMLDOM(Document Object Model)</Subject>
+      <Description>XML parser에 의해 instance화 된 XML 문서의 node 들을 추가, 삭제 또는 수정등을 할 수 있게 하는 기술(technology)</Description>
+    </Terms>
+    <Terms>
+      <Subject>XPath</Subject>
+      <Description>XSLT나 XMLDOM 등에서 node의 경로(path)를 탐색할 때 사용하는 기술(technology)</Description>
+    </Terms>
+    <Terms>
+      <Subject>XQL(Extensible Query Language)</Subject>
+      <Description>XML에서 사용하는 쿼리 언어</Description>
+    </Terms>
+    <Terms>
+      <Subject>XSL</Subject>
+      <Description><b>X</b>ML <b>S</b>tyesheet<b> L</b>anguage의 약자. XSLT와 구분하기 위해 XSL:fo 로 표기하기도 한다.</Description>
+    </Terms>
+    <Terms>
+      <Subject>XSLT</Subject>
+      <Description><b>X</b>ML <b>S</b>tyesheet<b> L</b>anguage <b>T</b>ransformation의 약자로서 xml data(file)를 다른 XML 문서 또는  HTML 문서 등의 형식으로 변환하는 XML 관련 기술(technology)</Description>
+    </Terms>  
+  </Category>
+  <Category Letter="Y">
+    <Terms>
+      <Subject></Subject>
+      <Description></Description>
+    </Terms>
+  </Category>
+  <Category Letter="Z">
+    <Terms>
+      <Subject></Subject>
+      <Description></Description>
+    </Terms>
+  </Category>
+</Glossary>

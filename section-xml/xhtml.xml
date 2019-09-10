@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Doc>
+  <Header>
+    <Title>Transforming to XHTML</Title>
+  </Header>
+  <Main>
+    <hr />
+    <Para>XML 문서를 XHTML 문서로 변환하자.</Para>
+    <hr />
+  </Main>
+</Doc>

@@ -1,1 +1,1 @@
-시아,웹표준,웹접근성,w3c, visual studio code,vscode,stack it all,developer,sia,channel,fullstack,design,specification,web standard,html,html5,html5.2,css3,css4, css modules,javascript,sass,scss,less,markup,markdown,web accessibility,w3c compliant, w3c standard documents conformance,node.js,git,git-scm
+w3c, visual studio code,vscode,w3c specification,web standard,html5,css3,css4, css modules,javascript,sass,scss,less,markup,markdown,web accessibility,git,git-scm

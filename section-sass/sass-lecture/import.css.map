@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,IAAI,CAAC;EACD,KAAK,EAAE,IAAI;CACd",
+    "sources": [
+        "import.scss",
+        "sass/mixinss.scss"
+    ],
+    "names": [],
+    "file": "import.css"
+}

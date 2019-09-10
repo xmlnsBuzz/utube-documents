@@ -1,0 +1,26 @@
+.box1 {
+  color: #0fafee;
+  background-color: #cdeffc;
+  border: 1px solid #6dcff6;
+  outline: rgba(109, 207, 246, 0.7);
+}
+
+.box2 {
+  content: 4;
+}
+
+.box3 {
+  content: slice(a, b, c, d, e, f, 3, 5);
+}
+
+.box4 {
+  content: to-string(a, b, c d e, f, g, h, "_");
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  border-width: 10px 20px 30px 40px;
+  border-color: blue red #abc #def;
+}

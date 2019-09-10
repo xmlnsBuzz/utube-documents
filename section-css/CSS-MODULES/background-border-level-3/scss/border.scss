@@ -1,0 +1,26 @@
+@mixin square($length) {
+  width: $length;
+  height: $length;
+  
+}
+
+.border-image {
+  @include square(300px);
+  background-color: #ff3;
+  border: solid red 30px; 
+  border-image-source: url('../img/transborder-from-w3c.png');
+  border-image-slice: 30;
+  border-image-width: 30px;
+  border-image-repeat: stretch stretch;
+  //border-color: transparent;
+  //border-image-outset: 30px;
+  //background-color: #999;
+  box-sizing: border-box;
+
+  /* border: solid orange 30px;
+  border-image: url("../img/transborder-from-w3c.png") 30 stretch stretch; 
+  
+  <border-image> : <‘border-image-source’>|| <‘border-image-slice’>[ / <‘border-image-width’>| / <‘border-image-width’>? / <‘border-image-outset’>]? || <‘border-image-repeat’>
+  
+  */
+}

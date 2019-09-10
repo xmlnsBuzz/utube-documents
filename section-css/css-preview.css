@@ -2,13 +2,13 @@
     width: 200px;
     height: 200px;
     border: 3px dotted rgb(80, 174, 225);
-    border-radius: 25px;
+    border-radius: 50%;
 }
 
 .box2 {
     width: 200px;
     height: 200px;
-    border: 3px dotted rgb(122, 14, 14);
+    border: 5px dotted rgb(122, 14, 14);
     border-radius: 25px;
 
 }

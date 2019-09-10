@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* Placeholder를 extend 할 때 '%' 빠뜨리지 말 것. */
+.foo, .bar, .baz {
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+/* 아래의 mixin은 각각의 border-radius를 가진 class를 만든다. */
+.foo {
+  border-radius: 5px;
+}
+
+.bar {
+  border-radius: 7px;
+}
+
+.baz {
+  border-radius: 9px;
+}
+/*# sourceMappingURL=placeholder-extend-vs-minix.css.map */

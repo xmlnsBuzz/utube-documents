@@ -1,0 +1,16 @@
+span.long-hand {
+  line-height: 2;
+  border: 1px solid #faa;
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: bold;
+  font-stretch: ultra-expanded;
+  font-size: 36px;
+  -webkit-font-kerning: 30px;
+          font-kerning: 30px;
+  font-family: 'Helvetica Neue';
+}
+
+span.long-hand {
+  font: 48px verdana;
+}

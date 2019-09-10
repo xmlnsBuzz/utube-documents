@@ -225,12 +225,12 @@ span.warnSign {
 }
 
 h1 {
-  font-weight: 700;
+  font-weight: -92;
   margin-left: 0.5em;
   border-left: 7px dotted #c2c2c2;
   padding-left: 3px;
   margin-bottom: 0;
-  background-color: #fff;
+  background-color: #ff4500;
 }
 
 h1 ~ p {
@@ -239,12 +239,12 @@ h1 ~ p {
 }
 
 h2 {
-  font-weight: 600;
+  font-weight: -192;
   margin-left: 1em;
   border-left: 6px dotted #c2c2c2;
   padding-left: 3px;
   margin-bottom: 0;
-  background-color: #fff;
+  background-color: #ff4500;
 }
 
 h2 ~ p {
@@ -253,12 +253,12 @@ h2 ~ p {
 }
 
 h3 {
-  font-weight: 500;
+  font-weight: -292;
   margin-left: 1.5em;
   border-left: 5px dotted #c2c2c2;
   padding-left: 3px;
   margin-bottom: 0;
-  background-color: #fff;
+  background-color: #ff4500;
 }
 
 h3 ~ p {
@@ -267,12 +267,12 @@ h3 ~ p {
 }
 
 h4 {
-  font-weight: 400;
+  font-weight: -392;
   margin-left: 2em;
   border-left: 4px dotted #c2c2c2;
   padding-left: 3px;
   margin-bottom: 0;
-  background-color: #fff;
+  background-color: #ff4500;
 }
 
 h4 ~ p {
@@ -281,12 +281,12 @@ h4 ~ p {
 }
 
 h5 {
-  font-weight: 300;
+  font-weight: -492;
   margin-left: 2.5em;
   border-left: 3px dotted #c2c2c2;
   padding-left: 3px;
   margin-bottom: 0;
-  background-color: #fff;
+  background-color: #ff4500;
 }
 
 h5 ~ p {
@@ -295,12 +295,12 @@ h5 ~ p {
 }
 
 h6 {
-  font-weight: 200;
+  font-weight: -592;
   margin-left: 3em;
   border-left: 2px dotted #c2c2c2;
   padding-left: 3px;
   margin-bottom: 0;
-  background-color: #fff;
+  background-color: #ff4500;
 }
 
 h6 ~ p {

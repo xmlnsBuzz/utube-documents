@@ -1,0 +1,9 @@
+#wedge {
+  width: 100px;
+  height: 100px;
+  border-style: solid;
+  /* border-color: transparent #000 #000 transparent; */
+  border-color: transparent #d8a708 #000000 transparent;
+  border-width: 50px;
+  box-sizing: border-box;
+}

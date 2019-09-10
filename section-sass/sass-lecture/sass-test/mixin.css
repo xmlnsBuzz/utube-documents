@@ -1,0 +1,87 @@
+h2::after {
+  content: "My font is: sans-serif.";
+}
+
+h2 {
+  padding: 16.66667px;
+}
+
+h2::after {
+  content: "var1 and var2 are false";
+}
+
+h2::after {
+  content: "Your name is: Karl Hadwen";
+}
+
+h1 {
+  color: rgba(102, 200, 255, 0.5);
+}
+
+.button {
+  color: #ffc453;
+}
+
+span .button {
+  background-color: gold;
+}
+
+.button h1 {
+  font-size: 6px;
+}
+
+.button h2 {
+  font-size: 12px;
+}
+
+.button h3 {
+  font-size: 5;
+  opacity: 0.6;
+  padding-right: 3.5px;
+}
+
+.button h4 {
+  width: 20px;
+  width: 30px;
+  width: 12px;
+}
+
+/* 
+.before-after::after {
+    content: 'after';
+    width: 200px;
+    height: 200px;
+    background-color: #3c79fc;
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    z-index: -1;
+}
+
+.before-after::before {
+    content: 'before';
+    width: 200px;
+    height: 200px;
+    background-color: #fc423c;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    z-index: -2;
+}
+
+
+div.before-after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    background-color: #d8b00e;
+    z-index: 30;
+} */
+h1 {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=mixin.css.map */

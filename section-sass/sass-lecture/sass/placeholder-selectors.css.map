@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAIA,AAJA,IAII,EAKJ,IAAI,CATC;EACD,KAAK,EAAE,GAAG;CACb;;AAED,AAAA,IAAI,CAAC;EAED,UAAU,EAAE,IAAI;CACnB;;AAED,AAAA,IAAI,CAAC;EAED,UAAU,EAAE,IAAI;CACnB",
+    "sources": [
+        "placeholder-selectors.scss"
+    ],
+    "names": [],
+    "file": "placeholder-selectors.css"
+}

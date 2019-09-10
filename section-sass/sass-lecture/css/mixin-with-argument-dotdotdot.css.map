@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAIA,AAAA,QAAQ,CAAC;EAHL,UAAU,EAIU,CAAC,CAAC,GAAG,CAAC,GAAG,CAAC,IAAI,EAAE,GAAG,CAAC,GAAG,CAAC,IAAI,CAAC,IAAI;CACxD",
+    "sources": [
+        "../sass/mixin-with-argument-dotdotdot.scss"
+    ],
+    "names": [],
+    "file": "mixin-with-argument-dotdotdot.css"
+}

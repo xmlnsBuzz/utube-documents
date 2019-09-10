@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACI,AAAA,OAAO,CAAK;EAAC,KAAK,EAAE,GAAQ;CAAG;;AAA/B,AAAA,OAAO,CAAK;EAAC,KAAK,EAAE,GAAQ;CAAG;;AAA/B,AAAA,OAAO,CAAK;EAAC,KAAK,EAAE,GAAQ;CAAG",
+    "sources": [
+        "for-loop.scss"
+    ],
+    "names": [],
+    "file": "for-loop.css"
+}

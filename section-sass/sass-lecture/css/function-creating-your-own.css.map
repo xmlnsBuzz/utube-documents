@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAQA,AAAA,IAAI,CAAC;EACD,KAAK,EARG,IAA8B;CASzC;;AAED,AAAA,IAAI,CAAC;EACD,KAAK,EARG,WAA6B;CASxC",
+    "sources": [
+        "../sass/function-creating-your-own.scss"
+    ],
+    "names": [],
+    "file": "function-creating-your-own.css"
+}

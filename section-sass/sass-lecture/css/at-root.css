@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.btn {
+  background-color: #ededed;
+  border: 1px solid #555;
+  color: #555555;
+  padding: 1em 2em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1rem;
+}
+
+a.btn {
+  text-decoration: none;
+}
+
+/* 해당 CSS rule의 root인 '.btn'에 selector를 만들라! */
+.parent {
+  font-size: 1rem;
+  padding: 1em 2em;
+}
+
+.likely-modified {
+  font-size: 1.5em;
+}

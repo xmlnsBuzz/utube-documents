@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!link rel="stylesheet" href="../../css/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Long+Cang:regular" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Sunflower:300,500,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,regular,500,600,700,800,900"
+    rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Gruppo:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,regular,500,700,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic" rel="stylesheet" />
+  <style>
+    table {
+      /* font-style: italic;
+      font-variant: small-caps;
+      font-weight: bold;
+      font-stretch: extra-expanded; */
+      font: 1em / 1.2 'Lato';
+      table-layout: fixed;
+      border: 0;
+      border-top: 1px solid #aaa;
+      border-spacing: 0;
+      border-collapse: collapse;
+    }
+
+    .catamaran {
+      font-family: Catamaran;
+      font-size: 36px;
+      background-color: gold;
+      border: 1px solid black;
+    }
+
+    .sunflower {
+      font-family: Lato;
+      font-size: 36px;
+      font-stretch: ultra-condensed;
+      background-color: red;
+      border: 1px solid black;
+/*       line-height: 1.2;
+ */    }
+
+    div.sample {
+      font-style: italic;
+      font-variant: normal;
+      font-weight: bold;
+      font-stretch: 200%;
+      font-size: 36px;
+      line-height: 2;
+      font-family: 'Helvetica Neue';
+      font: 36px verdana;
+      /* text-shadow: 1px 1px 3px rgb(184, 183, 183);
+      background-color: #f4f7dd;
+      color: green; */
+    }
+
+    .sample p {
+      color: red;
+    }
+
+    p.init {
+      color: gold;
+    }
+
+    p>span {
+      color: blue;
+    }
+
+    tr {
+      background: #dfdfdf;
+    }
+
+    tr:nth-child(2n + 1) {
+      background-color: hsl(60, 50%, 95%);
+    }
+
+    /* tr>th {
+      background-color: #ddd;
+    } */
+
+    tr>th:not(:last-child) {
+      border-right: 1px solid #bbb;
+    }
+
+    tr>td {
+      border-left: 1px solid #bbb;
+    }
+
+    th,
+    td {
+      border-bottom: 1px solid #aaa;
+    }
+
+    th {
+      background-color: #dddddd;
+      /* background-image: url('../background-level-3/img/dot-2x2-light-grey.png'); */
+    }
+
+    a:link {
+      color: rgb(35, 101, 177)
+    }
+
+    a:visited {
+      color: rgb(133, 48, 212);
+    }
+
+    a:hover {
+      color: rgb(214, 31, 31);
+    }
+
+    a:active {
+      color: rgb(238, 161, 18);
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <p><span class="sunflower">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, ipsum.<span class="catamaran">Catamaran</span> <span class="sunflower">Long Cang</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, repellendus quo? Quaerat laborum nisi illum!</span></p>
+
+
+<div class="sample">    [[ &lt;‘font-style’> || &lt;font-variant-css21> || &lt;‘font-weight’> || &lt;‘font-stretch’> ]? &lt;‘font-size’> [
+    / &lt;‘line-height’> ]? &lt;‘font-family’> ]
+    | caption | icon | menu | message-box | small-caption | status-bar
+  </div>
+  <table class="proptable">
+    <thead>
+      <tr>
+        <th>Property
+
+        </th>
+        <th>Values
+
+        </th>
+        <th>Initial
+
+        </th>
+        <th>Applies to
+
+        </th>
+        <th>Inh.
+
+        </th>
+        <th>Percentages
+
+        </th>
+        <th>Media
+
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th><a class="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font">font</a>
+
+        </th>
+        <td>[ [ &lt;‘font-style’&gt; || &lt;font-variant-css21&gt; ||
+          &lt;‘font-weight’&gt; || &lt;‘font-stretch’&gt; ]?
+          &lt;‘font-size’&gt; [ / &lt;‘line-height’&gt; ]?
+          &lt;‘font-family’&gt; ] | caption | icon | menu | message-box |
+          small-caption | status-bar
+
+        </td>
+        <td>see individual properties
+
+        </td>
+        <td>all elements
+
+        </td>
+        <td>yes
+
+        </td>
+        <td>see individual properties
+
+        </td>
+        <td>visual
+
+        </td>
+      </tr>
+      <tr>
+        <th><a class="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font-family">font-family</a>
+
+        </th>
+        <td>[ &lt;family-name&gt; | &lt;generic-family&gt; ]#
+
+        </td>
+        <td>depends on user agent
+
+        </td>
+        <td>all elements
+
+        </td>
+        <td>yes
+
+        </td>
+        <td>N/A
+
+        </td>
+        <td>visual
+
+        </td>
+      </tr>
+      <tr>
+        <th><a class="property"
+            href="https://www.w3.org/TR/css-fonts-3/#propdef-font-feature-settings">font-feature-settings</a>
+
+        </th>
+        <td>normal | &lt;feature-tag-value&gt;#
+
+        </td>
+        <td>normal
+
+        </td>
+        <td>all elements
+
+        </td>
+        <td>yes
+
+        </td>
+        <td>N/A
+
+        </td>
+        <td>visual
+
+        </td>
+      </tr>
+      <tr>
+        <th><a class="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font-kerning">font-kerning</a>
+
+        </th>
+        <td>auto | normal | none
+
+        </td>
+        <td>auto
+
+        </td>
+        <td>all elements
+
+        </td>
+        <td>yes
+
+        </td>
+        <td>N/A
+
+        </td>
+        <td>visual
+
+        </td>
+      </tr>
+      <tr>
+        <th><a class="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font-size">font-size</a>
+
+        </th>
+        <td>&lt;absolute-size&gt; | &lt;relative-size&gt; |
+          &lt;length-percentage&gt;
+
+        </td>
+        <td>medium
+
+        </td>
+        <td>all elements
+
+        </td>
+        <td>yes
+
+        </td>
+        <td>refer to parent element's font size
+
+        </td>
+        <td>visual
+
+        </td>
+      </tr>
+      <tr>
+        <th><a class="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font-size-adjust">font-size-adjust</a>
+
+        </th>
+        <td>none | &lt;number&gt;
+
+        </td>
+        <td>none
+
+        </td>
+        <td>all elements
+
+        </td>
+        <td>yes
+
+        </td>
+        <td>N/A
+
+        </td>
+        <td>visual
+
+        </td>
+      </tr>
+      <tr>
+        <th><a class="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font-stretch">font-stretch</a>
+
+        </th>
+        <td>normal | ultra-condensed | extra-condensed | condensed |
+          semi-condensed | semi-expanded | expanded | extra-expanded |
+          ultra-expanded
+
+        </td>
+        <td>normal
+
+        </td>
+        <td>all elements
+
+        </td>
+        <td>yes
+
+        </td>
+        <td>N/A
+
+        </td>
+        <td>visual
+
+        </td>
+      </tr>
+      <tr>
+        <th><a class="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font-style">font-style</a>
+
+        </th>
+        <td>normal | italic | oblique
+
+        </td>
+        <td>normal
+
+        </td>
+        <td>all elements
+
+        </td>
+        <td>yes
+
+        </td>
+        <td>N/A
+
+        </td>
+        <td>visual
+
+        </td>
+      </tr>
+      <tr>
+        <th><a class="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font-synthesis">font-synthesis</a>
+
+        </th>
+        <td>none | [ weight || style ]
+
+        </td>
+        <td>weight style
+
+        </td>
+        <td>all elements
+
+        </td>
+        <td>yes
+
+        </td>
+        <td>N/A
+
+        </td>
+        <td>visual
+
+        </td>
+      </tr>
+      <tr>
+        <th><a class="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font-variant">font-variant</a>
+
+        </th>
+        <td>normal | none | [ &lt;common-lig-values&gt; ||
+          &lt;discretionary-lig-values&gt; || &lt;historical-lig-values&gt; ||
+          &lt;contextual-alt-values&gt; || [ small-caps | all-small-caps |
+          petite-caps | all-petite-caps | unicase | titling-caps ] ||
+          &lt;numeric-figure-values&gt; || &lt;numeric-spacing-values&gt; ||
+          &lt;numeric-fraction-values&gt; || ordinal || slashed-zero ||
+          &lt;east-asian-variant-values&gt; || &lt;east-asian-width-values&gt; ||
+          ruby || [ sub | super ] ]
+
+        </td>
+        <td>normal
+
+        </td>
+        <td>all elements
+
+        </td>
+        <td>yes
+
+        </td>
+        <td>see individual properties
+
+        </td>
+        <td>visual
+
+        </td>
+      </tr>
+      <tr>
+        <th><a class="property"
+            href="https://www.w3.org/TR/css-fonts-3/#propdef-font-variant-caps">font-variant-caps</a>
+
+        </th>
+        <td>normal | small-caps | all-small-caps | petite-caps | all-petite-caps
+          | unicase | titling-caps
+
+        </td>
+        <td>normal
+
+        </td>
+        <td>all elements
+
+        </td>
+        <td>yes
+
+        </td>
+        <td>N/A
+
+        </td>
+        <td>visual
+
+        </td>
+      </tr>
+      <tr>
+        <th><a class="property"
+            href="https://www.w3.org/TR/css-fonts-3/#propdef-font-variant-east-asian">font-variant-east-asian</a>
+
+        </th>
+        <td>normal | [ &lt;east-asian-variant-values&gt; ||
+          &lt;east-asian-width-values&gt; || ruby ]
+
+        </td>
+        <td>normal
+
+        </td>
+        <td>all elements
+
+        </td>
+        <td>yes
+
+        </td>
+        <td>N/A
+
+        </td>
+        <td>visual
+
+        </td>
+      </tr>
+      <tr>
+        <th><a class="property"
+            href="https://www.w3.org/TR/css-fonts-3/#propdef-font-variant-ligatures">font-variant-ligatures</a>
+
+        </th>
+        <td>normal | none | [ &lt;common-lig-values&gt; ||
+          &lt;discretionary-lig-values&gt; || &lt;historical-lig-values&gt; ||
+          &lt;contextual-alt-values&gt; ]
+
+        </td>
+        <td>normal
+
+        </td>
+        <td>all elements
+
+        </td>
+        <td>yes
+
+        </td>
+        <td>N/A
+
+        </td>
+        <td>visual
+
+        </td>
+      </tr>
+      <tr>
+        <th><a class="property"
+            href="https://www.w3.org/TR/css-fonts-3/#propdef-font-variant-numeric">font-variant-numeric</a>
+
+        </th>
+        <td>normal | [ &lt;numeric-figure-values&gt; ||
+          &lt;numeric-spacing-values&gt; || &lt;numeric-fraction-values&gt; ||
+          ordinal || slashed-zero ]
+
+        </td>
+        <td>normal
+
+        </td>
+        <td>all elements
+
+        </td>
+        <td>yes
+
+        </td>
+        <td>N/A
+
+        </td>
+        <td>visual
+
+        </td>
+      </tr>
+      <tr>
+        <th><a class="property"
+            href="https://www.w3.org/TR/css-fonts-3/#propdef-font-variant-position">font-variant-position</a>
+
+        </th>
+        <td>normal | sub | super
+
+        </td>
+        <td>normal
+
+        </td>
+        <td>all elements
+
+        </td>
+        <td>yes
+
+        </td>
+        <td>N/A
+
+        </td>
+        <td>visual
+
+        </td>
+      </tr>
+      <tr>
+        <th><a class="property" href="https://www.w3.org/TR/css-fonts-3/#propdef-font-weight">font-weight</a>
+
+        </th>
+        <td>normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600
+          | 700 | 800 | 900
+
+        </td>
+        <td>normal
+
+        </td>
+        <td>all elements
+
+        </td>
+        <td>yes
+
+        </td>
+        <td>N/A
+
+        </td>
+        <td>visual
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

@@ -20,7 +20,7 @@ body {
   /* Base font size: 14px */
   font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.429;
-  margin: 0;
+  margin: 2em;
   padding: 0;
   text-align: left;
 }
@@ -80,12 +80,19 @@ a:visited {
 
 a:hover,
 a:active {
-  background-color: #C74350;
-  color: #fff;
   text-decoration: none;
-  text-shadow: 1px 1px 1px #333;
+  text-shadow: 2px 2px 5px #2bff00;
 }
 
+/* h3.a {
+    text-shadow: -1px -1px white, 1px 1px #333
+}*/
+/* a:active {
+    text-shadow: 13px 13px rgb(250, 10, 198),
+    rgb(221, 200, 16) 10px 10px 4px inset;
+    text-decoration: underline overline blink blue;
+
+} */
 /* Paragraphs */
 p {
   margin-bottom: 1.143em;
@@ -161,4 +168,3 @@ tbody td {
 }
 
 /* Tfoot */
-/*# sourceMappingURL=smashing-mag.css.map */

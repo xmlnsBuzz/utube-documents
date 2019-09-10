@@ -1,9 +1,9 @@
 {
     "version": 3,
-    "mappings": "ACAA,AAAA,CAAC,CAAC;EACE,KAAK,EAAE,IAAI;CACd",
+    "mappings": "ACAA,AAAA,IAAI,CAAC;EACD,KAAK,EAAE,IAAI;CACd",
     "sources": [
         "../sass-lecture/import.scss",
-        "../sass-lecture/sass/_mixin.scss"
+        "../sass-lecture/sass/mixinss.scss"
     ],
     "names": [],
     "file": "import.css"

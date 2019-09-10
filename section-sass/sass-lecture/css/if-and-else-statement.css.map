@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAC;EAEM,MAAM,EAAE,SAAS;CAMxB;;AAOD,AAAA,WAAW,CAAC;EAHR,KAAK,EADkB,IAAI;CAM9B;;AAED,AAAA,YAAY,CAAC;EAPT,KAAK,EADwB,GAAG;CAUnC;;AAUD,AAAA,IAAI,CAAC;EAPD,KAAK,EAAE,KAAK;CASf;;AAED,AAAA,KAAK,CAAC;EAXF,KAAK,EAAE,KAAK;EAGR,WAAW,EAAE,IAAI;CAUxB;;AAID,AAAA,CAAC,CAAC;EAQM,KAAK,EAAE,KAAK;CAEnB",
+    "sources": [
+        "../sass/if-and-else-statement.scss"
+    ],
+    "names": [],
+    "file": "if-and-else-statement.css"
+}

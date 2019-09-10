@@ -1,0 +1,40 @@
+#main a {
+  color: white;
+}
+
+#main a:visied {
+  color: blue;
+}
+
+#main a:hover {
+  color: green;
+}
+
+#main a:active {
+  color: red;
+}
+
+p {
+  border-color: blue;
+  border-width: 1in;
+  border-style: dashed;
+}
+
+h1 {
+  border-color: blue;
+  border-width: 2in;
+  border-style: dashed;
+}
+
+p {
+  border-color: blue;
+  border-width: 1in;
+  border-style: dashed;
+}
+
+h1 {
+  border-color: blue;
+  border-width: 2in;
+  border-style: dashed;
+}
+/*# sourceMappingURL=mixin-with-arguments.css.map */

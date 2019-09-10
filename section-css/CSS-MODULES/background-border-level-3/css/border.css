@@ -1,0 +1,19 @@
+@charset "UTF-8";
+.border-image {
+  width: 300px;
+  height: 300px;
+  background-color: #ff3;
+  border: solid red 30px;
+  border-image-source: url("../img/transborder-from-w3c.png");
+  border-image-slice: 30;
+  border-image-width: 30px;
+  border-image-repeat: stretch stretch;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* border: solid orange 30px;
+  border-image: url("../img/transborder-from-w3c.png") 30 stretch stretch; 
+  
+  <border-image> : <‘border-image-source’>|| <‘border-image-slice’>[ / <‘border-image-width’>| / <‘border-image-width’>? / <‘border-image-outset’>]? || <‘border-image-repeat’>
+  
+  */
+}

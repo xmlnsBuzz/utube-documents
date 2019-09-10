@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>ddd</title>
+  <meta charset="UTF-8" />
+  <script>
+    function disp(btn, target) {
+      if (document.getElementById(target).style.display == "none") {
+        document.getElementById(target).style.display = "block";
+        btn.innerHTML = "Make none";
+      } else {
+        document.getElementById(target).style.display = "none";
+        btn.innerHTML = "Make block";
+      }
+    }
+
+  </script>
+</head>
+
+<body>
+  <button type="button" onclick="disp(this, 'box');">Click</button>
+  <div id="box" style="color: red; width: 50px; height: 50px;background-color: #f00;;">
+    box
+  </div>
+</body>
+
+</html>

@@ -7,4 +7,8 @@ body {
 .para > p:nth-of-type(8n+5) {
   color: red;
 }
+
+a:matches(:link, :hover, :visited, :focus) {
+  color: red;
+}
 /*# sourceMappingURL=css-syntax.css.map */

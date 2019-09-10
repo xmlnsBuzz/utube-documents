@@ -1,0 +1,41 @@
+.message, .success, .error, .seriousError, .criticalError, .warning {
+  border: 1px solid gold;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  border-color: green;
+}
+
+.error, .seriousError, .criticalError {
+  border-color: red;
+}
+
+.warning {
+  border-color: blue;
+}
+
+/*  Multiple Extends */
+.error, .seriousError, .criticalError {
+  border: 1px #f00;
+  background-color: #fdd;
+}
+
+/* Chaining extends of extends   */
+.attention, .seriousError, .criticalError {
+  font-size: 3em;
+  background-color: #ff0;
+}
+
+.seriousError, .criticalError {
+  border-width: 3px;
+}
+
+.criticalError {
+  position: fixed;
+  top: 10%;
+  bottom: 10%;
+  left: 10%;
+  right: 10%;
+}

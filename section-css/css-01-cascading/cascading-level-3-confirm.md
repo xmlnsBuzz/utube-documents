@@ -134,17 +134,17 @@ display: block;
 
 그런데 이 목록중에 3번 '사용자의 important 선언'과 7번 '사용자의 normal 선언' 부분은 사용경험이 없는 사람에게는 이해하기 힘든 부분일 것이다. 예컨데 브라우저로 인터넷에 연결된 어떤 사이트의 문서를 본다고 치자. 그럴 경우(문서작성자와 사용자가 다를 경우) 사용자가 대체 어떻게 important선언을 한다는 것인지 이해가 쉽지 않을 것이라는 말이다.
 
-이 3번과 7번은 다른 말로 'User CSS'라고도 하는데, 이 것은 인터넷으로 문서를 보는 전세계인들이 사용자에 해당되므로 그 많은 경우를 다루려 해도 다룰 수 없는 부분인 만큼 이해를 돕기 위해 딱 한번만 사용법에 대해 설명하고, 더 이상 다루지 않겠다. User CSS를 경험해 보고 싶다면 아래와 같이
+이 3번과 7번은 다른 말로 'User CSS'라고도 하는데, 이 것은 인터넷으로 문서를 보는 전세계인들이 사용자에 해당되므로 그 많은 경우를 다루려 해도 다룰 수 없는 부분인 만큼 이해를 돕기 위해 딱 한번만 사용법에 대해 설명하고, 더 이상 다루지 않겠다. User CSS를 경험해 보기 위해, 아래와 같이
 
 ```css
 body {
 background-color: goldenrod;
-color: white !important;
+color: white;
 }
 ```
 라는 내용으로 'user.css'라는 이름을 붙여 찾을 수 있는 곳에 저장한다.
 
-그리고 항상 말썽만 부리는 notorious한 Internet Explorer를 열고 아래의 순서로 찾아간다.
+그리고 브라우저계의 문제아 'Internet Explorer'를 열고 아래의 순서로 찾아간다.
 
 > Tools(이 메뉴가 안보이면 gear icon) > Internet Options > Accessibility
 
@@ -186,13 +186,14 @@ Accessibility 단추를 누르면 아래와 같은 박스가 나오는데, 그�
 #para {color: red;}
 .graph {color: blue;}
 ```
-위의 CSS rule에서 처럼 HTML element 당 하나 이상 사용할 수 있는 c class selector <span class="emph">.graph</span> 보다, 오직 하나만 존재하므로해서(one and only) specificity가 가장 높은 id selector인 <span class="emph">#para</span>에 지정한 {color: red} 가 브라우저에 rendering되는 actual value로 간택되는 것과 같다. 또한 <span class="emph">보다 구체적</span>이라는 것은
+위의 CSS rule에서 처럼 HTML element 당 하나 이상 사용할 수 있는  class selector <span class="emph">.graph</span> 보다, 오직 하나만 존재하므로해서(one and only) specificity가 가장 높은 id selector인 <span class="emph">#para</span>에 지정한 {color: red} 가 브라우저에 rendering되는 actual value로 간택되는 것과 같다. 또한 <span class="emph">보다 구체적</span>이라는 것은
 
 ```html
 <section>
     <P>Lorem ipsum dolor sit amet.</P>
     <P>Lorem ipsum dolor sit amet.</P>
 </section>
+
 ```
 위의 HTML code 속의 2개의 <span class="anBra">p</span> element에 아래와 같이
 
@@ -203,7 +204,7 @@ section p {color: blue;}
 p {color: green;}
 /* 문서내의 모든 p : specificity 001 */
 ```
-CSS rule을 적용했을 경우 2개 모두 {color: blue}가 actual value가 되는데, 그 이유는 위에 붙인 주석처럼 첫 번째 selector와 두 번째 selector를 비교해 보면<span class="anBra">p</span> element에 <span class="emph">모든 section의 자손</span>이라는 한 마디를 더 수식하고 있다는 이유 때문이다. 즉, HTML element <span class="emph">p</span>를 더 구체적이고 명확하게 가리키는 표현이기 때문에 간택된다는 뜻이다.  
+CSS rule을 적용했을 경우 2개 p element의 color 모두 {color: blue}가 actual value로 적용되는데, 그 이유는 위에 붙인 주석처럼 첫 번째 selector와 두 번째 selector를 비교해 보면, 첫번째 selector는<span class="anBra">p</span> element 앞에 <span class="emph">모든 section의 자손</span>이라는 의미의 'section'이라는 한 마디를 더 수식하고 있다는 이유 때문이다. 즉, HTML element <span class="emph">p</span>를 더 구체적이고 명확하게 가리키는 표현이기 때문에 간택된다는 뜻이다.  
 
 아래의 code를 보면 이해가 보다 쉬울 것이다.
 
@@ -215,13 +216,13 @@ CSS rule을 적용했을 경우 2개 모두 {color: blue}가 actual value가 되
     <div>
         <p>paragraph</p>
     </div>
-        <p>paragraph</p>
+    <p>paragraph</p>
 </body>    
 ```
 이 code에 나타나는 3개의 <span class="anBra">p</span>를 보자. 첫번째 p는 section의 자식이고, 두번째 p는 div의 자식, 3번째 p는 body의 자식이다. 따라서 첫 번째 p element를 가리킬 때 <span class="emph">모든 p 보다는 'section의 자식 p'</span>라는 표현을 덧 붙이는 것이 보다 더 구체적이고 더 명확한 것을 알 수 있다.
 
 
-따라서 위의 위의 code에서는, 아래에서 설명할 '뒤에 나타나는 selector가 순서상 우선'이라는 cascading 규칙보다 '구체성이 높은 selector가 우선'이라는 규칙이 앞서므로 2개의 <span class="anBra">p</span>element 모두 {color: blue;} 가 적용된 것이다.
+따라서 위의 code에서는, 아래에서 설명할 '뒤에 나타나는 selector가 순서상 우선'이라는 cascading 규칙보다 '구체성이 높은 selector가 우선'이라는 규칙이 앞서므로 section의 자식인 첫번째 p는 {color: bleu;} 뒤의 나머지 2개의 <span class="anBra">p</span>element는 모두 {color: green;} 이 적용된 것이다.
 
 또한 위의 明確性과 具體性을 동시에 다루어야 할 경우 명확성과 구체성 두 가지를 모두 합쳐 specificity(구체도)가 높은 selector가 이기게 된다. 여기서 '이긴다'는 말은 '브라우저에 render될 actual value로 간택된다'는 말이고, specificity에 대해서는 뒤에 나오는 구체도 계산방법에서 자세히 설명한다.
 <hr class="thin" />
@@ -314,5 +315,9 @@ div {
 > 80% X 900px = 720px 
 
 가 div의 실제로 출력되는 width값이다. 즉 문서에서는 상대단위를 사용하더라도 최종출력은 실제로 적용할 수 있는 절대단위로 변환하여 출력된다.
+
+하지만 이 계산은 screen에서의 얘기고, 출력 media는 screen만 있는 것이 아니기 때문에 다른 media에서 어떻게 출력되는지도 항상 고려해야 된다. 예를 들어 laser printer의 경우 screen의 1px을 가로 4칸, 세로 4칸으로 더 분할할 수 있으므로 4 X 4 = 16개로 더 세밀한 계산을 한다.
+
+특히 웹 개발을 하거나 하려고 하는 사람들에게는 "내가 이러니 남도 이럴 것이다."라는 생각은 금물이다. 모든 조건을 고려해야 되므로 세심함이 필요한데, 그게 처음부터 되는 것이 아니라 수 많은 시행착오를 거쳐 경험이 쌓여야 되겠지만 최소한 이런 부분까지도 배려하는 '마음가짐'을 항상 품고 있어야 할 것이다.
 
 ---
