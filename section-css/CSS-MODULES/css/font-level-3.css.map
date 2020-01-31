@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,IAAI,CAAC;EAED,WAAM,EAAE,OAAO;EACf,qBAAgB,EAAE,MAAM;EACxB,YAAO,EAAE,IAAI;EACb,gBAAW,EAAE,CAAC;EACd,WAAM,EAAE,GAAG;EACX,sBAAiB,EAAE,MAAM;CAoB5B;;AA3BD,AAUE,IAVE,GAUD,GAAG,CAAC;EAGD,WAAI,EAAC,IAAI;EAIX,iBAAK,EAAC,GAAG;EACT,iBAAK,EAAE,IAAI;CAOZ;;AAzBH,AAqBI,IArBA,GAUD,GAAG,AAWD,IAAI,CAAC;EACJ,KAAK,EAAE,IAAI;CACZ",
-    "sources": [
-        "../font-level-3/font-level-3.scss"
-    ],
-    "names": [],
-    "file": "font-level-3.css"
-}

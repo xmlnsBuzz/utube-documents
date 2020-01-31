@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>Font Level 3 Test Suite</title>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   <style>
+      p,
+      span {
+         font-family: sans-serif;
+         font-size: 48px;
+      }
+
+      .style_italic {
+         font-style: italic;
+      }
+
+      .style_oblique {
+         font-style: oblique 60deg;
+      }
+
+      p {
+         margin: 0;
+      }
+
+      .w500 {
+         font-weight: 600;
+      }
+
+      .w700 {
+         font-weight: 700;
+      }
+
+      .w900 {
+         font-weight: 900;
+      }
+
+   </style>
+</head>
+
+<body>
+   <span>abcdefghijklmnopqrstuvwxyz</span><br />
+   <span id="font_style">abcdefghijklmnopqrstuvwxyz</span><br />
+   <button onclick="document.getElementById('font_style').style.fontStyle='italic';">italic</button>
+   <button onclick="document.getElementById('font_style').style.fontStyle='oblique -60deg';">oblique 60deg</button>
+   <p class="w500">font weight</p>
+   <p class="w700">font weight</p>
+   <p class="w900">font weight</p>
+</body>
+
+</html>

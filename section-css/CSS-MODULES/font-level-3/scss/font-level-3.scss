@@ -1,0 +1,42 @@
+body {
+   color: red;
+
+   >div {
+      margin: {
+
+         left: 50px;
+      }
+
+      border: {
+         left: {
+            width: 3px;
+            color: #fd3;
+         }
+         right: {
+            style:dotted;
+            width: 5px;
+         }
+      }
+
+      &.box {
+         color: #000;
+      }
+
+   }
+}
+
+p {
+   font: {
+      size: 36px;
+      family: 'TradeGothic';
+      weight: 300;
+   }
+}
+
+
+
+div.anim {
+   animation: {
+      timing-function: 1;
+   }
+}

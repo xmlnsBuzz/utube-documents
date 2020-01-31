@@ -4,21 +4,60 @@
 <head>
    <title>Short hand property 사용시 주의사항</title>
    <meta charset="UTF-8" />
+   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,regular,500,700,900" rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css?family=Encode+Sans:100,200,300,regular,500,600,700,800,900"
+      rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:100,200,300,regular,500,600,700,800,900"
+      rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:100,200,300,regular,500,600,700,800,900"
+      rel="stylesheet" />
    <style>
-      .long-hand {
-         line-height: 3;
-         border: 1px solid #faa;
-         border-width: 0 0 0px 0;
-         font-style: italic;
-         font-variant: normal;
-         font-weight: normal;
-         font-stretch: ultra-expanded;
-         font-size: 16px;
-         font-family: 'dotum';
+      p {
+         font-size: 24px;
       }
 
+      .short-hand {
+
+         /* font-style: italic; */
+         font-family: sans-serif;
+         font-style: italic;
+         /* font-style: oblique 45deg; */
+         font-variant: small-caps;
+         font-weight: bold;
+         font-stretch: ultra-expanded;
+         font-size: 24px;
+         line-height: 2;
+         color: orangered;
+         font: 24px/2 sans-serif
+      }
+
+      /* small-caps oblique 60deg bold condensed */
       .long-hand {
-         font:italic 48px verdana;
+         font: 24px/2 sans-serif;
+         color: goldenrod;
+
+      }
+
+      .condensed {
+         font-family: 'Encode Sans Condensed';
+      }
+
+      .regular {
+         font-family: 'Encode Sans';
+      }
+
+      .expanded {
+         font-family: 'Encode Sans Expanded';
+      }
+
+      .condensed,
+      .regular,
+      .expanded {
+         font-weight: 100;
+      }
+
+      div>p {
+         font-size: 36px;
       }
 
    </style>
@@ -26,9 +65,23 @@
 </head>
 
 <body>
-   <p id="shortHand"><span class="long-hand">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum repellendus
-         quam expedita alias, sequi quo. Ea, repudiandae. Ex, vitae facere. Lorem ipsum dolor sit amet consectetur
-         adipisicing elit. Eum dolorum culpa id cumque dolor esse?</span></p>
+   <h1>Fonts</h1>
+   <h2>Longhands & Shorhand</h2>
+   <p class="short-hand">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor perspiciatis voluptatibus ea
+      eius error dignissimos, laborum quas aperiam odit necessitatibus minima velit autem vitae rem voluptas incidunt
+      distinctio ratione ab!</p>
+
+   </p>
+   <p class="long-hand">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eius rem officiis expedita error
+      quos, necessitatibus animi impedit provident aspernatur molestiae eos fugit alias suscipit? Officiis explicabo
+      temporibus fugit doloribus?</p>
+   <h2>Regular, Condensed & Expanded</h2>
+   <div>
+      <p class="condensed">한글 Encode Sans Condensed 한글</p>
+      <p class="regular">한글 Encode Sans Regular 한글</p>
+      <p class="expanded">한글 Encode Sans Expanded 한글</p>
+   </div>
+
 
 </body>
 

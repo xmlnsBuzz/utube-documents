@@ -2,6 +2,9 @@
     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1707.68 1065.58">
     <defs>
         <style>
+        :root {
+           background-color: lightyellow;
+        }
         .cls-1,.cls-3{
         fill:#c0a32222;
         stroke:#9b3e0822;

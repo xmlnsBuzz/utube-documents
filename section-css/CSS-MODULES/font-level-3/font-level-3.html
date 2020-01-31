@@ -1,0 +1,703 @@
+<!DOCTYPE html><html><head>
+      <title>font-level-3</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///e:\Users\Administrator\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.0\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: hsl(0, 0%, 96%);
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: hsl(332, 70%, 38%);
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Noto Sans KR Thin'), local('NotoSansKR-Thin'), url(https://fonts.gstatic.com/s/notosanskr/v12/Pby6FmXiEBPT4ITbgNA5CgmOsk7vyJQ.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Noto Sans KR Light'), local('NotoSansKR-Light'), url(https://fonts.gstatic.com/s/notosanskr/v12/Pby7FmXiEBPT4ITbgNA5CgmOelz477IS.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans KR Regular'), local('NotoSansKR-Regular'), url(https://fonts.gstatic.com/s/notosanskr/v12/PbykFmXiEBPT4ITbgNA5CgmG0X7u.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Noto Sans KR Medium'), local('NotoSansKR-Medium'), url(https://fonts.gstatic.com/s/notosanskr/v12/Pby7FmXiEBPT4ITbgNA5CgmOIl3477IS.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans KR Bold'), local('NotoSansKR-Bold'), url(https://fonts.gstatic.com/s/notosanskr/v12/Pby7FmXiEBPT4ITbgNA5CgmOalv477IS.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Noto Sans KR Black'), local('NotoSansKR-Black'), url(https://fonts.gstatic.com/s/notosanskr/v12/Pby7FmXiEBPT4ITbgNA5CgmOUln477IS.otf) format('opentype');
+}
+/* Please visit the URL below for more information: */
+/*   https                                        ://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+*,
+body,
+p,
+span,
+div {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+}
+pre,
+code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+}
+.token.punctuation,
+.token.doctype {
+  color: #aaaaaa;
+}
+.token.attr-value {
+  color: #e49b48;
+  font-weight: bold;
+}
+.token.boolean {
+  color: #e49b48;
+  font-weight: bold;
+}
+html,
+body {
+  caret-color: red !important;
+}
+.markdown-preview.markdown-preview {
+  background-color: #383838;
+  /* background-size        : 90%;
+    background-repeat         : no-repeat;
+    background-attachment     : fixed;
+    background-position       : 1000px 30px;
+    color                     : #efefef; */
+  /*span.token.punctuation {
+      color: #d1d1d1;
+  }
+
+  span.token.attr-value {
+      color: #df7631;
+  }
+  
+  span.token.tag {
+      color: #4380db;
+  }
+*/
+}
+.markdown-preview.markdown-preview html body {
+  height: 100vh;
+  font-weight: 100;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.markdown-preview.markdown-preview p {
+  margin-left: 15px;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #fff;
+  font-weight: 100;
+}
+.markdown-preview.markdown-preview h1,
+.markdown-preview.markdown-preview h2,
+.markdown-preview.markdown-preview h3,
+.markdown-preview.markdown-preview h4,
+.markdown-preview.markdown-preview h5,
+.markdown-preview.markdown-preview h6 {
+  color: #efefef;
+  line-height: 1.5;
+}
+.markdown-preview.markdown-preview h1.special,
+.markdown-preview.markdown-preview h2.special,
+.markdown-preview.markdown-preview h3.special,
+.markdown-preview.markdown-preview h4.special,
+.markdown-preview.markdown-preview h5.special,
+.markdown-preview.markdown-preview h6.special {
+  color: #278eee;
+}
+.markdown-preview.markdown-preview h1 {
+  font-size: 42px;
+  font-weight: 400;
+}
+.markdown-preview.markdown-preview h1 > span {
+  font-size: inherit;
+  font-weight: 300;
+}
+.markdown-preview.markdown-preview h2,
+.markdown-preview.markdown-preview h3 {
+  margin-left: 10px;
+  color: #eee;
+  font-weight: 500;
+}
+.markdown-preview.markdown-preview h2 {
+  font-size: 26.46px;
+}
+.markdown-preview.markdown-preview h2 > span {
+  font-size: inherit;
+}
+.markdown-preview.markdown-preview h3 {
+  font-size: 21px;
+}
+.markdown-preview.markdown-preview h3 > span {
+  font-size: inherit;
+}
+.markdown-preview.markdown-preview h4 {
+  margin-left: 20px;
+  font-size: inherit;
+}
+.markdown-preview.markdown-preview h4 + p table {
+  width: 100%;
+}
+.markdown-preview.markdown-preview th {
+  color: rgba(245, 245, 245, 0.986);
+  background-color: rgba(85, 107, 47, 0.541);
+  display: inline-block;
+}
+.markdown-preview.markdown-preview tr:nth-child(odd) {
+  background-color: #555;
+}
+.markdown-preview.markdown-preview tr:nth-child(even) {
+  background-color: #444;
+}
+.markdown-preview.markdown-preview body {
+  background-color: #353535;
+}
+.markdown-preview.markdown-preview hr {
+  background-color: #943232;
+  height: 2px;
+  margin-top: 0;
+  background-image: linear-gradient();
+}
+.markdown-preview.markdown-preview hr.thin {
+  height: 1px;
+  background-color: #679787c5;
+}
+.markdown-preview.markdown-preview blockquote {
+  background-color: #cbce130c;
+  border-left: 3px solid #219616;
+  border-radius: 0 6px 6px 0;
+  font-weight: normal;
+}
+.markdown-preview.markdown-preview blockquote > p {
+  color: #ffffff;
+  padding: 3px;
+  font-weight: normal;
+}
+.markdown-preview.markdown-preview sup,
+.markdown-preview.markdown-preview sub {
+  color: #fff;
+  font-size: 0.8em;
+  padding: 2px 5px;
+  margin-left: 5px;
+  border-radius: 3px;
+  background-color: #614c38;
+}
+.markdown-preview.markdown-preview .warn {
+  color: #aa1378;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.markdown-preview.markdown-preview .emp-i {
+  color: #f3a93b;
+  font-weight: 500;
+  font-family: 'Fira Code';
+  font-style: italic;
+}
+.markdown-preview.markdown-preview .emp-h {
+  color: #f3a93b;
+  font-weight: 100;
+}
+.markdown-preview.markdown-preview .emph {
+  color: #f3a93b;
+  font-weight: 100;
+}
+.markdown-preview.markdown-preview .lev3 {
+  text-decoration: underline;
+}
+.markdown-preview.markdown-preview .red {
+  color: #ff4500;
+}
+.markdown-preview.markdown-preview .anBra {
+  color: #f3a93b;
+}
+.markdown-preview.markdown-preview .anBra::before {
+  content: '<';
+}
+.markdown-preview.markdown-preview .anBra::after {
+  content: '>';
+}
+.markdown-preview.markdown-preview .filename {
+  color: #d5d511;
+}
+.markdown-preview.markdown-preview img[title='Stack It All'] {
+  width: 100px;
+  float: right;
+  position: relative;
+  top: -10px;
+}
+.markdown-preview.markdown-preview img[title='Emmet'] {
+  width: 100px;
+}
+.markdown-preview.markdown-preview img[title='Classic CSS Icon'] {
+  width: 50%;
+}
+.markdown-preview.markdown-preview ol li,
+.markdown-preview.markdown-preview ul li {
+  color: #fff;
+  font-family: 'Fira Code';
+}
+.markdown-preview.markdown-preview li > p {
+  color: #fff;
+}
+.markdown-preview.markdown-preview li li {
+  color: #b1b1b1;
+  list-style: square outside;
+  margin-top: 0;
+  line-height: 1.8;
+}
+.markdown-preview.markdown-preview li {
+  margin-top: 15px;
+}
+.markdown-preview.markdown-preview dl {
+  color: #ffffff;
+  margin-left: 10px;
+}
+.markdown-preview.markdown-preview dt {
+  font-weight: 300;
+  color: #e7b324;
+  font-size: 18px;
+}
+.markdown-preview.markdown-preview dd {
+  color: #eee;
+}
+.markdown-preview.markdown-preview strong {
+  font-weight: bold;
+  color: #ffffff;
+}
+.markdown-preview.markdown-preview code {
+  padding: 0 3px;
+  margin: 1px;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #5fbb09b9;
+  border: 1px solid #b2e97f;
+}
+.markdown-preview.markdown-preview code.shift,
+.markdown-preview.markdown-preview code.ctrl,
+.markdown-preview.markdown-preview code.alt {
+  padding: 0;
+}
+.markdown-preview.markdown-preview code.shift {
+  background-color: #f10e0e77;
+  border: 1px solid #f10e0e;
+}
+.markdown-preview.markdown-preview code.ctrl {
+  background-color: #e0b42277;
+  border: 1px solid #e0b422;
+}
+.markdown-preview.markdown-preview code.alt {
+  background-color: #0f62af77;
+  border: 1px solid #0f62af;
+}
+.markdown-preview.markdown-preview code + span.desc {
+  font-family: consolas;
+  color: #e07bff;
+}
+.markdown-preview.markdown-preview code.attr-name {
+  color: #e07bff;
+  border-radius: 0;
+  border: none;
+  background-color: #333;
+}
+.markdown-preview.markdown-preview code.elem-name {
+  color: #219616;
+  border-radius: 0;
+  border: none;
+  background-color: #333;
+}
+.markdown-preview.markdown-preview .list-item {
+  display: list-item;
+  margin-left: 1em;
+}
+.markdown-preview.markdown-preview .note {
+  color: #fff;
+  padding: 10px;
+  background-color: #fcca66;
+  color: #000000;
+}
+.markdown-preview.markdown-preview a:link {
+  color: #2093ff;
+}
+.markdown-preview.markdown-preview a:hover {
+  text-decoration: underline;
+}
+.markdown-preview.markdown-preview pre[class|=language] {
+  background-color: #222222;
+  color: #dadada;
+  font-size: 16px !important;
+  border-radius: 5px;
+  font-weight: 300;
+}
+.markdown-preview.markdown-preview .fsize24 {
+  font-size: 24px;
+}
+.markdown-preview.markdown-preview span.token.comment {
+  color: #00a316;
+  font-style: italic;
+  font-family: monospace;
+  font-weight: 300;
+}
+.markdown-preview.markdown-preview span.token.property {
+  color: #8ccdf8;
+  font-weight: 300;
+}
+.markdown-preview.markdown-preview span.token.string {
+  color: #81c255;
+  font-weight: 300;
+}
+.markdown-preview.markdown-preview pre * {
+  font-family: 'Courier New', Courier, monospace;
+}
+.markdown-preview.markdown-preview .bg-emph {
+  background-color: #fff;
+}
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <h1 class="mume-header" id="css-font-module-span-classemp-hlevel-3span">CSS Font-Module-<span class="emp-h">Level 3</span></h1>
+
+<hr>
+<p>&#xC774;&#xBC88; &#xAC15;&#xC758;&#xC5D0;&#xC11C; Font-Module-Level-3 section&#xC740; &#xBE44;&#xB2E8; web page &#xBFD0;&#xB9CC; &#xC544;&#xB2C8;&#xB77C; &#xBAA8;&#xB4E0; &#xB514;&#xC790;&#xC778;&#xC5D0;&#xC11C;&#xC758; &#xC2DC;&#xAC01;&#xC801; &#xD544;&#xC218;&#xC694;&#xC18C;&#xC778; font&#xB97C; &#xB2E4;&#xB8EC;&#xB2E4;. &apos;&#xC6F9;&#xD398;&#xC774;&#xC9C0;&#xC758; &#xC124;&#xACC4;&apos;&#xB77C;&#xB294; &#xC758;&#xBBF8;&#xB85C;&#xC368;&#xC758; &apos;&#xC6F9;&#xB514;&#xC790;&#xC778;&apos;&#xC5D0;&#xC11C; font&#xB294; &#xC6F9;&#xD398;&#xC774;&#xC9C0;&#xC758; &#xAC00;&#xC7A5; &#xC911;&#xC694;&#xD55C; &#xC694;&#xC18C;&#xC778; &apos;&#xC815;&#xBCF4;&#xC758; &#xC804;&#xB2EC;&apos;&#xC774; &#xC8FC;&#xBAA9;&#xC801;&#xC774;&#xC9C0;&#xB9CC;, font&#xB97C; &#xC798; &#xC54C;&#xACE0; &#xD65C;&#xC6A9;&#xD558;&#xBA74; font &#xC790;&#xCCB4;&#xB9CC;&#xC73C;&#xB85C;&#xB3C4; &#xC6F9;&#xD398;&#xC774;&#xC9C0;&#xC5D0; &#xBBF8;&#xC801; &#xC694;&#xC18C;&#xB97C; &#xD45C;&#xD604;&#xD560; &#xC218; &#xC788;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xB300;&#xD559;&#xC758; &#xC2DC;&#xAC01;&#xB514;&#xC790;&#xC778;&#xD559;&#xACFC;(VC : Visual Communication, VD : Visual Design&#xB4F1;&#xC73C;&#xB85C; &#xBD88;&#xB9BC;)&#xC758; &#xC218;&#xC5C5;&#xC5D0;&#xC11C; font&#xAC00; &#xB9E4;&#xC6B0; &#xD070; &#xBE44;&#xC911;(&#xC5B4;&#xB5A4; &#xAD50;&#xC218;&#xB294; &#xC2DC;&#xAC01;&#xB514;&#xC790;&#xC778;&#xC5D0;&#xC11C; font&#xAC00; &#xCC28;&#xC9C0;&#xD558;&#xB294; &#xBE44;&#xC911;&#xC744; 90% &#xC774;&#xC0C1;&#xC774;&#xB77C;&#xACE0;&#xB3C4; &#xC8FC;&#xC7A5;&#xD55C;&#xB2E4;.)&#xC744; &#xCC28;&#xC9C0;&#xD558;&#xBBC0;&#xB85C; Font module level 3&#xB97C; CSS section&#xC5D0;&#xC11C; &#xAC00;&#xC7A5; &#xBA3C;&#xC800; &#xB2E4;&#xB8E8;&#xB294; &#xAC83;&#xC740; &#xB2F9;&#xC5F0;&#xD558;&#xB2E4;&#xACE0; &#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
+<p>&#xD558;&#xC9C0;&#xB9CC; &#xAE30;&#xC874;&#xC758; &#xC720;&#xBA85; &#xC0AC;&#xC774;&#xD2B8; &#xB4F1;&#xB3C4; &#xD3EC;&#xD568;&#xD574;, &#xB300;&#xAC1C;&#xC758; &#xACBD;&#xC6B0;, &#xC2EC;&#xC9C0;&#xC5B4; &#xCD08;&#xBCF4;&#xC790;&#xC758; &#xACBD;&#xC6B0;&#xB3C4; &#xC790;&#xC2E0;&#xC774; font&#xC5D0; &#xB300;&#xD574; &#xC2A4;&#xC2A4;&#xB85C; &#xC798; &#xC54C;&#xACE0; &#xC788;&#xB2E4;&#xACE0; &#xC0DD;&#xAC01;&#xD558;&#xB294; &#xACBD;&#xC6B0;&#xB97C; &#xD754;&#xD788; &#xBCF8;&#xB2E4;. &#xBC18;&#xC740; &#xB9DE;&#xACE0; &#xBC18;&#xC740; &#xD2C0;&#xB9B0; &#xB9D0;&#xC774;&#xB2E4;. &#xC65C;&#xB0D0;&#xD558;&#xBA74; &#xD0DC;&#xC5B4;&#xB098; &#xC9C0;&#xAE08;&#xAE4C;&#xC9C0; &#xCC45;&#xB4F1;&#xC758; &#xB9E4;&#xCCB4;&#xB97C; &#xD1B5;&#xD574; &#xC218; &#xB9CE;&#xC740; &#xBB38;&#xC790;&#xB97C; &#xC77D;&#xC5B4;&#xC654;&#xC73C;&#xBBC0;&#xB85C; &#xCD5C;&#xC18C;&#xD55C; &#xB0A8;&#xC774; &#xB9CC;&#xB4E0; &#xD398;&#xC774;&#xC9C0;(&#xBAA8;&#xB4E0; &#xB9E4;&#xCCB4;&#xC758;)&#xB97C; &#xC77D;&#xB294; &#xAC83;&#xC740; &#xB2F9;&#xC5F0;&#xD788; &#xC798; &#xC54C;&#xACE0; &#xC788;&#xB2E4;. &#xD558;&#xC9C0;&#xB9CC; &#xBC18;&#xB300; &#xACBD;&#xC6B0;&#xC778; &#xC6F9;&#xD398;&#xC774;&#xC9C0; &#xC81C;&#xC791;&#xC5D0; &#xB300;&#xD574; &#xB2E4;&#xB8E8;&#xC5B4;&#xBCF4;&#xC9C0; &#xC54A;&#xC558;&#xB2E4;&#xBA74; &#xC81C;&#xC791;&#xC790;(Author) &#xC785;&#xC7A5;&#xC5D0;&#xC11C;&#xC758; font&#xC5D0; &#xB300;&#xD574;&#xC11C;&#xB294; &#xBAA8;&#xB978;&#xB2E4;&#xACE0; &#xBD10;&#xC57C; &#xD55C;&#xB2E4;.</p>
+<p>&#xB530;&#xB77C;&#xC11C; &#xC774; &#xCC44;&#xB110;&#xC5D0;&#xC11C;&#xB294; &#xC774;&#xBC88; Font-Module-Level-3 section&#xACFC; &#xB4A4;&#xC5D0; &#xB098;&#xC62C; Text-Module-Level-3&#xB97C; &#xD1B5;&#xD574; &#xC6F9;&#xD398;&#xC774;&#xC9C0;&#xC5D0;&#xC11C; font &#xB2E4;&#xB8E8;&#xB294; &#xBC29;&#xBC95;&#xC5D0; &#xB300;&#xD574; &#xB17C;&#xC758;&#xD560; &#xAC83;&#xC774;&#xB2E4;.</p>
+<h2 class="mume-header" id="font-property%EB%A1%9C-css%EB%A5%BC-%EC%B6%9C%EB%B0%9C%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0">Font property&#xB85C; CSS&#xB97C; &#xCD9C;&#xBC1C;&#xD558;&#xB294; &#xC774;&#xC720;...</h2>
+
+<p>CSS property &#xC911; font &#xAD00;&#xB828; property&#xB97C;  &#xCC98;&#xC74C; &#xC18C;&#xAC1C;&#xD55C;&#xB2E4;. &#xADF8; &#xC774;&#xC720;&#xB294;</p>
+<ul>
+<li>CSS &#xC785;&#xBB38;&#xC790;&#xC758; &#xAD00;&#xC2EC;&#xC744; &#xAC00;&#xC7A5; &#xB9CE;&#xC774; &#xB048;&#xB2E4;.</li>
+<li>Font&#xAD00;&#xB828; property&#xB4E4;&#xC774; CSS&#xC5D0;&#xC11C;&#xB294; &#xAC00;&#xC7A5; &#xAE30;&#xBCF8;&#xC801;&#xC774;&#xAE30;&#xB3C4; &#xD558;&#xC9C0;&#xB9CC;, &#xC6F9;&#xD398;&#xC774;&#xC9C0;&#xB97C; &#xAFB8;&#xBBF8;&#xB294;&#xB370; &#xAC00;&#xC7A5; &#xD070; &#xBE44;&#xC911;&#xC744; &#xCC28;&#xC9C0;&#xD558;&#xB294; &#xC911;&#xC694;&#xD55C; property&#xB2E4;.</li>
+<li>&#xCD95;&#xC57D;&#xD615;(Shorthand) propery&#xB97C; &#xC0AC;&#xC6A9;&#xD560; &#xB54C; &#xBC18;&#xB4DC;&#xC2DC; <span class="emph">&#xC720;&#xC758;&#xD560; &#xC810;</span>&#xC774; &#xBB34;&#xC5C7;&#xC778;&#xC9C0; &#xC54C; &#xC218; &#xC788;&#xB294; &#xB300;&#xD45C;&#xC801;&#xC778; property&#xAC00; font property&#xC774;&#xB2E4;.</li>
+</ul>
+<hr class="thin">
+<h2 class="mume-header" id="font-%EA%B4%80%EB%A0%A8-properties%EC%99%80-short-hand%EA%B0%84%ED%8E%B8%ED%98%95-property%EC%97%90-%EA%B4%80%ED%95%98%EC%97%AC">Font &#xAD00;&#xB828; properties&#xC640; short hand(&#xAC04;&#xD3B8;&#xD615;) property&#xC5D0; &#xAD00;&#xD558;&#xC5EC;...</h2>
+
+<p>&#xB300;&#xBD80;&#xBD84;&#xC758; CSS property&#xB4E4;&#xC740; Longhand properties&#xC640; &#xADF8; &#xAC83;&#xB4E4;&#xC744; &#xAC04;&#xB7B5;&#xD558;&#xAC8C; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xB294; Shorthand property&#xAC00; &#xB9C8;&#xB828;&#xB418;&#xC5B4; &#xC788;&#xB2E4;. &#xADF8;&#xB807;&#xB2E4;&#xACE0; &#xBAA8;&#xB4E0; CSS module&#xB9C8;&#xB2E4; shorthand property&#xAC00; &#xC788;&#xB294; &#xAC83;&#xC740; &#xC544;&#xB2C8;&#xC9C0;&#xB9CC;, &#xC608;&#xB97C; &#xB4E4;&#xC5B4; font&#xC640; &#xAD00;&#xB828;&#xD574;&#xC11C;&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xB2E4;.</p>
+<h3 class="mume-header" id="long-hand-property">Long hand property</h3>
+
+<ul>
+<li><span class="emp-i">font-style</span> ::= normal | italic | oblique <span class="emp-i">&lt;degree&gt; (default 14deg)</span></li>
+<li><span class="emp-i">font-weight</span> ::= normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900</li>
+<li><span class="emp-i">font-size</span> ::= &lt;absolute-size&gt; | &lt;relative-size&gt; |<br>
+&lt;length-percentage&gt;</li>
+<li><span class="emp-i">line-height</span> ::= normal <span class="emp-i">(&#xB300;&#xB7B5; 1.2)</span> | &lt;number&gt; | &lt;length&gt; | &lt;percentage&gt;</li>
+<li><span class="emp-i">font-family</span> ::= [ &lt;family-name&gt; | &lt;generic-family&gt; ]#</li>
+<li><span class="emp-i">font-variant</span> ::= normal | none | [ &lt;common-lig-values&gt; ||<br>
+&lt;discretionary-lig-values&gt; || &lt;historical-lig-values&gt; ||<br>
+&lt;contextual-alt-values&gt; || [ small-caps | all-small-caps |<br>
+petite-caps | all-petite-caps | unicase | titling-caps ] ||<br>
+&lt;numeric-figure-values&gt; || &lt;numeric-spacing-values&gt; ||<br>
+&lt;numeric-fraction-values&gt; || ordinal || slashed-zero ||<br>
+&lt;east-asian-variant-values&gt; || &lt;east-asian-width-values&gt; ||<br>
+ruby || [ sub | super ] ]</li>
+<li><span class="emp-i lev3">font-stretch</span> ::= normal | ultra-condensed | extra-condensed | condensed |         semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded</li>
+</ul>
+<p><img src="img/weight-width-variations.png" alt="img" title="Font weight width variations"></p>
+<hr class="thin">
+<h3 class="mume-header" id="short-hand-property">Short hand property</h3>
+
+<p>&#xC774; &#xAC83;&#xB4E4;&#xC744; &#xAC04;&#xD3B8;&#xD654;&#xD55C;(Short handed)&#xD55C; Shorthand property <span class="emp-i">font</span> property&#xAC00; &#xC788;&#xB2E4;. &#xBB3C;&#xB860;</p>
+<ul>
+<li><span class="emp-i">font</span> ::= [[ &lt;&apos;<span class="emph">font</span>-style&apos;&gt; || &lt;<span class="emph">font</span>-variant-css21&gt; || &lt;&apos;<span class="emph">font</span>-weight&apos;&gt; || &lt;&apos;<span class="emph">font</span>-stretch&apos;&gt; ]? &lt;&apos;<span class="emph">font</span>-size&apos;&gt; [ / &lt;&apos;line-height&apos;&gt; ]? &lt;&apos;<span class="emph">font</span>-family&apos;&gt; ] | caption | icon | menu | message-box | small-caption | status-bar</li>
+</ul>
+<p>CSS file</p>
+<pre data-role="codeBlock" data-info="css" class="language-css"><span class="token selector">p</span> <span class="token punctuation">{</span>
+   <span class="token property">font-style</span><span class="token punctuation">:</span> italic<span class="token punctuation">;</span>
+   <span class="token property">font-variant</span><span class="token punctuation">:</span> small-caps<span class="token punctuation">;</span>
+   <span class="token property">font-weight</span><span class="token punctuation">:</span> <span class="token number">500</span><span class="token punctuation">;</span>
+   <span class="token property">font-stretch</span><span class="token punctuation">:</span> expanded<span class="token punctuation">;</span>
+   <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">16</span><span class="token unit">px</span><span class="token punctuation">;</span>
+   <span class="token property">line-height</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">;</span>
+   <span class="token property">font-family</span><span class="token punctuation">:</span> sans-serif<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><p>&#xC704;&#xC758; code&#xB97C; shorthand property&#xC778; &apos;<span class="emp-i">font</span>&apos;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xC5EC; &#xD45C;&#xD604;&#xD558;&#xBA74; &#xC544;&#xB798;&#xC640; &#xAC19;&#xB2E4;.</p>
+<pre data-role="codeBlock" data-info="css" class="language-css"><span class="token selector">p</span> <span class="token punctuation">{</span>
+   <span class="token property">font</span><span class="token punctuation">:</span> italic small-caps <span class="token number">500</span> expanded <span class="token number">16</span><span class="token unit">px</span>/<span class="token number">2</span> sans-serif<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><h2 class="mume-header" id="%EC%9D%B4-%EA%B2%83-%EC%8D%A8%EB%8F%84-%EA%B4%9C%EC%B0%AE%EC%95%84-%EC%82%AC%EC%9D%B4%ED%8A%B8-can-i-use-%EC%82%AC%EC%9D%B4%ED%8A%B8">&#xC774; &#xAC83; &#xC368;&#xB3C4; &#xAD1C;&#xCC2E;&#xC544;? &#xC0AC;&#xC774;&#xD2B8; - &apos;Can I Use&apos; &#xC0AC;&#xC774;&#xD2B8;</h2>
+
+<p>&#xC774; &#xCC44;&#xB110; HTML section &#xCD08;&#xBC18;&#xBD80;&#xC5D0; 3&#xD3B8;&#xC758; &apos;HTML 5++ &#xC608;&#xBE44;&#xC9C0;&#xC2DD;&apos;&#xC5D0;&#xC11C;&#xB3C4; &#xC5B8;&#xAE09;&#xD588;&#xC9C0;&#xB9CC; &#xD604;&#xC7AC; UA(User Agent)&#xC5D0; &#xB530;&#xB77C; &#xD604;&#xC7AC; HTML, CSS &#xB4F1;&#xC758; spec&#xC774; &#xB611;&#xAC19;&#xC774; &#xBC18;&#xC601;&#xB418;&#xC5B4;&#xC788;&#xC9C0; &#xC54A;&#xB2E4;. CSS3&#xC758; &#xACBD;&#xC6B0;&#xB3C4; &#xB9C8;&#xCC2C;&#xAC00;&#xC9C0;&#xB2E4;. &#xC608;&#xB97C; &#xB4E4;&#xC5B4; font-stretch property&#xC758; &#xACBD;&#xC6B0;&#xB294; FireFox&#xC5D0;&#xC11C;&#xB9CC; &#xC77C;&#xBD80; &#xD45C;&#xD604;&#xB418;&#xACE0; &#xB098;&#xBA38;&#xC9C0; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xC5D0;&#xC11C;&#xB294; &#xC791;&#xB3D9;&#xD558;&#xC9C0; &#xC54A;&#xB294;&#xB2E4;.</p>
+<p>&#xB530;&#xB77C;&#xC11C; &#xC791;&#xB3D9;&#xB418;&#xC9C0;&#xB3C4; &#xC54A;&#xB294; property&#xB4E4;&#xC740; &#xC368;&#xBD10;&#xC57C; &#xC18C;&#xC6A9;&#xC5C6;&#xC73C;&#xBBC0;&#xB85C; &#xCD5C;&#xC18C;&#xD55C; &#xB2F9;&#xBD84;&#xAC04; &#xACE0;&#xB824;&#xD560; &#xD544;&#xC694;&#xC5C6;&#xB294;&#xB370;, &#xADF8;&#xB7F0; property&#xB4E4;&#xC774; &#xC5B4;&#xB5A4; &#xAC83;&#xC778;&#xC9C0; &#xC54C; &#xD544;&#xC694;&#xAC00; &#xC788;&#xB2E4;.</p>
+<p>&#xACE0;&#xB9D9;&#xAC8C;&#xB3C4; &apos;<a href="https://caniuse.com/">https://caniuse.com/</a>&apos;(can i use) &#xC774;&#xB77C;&#xB294; &#xC0AC;&#xC774;&#xD2B8;&#xC5D0;&#xC11C; &#xADF8; &#xC5EC;&#xBD80;&#xB97C; &#xC54C; &#xC218; &#xC788;&#xB2E4;. <span class="emp-i">font-variant</span>&#xB97C; &#xC0AC;&#xC6A9;&#xC5EC;&#xBD80;&#xC5D0; &#xB300;&#xD574; &#xC54C;&#xC544;&#xBCF4;&#xC790;. &#xAC10;&#xC0AC;&#xD558;&#xB294; &#xB9C8;&#xC74C;&#xC73C;&#xB85C; &#xC774; &#xC0AC;&#xC774;&#xD2B8;&#xB97C; &#xC798; &#xC774;&#xC6A9;&#xD558;&#xC790;.</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
